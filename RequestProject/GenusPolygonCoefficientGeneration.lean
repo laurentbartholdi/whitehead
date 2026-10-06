@@ -1,4 +1,8 @@
-import RequestProject.GenusPolygonCoefficientBoundaryBridge
+module
+
+public import RequestProject.GenusPolygonCoefficientBoundaryBridge
+
+@[expose] public section
 
 /-! The actual marking boundary supplies polygon relativity automatically.
 Consequently a fixed degree-one geometric reference generates every vector

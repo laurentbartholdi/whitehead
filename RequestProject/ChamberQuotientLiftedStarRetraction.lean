@@ -1,5 +1,9 @@
-import RequestProject.ChamberQuotientStarRetraction
-import RequestProject.PosetCoverComparableLifts
+module
+
+public import RequestProject.ChamberQuotientStarRetraction
+public import RequestProject.PosetCoverComparableLifts
+
+@[expose] public section
 
 /-! Lift the actual downward star retraction in the chosen universal-cover sheet. -/
 namespace FiniteChains.Davis

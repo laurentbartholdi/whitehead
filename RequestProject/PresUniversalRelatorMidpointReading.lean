@@ -1,6 +1,10 @@
-import RequestProject.PresUniversalReadingPrefix
-import RequestProject.PresUniversalRelatorDeck
-import RequestProject.PresCoverRelatorFan
+module
+
+public import RequestProject.PresUniversalReadingPrefix
+public import RequestProject.PresUniversalRelatorDeck
+public import RequestProject.PresCoverRelatorFan
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

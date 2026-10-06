@@ -1,5 +1,9 @@
-import RequestProject.OrderPosetCovering
-import RequestProject.OrderNormalizationHomotopy
+module
+
+public import RequestProject.OrderPosetCovering
+public import RequestProject.OrderNormalizationHomotopy
+
+@[expose] public section
 
 /-! Three-simplex maps and their unique lifts through actual poset coverings. -/
 

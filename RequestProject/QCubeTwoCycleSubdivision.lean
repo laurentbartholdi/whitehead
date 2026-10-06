@@ -1,5 +1,9 @@
-import RequestProject.QCubeSquareCycleRecovery
-import RequestProject.QCubeSquareChainBoundary
+module
+
+public import RequestProject.QCubeSquareCycleRecovery
+public import RequestProject.QCubeSquareChainBoundary
+
+@[expose] public section
 
 /-! Global recovery of actual two-dimensional strict cycles as finite cubical square chains. -/
 namespace FiniteChains.Davis

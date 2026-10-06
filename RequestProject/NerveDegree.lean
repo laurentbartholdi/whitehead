@@ -1,4 +1,8 @@
-import RequestProject.NerveSupport
+module
+
+public import RequestProject.NerveSupport
+
+@[expose] public section
 
 /-! Degree projections for the full augmented order-nerve chain complex. -/
 

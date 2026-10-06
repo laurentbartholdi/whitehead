@@ -1,6 +1,10 @@
-import RequestProject.BlockRelativeVanishing
-import RequestProject.UniversalCoverPi2
-import RequestProject.CoverHomologyOne
+module
+
+public import RequestProject.BlockRelativeVanishing
+public import RequestProject.UniversalCoverPi2
+public import RequestProject.CoverHomologyOne
+
+@[expose] public section
 
 /-!
 # Exactness of the Fox complex in degree one, and its base change

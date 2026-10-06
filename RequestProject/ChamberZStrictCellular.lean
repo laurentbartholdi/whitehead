@@ -1,5 +1,9 @@
-import RequestProject.ChamberZCellular
-import RequestProject.OrderNormalizationSupport
+module
+
+public import RequestProject.ChamberZCellular
+public import RequestProject.OrderNormalizationSupport
+
+@[expose] public section
 
 /-! Relative generation using genuine nondegenerate chamber flags. -/
 set_option backward.defeqAttrib.useBackward true

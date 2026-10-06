@@ -1,5 +1,9 @@
-import RequestProject.QCubeSquareInternalBoundary
-import RequestProject.QCubeSquareCoefficientSigns
+module
+
+public import RequestProject.QCubeSquareInternalBoundary
+public import RequestProject.QCubeSquareCoefficientSigns
+
+@[expose] public section
 
 /-! The genuine square radial boundary matrix has one-dimensional integral kernel. -/
 set_option maxHeartbeats 1000000

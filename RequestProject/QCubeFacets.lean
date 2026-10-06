@@ -1,4 +1,8 @@
-import RequestProject.QCubeEdgeSubdivision
+module
+
+public import RequestProject.QCubeEdgeSubdivision
+
+@[expose] public section
 
 /-! Actual coordinate facets of quotient cubes. -/
 namespace FiniteChains.Davis

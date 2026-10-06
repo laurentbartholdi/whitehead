@@ -1,5 +1,9 @@
-import RequestProject.SquareComplexWalls
-import RequestProject.WallSpaceDualConnected
+module
+
+public import RequestProject.SquareComplexWalls
+public import RequestProject.WallSpaceDualConnected
+
+@[expose] public section
 
 /-!
 # From the walls of a square complex to a wall space

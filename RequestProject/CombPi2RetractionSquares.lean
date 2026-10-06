@@ -1,5 +1,9 @@
-import RequestProject.ComponentComplex
-import RequestProject.ZeroPi2Descent
+module
+
+public import RequestProject.ComponentComplex
+public import RequestProject.ZeroPi2Descent
+
+@[expose] public section
 
 /-! Transfer vanishing through a commuting square whose target vertical
 map admits a cellular left inverse. Pending final Lean verification. -/

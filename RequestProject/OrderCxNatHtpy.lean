@@ -1,4 +1,8 @@
-import RequestProject.OrderCxMonodromy
+module
+
+public import RequestProject.OrderCxMonodromy
+
+@[expose] public section
 
 /-!
 # Two monotone maps in the relation `f ≤ g` induce homotopic maps of order complexes

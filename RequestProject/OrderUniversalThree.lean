@@ -1,5 +1,9 @@
-import RequestProject.OrderPosetCoverThree
-import RequestProject.SimplyConnectedCoverEquiv
+module
+
+public import RequestProject.OrderPosetCoverThree
+public import RequestProject.SimplyConnectedCoverEquiv
+
+@[expose] public section
 
 /-! The actual lifted three-simplices of the path-class universal cover of an order nerve. -/
 

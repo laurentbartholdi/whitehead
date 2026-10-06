@@ -1,4 +1,8 @@
-import RequestProject.GenusQuotientReceiver
+module
+
+public import RequestProject.GenusQuotientReceiver
+
+@[expose] public section
 
 /-! The forward comparison with the actual quotient and its reverse reading.
 

@@ -1,5 +1,9 @@
-import RequestProject.ChamberDescent
-import RequestProject.RACGCovering
+module
+
+public import RequestProject.ChamberDescent
+public import RequestProject.RACGCovering
+
+@[expose] public section
 
 /-!
 # The parity map on a special subgroup of a simplex

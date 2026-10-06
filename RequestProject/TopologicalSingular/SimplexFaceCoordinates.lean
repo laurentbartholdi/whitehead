@@ -1,10 +1,14 @@
+module
+
 /-
 Copyright (c) 2026 Vasily Ilin. All rights reserved.
 Released under Apache 2.0 license.
 Adapted from Vilin97/homotopy-groups-lean, commit
 c66523531ff172d7f41913d94e56921e790a1b47; isolated geometry for Lean 4.28.0.
 -/
-import RequestProject.TopologicalSingular.StickSimplex
+public import RequestProject.TopologicalSingular.StickSimplex
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 open scoped unitInterval Topology

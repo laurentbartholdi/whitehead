@@ -1,4 +1,8 @@
-import RequestProject.NerveBoundaryReflection
+module
+
+public import RequestProject.NerveBoundaryReflection
+
+@[expose] public section
 
 /-! Both chain comparisons for a genuine monotone upper retraction. -/
 namespace FiniteChains.Nerve

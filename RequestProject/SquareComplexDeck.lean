@@ -1,5 +1,9 @@
-import RequestProject.SquareComplexMonodromy
-import RequestProject.SquareComplexUniversalCover
+module
+
+public import RequestProject.SquareComplexMonodromy
+public import RequestProject.SquareComplexUniversalCover
+
+@[expose] public section
 
 /-!
 # Deck transformations of a universal covering

@@ -1,5 +1,9 @@
-import RequestProject.ComponentComplex
-import RequestProject.OrderComplexGluing
+module
+
+public import RequestProject.ComponentComplex
+public import RequestProject.OrderComplexGluing
+
+@[expose] public section
 
 /-! Actual path components of an order complex, as labels of its vertices. -/
 namespace FiniteChains.Comb

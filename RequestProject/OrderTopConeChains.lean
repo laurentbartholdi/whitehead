@@ -1,4 +1,8 @@
-import RequestProject.OrderConeThreeChains
+module
+
+public import RequestProject.OrderConeThreeChains
+
+@[expose] public section
 
 /-! Actual upper-cone triangle and tetrahedron chains for cell subdivisions. -/
 set_option backward.defeqAttrib.useBackward true

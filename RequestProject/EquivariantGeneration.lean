@@ -1,4 +1,8 @@
-import Mathlib
+module
+
+public import Mathlib
+
+@[expose] public section
 
 /-!
 # The equivariance arguments of Lemmas 3.9, 3.10 and Proposition 3.11

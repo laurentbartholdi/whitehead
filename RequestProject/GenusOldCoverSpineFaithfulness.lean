@@ -1,5 +1,9 @@
-import RequestProject.TruncatedCoverRetraction
-import RequestProject.GenusCoveredSpineCycleFaithfulness
+module
+
+public import RequestProject.TruncatedCoverRetraction
+public import RequestProject.GenusCoveredSpineCycleFaithfulness
+
+@[expose] public section
 
 /-! Actual covered-spine cycles are detected in the old cubical block. -/
 set_option backward.defeqAttrib.useBackward true

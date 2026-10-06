@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.SimplexHomotopyExtension
-import RequestProject.TopologicalSingular.TriangleSquareGeometry
+module
+
+public import RequestProject.TopologicalSingular.SimplexHomotopyExtension
+public import RequestProject.TopologicalSingular.TriangleSquareGeometry
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

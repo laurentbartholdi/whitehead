@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.TetrahedronSquareDisks
-import RequestProject.TopologicalSingular.SimplexLinearHomotopy
+module
+
+public import RequestProject.TopologicalSingular.TetrahedronSquareDisks
+public import RequestProject.TopologicalSingular.SimplexLinearHomotopy
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 open scoped unitInterval Topology

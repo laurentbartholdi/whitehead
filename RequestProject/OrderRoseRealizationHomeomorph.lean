@@ -1,6 +1,10 @@
-import RequestProject.OrderRoseDiskHomeomorph
-import RequestProject.OrderRoseFourVertices
-import RequestProject.FinitePosetCycleRealization
+module
+
+public import RequestProject.OrderRoseDiskHomeomorph
+public import RequestProject.OrderRoseFourVertices
+public import RequestProject.FinitePosetCycleRealization
+
+@[expose] public section
 
 /-! The actual arbitrary order rose is homeomorphic to the actual bouquet
 of one-dimensional disks. The four-edge generator orientation is retained. -/

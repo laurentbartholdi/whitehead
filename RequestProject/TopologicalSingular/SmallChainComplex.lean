@@ -1,7 +1,11 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.SmallChainHomology
-import RequestProject.TopologicalSingular.SingularHomologySequence
+public import RequestProject.TopologicalSingular.SmallChainHomology
+public import RequestProject.TopologicalSingular.SingularHomologySequence
+
+@[expose] public section
 
 /-! # The small singular subcomplex and its quotient
 

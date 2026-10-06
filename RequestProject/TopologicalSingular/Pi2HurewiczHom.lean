@@ -1,6 +1,10 @@
-import RequestProject.TopologicalSingular.Pi2HurewiczMap
-import RequestProject.TopologicalSingular.SquareSubdivisionPrism
-import RequestProject.TopologicalSingular.SquareConcatenationGeometry
+module
+
+public import RequestProject.TopologicalSingular.Pi2HurewiczMap
+public import RequestProject.TopologicalSingular.SquareSubdivisionPrism
+public import RequestProject.TopologicalSingular.SquareConcatenationGeometry
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

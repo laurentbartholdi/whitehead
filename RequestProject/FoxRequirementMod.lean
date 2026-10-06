@@ -1,5 +1,9 @@
-import Mathlib
-import RequestProject.UniversalCoefficients
+module
+
+public import Mathlib
+public import RequestProject.UniversalCoefficients
+
+@[expose] public section
 
 /-!
 # The requirements (2.2) modulo an integer

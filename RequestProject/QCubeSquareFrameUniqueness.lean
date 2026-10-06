@@ -1,5 +1,9 @@
-import RequestProject.QCubeCanonicalTwoCycles
-import RequestProject.QCubeFacetIncidence
+module
+
+public import RequestProject.QCubeCanonicalTwoCycles
+public import RequestProject.QCubeFacetIncidence
+
+@[expose] public section
 
 /-! Decreasing square frames agree with the actual ordered coordinate directions. -/
 namespace FiniteChains.Davis

@@ -1,3 +1,5 @@
+module
+
 /-
 The generic codimension-two stick-coordinate lemma below is adapted from
 Vilin97/homotopy-groups-lean, c66523531ff172d7f41913d94e56921e790a1b47,
@@ -5,8 +7,10 @@ Hurewicz/CubicalShell.lean, Copyright (c) 2026 Vasily Ilin,
 released under Apache 2.0. The remaining constructions connect that geometry
 to the singular simplex and based-square models in this project.
 -/
-import RequestProject.TopologicalSingular.StickTriangleComparison
-import RequestProject.TopologicalSingular.BasedTetrahedronDisks
+public import RequestProject.TopologicalSingular.StickTriangleComparison
+public import RequestProject.TopologicalSingular.BasedTetrahedronDisks
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

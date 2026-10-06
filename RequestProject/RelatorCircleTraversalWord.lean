@@ -1,6 +1,10 @@
-import RequestProject.RelatorCircleIndexedWord
-import RequestProject.OrderNerveAffinePathWords
-import RequestProject.FinitePosetCycleNaturality
+module
+
+public import RequestProject.RelatorCircleIndexedWord
+public import RequestProject.OrderNerveAffinePathWords
+public import RequestProject.FinitePosetCycleNaturality
+
+@[expose] public section
 
 /-! The explicit once-around circle traversal represents its literal
 four-edges-per-letter word as an actual based path homotopy.

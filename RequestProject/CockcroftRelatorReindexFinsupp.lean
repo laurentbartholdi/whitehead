@@ -1,6 +1,10 @@
-import RequestProject.CockcroftRelatorReindex
-import RequestProject.GenerationStepFinsupp
-import RequestProject.BlockFamilyBlockwiseFinsupp
+module
+
+public import RequestProject.CockcroftRelatorReindex
+public import RequestProject.GenerationStepFinsupp
+public import RequestProject.BlockFamilyBlockwiseFinsupp
+
+@[expose] public section
 
 /-! Relator reindexing for arbitrary presentations and finitely supported
 chains. No finiteness of the generators or relators is imposed.

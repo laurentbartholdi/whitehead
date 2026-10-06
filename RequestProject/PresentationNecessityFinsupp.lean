@@ -1,5 +1,9 @@
-import RequestProject.PresentationDictionary
-import RequestProject.HurewiczFinsupp
+module
+
+public import RequestProject.PresentationDictionary
+public import RequestProject.HurewiczFinsupp
+
+@[expose] public section
 
 /-! The necessity dictionary for arbitrary presentations, with finitely supported chains. -/
 

@@ -1,7 +1,11 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.ClassicalGraphModel
-import RequestProject.PathTailContraction
-import RequestProject.AttachmentBaseChange
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.ClassicalGraphModel
+public import RequestProject.PathTailContraction
+public import RequestProject.AttachmentBaseChange
+
+@[expose] public section
 
 /-! Cellwise contraction of an arbitrary disk graph from compatible vertex
 paths. Compactness is used only for the homotopy time parameter. -/
@@ -21,7 +25,7 @@ variable (Q : ∀ a : V, Path ((old r (boundaryFamilyInclusion J (Fin 1 → ℝ)
     Q (graphTgt r j) = (graphEdgePath r j).symm.trans (Q (graphSrc r j)))
 
 include hQ in
-private theorem graphEdgeContraction_exists (j : J) : ∃ H : C(I × I, (DiskAttachment r)),
+theorem graphEdgeContraction_exists (j : J) : ∃ H : C(I × I, (DiskAttachment r)),
     (∀ s, H (0, s) = graphEdgePath r j s) ∧
     (∀ s, H (1, s) = (old r (boundaryFamilyInclusion J (Fin 1 → ℝ))) root) ∧
     (∀ t, H (t, 0) = Q (graphSrc r j) t) ∧
@@ -49,10 +53,10 @@ private theorem graphEdgeContraction_exists (j : J) : ∃ H : C(I × I, (DiskAtt
     intro t
     rw [Path.tailContraction_right, ← hj]
 
-private def graphEdgeContraction (j : J) : C(I × I, (DiskAttachment r)) :=
+def graphEdgeContraction (j : J) : C(I × I, (DiskAttachment r)) :=
   Classical.choose (graphEdgeContraction_exists r root Q hQ j)
 
-private theorem graphEdgeContraction_spec (j : J) :
+theorem graphEdgeContraction_spec (j : J) :
     (∀ s, graphEdgeContraction r root Q hQ j (0, s) = graphEdgePath r j s) ∧
     (∀ s, graphEdgeContraction r root Q hQ j (1, s) = (old r (boundaryFamilyInclusion J (Fin 1 → ℝ))) root) ∧
     (∀ t, graphEdgeContraction r root Q hQ j (t, 0) = Q (graphSrc r j) t) ∧
@@ -61,16 +65,16 @@ private theorem graphEdgeContraction_spec (j : J) :
 
 variable [DiscreteTopology V]
 
-private def graphVertexContraction : C(I × V, (DiskAttachment r)) :=
+def graphVertexContraction : C(I × V, (DiskAttachment r)) :=
   (⟨fun a => (Q a).toContinuousMap, continuous_of_discreteTopology⟩ : C(V, C(I, (DiskAttachment r)))).uncurry.comp
     ⟨Prod.swap, continuous_swap⟩
 
-private def graphDiskContraction (j : J) : C(I × ClosedUnitBall (Fin 1 → ℝ), (DiskAttachment r)) :=
+def graphDiskContraction (j : J) : C(I × ClosedUnitBall (Fin 1 → ℝ), (DiskAttachment r)) :=
   (graphEdgeContraction r root Q hQ j).comp
     ⟨fun td => (td.1, graphDiskHomeomorph.symm td.2),
       continuous_fst.prodMk (graphDiskHomeomorph.symm.continuous.comp continuous_snd)⟩
 
-private def graphDiskFamilyContraction : C(I × DiskFamily J (Fin 1 → ℝ), (DiskAttachment r)) :=
+def graphDiskFamilyContraction : C(I × DiskFamily J (Fin 1 → ℝ), (DiskAttachment r)) :=
   let F : C(DiskFamily J (Fin 1 → ℝ), C(I, (DiskAttachment r))) := {
     toFun := fun d => ((graphDiskContraction r root Q hQ d.1).comp
       ⟨Prod.swap, continuous_swap⟩).curry d.2
@@ -78,7 +82,7 @@ private def graphDiskFamilyContraction : C(I × DiskFamily J (Fin 1 → ℝ), (D
       ((graphDiskContraction r root Q hQ j).comp ⟨Prod.swap, continuous_swap⟩).curry.continuous) }
   F.uncurry.comp ⟨Prod.swap, continuous_swap⟩
 
-private theorem graphContraction_compatible (t : I) (a : BoundaryFamily J (Fin 1 → ℝ)) :
+theorem graphContraction_compatible (t : I) (a : BoundaryFamily J (Fin 1 → ℝ)) :
     graphVertexContraction r root Q (t, r a) =
       graphDiskFamilyContraction r root Q hQ (t, boundaryFamilyInclusion J _ a) := by
   rcases a with ⟨j, a⟩

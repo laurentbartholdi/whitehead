@@ -1,4 +1,8 @@
-import RequestProject.OrderCocyclePotential
+module
+
+public import RequestProject.OrderCocyclePotential
+
+@[expose] public section
 
 /-! Flat sections for arbitrary group actions, retaining nonabelian monodromy. -/
 set_option backward.defeqAttrib.useBackward true

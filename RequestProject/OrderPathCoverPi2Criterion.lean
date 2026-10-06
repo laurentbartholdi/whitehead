@@ -1,6 +1,10 @@
-import RequestProject.OrderRealizationPi2Criterion
-import RequestProject.OrderUniversalPosetThree
-import RequestProject.OrderUniversalTetLift
+module
+
+public import RequestProject.OrderRealizationPi2Criterion
+public import RequestProject.OrderUniversalPosetThree
+public import RequestProject.OrderUniversalTetLift
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 variable {P Q : Type} [PartialOrder P] [PartialOrder Q]

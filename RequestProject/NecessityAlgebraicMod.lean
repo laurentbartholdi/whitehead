@@ -1,7 +1,11 @@
-import RequestProject.NecessityAlgebraic
-import RequestProject.ChainFormulaMod
-import RequestProject.FoxCommutatorMod
-import RequestProject.FoxRequirementMod
+module
+
+public import RequestProject.NecessityAlgebraic
+public import RequestProject.ChainFormulaMod
+public import RequestProject.FoxCommutatorMod
+public import RequestProject.FoxRequirementMod
+
+@[expose] public section
 
 /-!
 # Section 2 with the full family of requirements, without any topological interface

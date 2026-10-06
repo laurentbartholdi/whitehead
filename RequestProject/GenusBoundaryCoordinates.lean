@@ -1,5 +1,9 @@
-import RequestProject.GenusLoops
-import RequestProject.BarycentricCocycleDescent
+module
+
+public import RequestProject.GenusLoops
+public import RequestProject.BarycentricCocycleDescent
+
+@[expose] public section
 
 /-! Exact boundary incidences and cocycle values of the genuine marked loops. -/
 set_option backward.defeqAttrib.useBackward true

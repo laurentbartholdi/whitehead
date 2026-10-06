@@ -1,6 +1,10 @@
-import RequestProject.OrderComponentLabels
-import RequestProject.ConeAdjPoset
-import RequestProject.CylinderPoset
+module
+
+public import RequestProject.OrderComponentLabels
+public import RequestProject.ConeAdjPoset
+public import RequestProject.CylinderPoset
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 universe u

@@ -1,6 +1,10 @@
-import RequestProject.TruncatedCubePoset
-import RequestProject.OrderCxNatHtpy
-import RequestProject.StrictOrderComplex
+module
+
+public import RequestProject.TruncatedCubePoset
+public import RequestProject.OrderCxNatHtpy
+public import RequestProject.StrictOrderComplex
+
+@[expose] public section
 
 /-! Based path comparison for the actual truncated face poset, before collapse. -/
 set_option backward.defeqAttrib.useBackward true

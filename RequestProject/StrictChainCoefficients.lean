@@ -1,5 +1,9 @@
-import RequestProject.StrictOrderChains
-import RequestProject.OrderNerveDictionary
+module
+
+public import RequestProject.StrictOrderChains
+public import RequestProject.OrderNerveDictionary
+
+@[expose] public section
 
 /-! Normalization preserves the coefficients of all genuine order simplices. -/
 

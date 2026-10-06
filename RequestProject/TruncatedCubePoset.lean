@@ -1,5 +1,9 @@
-import RequestProject.QCubeCoordinateEquiv
-import RequestProject.NerveDegree
+module
+
+public import RequestProject.QCubeCoordinateEquiv
+public import RequestProject.NerveDegree
+
+@[expose] public section
 
 /-! Face incidences of the truncated complex, including its new cut cells. -/
 

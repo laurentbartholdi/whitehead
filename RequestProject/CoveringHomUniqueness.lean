@@ -1,5 +1,9 @@
-import RequestProject.CombCoveringLift
-import RequestProject.CombData
+module
+
+public import RequestProject.CombCoveringLift
+public import RequestProject.CombData
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 universe u

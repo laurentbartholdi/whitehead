@@ -1,6 +1,10 @@
-import RequestProject.ReceivedTreeGauge
-import RequestProject.CellularHomotopyChain
-import RequestProject.ComponentComplex
+module
+
+public import RequestProject.ReceivedTreeGauge
+public import RequestProject.CellularHomotopyChain
+public import RequestProject.ComponentComplex
+
+@[expose] public section
 
 /-! A constructed cellular comparison, including the lifted attaching paths. -/
 set_option backward.defeqAttrib.useBackward true

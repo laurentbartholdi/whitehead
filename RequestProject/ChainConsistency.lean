@@ -1,6 +1,10 @@
-import RequestProject.NecessityAlgebraic
-import RequestProject.TorsionFreeGroupRing
-import RequestProject.ChainFormulaMod
+module
+
+public import RequestProject.NecessityAlgebraic
+public import RequestProject.TorsionFreeGroupRing
+public import RequestProject.ChainFormulaMod
+
+@[expose] public section
 
 /-!
 # The cell-level chain data is consistent

@@ -1,5 +1,9 @@
-import RequestProject.HurewiczDictionary
-import RequestProject.PresentationDictionary
+module
+
+public import RequestProject.HurewiczDictionary
+public import RequestProject.PresentationDictionary
+
+@[expose] public section
 
 /-!
 # The Hurewicz dictionary as an explicit isomorphism `H₁(K_N) ≅ N/[N, N]`

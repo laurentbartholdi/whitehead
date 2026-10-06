@@ -1,6 +1,10 @@
-import RequestProject.RACGSquareComplex
-import RequestProject.SquareComplexMonodromy
-import RequestProject.SquareComplexCoverExists
+module
+
+public import RequestProject.RACGSquareComplex
+public import RequestProject.SquareComplexMonodromy
+public import RequestProject.SquareComplexCoverExists
+
+@[expose] public section
 
 /-!
 # The fundamental group of `C(L)` is the kernel of the parity map

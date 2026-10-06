@@ -1,5 +1,9 @@
-import RequestProject.PresentationDictionary
-import RequestProject.CoverChainComplex
+module
+
+public import RequestProject.PresentationDictionary
+public import RequestProject.CoverChainComplex
+
+@[expose] public section
 
 /-!
 # The Cockcroft property of a presentation complex

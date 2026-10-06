@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveAffineEdgePath
-import RequestProject.FiniteSimpleArcConcatenation
+module
+
+public import RequestProject.OrderNerveAffineEdgePath
+public import RequestProject.FiniteSimpleArcConcatenation
+
+@[expose] public section
 
 /-! Realizing an explicitly enumerated finite rank-one poset cycle gives
 an actual topological circle. All topological assertions follow from exact
@@ -46,7 +50,7 @@ theorem lastEdge_coordinates (t : I) (p : P) :
         (t : ℝ) * (if C.vertex 0 = p then 1 else 0) :=
   orderNerveComparablePath_coordinates _ _ _
 
-private theorem vne {i j : Fin (n + 2)} (h : i.val ≠ j.val) : C.vertex i ≠ C.vertex j :=
+theorem vne {i j : Fin (n + 2)} (h : i.val ≠ j.val) : C.vertex i ≠ C.vertex j :=
   fun he => h (congrArg Fin.val (C.vertex.injective he))
 
 theorem edge_injective (i : Fin (n + 1)) : Function.Injective (C.edge i) :=
@@ -121,14 +125,14 @@ theorem traversal_fiber (s t : I) (h : C.traversal s = C.traversal t) :
     C.prefix_meet_last h
 
 include C in
-private theorem height_ne {a b : P} (hne : a ≠ b) (h : a ≤ b ∨ b ≤ a) :
+theorem height_ne {a b : P} (hne : a ≠ b) (h : a ≤ b ∨ b ≤ a) :
     C.height a ≠ C.height b := by
   rcases h with h | h
   · exact ne_of_lt (C.height_strict (lt_of_le_of_ne h hne))
   · exact (ne_of_lt (C.height_strict (lt_of_le_of_ne h hne.symm))).symm
 
 include C in
-private theorem support_pair [Fintype P] (x : orderNerveRealization P) :
+theorem support_pair [Fintype P] (x : orderNerveRealization P) :
     ∃ a b : P, a ≠ b ∧ (a ≤ b ∨ b ≤ a) ∧
       ∀ p, p ≠ a → p ≠ b → orderNerveRealizationCoordinates P x p = 0 := by
   let c := orderNerveRealizationCoordinates P x

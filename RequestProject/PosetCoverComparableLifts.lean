@@ -1,4 +1,8 @@
-import RequestProject.PosetCoverUpTransform
+module
+
+public import RequestProject.PosetCoverUpTransform
+
+@[expose] public section
 
 /-! Lift a comparable map from a previously chosen lift, preserving its sheet. -/
 namespace FiniteChains.Comb.IsPosetCover

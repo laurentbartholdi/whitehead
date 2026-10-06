@@ -1,7 +1,11 @@
-import RequestProject.CoverChainComplex
-import RequestProject.PresentationDictionary
-import RequestProject.ExponentCorrection
-import RequestProject.Cockcroft
+module
+
+public import RequestProject.CoverChainComplex
+public import RequestProject.PresentationDictionary
+public import RequestProject.ExponentCorrection
+public import RequestProject.Cockcroft
+
+@[expose] public section
 
 /-!
 # Rule 2 of Section 3.4 does not change `π₂`

@@ -1,4 +1,8 @@
-import RequestProject.GenusNamedSpine
+module
+
+public import RequestProject.GenusNamedSpine
+
+@[expose] public section
 
 /-! The genuine finite marked presentation compared with the previously verified block. -/
 namespace FiniteChains.Comb

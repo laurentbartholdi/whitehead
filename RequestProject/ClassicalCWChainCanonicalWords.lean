@@ -1,9 +1,13 @@
-import RequestProject.ClassicalCWChainRoseModels
-import RequestProject.StabilizedDiskNaturality
-import RequestProject.ClassicalRoseWordNaturality
-import RequestProject.PresCircleWordParametrization
-import RequestProject.PresCanonicalWords
-import RequestProject.PresWordDiskNaturality
+module
+
+public import RequestProject.ClassicalCWChainRoseModels
+public import RequestProject.StabilizedDiskNaturality
+public import RequestProject.ClassicalRoseWordNaturality
+public import RequestProject.PresCircleWordParametrization
+public import RequestProject.PresCanonicalWords
+public import RequestProject.PresWordDiskNaturality
+
+@[expose] public section
 
 /-! Nonempty canonical presentation words for the entire original CW
 filtration. Both generator and relator embeddings are actual injective

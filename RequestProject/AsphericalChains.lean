@@ -1,11 +1,15 @@
-import RequestProject.Pi2ExtensionInjective
-import RequestProject.MapChainDescent
-import RequestProject.PresUnivCoverIso
-import RequestProject.UniversalCoverPi2
-import RequestProject.PresentationConsistency
-import RequestProject.TorsionFreeGroupRing
-import RequestProject.GenerationIterate
-import RequestProject.Pi2ExtensionExample
+module
+
+public import RequestProject.Pi2ExtensionInjective
+public import RequestProject.MapChainDescent
+public import RequestProject.PresUnivCoverIso
+public import RequestProject.UniversalCoverPi2
+public import RequestProject.PresentationConsistency
+public import RequestProject.TorsionFreeGroupRing
+public import RequestProject.GenerationIterate
+public import RequestProject.Pi2ExtensionExample
+
+@[expose] public section
 
 /-!
 # Strictly increasing chains over an aspherical presentation complex

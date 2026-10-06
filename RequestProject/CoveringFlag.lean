@@ -1,4 +1,8 @@
-import RequestProject.FlagComplex
+module
+
+public import RequestProject.FlagComplex
+
+@[expose] public section
 
 /-!
 # Coverings of flag complexes are flag

@@ -1,5 +1,9 @@
-import RequestProject.TreePi2Reflection
-import RequestProject.CombPushout
+module
+
+public import RequestProject.TreePi2Reflection
+public import RequestProject.CombPushout
+
+@[expose] public section
 
 /-! Undo a spanning-tree collapse relative to the original complex.
 New generators are actual loops at the original tree root. An old
@@ -21,7 +25,7 @@ variable {D : Complex2} (T : SpanningTree D) {Z S : Type}
 def source : D.E ⊕ Z → D.V := Sum.elim D.src (fun _ => T.root)
 def target : D.E ⊕ Z → D.V := Sum.elim D.tgt (fun _ => T.root)
 
-private def loopGraph : Complex2 where
+def loopGraph : Complex2 where
   V := D.V
   E := D.E ⊕ Z
   F := PEmpty

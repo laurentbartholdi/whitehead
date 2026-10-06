@@ -1,8 +1,12 @@
-import RequestProject.CutPuncturedBoundary
-import RequestProject.VertexPunctureIntersection
-import RequestProject.OrderComplexPi1Transfer
-import RequestProject.OrderComplexRetraction
-import RequestProject.OrderComplexGluing
+module
+
+public import RequestProject.CutPuncturedBoundary
+public import RequestProject.VertexPunctureIntersection
+public import RequestProject.OrderComplexPi1Transfer
+public import RequestProject.OrderComplexRetraction
+public import RequestProject.OrderComplexGluing
+
+@[expose] public section
 
 /-! Coordinate restriction and extension on a positive three-cube's retained boundary. -/
 namespace FiniteChains.Davis

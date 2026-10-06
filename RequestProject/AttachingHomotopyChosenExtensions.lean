@@ -1,4 +1,8 @@
-import RequestProject.AttachingHomotopyEquiv
+module
+
+public import RequestProject.AttachingHomotopyEquiv
+
+@[expose] public section
 
 /-! The attaching equivalence with specified extensions. This permits a
 natural explicit extension to replace unrelated choices of HEP witnesses.

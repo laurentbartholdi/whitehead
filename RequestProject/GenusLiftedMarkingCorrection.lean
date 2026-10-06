@@ -1,5 +1,9 @@
-import RequestProject.LiftedHomotopyChains
-import RequestProject.GenusEquivariantCapFillings
+module
+
+public import RequestProject.LiftedHomotopyChains
+public import RequestProject.GenusEquivariantCapFillings
+
+@[expose] public section
 
 /-! Genuine old-block cover chains correcting the surviving-spine marking to its surface loop. -/
 set_option backward.defeqAttrib.useBackward true

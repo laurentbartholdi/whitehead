@@ -1,6 +1,10 @@
-import RequestProject.GenusFullCubeMarking
-import RequestProject.GenusCappedSpine
-import RequestProject.UnivCoverIncl
+module
+
+public import RequestProject.GenusFullCubeMarking
+public import RequestProject.GenusCappedSpine
+public import RequestProject.UnivCoverIncl
+
+@[expose] public section
 
 /-! A constructed integral chain map from the capped spine into the full cube quotient. -/
 namespace FiniteChains.Davis.Genus

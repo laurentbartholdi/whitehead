@@ -1,5 +1,9 @@
-import RequestProject.PresCoverConeCircleChains
-import RequestProject.PresCoverCylinderElimination
+module
+
+public import RequestProject.PresCoverConeCircleChains
+public import RequestProject.PresCoverCylinderElimination
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

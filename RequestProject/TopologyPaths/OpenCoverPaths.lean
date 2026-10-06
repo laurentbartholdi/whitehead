@@ -1,6 +1,10 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologyPaths.PathSubdivision
+public import RequestProject.TopologyPaths.PathSubdivision
+
+@[expose] public section
 
 /-! # Induction over paths subordinate to an open cover
 

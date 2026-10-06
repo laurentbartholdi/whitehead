@@ -1,7 +1,11 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.OrderTriangleSkeletonAttachment
-import RequestProject.ClassicalCWGraphCoordinates
-import RequestProject.OrderNerveAffineEdgePath
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.OrderTriangleSkeletonAttachment
+public import RequestProject.ClassicalCWGraphCoordinates
+public import RequestProject.OrderNerveAffineEdgePath
+
+@[expose] public section
 
 /-! Explicitly oriented graph disks for the genuine first skeleton of
 an order realization. Vertex labels are the actual zero-skeleton points;

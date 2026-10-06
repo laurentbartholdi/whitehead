@@ -1,4 +1,8 @@
-import RequestProject.FoxCommutator
+module
+
+public import RequestProject.FoxCommutator
+
+@[expose] public section
 
 /-!
 # Formula (2.3): a chain of two-complexes produces normal subgroups of `G = π₁(K)`

@@ -1,9 +1,13 @@
-import Mathlib.Topology.CWComplex.Classical.Subcomplex
-import Mathlib.Topology.Covering.Basic
-import Mathlib.Topology.Homotopy.HomotopyGroup
-import Mathlib.AlgebraicTopology.SingularHomology.Basic
-import Mathlib.Algebra.Category.ModuleCat.Abelian
-import Mathlib.Algebra.Category.ModuleCat.Colimits
+module
+
+public import Mathlib.Topology.CWComplex.Classical.Subcomplex
+public import Mathlib.Topology.Covering.Basic
+public import Mathlib.Topology.Homotopy.HomotopyGroup
+public import Mathlib.AlgebraicTopology.SingularHomology.Basic
+public import Mathlib.Algebra.Category.ModuleCat.Abelian
+public import Mathlib.Algebra.Category.ModuleCat.Colimits
+
+@[expose] public section
 
 /-! Definitions used in the statement of Theorem A. They are identical to those in
 `Challenge.lean`; the theorem itself is stated and proved in `Solution.lean`. -/

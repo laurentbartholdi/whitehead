@@ -1,4 +1,8 @@
-import RequestProject.QCubeSquareBoundaryKernel
+module
+
+public import RequestProject.QCubeSquareBoundaryKernel
+
+@[expose] public section
 
 /-! Local recovery of cubical coefficients from actual two-dimensional strict cycles. -/
 open scoped Classical

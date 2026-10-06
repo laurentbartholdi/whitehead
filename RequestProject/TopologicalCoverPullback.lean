@@ -1,4 +1,8 @@
-import RequestProject.TopologicalCoverPi2
+module
+
+public import RequestProject.TopologicalCoverPi2
+
+@[expose] public section
 
 /-! The concrete topological pullback of a covering map. Its covering
 charts and deck homeomorphisms are constructed from those of the given
@@ -27,14 +31,14 @@ theorem coverPullback_square (f : C(X, Y)) (p : C(D, Y)) :
   apply ContinuousMap.ext
   exact fun z => z.property
 
-private theorem coveringChart_inverse_projection {F : Type} [TopologicalSpace F]
+theorem coveringChart_inverse_projection {F : Type} [TopologicalSpace F]
     (p : C(D, Y)) (U : Set Y) (e : p ⁻¹' U ≃ₜ U × F)
     (he : ∀ d, (e d).1.val = p d.val) (u : U) (i : F) :
     p (e.symm (u, i)).val = u.val :=
   (he (e.symm (u, i))).symm.trans
     (congrArg (fun w : U × F => w.1.val) (e.apply_symm_apply (u, i)))
 
-private def coverPullbackLocalChart {F : Type} [TopologicalSpace F]
+def coverPullbackLocalChart {F : Type} [TopologicalSpace F]
     (f : C(X, Y)) (p : C(D, Y)) (U : Set Y) (e : p ⁻¹' U ≃ₜ U × F)
     (he : ∀ d, (e d).1.val = p d.val) :
     (coverPullbackProjection f p) ⁻¹' (f ⁻¹' U) ≃ₜ (f ⁻¹' U) × F where

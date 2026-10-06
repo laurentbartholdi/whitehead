@@ -1,5 +1,9 @@
-import RequestProject.ClassicalCWGraphCoordinates
-import RequestProject.ComponentComplex
+module
+
+public import RequestProject.ClassicalCWGraphCoordinates
+public import RequestProject.ComponentComplex
+
+@[expose] public section
 
 /-! Original subcomplex inclusions induce compatible graph inclusions and
 actual maps of disk models, retaining every original vertex and edge.

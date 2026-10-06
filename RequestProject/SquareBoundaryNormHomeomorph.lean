@@ -1,5 +1,9 @@
-import RequestProject.SquareSideQuotient
-import RequestProject.ClassicalCWOneCellCellularization
+module
+
+public import RequestProject.SquareSideQuotient
+public import RequestProject.ClassicalCWOneCellCellularization
+
+@[expose] public section
 
 /-! Affine coordinates identify the actual sup-norm disk boundary with
 the square boundary, and the one-dimensional disk with the unit interval. -/
@@ -8,12 +12,12 @@ noncomputable section
 namespace FiniteChains.RelativeAttachment
 open scoped Topology unitInterval Classical
 
-private theorem norm_coordinate_bounds {n : ℕ} (x : Fin n → ℝ)
+theorem norm_coordinate_bounds {n : ℕ} (x : Fin n → ℝ)
     (hx : ‖x‖ ≤ 1) (i : Fin n) : -1 ≤ x i ∧ x i ≤ 1 := by
   have hi : |x i| ≤ 1 := (Real.norm_eq_abs (x i)) ▸ (norm_le_pi_norm x i).trans hx
   exact abs_le.mp hi
 
-private theorem norm_one_coordinate {n : ℕ} (x : Fin n → ℝ) (hx : ‖x‖ = 1) :
+theorem norm_one_coordinate {n : ℕ} (x : Fin n → ℝ) (hx : ‖x‖ = 1) :
     ∃ i, x i = 1 ∨ x i = -1 := by
   by_contra! h
   have hl : ‖x‖ < 1 := (pi_norm_lt_iff zero_lt_one).mpr (fun i => by

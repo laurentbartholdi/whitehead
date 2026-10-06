@@ -1,4 +1,8 @@
-import RequestProject.MedianHalfspaces
+module
+
+public import RequestProject.MedianHalfspaces
+
+@[expose] public section
 
 /-!
 # Convex subcomplexes of median graphs are gated retracts

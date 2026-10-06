@@ -1,9 +1,13 @@
-import RequestProject.TopologicalOrderCoverHomeomorph
-import RequestProject.OrderNerveConnectedReflection
-import RequestProject.OrderNerveCoverDimension
-import RequestProject.OrderNerveTwoComplex
-import RequestProject.OrderStrictAcyclicityComparison
-import RequestProject.TopologicalSingular.MathlibComparison
+module
+
+public import RequestProject.TopologicalOrderCoverHomeomorph
+public import RequestProject.OrderNerveConnectedReflection
+public import RequestProject.OrderNerveCoverDimension
+public import RequestProject.OrderNerveTwoComplex
+public import RequestProject.OrderStrictAcyclicityComparison
+public import RequestProject.TopologicalSingular.MathlibComparison
+
+@[expose] public section
 
 /-! Reverse cover dictionary for the original topological definition.
 The total space, projection, and deck action are constructed from the

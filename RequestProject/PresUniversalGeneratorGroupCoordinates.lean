@@ -1,7 +1,11 @@
-import RequestProject.PresCoverRoseFibreEquiv
-import RequestProject.PresUniversalGroupCoordinates
-import RequestProject.PresUniversalRelatorDeck
-import RequestProject.RoseCoverGeneratorEquiv
+module
+
+public import RequestProject.PresCoverRoseFibreEquiv
+public import RequestProject.PresUniversalGroupCoordinates
+public import RequestProject.PresUniversalRelatorDeck
+public import RequestProject.RoseCoverGeneratorEquiv
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

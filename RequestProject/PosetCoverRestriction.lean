@@ -1,4 +1,8 @@
-import RequestProject.OrderPosetCovering
+module
+
+public import RequestProject.OrderPosetCovering
+
+@[expose] public section
 
 /-! A poset covering restricts to the actual preimage of any induced subposet. -/
 namespace FiniteChains.Comb

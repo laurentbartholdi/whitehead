@@ -1,4 +1,8 @@
-import RequestProject.NervePrism
+module
+
+public import RequestProject.NervePrism
+
+@[expose] public section
 
 /-! A three-leg order contraction supplies actual augmented nerve fillings. -/
 namespace FiniteChains.Nerve

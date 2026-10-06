@@ -1,5 +1,9 @@
-import RequestProject.CombPi2
-import RequestProject.CombPi1Conj
+module
+
+public import RequestProject.CombPi2
+public import RequestProject.CombPi1Conj
+
+@[expose] public section
 
 /-!
 # Universal-cover transport along an actual path

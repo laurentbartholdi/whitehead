@@ -1,5 +1,9 @@
-import RequestProject.CellularHomotopyChain
-import RequestProject.GenusFiniteMarking
+module
+
+public import RequestProject.CellularHomotopyChain
+public import RequestProject.GenusFiniteMarking
+
+@[expose] public section
 
 /-! Cellular filling chains of the actual marked surface words. -/
 

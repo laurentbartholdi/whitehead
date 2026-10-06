@@ -1,4 +1,8 @@
-import RequestProject.QCubeSquareRadialIndex
+module
+
+public import RequestProject.QCubeSquareRadialIndex
+
+@[expose] public section
 
 /-! The actual internal radial boundary matrix of the eight square flags. -/
 set_option backward.defeqAttrib.useBackward true

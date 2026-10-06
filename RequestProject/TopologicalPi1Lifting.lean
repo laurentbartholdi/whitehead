@@ -1,5 +1,9 @@
-import RequestProject.TopologicalCockcroft
-import Mathlib.Topology.Homotopy.Lifting
+module
+
+public import RequestProject.TopologicalCockcroft
+public import Mathlib.Topology.Homotopy.Lifting
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

@@ -1,5 +1,9 @@
-import RequestProject.GenusCutPairCollapse
-import RequestProject.GenusSpineTruncation
+module
+
+public import RequestProject.GenusCutPairCollapse
+public import RequestProject.GenusSpineTruncation
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

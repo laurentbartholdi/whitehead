@@ -1,4 +1,8 @@
-import RequestProject.MomentAngle
+module
+
+public import RequestProject.MomentAngle
+
+@[expose] public section
 
 /-!
 # The truncated complex `M_q` and Lemma 3.2 (iii)

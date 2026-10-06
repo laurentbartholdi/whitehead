@@ -1,6 +1,10 @@
-import RequestProject.PositiveCornerLink
-import RequestProject.MinimalCornerChains
-import RequestProject.SurfaceFullCubeConeChains
+module
+
+public import RequestProject.PositiveCornerLink
+public import RequestProject.MinimalCornerChains
+public import RequestProject.SurfaceFullCubeConeChains
+
+@[expose] public section
 
 /-! Actual surface chains extracted from the restored positive corner. -/
 set_option backward.defeqAttrib.useBackward true

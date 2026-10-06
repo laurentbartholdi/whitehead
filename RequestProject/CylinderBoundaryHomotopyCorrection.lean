@@ -1,6 +1,10 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.CylinderBoundaryPasting
-import RequestProject.BallCylinderHomotopyExtension
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.CylinderBoundaryPasting
+public import RequestProject.BallCylinderHomotopyExtension
+
+@[expose] public section
 
 /-! Turn a homotopy with a contractible boundary track into a homotopy
 relative to that boundary. Endpoint maps are retained exactly. -/

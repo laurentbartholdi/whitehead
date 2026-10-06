@@ -1,5 +1,9 @@
-import RequestProject.QCubeCoordinateEquiv
-import RequestProject.StrictOrderChains
+module
+
+public import RequestProject.QCubeCoordinateEquiv
+public import RequestProject.StrictOrderChains
+
+@[expose] public section
 
 /-! Actual oriented edge subdivisions of quotient cubes. -/
 open scoped Classical

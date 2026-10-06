@@ -1,4 +1,8 @@
-import RequestProject.CockcroftExtStep
+module
+
+public import RequestProject.CockcroftExtStep
+
+@[expose] public section
 
 /-!
 # Subpresentations that are retracts: their Fox cycles have zero augmentation

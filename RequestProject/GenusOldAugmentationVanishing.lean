@@ -1,5 +1,9 @@
-import RequestProject.GenusSpineCycleFaithfulness
-import RequestProject.GenusOldCoordinateVanishing
+module
+
+public import RequestProject.GenusSpineCycleFaithfulness
+public import RequestProject.GenusOldCoordinateVanishing
+
+@[expose] public section
 
 /-! Actual old-spine and total capped-cover augmentation vanishing, with all dependencies proved. -/
 set_option backward.defeqAttrib.useBackward true

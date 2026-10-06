@@ -1,5 +1,9 @@
-import RequestProject.NerveDegree
-import RequestProject.MathlibOrderNerveChainBoundary
+module
+
+public import RequestProject.NerveDegree
+public import RequestProject.MathlibOrderNerveChainBoundary
+
+@[expose] public section
 
 namespace FiniteChains.Nerve
 open FreeAbelianGroup

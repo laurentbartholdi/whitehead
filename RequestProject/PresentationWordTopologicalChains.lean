@@ -1,5 +1,9 @@
-import RequestProject.OrderSequentialTopologicalChains
-import RequestProject.PresWordEmbeddingCombPi2
+module
+
+public import RequestProject.OrderSequentialTopologicalChains
+public import RequestProject.PresWordEmbeddingCombPi2
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

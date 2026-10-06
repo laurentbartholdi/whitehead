@@ -1,5 +1,9 @@
-import RequestProject.CombPi2
-import RequestProject.CellularHomotopyChain
+module
+
+public import RequestProject.CombPi2
+public import RequestProject.CellularHomotopyChain
+
+@[expose] public section
 
 /-! Lifted finite chain witnesses for actual path homotopies and their cellular images. -/
 set_option backward.defeqAttrib.useBackward true

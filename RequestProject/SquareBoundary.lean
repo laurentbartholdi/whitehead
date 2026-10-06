@@ -1,5 +1,9 @@
-import Mathlib.Topology.Homotopy.HomotopyGroup
-import Mathlib.Topology.Connected.Basic
+module
+
+public import Mathlib.Topology.Homotopy.HomotopyGroup
+public import Mathlib.Topology.Connected.Basic
+
+@[expose] public section
 
 /-! Connectedness of the boundary used in Mathlib's two-dimensional based-loop model. -/
 

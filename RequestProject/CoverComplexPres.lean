@@ -1,6 +1,10 @@
-import RequestProject.CoverComplex
-import RequestProject.PresentationDictionary
-import RequestProject.NecessityAlgebraic
+module
+
+public import RequestProject.CoverComplex
+public import RequestProject.PresentationDictionary
+public import RequestProject.NecessityAlgebraic
+
+@[expose] public section
 
 /-!
 # The construction of the cover, phrased with `G = π₁(K)`

@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveCellMaps
+module
+
+public import RequestProject.OrderNerveCellMaps
+
+@[expose] public section
 
 /-! Explicit finite cellular prisms for two monotone maps with different
 source and target posets. Proof terms only; not compiled. -/

@@ -1,6 +1,10 @@
-import RequestProject.TopologicalPi1Lifting
-import RequestProject.OrderRealizationHurewicz
-import RequestProject.OrderUniversalRealizationCover
+module
+
+public import RequestProject.TopologicalPi1Lifting
+public import RequestProject.OrderRealizationHurewicz
+public import RequestProject.OrderUniversalRealizationCover
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

@@ -1,6 +1,10 @@
-import RequestProject.OrderRealizationCockcroft
-import RequestProject.ChamberQuotientPushdownFillings
-import RequestProject.ChamberZConnected
+module
+
+public import RequestProject.OrderRealizationCockcroft
+public import RequestProject.ChamberQuotientPushdownFillings
+public import RequestProject.ChamberZConnected
+
+@[expose] public section
 
 namespace FiniteChains.Davis
 open RACG Mirror Comb

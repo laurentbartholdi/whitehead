@@ -1,4 +1,8 @@
-import RequestProject.BaseChangeCycles
+module
+
+public import RequestProject.BaseChangeCycles
+
+@[expose] public section
 
 /-! Exactness after extending a subgroup ring, with finite support in every cell index. -/
 

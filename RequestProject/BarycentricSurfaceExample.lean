@@ -1,5 +1,9 @@
-import RequestProject.BarycentricSurface
-import RequestProject.MomentAngleExample
+module
+
+public import RequestProject.BarycentricSurface
+public import RequestProject.MomentAngleExample
+
+@[expose] public section
 
 /-!
 # A nonempty instance of the subdivision computation

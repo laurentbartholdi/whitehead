@@ -1,4 +1,8 @@
-import RequestProject.SquareComplexWalls
+module
+
+public import RequestProject.SquareComplexWalls
+
+@[expose] public section
 
 /-!
 # The four-cycle with its square: non-vacuity of the wall theorems

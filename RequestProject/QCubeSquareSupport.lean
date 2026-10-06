@@ -1,4 +1,8 @@
-import RequestProject.QCubeSquareSubdivision
+module
+
+public import RequestProject.QCubeSquareSubdivision
+
+@[expose] public section
 
 /-! Restriction to the actual top cube separates square subdivisions. -/
 open scoped Classical

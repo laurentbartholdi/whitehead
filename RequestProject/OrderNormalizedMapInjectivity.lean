@@ -1,4 +1,8 @@
-import RequestProject.OrderNormalizationNaturality
+module
+
+public import RequestProject.OrderNormalizationNaturality
+
+@[expose] public section
 
 /-! Faithfulness of actual normalized strict maps on retained vertex sets. -/
 set_option backward.defeqAttrib.useBackward true

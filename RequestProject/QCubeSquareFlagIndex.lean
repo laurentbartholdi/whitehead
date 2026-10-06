@@ -1,4 +1,8 @@
-import RequestProject.QCubeSquareFlags
+module
+
+public import RequestProject.QCubeSquareFlags
+
+@[expose] public section
 
 /-! Faithful indexing of the actual square flags by their signs and endpoints. -/
 set_option backward.defeqAttrib.useBackward true

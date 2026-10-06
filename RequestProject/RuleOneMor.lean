@@ -1,5 +1,9 @@
-import RequestProject.GenerationIterate
-import RequestProject.Pi2FreeGenerator
+module
+
+public import RequestProject.GenerationIterate
+public import RequestProject.Pi2FreeGenerator
+
+@[expose] public section
 
 /-!
 # The three moves of rule 1 as structural maps with the generation property

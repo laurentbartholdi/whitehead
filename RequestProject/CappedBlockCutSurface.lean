@@ -1,5 +1,9 @@
-import RequestProject.CappedBlock
-import RequestProject.CutSurfaceSpine
+module
+
+public import RequestProject.CappedBlock
+public import RequestProject.CutSurfaceSpine
+
+@[expose] public section
 
 /-!
 # Property (B3) with Lemma 3.3 (iii) discharged

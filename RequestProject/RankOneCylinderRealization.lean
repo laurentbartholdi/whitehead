@@ -1,6 +1,10 @@
-import RequestProject.OrderConstructionPartialOrder
-import RequestProject.OrderNerveContiguousHomotopy
-import Mathlib.Topology.Homotopy.Equiv
+module
+
+public import RequestProject.OrderConstructionPartialOrder
+public import RequestProject.OrderNerveContiguousHomotopy
+public import Mathlib.Topology.Homotopy.Equiv
+
+@[expose] public section
 
 /-! An actual homotopy equivalence from the realization of a poset mapping
 cylinder to its base when the outer poset has height at most one. Collapsing
@@ -28,14 +32,14 @@ variable {X S : Type} [PartialOrder X] [PartialOrder S]
   (a : S →o X) (d : S → ℕ) (hd : StrictMono d) (hd₁ : ∀ s, d s ≤ 1)
 
 include hd hd₁ in
-private theorem rankOne_maximal {s t : S} (hs : d s = 1) (h : s ≤ t) : s = t := by
+theorem rankOne_maximal {s t : S} (hs : d s = 1) (h : s ≤ t) : s = t := by
   by_contra hne
   have hh := hd (lt_of_le_of_ne h hne)
   have ht := hd₁ t
   omega
 
 include hd in
-private theorem rankOne_minimal {s t : S} (ht : d t = 0) (h : s ≤ t) : s = t := by
+theorem rankOne_minimal {s t : S} (ht : d t = 0) (h : s ≤ t) : s = t := by
   by_contra hne
   have hh := hd (lt_of_le_of_ne h hne)
   omega

@@ -1,7 +1,11 @@
-import RequestProject.PresUniversalCockcroftWeakPushdown
-import RequestProject.OrderRealizationCockcroft
-import RequestProject.PresValidRealization
-import RequestProject.TopologicalCockcroftHomotopy
+module
+
+public import RequestProject.PresUniversalCockcroftWeakPushdown
+public import RequestProject.OrderRealizationCockcroft
+public import RequestProject.PresValidRealization
+public import RequestProject.TopologicalCockcroftHomotopy
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

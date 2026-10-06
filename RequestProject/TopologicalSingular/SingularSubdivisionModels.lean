@@ -1,6 +1,10 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.AffineSubdivisionNaturality
+public import RequestProject.TopologicalSingular.AffineSubdivisionNaturality
+
+@[expose] public section
 
 /-! # The universal singular chains for barycentric subdivision -/
 

@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.SimplexPrismRetraction
-import RequestProject.TopologicalSingular.SingularChainH1
+module
+
+public import RequestProject.TopologicalSingular.SimplexPrismRetraction
+public import RequestProject.TopologicalSingular.SingularChainH1
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 open scoped unitInterval Topology

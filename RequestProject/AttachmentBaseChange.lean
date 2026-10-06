@@ -1,5 +1,9 @@
-import RequestProject.AttachmentHomotopyExtension
-import Mathlib.Topology.Homotopy.Equiv
+module
+
+public import RequestProject.AttachmentHomotopyExtension
+public import Mathlib.Topology.Homotopy.Equiv
+
+@[expose] public section
 
 /-! Actual maps under change of the base of a cell attachment. The first
 homotopy inverse is constructed from disk homotopy extension. This file does

@@ -1,6 +1,10 @@
-import RequestProject.GenusControlledCoverCap
-import RequestProject.GenusCappedCoverAugmentation
-import RequestProject.DavisFillingIndependence
+module
+
+public import RequestProject.GenusControlledCoverCap
+public import RequestProject.GenusCappedCoverAugmentation
+public import RequestProject.DavisFillingIndependence
+
+@[expose] public section
 
 /-! Comparison of the controlled and chosen cap fillings modulo actual three-boundaries. -/
 set_option backward.defeqAttrib.useBackward true

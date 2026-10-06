@@ -1,4 +1,8 @@
-import RequestProject.CoordinateFacetContraction
+module
+
+public import RequestProject.CoordinateFacetContraction
+
+@[expose] public section
 
 /-! The actual proper face poset of an ordinary cube, with one facet deleted, contracts
 onto the opposite facet by an explicit zigzag of monotone coordinate maps. -/
@@ -28,7 +32,7 @@ instance (t : Cube V) (j : V) (b : CubeCoord) : PartialOrder (PuncturedCubeFace 
     · exact hd
 
 omit [DecidableEq V] in
-private theorem face_trans {c d e : Cube V} (hcd : CoordinateFace c d)
+theorem face_trans {c d e : Cube V} (hcd : CoordinateFace c d)
     (hde : CoordinateFace d e) : CoordinateFace c e := by
   intro v
   rcases hde v with he | he

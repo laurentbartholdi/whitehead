@@ -1,4 +1,8 @@
-import RequestProject.PresentationDictionary
+module
+
+public import RequestProject.PresentationDictionary
+
+@[expose] public section
 
 /-!
 # Free products of presentations, and injectivity of the inclusions of the factors

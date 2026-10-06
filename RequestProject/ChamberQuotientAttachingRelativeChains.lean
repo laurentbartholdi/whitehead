@@ -1,5 +1,9 @@
-import RequestProject.ChamberQuotientOldRelativeFillings
-import RequestProject.ChamberQuotientAttachingCover
+module
+
+public import RequestProject.ChamberQuotientOldRelativeFillings
+public import RequestProject.ChamberQuotientAttachingCover
+
+@[expose] public section
 
 /-! Relative old-cell fillings with the prescribed boundary in the actual attaching cover. -/
 namespace FiniteChains.Davis

@@ -1,5 +1,9 @@
-import RequestProject.CoverComplexFinsupp
-import RequestProject.TreeCover
+module
+
+public import RequestProject.CoverComplexFinsupp
+public import RequestProject.TreeCover
+
+@[expose] public section
 
 /-!
 # The cover of `K` is acyclic when the cover of the collapsed presentation complex is

@@ -1,5 +1,9 @@
-import RequestProject.ChamberQuotientDeckGeneration
-import RequestProject.CoveringHomUniqueness
+module
+
+public import RequestProject.ChamberQuotientDeckGeneration
+public import RequestProject.CoveringHomUniqueness
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

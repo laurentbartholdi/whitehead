@@ -1,4 +1,8 @@
-import RequestProject.PresConeStrictGerms
+module
+
+public import RequestProject.PresConeStrictGerms
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

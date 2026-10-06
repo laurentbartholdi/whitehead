@@ -1,5 +1,9 @@
-import RequestProject.WedgeSigma
-import RequestProject.GenerationStep
+module
+
+public import RequestProject.WedgeSigma
+public import RequestProject.GenerationStep
+
+@[expose] public section
 
 /-!
 # Collapsing the acyclic core: the Hurewicz image is detected on the extra cells

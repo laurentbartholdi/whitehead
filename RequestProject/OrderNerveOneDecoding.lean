@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveOneDictionary
+module
+
+public import RequestProject.OrderNerveOneDictionary
+
+@[expose] public section
 
 /-! Recovering genuine cellular one-cycles from homogeneous increasing nerve cycles. -/
 set_option backward.defeqAttrib.useBackward true

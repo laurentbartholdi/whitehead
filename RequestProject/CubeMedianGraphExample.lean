@@ -1,6 +1,10 @@
-import RequestProject.CubeMedianGraph
-import RequestProject.CubeRollerModel
-import RequestProject.CubeCartanHadamardExample
+module
+
+public import RequestProject.CubeMedianGraph
+public import RequestProject.CubeRollerModel
+public import RequestProject.CubeCartanHadamardExample
+
+@[expose] public section
 
 /-!
 # A model of the median-graph axioms

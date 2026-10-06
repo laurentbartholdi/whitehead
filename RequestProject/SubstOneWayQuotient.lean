@@ -1,6 +1,10 @@
-import RequestProject.SubstOneWay
-import RequestProject.PresPosetReading
-import RequestProject.ChamberQuotientCover
+module
+
+public import RequestProject.SubstOneWay
+public import RequestProject.PresPosetReading
+public import RequestProject.ChamberQuotientCover
+
+@[expose] public section
 
 /-!
 # The one-way comparison over the quotient of the model of modified chambers

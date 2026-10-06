@@ -1,6 +1,10 @@
-import RequestProject.FreeIntegerCoproduct
-import Mathlib.AlgebraicTopology.SingularHomology.Basic
-import Mathlib.Algebra.Category.ModuleCat.Abelian
+module
+
+public import RequestProject.FreeIntegerCoproduct
+public import Mathlib.AlgebraicTopology.SingularHomology.Basic
+public import Mathlib.Algebra.Category.ModuleCat.Abelian
+
+@[expose] public section
 
 namespace FiniteChains
 open CategoryTheory

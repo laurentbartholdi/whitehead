@@ -1,5 +1,9 @@
-import RequestProject.RegularCoverAcyclicChains
-import RequestProject.FreshLoopTreeStrictness
+module
+
+public import RequestProject.RegularCoverAcyclicChains
+public import RequestProject.FreshLoopTreeStrictness
+
+@[expose] public section
 
 /-! The actual descended chains have stronger strictness than a generic
 cellular chain: a fresh loop or a fresh face at every step. Thus tree

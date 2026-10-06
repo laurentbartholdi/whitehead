@@ -1,4 +1,8 @@
-import RequestProject.RoseCoverBoundary
+module
+
+public import RequestProject.RoseCoverBoundary
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

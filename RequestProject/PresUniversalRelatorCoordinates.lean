@@ -1,6 +1,10 @@
-import RequestProject.OrderUniversalDeckChains
-import RequestProject.OrderUniversalChainNormalization
-import RequestProject.PresUniversalRelatorDeck
+module
+
+public import RequestProject.OrderUniversalDeckChains
+public import RequestProject.OrderUniversalChainNormalization
+public import RequestProject.PresUniversalRelatorDeck
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

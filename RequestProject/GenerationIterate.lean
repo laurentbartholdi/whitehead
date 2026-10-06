@@ -1,5 +1,9 @@
-import RequestProject.GenerationStep
-import RequestProject.CockcroftExtStep
+module
+
+public import RequestProject.GenerationStep
+public import RequestProject.CockcroftExtStep
+
+@[expose] public section
 
 /-!
 # The composite operation: finitely many moves of rule 1

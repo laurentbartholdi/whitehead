@@ -1,5 +1,9 @@
-import RequestProject.GenusOldCoverSpineFaithfulness
-import RequestProject.OrderRealizationCockcroft
+module
+
+public import RequestProject.GenusOldCoverSpineFaithfulness
+public import RequestProject.OrderRealizationCockcroft
+
+@[expose] public section
 
 /-! The old-cell comparison is injective on genuine integral H2 in every cover. -/
 set_option backward.defeqAttrib.useBackward true

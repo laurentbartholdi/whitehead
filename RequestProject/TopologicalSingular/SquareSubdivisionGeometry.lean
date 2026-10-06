@@ -1,4 +1,8 @@
-import RequestProject.TopologicalSingular.SquareSingularHomotopy
+module
+
+public import RequestProject.TopologicalSingular.SquareSingularHomotopy
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 open scoped unitInterval Topology

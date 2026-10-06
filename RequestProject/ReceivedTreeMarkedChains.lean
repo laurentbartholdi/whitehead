@@ -1,4 +1,8 @@
-import RequestProject.ReceivedTreeRootedChainFaithfulness
+module
+
+public import RequestProject.ReceivedTreeRootedChainFaithfulness
+
+@[expose] public section
 
 /-! Exact marked relative boundaries in the actual receiving-group cover. -/
 set_option backward.defeqAttrib.useBackward true

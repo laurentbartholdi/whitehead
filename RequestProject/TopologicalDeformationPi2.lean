@@ -1,4 +1,8 @@
-import RequestProject.TopologicalCoverPi2
+module
+
+public import RequestProject.TopologicalCoverPi2
+
+@[expose] public section
 
 namespace Whitehead
 open scoped unitInterval Topology

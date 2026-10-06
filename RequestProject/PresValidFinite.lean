@@ -1,7 +1,11 @@
-import RequestProject.PresValidPoset
-import RequestProject.PresPosetDimension
-import RequestProject.OrderNerveDimension
-import RequestProject.OrderNerveRealizationFinite
+module
+
+public import RequestProject.PresValidPoset
+public import RequestProject.PresPosetDimension
+public import RequestProject.OrderNerveDimension
+public import RequestProject.OrderNerveRealizationFinite
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb CategoryTheory

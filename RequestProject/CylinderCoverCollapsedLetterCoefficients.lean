@@ -1,4 +1,8 @@
-import RequestProject.CylinderCoverCollapsedCircle
+module
+
+public import RequestProject.CylinderCoverCollapsedCircle
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

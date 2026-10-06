@@ -1,4 +1,8 @@
-import RequestProject.GenusFreeFaceRetraction
+module
+
+public import RequestProject.GenusFreeFaceRetraction
+
+@[expose] public section
 
 /-! Actual intermediate cell sets of the chosen genus-block geometric collapse. -/
 namespace FiniteChains.Davis.Genus

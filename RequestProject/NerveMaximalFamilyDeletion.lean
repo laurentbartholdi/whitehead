@@ -1,4 +1,8 @@
-import RequestProject.NerveMaximalDeletion
+module
+
+public import RequestProject.NerveMaximalDeletion
+
+@[expose] public section
 
 /-! Simultaneous deletion of an arbitrary family of maximal cells uses only finite supports. -/
 namespace FiniteChains.Nerve
@@ -11,7 +15,7 @@ variable {P : Type u} [PartialOrder P]
   (hlink₂ : ∀ v, T v → FillsDegreeIn (fun p => C p ∧ p < v) (n + 1))
 
 include hTC hmax hlink₁ hlink₂ in
-private theorem maximalFamily_finite (S : Finset P) (hS : ∀ v ∈ S, T v) :
+theorem maximalFamily_finite (S : Finset P) (hS : ∀ v ∈ S, T v) :
     GeneratesDegreeIn (fun p => (C p ∧ ¬ T p) ∨ p ∈ S)
       (fun p => C p ∧ ¬ T p) (n + 1) ∧
     ReflectsBoundsIn (fun p => (C p ∧ ¬ T p) ∨ p ∈ S)
@@ -86,7 +90,7 @@ private theorem maximalFamily_finite (S : Finset P) (hS : ∀ v ∈ S, T v) :
           (reflectsBoundsIn_union_of_unmixed hmix
             (fillsDegreeIn_congr (fun p => (hinter p).symm) (hlink₂ v hvT))) hprev.2
 
-private theorem exists_finite_maximal_support (c : Ch P) (hc : c ∈ IncOn C) :
+theorem exists_finite_maximal_support (c : Ch P) (hc : c ∈ IncOn C) :
     ∃ S : Finset P, (∀ v ∈ S, T v) ∧ c ∈ IncOn (fun p => (C p ∧ ¬ T p) ∨ p ∈ S) := by
   classical
   let S := (c.support.biUnion (fun l => l.toFinset)).filter T

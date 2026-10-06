@@ -1,4 +1,8 @@
-import RequestProject.CellularChainMapZero
+module
+
+public import RequestProject.CellularChainMapZero
+
+@[expose] public section
 
 /-! Acyclicity is preserved and reflected by bijections on actual
 cell labels. Pending final Lean verification. -/

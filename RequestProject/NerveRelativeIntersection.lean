@@ -1,4 +1,8 @@
-import RequestProject.NerveIntersectionGeneration
+module
+
+public import RequestProject.NerveIntersectionGeneration
+
+@[expose] public section
 
 /-! Relative chains, whose boundary need only lie in the intersection. -/
 namespace FiniteChains.Nerve

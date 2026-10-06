@@ -1,5 +1,9 @@
-import RequestProject.FinitePosetCycleNaturality
-import RequestProject.OrderNerveAffinePathWords
+module
+
+public import RequestProject.FinitePosetCycleNaturality
+public import RequestProject.OrderNerveAffinePathWords
+
+@[expose] public section
 
 /-! A monotone image of an explicit cycle reads its ordered edge word by
 an actual endpoint-preserving path homotopy. Pending Lean verification. -/

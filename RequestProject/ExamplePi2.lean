@@ -1,8 +1,12 @@
-import RequestProject.ExampleSL25Group
-import RequestProject.ExampleSL25
-import RequestProject.HurewiczIso
-import RequestProject.PresUnivCoverIso
-import RequestProject.UniversalCoverPi2
+module
+
+public import RequestProject.ExampleSL25Group
+public import RequestProject.ExampleSL25
+public import RequestProject.HurewiczIso
+public import RequestProject.PresUnivCoverIso
+public import RequestProject.UniversalCoverPi2
+
+@[expose] public section
 
 /-! The integer rank of the second homotopy module of the example presentation. -/
 

@@ -1,7 +1,10 @@
-import RequestProject.GenusControlledCapFillings
+module
 
-import RequestProject.PositiveCornerChainExtraction
-import RequestProject.GenusControlledFillingComparison
+public import RequestProject.GenusControlledCapFillings
+public import RequestProject.PositiveCornerChainExtraction
+public import RequestProject.GenusControlledFillingComparison
+
+@[expose] public section
 
 /-! Cap coefficients of actual capped-cover cycles bound on the actual genus surface. -/
 set_option backward.defeqAttrib.useBackward true

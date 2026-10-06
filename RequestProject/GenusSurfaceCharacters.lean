@@ -1,7 +1,11 @@
-import RequestProject.GenusCapSurfaceExtraction
-import RequestProject.GenusApply
-import RequestProject.PresPosetReading
-import RequestProject.OrderCocycleChains
+module
+
+public import RequestProject.GenusCapSurfaceExtraction
+public import RequestProject.GenusApply
+public import RequestProject.PresPosetReading
+public import RequestProject.OrderCocycleChains
+
+@[expose] public section
 
 /-! Explicit integral characters separating the actual genus marking loops. -/
 set_option backward.defeqAttrib.useBackward true
@@ -12,14 +16,14 @@ namespace FiniteChains.Davis.Genus
 open RACG Mirror Comb PresModel
 variable (q : ℕ) [NeZero q]
 
-private def characterRel : Empty ⊕ PUnit → FreeGroup (ℕ × Bool) := fun _ => 1
-private def characterA (h : ℕ) : ℕ × Bool := (h, false)
-private def characterB (h : ℕ) : ℕ × Bool := (h, true)
-private noncomputable def characterGen (x : ℕ × Bool) : Multiplicative ((ℕ × Bool) →₀ ℤ) :=
+def characterRel : Empty ⊕ PUnit → FreeGroup (ℕ × Bool) := fun _ => 1
+def characterA (h : ℕ) : ℕ × Bool := (h, false)
+def characterB (h : ℕ) : ℕ × Bool := (h, true)
+noncomputable def characterGen (x : ℕ × Bool) : Multiplicative ((ℕ × Bool) →₀ ℤ) :=
   Multiplicative.ofAdd (Finsupp.single x 1)
 
 omit [NeZero q] in
-private theorem characterRel_read (j : Empty ⊕ PUnit) :
+theorem characterRel_read (j : Empty ⊕ PUnit) :
     wordVal characterGen (genusW characterRel characterA characterB q j) = 1 := by
   obtain j | j := j
   · exact j.elim

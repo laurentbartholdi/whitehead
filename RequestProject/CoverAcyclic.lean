@@ -1,5 +1,9 @@
-import RequestProject.CoverChainComplex
-import RequestProject.FoxCommutator
+module
+
+public import RequestProject.CoverChainComplex
+public import RequestProject.FoxCommutator
+
+@[expose] public section
 
 /-!
 # From the requirements (2.2) to an acyclic cover

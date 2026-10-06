@@ -1,5 +1,9 @@
-import RequestProject.TruncatedCubePoset
-import RequestProject.OrderCxNullTransfer
+module
+
+public import RequestProject.TruncatedCubePoset
+public import RequestProject.OrderCxNullTransfer
+
+@[expose] public section
 
 /-! Retraction of the actual boundary with its cut facet deleted onto retained proper faces. -/
 set_option backward.defeqAttrib.useBackward true

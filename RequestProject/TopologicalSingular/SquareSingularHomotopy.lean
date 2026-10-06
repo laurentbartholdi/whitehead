@@ -1,6 +1,10 @@
-import RequestProject.TopologicalSingular.SquareSingularChains
-import RequestProject.TopologicalSingular.RelativeSingularPrism
-import RequestProject.TopologicalCoverPi2
+module
+
+public import RequestProject.TopologicalSingular.SquareSingularChains
+public import RequestProject.TopologicalSingular.RelativeSingularPrism
+public import RequestProject.TopologicalCoverPi2
+
+@[expose] public section
 
 namespace FiniteChains.SingularPrism
 open TopologicalSingular

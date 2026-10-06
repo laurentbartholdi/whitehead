@@ -1,6 +1,10 @@
-import RequestProject.OrderNerveAffineEdgePath
-import RequestProject.ContinuousEdgeWordHomotopies
-import RequestProject.CombPi1
+module
+
+public import RequestProject.OrderNerveAffineEdgePath
+public import RequestProject.ContinuousEdgeWordHomotopies
+public import RequestProject.CombPi1
+
+@[expose] public section
 
 /-! Actual affine realization of composable order-edge words, with exact
 monotone-map naturality. Pending Lean verification. -/
@@ -53,7 +57,7 @@ theorem comparablePath_homotopic_single {a b : P} (h : a ≤ b ∨ b ≤ a)
   rw (config := { transparency := .default }) [he]
   exact (Path.Homotopic.trans_refl _).symm
 
-private theorem affineWord_map_vertex {Q : Type} [PartialOrder Q]
+theorem affineWord_map_vertex {Q : Type} [PartialOrder Q]
     (f : P → Q) (hf : Monotone f) (p : P) :
     orderNerveRealizationMap f hf (orderNerveRealizationVertex p) =
       orderNerveRealizationVertex (f p) := by

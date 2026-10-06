@@ -1,4 +1,8 @@
-import RequestProject.RACGDescent
+module
+
+public import RequestProject.RACGDescent
+
+@[expose] public section
 
 /-!
 # Medians in the Cayley graph of a right-angled Coxeter group

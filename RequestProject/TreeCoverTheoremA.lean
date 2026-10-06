@@ -1,7 +1,11 @@
-import RequestProject.TreeCoverAcyclic
-import RequestProject.CoverComplexPres
-import RequestProject.PresentationNecessity
-import RequestProject.PresChainTopological
+module
+
+public import RequestProject.TreeCoverAcyclic
+public import RequestProject.CoverComplexPres
+public import RequestProject.PresentationNecessity
+public import RequestProject.PresChainTopological
+
+@[expose] public section
 
 /-!
 # `(1) ⇒ (2)` of Theorem A for an arbitrary finite connected two-complex

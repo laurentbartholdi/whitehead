@@ -1,5 +1,9 @@
-import RequestProject.PresCylinderRoseCover
-import RequestProject.ConeAdjBaseCover
+module
+
+public import RequestProject.PresCylinderRoseCover
+public import RequestProject.ConeAdjBaseCover
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

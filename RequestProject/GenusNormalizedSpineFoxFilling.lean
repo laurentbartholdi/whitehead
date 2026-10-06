@@ -1,8 +1,12 @@
-import RequestProject.GenusUniversalCoveredSpine
-import RequestProject.GenusSpineSubstitutedBoundary
-import RequestProject.ReceivedTreeMarkedChains
-import RequestProject.CrowellFinsupp
-import RequestProject.BlockFamilyBlockwiseFinsupp
+module
+
+public import RequestProject.GenusUniversalCoveredSpine
+public import RequestProject.GenusSpineSubstitutedBoundary
+public import RequestProject.ReceivedTreeMarkedChains
+public import RequestProject.CrowellFinsupp
+public import RequestProject.BlockFamilyBlockwiseFinsupp
+
+@[expose] public section
 
 /-! Convert a geometrically normalized pre-substitution spine filling to the
 full named Fox filling, preserving the marked coefficients and the original
@@ -18,7 +22,7 @@ namespace FiniteChains.Davis.Genus
 open RACG Mirror Comb BlockFamily
 variable (q : ℕ) [NeZero q]
 
-private theorem sum_namedSpineRel {M : Type*} [AddCommMonoid M]
+theorem sum_namedSpineRel {M : Type*} [AddCommMonoid M]
     (f : NamedSpineRel q → M) :
     (∑ m, f m) = (∑ j : SpinePresentationRel q, f (Sum.inl j)) +
       ∑ i : Fin q × Bool, f (Sum.inr i) := by

@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveRealizationOpenStars
+module
+
+public import RequestProject.OrderNerveRealizationOpenStars
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

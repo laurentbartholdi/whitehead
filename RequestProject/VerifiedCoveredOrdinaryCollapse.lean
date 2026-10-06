@@ -1,5 +1,9 @@
-import RequestProject.VerifiedStrictAcyclicityAndSpineFamilies
-import RequestProject.GenusOrdinaryPairCoverHomology
+module
+
+public import RequestProject.VerifiedStrictAcyclicityAndSpineFamilies
+public import RequestProject.GenusOrdinaryPairCoverHomology
+
+@[expose] public section
 
 /-!
 Checked integration point for genuine homology preservation under ordinary

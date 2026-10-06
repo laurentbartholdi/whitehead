@@ -1,5 +1,9 @@
-import RequestProject.GenusSurfaceMonodromy
-import RequestProject.OrderCocycleComparisonAction
+module
+
+public import RequestProject.GenusSurfaceMonodromy
+public import RequestProject.OrderCocycleComparisonAction
+
+@[expose] public section
 
 /-! Agreement on the genuine genus markings determines all surface monodromy. -/
 set_option backward.defeqAttrib.useBackward true

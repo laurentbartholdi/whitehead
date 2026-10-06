@@ -1,6 +1,10 @@
-import RequestProject.ClassicalCellAttachmentMaps
-import Mathlib.Topology.MetricSpace.ProperSpace
-import Mathlib.Tactic
+module
+
+public import RequestProject.ClassicalCellAttachmentMaps
+public import Mathlib.Topology.MetricSpace.ProperSpace
+public import Mathlib.Tactic
+
+@[expose] public section
 
 /-! The original cells identify consecutive classical CW skeleta with an
 actual disk attachment. Cell families may be infinite, and the statement
@@ -73,7 +77,7 @@ def skeletonAttachmentOrigin (n : ℕ) : C(DiskAttachment (skeletonAttachingMap 
       RelCWComplex.map n j x.val := desc_cell ..
 
 omit [T2Space X] in
-private theorem disk_interior_norm (n : ℕ)
+theorem disk_interior_norm (n : ℕ)
     (d : DiskFamily (RelCWComplex.cell C n) (Fin n → ℝ))
     (hd : d ∉ range (boundaryFamilyInclusion (RelCWComplex.cell C n) (Fin n → ℝ))) :
     ‖d.2.val‖ < 1 :=
@@ -81,7 +85,7 @@ private theorem disk_interior_norm (n : ℕ)
     ((boundaryFamilyInclusion_range (RelCWComplex.cell C n) (Fin n → ℝ) d).mpr h))
 
 omit [T2Space X] in
-private theorem characteristic_mem_open (n : ℕ) (j : RelCWComplex.cell C n)
+theorem characteristic_mem_open (n : ℕ) (j : RelCWComplex.cell C n)
     (x : Fin n → ℝ) (hx : ‖x‖ < 1) :
     RelCWComplex.map n j x ∈ CWComplex.openCell n j :=
   ⟨x, by simpa only [Metric.mem_ball, dist_zero_right] using hx, rfl⟩
@@ -175,7 +179,7 @@ theorem skeletonAttachmentMap_surjective (n : ℕ) :
     apply Subtype.ext
     exact (skeletonAttachmentOrigin_cell C n j d).trans hyx
 
-private theorem origin_image_inter_lower_cell (n m : ℕ) (hmn : m < n)
+theorem origin_image_inter_lower_cell (n m : ℕ) (hmn : m < n)
     (j : RelCWComplex.cell C m) (A : Set (DiskAttachment (skeletonAttachingMap C n))) :
     skeletonAttachmentOrigin C n '' A ∩ CWComplex.closedCell m j =
       (Subtype.val '' ((old (skeletonAttachingMap C n)
@@ -198,7 +202,7 @@ private theorem origin_image_inter_lower_cell (n m : ℕ) (hmn : m < n)
   · rintro ⟨⟨b, hb, rfl⟩, hx⟩
     exact ⟨⟨old _ _ b, hb, rfl⟩, hx⟩
 
-private theorem origin_image_inter_top_cell (n : ℕ) (j : RelCWComplex.cell C n)
+theorem origin_image_inter_top_cell (n : ℕ) (j : RelCWComplex.cell C n)
     (A : Set (DiskAttachment (skeletonAttachingMap C n))) :
     skeletonAttachmentOrigin C n '' A ∩ CWComplex.closedCell n j =
       characteristicDisk C n j '' ((fun x : ClosedUnitBall (Fin n → ℝ) =>

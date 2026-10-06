@@ -1,6 +1,10 @@
-import RequestProject.ChamberQuotientCycleGeneration
-import RequestProject.PosetCoverTargetIso
-import RequestProject.UniversalCoverPi1Injection
+module
+
+public import RequestProject.ChamberQuotientCycleGeneration
+public import RequestProject.PosetCoverTargetIso
+public import RequestProject.UniversalCoverPi1Injection
+
+@[expose] public section
 
 /-! The actual lifted inserted base covers the original base poset. -/
 namespace FiniteChains.Davis

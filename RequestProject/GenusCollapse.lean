@@ -1,5 +1,9 @@
-import RequestProject.SurfaceDual
-import RequestProject.GenusSurface
+module
+
+public import RequestProject.SurfaceDual
+public import RequestProject.GenusSurface
+
+@[expose] public section
 
 /-!
 # Lemma 3.2 (ii) for the block of genus `q`

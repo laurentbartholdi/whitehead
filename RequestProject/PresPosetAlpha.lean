@@ -1,5 +1,9 @@
-import RequestProject.PresPosetModel
-import RequestProject.PresentationDictionary
+module
+
+public import RequestProject.PresPosetModel
+public import RequestProject.PresentationDictionary
+
+@[expose] public section
 
 /-!
 # The generators of a presentation as loops of the poset model

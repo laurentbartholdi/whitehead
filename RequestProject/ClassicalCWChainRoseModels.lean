@@ -1,6 +1,10 @@
-import RequestProject.ClassicalCWChainConnectivity
-import RequestProject.ClassicalGraphTreeWordNaturality
-import RequestProject.DiskRoseMaps
+module
+
+public import RequestProject.ClassicalCWChainConnectivity
+public import RequestProject.ClassicalGraphTreeWordNaturality
+public import RequestProject.DiskRoseMaps
+
+@[expose] public section
 
 /-! A simultaneous tree collapse of the actual graph-and-disk models.
 The original two-cell labels and disk parameters are retained. Compatible

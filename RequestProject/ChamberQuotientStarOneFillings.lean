@@ -1,8 +1,12 @@
-import RequestProject.ChamberQuotientLiftedStarRetraction
-import RequestProject.ChamberQuotientBaseSimplyConnected
-import RequestProject.ChamberZConnected
-import RequestProject.OrderSimplyConnectedOneFillings
-import RequestProject.NerveLowerMapFillings
+module
+
+public import RequestProject.ChamberQuotientLiftedStarRetraction
+public import RequestProject.ChamberQuotientBaseSimplyConnected
+public import RequestProject.ChamberZConnected
+public import RequestProject.OrderSimplyConnectedOneFillings
+public import RequestProject.NerveLowerMapFillings
+
+@[expose] public section
 
 /-! Every one-cycle of the actual lifted base star has a finite filling there. -/
 namespace FiniteChains.Davis

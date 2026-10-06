@@ -1,4 +1,8 @@
-import RequestProject.PresCoverRelatorFan
+module
+
+public import RequestProject.PresCoverRelatorFan
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

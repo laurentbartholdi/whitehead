@@ -1,10 +1,14 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import Mathlib
-import Mathlib.AlgebraicTopology.AlternatingFaceMapComplex
-import Mathlib.AlgebraicTopology.TopologicalSimplex
-import Mathlib.Algebra.Category.ModuleCat.Basic
-import Mathlib.LinearAlgebra.Finsupp.LinearCombination
+public import Mathlib
+public import Mathlib.AlgebraicTopology.AlternatingFaceMapComplex
+public import Mathlib.AlgebraicTopology.TopologicalSimplex
+public import Mathlib.Algebra.Category.ModuleCat.Basic
+public import Mathlib.LinearAlgebra.Finsupp.LinearCombination
+
+@[expose] public section
 
 /-! # Explicit integral singular chains of actual topological spaces
 

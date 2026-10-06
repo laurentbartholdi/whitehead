@@ -1,4 +1,8 @@
-import RequestProject.Pi2GenerationDescent
+module
+
+public import RequestProject.Pi2GenerationDescent
+
+@[expose] public section
 
 /-!
 # The copies of `L̃` cover the universal cover of the pushout

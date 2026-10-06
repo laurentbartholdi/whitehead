@@ -1,5 +1,9 @@
-import RequestProject.SurfaceReading
-import RequestProject.BlockSurfaceFilling
+module
+
+public import RequestProject.SurfaceReading
+public import RequestProject.BlockSurfaceFilling
+
+@[expose] public section
 
 /-!
 # The marked polygon of the closed surface of genus `q`

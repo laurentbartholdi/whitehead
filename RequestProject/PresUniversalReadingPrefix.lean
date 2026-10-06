@@ -1,6 +1,10 @@
-import RequestProject.PresPosetPartialOrder
-import RequestProject.OrderUniversalCocycleComparability
-import RequestProject.PresReadingLetterPrefix
+module
+
+public import RequestProject.PresPosetPartialOrder
+public import RequestProject.OrderUniversalCocycleComparability
+public import RequestProject.PresReadingLetterPrefix
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

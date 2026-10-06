@@ -1,6 +1,10 @@
-import RequestProject.ConeAdjPoset
-import RequestProject.CylinderPoset
-import RequestProject.OrderCxNatHtpy
+module
+
+public import RequestProject.ConeAdjPoset
+public import RequestProject.CylinderPoset
+public import RequestProject.OrderCxNatHtpy
+
+@[expose] public section
 
 /-!
 # The poset model of a presentation complex

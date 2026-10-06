@@ -1,5 +1,9 @@
-import RequestProject.OrderRoseWedgeTopology
-import RequestProject.ClassicalGraphRose
+module
+
+public import RequestProject.OrderRoseWedgeTopology
+public import RequestProject.ClassicalGraphRose
+
+@[expose] public section
 
 /-! A once-traversed four-vertex order circle gives the exact disk-graph
 realization of an arbitrary rose. Continuity of the inverse uses the genuine
@@ -16,7 +20,7 @@ variable (α : Type)
     (hfiber : ∀ s t : I, L s = L t →
       s = t ∨ (s = 0 ∧ t = 1) ∨ (s = 1 ∧ t = 0))
 
-private def roseDiskLoopMap : C(DiskFamily α (Fin 1 → ℝ),
+def roseDiskLoopMap : C(DiskFamily α (Fin 1 → ℝ),
     orderNerveRealization (Rose α)) where
   toFun d := roseCopyRealization d.1 (L (graphDiskHomeomorph.symm d.2))
   continuous_toFun := continuous_sigma (fun a =>
@@ -47,7 +51,7 @@ theorem diskRoseToOrderRose_interval (a : α) (t : I) :
       roseCopyRealization a (L t) := by
   rw [diskRoseToOrderRose_cell, Homeomorph.symm_apply_apply]
 
-private theorem freshParameter_ne_endpoints
+theorem freshParameter_ne_endpoints
     (d : {d : DiskFamily α (Fin 1 → ℝ) // d ∉ Set.range (boundaryFamilyInclusion α _)}) :
     graphDiskHomeomorph.symm d.val.2 ≠ 0 ∧ graphDiskHomeomorph.symm d.val.2 ≠ 1 := by
   constructor
@@ -75,14 +79,14 @@ private theorem freshParameter_ne_endpoints
         rw [← graphDiskHomeomorph_one, ← ht, Homeomorph.apply_symm_apply]
 
 include hfiber in
-private theorem traversal_eq_base {t : I} (h : L t = orderRoseBase PUnit) : t = 0 ∨ t = 1 := by
+theorem traversal_eq_base {t : I} (h : L t = orderRoseBase PUnit) : t = 0 ∨ t = 1 := by
   rcases hfiber t 0 (h.trans L.source.symm) with ht | ht | ht
   · exact Or.inl ht
   · exact Or.inl ht.1
   · exact Or.inr ht.1
 
 include hfiber in
-private theorem freshImage_ne_base
+theorem freshImage_ne_base
     (d : {d : DiskFamily α (Fin 1 → ℝ) // d ∉ Set.range (boundaryFamilyInclusion α _)}) :
     roseCopyRealization d.val.1 (L (graphDiskHomeomorph.symm d.val.2)) ≠ orderRoseBase α := by
   intro h
@@ -91,7 +95,7 @@ private theorem freshImage_ne_base
   exact (traversal_eq_base L hfiber he).elim
     (freshParameter_ne_endpoints α d).1 (freshParameter_ne_endpoints α d).2
 
-private theorem diskRoseToOrderRose_fresh
+theorem diskRoseToOrderRose_fresh
     (d : {d : DiskFamily α (Fin 1 → ℝ) // d ∉ Set.range (boundaryFamilyInclusion α _)}) :
     diskRoseToOrderRose α L (Sum.inr d) =
       roseCopyRealization d.val.1 (L (graphDiskHomeomorph.symm d.val.2)) := by

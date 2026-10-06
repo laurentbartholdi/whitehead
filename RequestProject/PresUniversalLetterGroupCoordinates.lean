@@ -1,6 +1,10 @@
-import RequestProject.PresUniversalGeneratorGroupCoordinates
-import RequestProject.PresCoverRelatorLetterCoefficients
-import RequestProject.PresUniversalCylinderCollapseReading
+module
+
+public import RequestProject.PresUniversalGeneratorGroupCoordinates
+public import RequestProject.PresCoverRelatorLetterCoefficients
+public import RequestProject.PresUniversalCylinderCollapseReading
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

@@ -1,4 +1,8 @@
-import RequestProject.OrderComplexHtpyIn
+module
+
+public import RequestProject.OrderComplexHtpyIn
+
+@[expose] public section
 
 /-!
 # A retraction on path classes across one gluing step

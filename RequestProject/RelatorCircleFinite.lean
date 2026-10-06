@@ -1,5 +1,9 @@
-import RequestProject.PresConeLinkOrderIso
-import RequestProject.PresValidFinite
+module
+
+public import RequestProject.PresConeLinkOrderIso
+public import RequestProject.PresValidFinite
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open scoped Classical

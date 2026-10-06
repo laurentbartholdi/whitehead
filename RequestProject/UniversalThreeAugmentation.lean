@@ -1,5 +1,9 @@
-import RequestProject.OrderUniversalThree
-import RequestProject.CombPi2
+module
+
+public import RequestProject.OrderUniversalThree
+public import RequestProject.CombPi2
+
+@[expose] public section
 
 /-! Forgetting the deck coordinate of the actual lifted three-boundary. -/
 set_option backward.defeqAttrib.useBackward true

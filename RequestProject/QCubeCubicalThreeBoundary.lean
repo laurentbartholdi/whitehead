@@ -1,4 +1,8 @@
-import RequestProject.QCubeThreeBoundaryRecovery
+module
+
+public import RequestProject.QCubeThreeBoundaryRecovery
+
+@[expose] public section
 
 /-! Actual cubical three-to-two boundary and its finite strict subdivision dictionary. -/
 namespace FiniteChains.Davis

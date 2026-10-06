@@ -1,5 +1,9 @@
-import RequestProject.VerifiedInitialFiniteTopologicalPair
-import RequestProject.CanonicalPresentationTopologicalPair
+module
+
+public import RequestProject.VerifiedInitialFiniteTopologicalPair
+public import RequestProject.CanonicalPresentationTopologicalPair
+
+@[expose] public section
 
 /-! The actual lift of a labelled presentation inclusion to universal covers
 commutes with lifted-relator coordinates and the induced presentation-group

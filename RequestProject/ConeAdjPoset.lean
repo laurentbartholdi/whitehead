@@ -1,4 +1,8 @@
-import RequestProject.OrderCxMonodromy
+module
+
+public import RequestProject.OrderCxMonodromy
+
+@[expose] public section
 
 /-!
 # Adjoining cone points over prescribed subsets of a poset

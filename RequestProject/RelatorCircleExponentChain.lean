@@ -1,7 +1,11 @@
-import RequestProject.RelatorCircleFundamentalChain
-import RequestProject.StrictNormalizedOneMaps
-import RequestProject.ExponentCorrection
-import RequestProject.CombHurewicz1Pres
+module
+
+public import RequestProject.RelatorCircleFundamentalChain
+public import RequestProject.StrictNormalizedOneMaps
+public import RequestProject.ExponentCorrection
+public import RequestProject.CombHurewicz1Pres
+
+@[expose] public section
 
 /-! The actual normalized attaching-circle fundamental chain reads the
 exponent vector in the subdivided rose. The rose coefficient realization
@@ -92,7 +96,7 @@ theorem roseIntegerRealize_cycle (c : A →₀ ℤ) :
     rw (config := { transparency := .default }) [roseIntegerRealize, Finsupp.linearCombination_single, map_smul,
       roseIntegerGeneratorChain_cycle, smul_zero]
 
-private theorem mapOne_single_of_endpoints {P Q : Type u} [PartialOrder P] [PartialOrder Q]
+theorem mapOne_single_of_endpoints {P Q : Type u} [PartialOrder P] [PartialOrder Q]
     (f : P → Q) (hf : Monotone f) (e : StrictOrdEdge P) (d : StrictOrdEdge Q)
     (he : (f e.val.1, f e.val.2) = d.val) :
     StrictNormalized.mapOne f hf (Finsupp.single e 1) = Finsupp.single d 1 := by
@@ -135,7 +139,7 @@ theorem relatorCircleLetterChain_exponent (k : Fin (w j).length) :
     Bool.false_eq_true, if_false, if_true, roseIntegerGeneratorChain]
   abel
 
-private theorem pathChain_eq_sum_get (l : List (A × Bool)) :
+theorem pathChain_eq_sum_get (l : List (A × Bool)) :
     pathChain l = ∑ k : Fin l.length,
       if l[k.val].2 then Finsupp.single l[k.val].1 (1 : ℤ) else -Finsupp.single l[k.val].1 1 := by
   induction l with

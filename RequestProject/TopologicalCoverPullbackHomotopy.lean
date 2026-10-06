@@ -1,6 +1,10 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.TopologicalCoverPullback
-import RequestProject.HomotopyEquivCancellation
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.TopologicalCoverPullback
+public import RequestProject.HomotopyEquivCancellation
+
+@[expose] public section
 
 /-! Pullbacks along homotopic maps are homeomorphic by covering path
 transport. Pullback along a homotopy equivalence preserves the homotopy

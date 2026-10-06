@@ -1,6 +1,10 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.ClassicalCWVertexPaths
-import RequestProject.ClassicalCellAttachmentCW
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.ClassicalCWVertexPaths
+public import RequestProject.ClassicalCellAttachmentCW
+
+@[expose] public section
 
 /-! Cellularization of the endpoints of any family of new one-cells in the
 literal original CW complex. Each endpoint is moved along an actual path to
@@ -13,7 +17,7 @@ open Set Topology
 
 namespace FiniteChains.RelativeAttachment
 
-private theorem oneBoundary_finiteSet :
+theorem oneBoundary_finiteSet :
     ({x : Fin 1 → ℝ | ‖x‖ = 1} : Set (Fin 1 → ℝ)).Finite := by
   apply ((Set.finite_singleton (fun _ : Fin 1 => (-1 : ℝ))).insert
     (fun _ : Fin 1 => (1 : ℝ))).subset

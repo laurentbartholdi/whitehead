@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveCharacteristicCells
-import Mathlib.Topology.CWComplex.Classical.Basic
+module
+
+public import RequestProject.OrderNerveCharacteristicCells
+public import Mathlib.Topology.CWComplex.Classical.Basic
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory Simplicial Topology

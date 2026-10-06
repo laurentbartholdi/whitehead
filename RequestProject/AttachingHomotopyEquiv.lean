@@ -1,5 +1,9 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.AttachmentBacktrackHomotopy
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.AttachmentBacktrackHomotopy
+
+@[expose] public section
 
 /-! Homotopic attaching maps have homotopy equivalent attachment spaces.
 The equivalence is the identity on the literal old summand. The inverse

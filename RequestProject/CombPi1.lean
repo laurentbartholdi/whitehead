@@ -1,4 +1,8 @@
-import RequestProject.CellComplex
+module
+
+public import RequestProject.CellComplex
+
+@[expose] public section
 
 /-!
 # The edge-path fundamental group of a combinatorial two-complex

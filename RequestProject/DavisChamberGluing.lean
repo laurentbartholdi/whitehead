@@ -1,5 +1,9 @@
-import RequestProject.DavisChamberModel
-import RequestProject.OrderComplexGluing
+module
+
+public import RequestProject.DavisChamberModel
+public import RequestProject.OrderComplexGluing
+
+@[expose] public section
 
 /-!
 # One step of the chamber induction in the Davis model

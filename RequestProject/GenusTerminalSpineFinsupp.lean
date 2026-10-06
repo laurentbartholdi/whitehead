@@ -1,10 +1,14 @@
-import RequestProject.GenusTerminalSpineCockcroft
-import RequestProject.CoreSignedCollapseFinsupp
-import RequestProject.WedgeCockcroftFinsupp
-import RequestProject.TerminalFinsupp
-import RequestProject.CockcroftRelatorReindexFinsupp
-import RequestProject.GenusStructuralFinsupp
-import RequestProject.RelativeNormalizedWords
+module
+
+public import RequestProject.GenusTerminalSpineCockcroft
+public import RequestProject.CoreSignedCollapseFinsupp
+public import RequestProject.WedgeCockcroftFinsupp
+public import RequestProject.TerminalFinsupp
+public import RequestProject.CockcroftRelatorReindexFinsupp
+public import RequestProject.GenusStructuralFinsupp
+public import RequestProject.RelativeNormalizedWords
+
+@[expose] public section
 
 /-! The terminal fixed-core conclusions for arbitrary presentations and block
 families.  No generator, relator, core or family is assumed finite.  The actual

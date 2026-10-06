@@ -1,5 +1,9 @@
-import RequestProject.ClassicalGraphTreeBoundaryWords
-import RequestProject.BoundaryWordNaturality
+module
+
+public import RequestProject.ClassicalGraphTreeBoundaryWords
+public import RequestProject.BoundaryWordNaturality
+
+@[expose] public section
 
 /-! Tree deletion commutes literally with compatible graph inclusions.
 Thus the resulting rose relators retain their original cell labels and

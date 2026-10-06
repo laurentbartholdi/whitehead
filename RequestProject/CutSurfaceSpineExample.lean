@@ -1,5 +1,9 @@
-import RequestProject.CutSurfaceSpine
-import RequestProject.SurfaceBlockCollapse
+module
+
+public import RequestProject.CutSurfaceSpine
+public import RequestProject.SurfaceBlockCollapse
+
+@[expose] public section
 
 /-!
 # A nonempty instance of the chain collapse

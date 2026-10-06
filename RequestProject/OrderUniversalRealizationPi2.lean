@@ -1,6 +1,10 @@
-import RequestProject.OrderUniversalRealizationCover
-import RequestProject.OrderNerveCoverDimension
-import RequestProject.TopologicalCoverPi2
+module
+
+public import RequestProject.OrderUniversalRealizationCover
+public import RequestProject.OrderNerveCoverDimension
+public import RequestProject.TopologicalCoverPi2
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory Topology

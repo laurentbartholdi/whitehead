@@ -1,5 +1,9 @@
-import RequestProject.DiskPresentationExtensionHomeomorph
-import RequestProject.PresWordDiskNaturality
+module
+
+public import RequestProject.DiskPresentationExtensionHomeomorph
+public import RequestProject.PresWordDiskNaturality
+
+@[expose] public section
 
 /-! Every genuine labelled presentation-word embedding is realized as
 an actual relative attachment of its new generators and new relators.

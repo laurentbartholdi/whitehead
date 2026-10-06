@@ -1,5 +1,9 @@
-import RequestProject.ChamberZPoset
-import RequestProject.OrderComplexGluing
+module
+
+public import RequestProject.ChamberZPoset
+public import RequestProject.OrderComplexGluing
+
+@[expose] public section
 
 /-!
 # When a copy of the base splits off the fundamental group of `Z`

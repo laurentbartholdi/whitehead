@@ -1,4 +1,8 @@
-import RequestProject.PosetCoverDownTransform
+module
+
+public import RequestProject.PosetCoverDownTransform
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 universe u

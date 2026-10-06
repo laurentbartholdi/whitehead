@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.SimplexHornFiller
-import RequestProject.TopologicalSingular.StickTriangleComparison
+module
+
+public import RequestProject.TopologicalSingular.SimplexHornFiller
+public import RequestProject.TopologicalSingular.StickTriangleComparison
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 variable {X : Type} [TopologicalSpace X] {n : ℕ}

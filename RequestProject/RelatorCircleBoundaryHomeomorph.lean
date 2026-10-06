@@ -1,8 +1,12 @@
-import RequestProject.RelatorCircleFinite
-import RequestProject.RelatorCircleEdges
-import RequestProject.PresPosetDimension
-import RequestProject.FinitePosetCycleRealization
-import Mathlib.Logic.Equiv.Fin.Basic
+module
+
+public import RequestProject.RelatorCircleFinite
+public import RequestProject.RelatorCircleEdges
+public import RequestProject.PresPosetDimension
+public import RequestProject.FinitePosetCycleRealization
+public import Mathlib.Logic.Equiv.Fin.Basic
+
+@[expose] public section
 
 /-! The actual valid relator-circle realization is homeomorphic to the
 normed-circle boundary. Its traversal visits cor, cedgL, cmid, cedgR for
@@ -167,7 +171,7 @@ theorem relatorCircleEnumeration_last_next :
   change (if relatorCircleSize w j + 1 + 1 < (w j).length * 4 then _ else 0) = 0
   rw [if_neg (by omega)]
 
-private theorem relatorCircle_next_edge (a : RelatorCircle w j) :
+theorem relatorCircle_next_edge (a : RelatorCircle w j) :
     (∃ i : Fin (relatorCircleSize w j + 1),
       a = relatorCircleEnumeration w j hn i.castSucc ∧
         relatorCircleSuccessor w j hn a = relatorCircleEnumeration w j hn i.succ) ∨

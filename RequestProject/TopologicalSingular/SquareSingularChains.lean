@@ -1,6 +1,10 @@
-import RequestProject.SquareBoundary
-import RequestProject.TopologicalSingular.SingularPathHomotopy
-import RequestProject.TopologicalSingular.RelativeSingularMaps
+module
+
+public import RequestProject.SquareBoundary
+public import RequestProject.TopologicalSingular.SingularPathHomotopy
+public import RequestProject.TopologicalSingular.RelativeSingularMaps
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 open scoped unitInterval Topology

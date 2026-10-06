@@ -1,6 +1,10 @@
-import RequestProject.TopologicalSingular.HurewiczIsomorphism
-import RequestProject.OrderNerveSingularH2Iso
-import RequestProject.OrderUniversalRealizationSimplyConnected
+module
+
+public import RequestProject.TopologicalSingular.HurewiczIsomorphism
+public import RequestProject.OrderNerveSingularH2Iso
+public import RequestProject.OrderUniversalRealizationSimplyConnected
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory AlgebraicTopology TopologicalSingular

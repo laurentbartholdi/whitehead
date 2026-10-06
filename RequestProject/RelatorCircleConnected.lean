@@ -1,5 +1,9 @@
-import RequestProject.RelatorCircleEdges
-import RequestProject.OrderConstructionConnected
+module
+
+public import RequestProject.RelatorCircleEdges
+public import RequestProject.OrderConstructionConnected
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

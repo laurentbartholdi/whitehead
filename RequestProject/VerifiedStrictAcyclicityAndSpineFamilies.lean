@@ -1,6 +1,10 @@
-import RequestProject.VerifiedOrderAcyclicCovers
-import RequestProject.OrderStrictAcyclicityComparison
-import RequestProject.GenusMarkedSpineFamily
+module
+
+public import RequestProject.VerifiedOrderAcyclicCovers
+public import RequestProject.OrderStrictAcyclicityComparison
+public import RequestProject.GenusMarkedSpineFamily
+
+@[expose] public section
 
 /-!
 Checked integration point for the converse cellular acyclicity comparison and

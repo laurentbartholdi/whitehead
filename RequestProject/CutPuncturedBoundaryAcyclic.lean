@@ -1,5 +1,9 @@
-import RequestProject.VertexPunctureAcyclic
-import RequestProject.PositiveBoundaryCoordinates
+module
+
+public import RequestProject.VertexPunctureAcyclic
+public import RequestProject.PositiveBoundaryCoordinates
+
+@[expose] public section
 
 /-! Actual augmented fillings on the boundary after its cut facet is removed. -/
 namespace FiniteChains.Davis

@@ -1,4 +1,8 @@
-import RequestProject.GenusEquivariantCapFillings
+module
+
+public import RequestProject.GenusEquivariantCapFillings
+
+@[expose] public section
 
 /-! Linear cap fillings and their deck-forgetting formula on finitely supported coefficients. -/
 set_option backward.defeqAttrib.useBackward true

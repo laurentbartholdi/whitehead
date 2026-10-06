@@ -1,5 +1,9 @@
-import RequestProject.StrictTopConeInjectivity
-import RequestProject.StrictLowerIntervalChains
+module
+
+public import RequestProject.StrictTopConeInjectivity
+public import RequestProject.StrictLowerIntervalChains
+
+@[expose] public section
 
 /-! Vanishing of an actual top-cone internal boundary reflects lower-interval two-cycles. -/
 open scoped Classical

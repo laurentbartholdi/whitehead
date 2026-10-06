@@ -1,5 +1,9 @@
-import RequestProject.MinimalGap
-import RequestProject.Pi2GenerationDescent
+module
+
+public import RequestProject.MinimalGap
+public import RequestProject.Pi2GenerationDescent
+
+@[expose] public section
 
 /-!
 # Proposition 3.11 for chains given by explicit inclusions

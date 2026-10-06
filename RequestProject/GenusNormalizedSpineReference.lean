@@ -1,4 +1,8 @@
-import RequestProject.GenusUniversalPolygonFoxBoundary
+module
+
+public import RequestProject.GenusUniversalPolygonFoxBoundary
+
+@[expose] public section
 
 /-! The marked filling is selected before substitution with the geometric
 class of the explicit degree-one polygon. Pending final Lean verification. -/

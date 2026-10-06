@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveRealizationMapCoordinates
+module
+
+public import RequestProject.OrderNerveRealizationMapCoordinates
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

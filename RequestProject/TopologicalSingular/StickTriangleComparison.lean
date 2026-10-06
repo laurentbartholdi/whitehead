@@ -1,6 +1,10 @@
-import RequestProject.TopologicalSingular.StickSimplex
-import RequestProject.TopologicalSingular.BasedTriangleHomotopy
-import RequestProject.TopologicalSingular.TriangleBasedNormalization
+module
+
+public import RequestProject.TopologicalSingular.StickSimplex
+public import RequestProject.TopologicalSingular.BasedTriangleHomotopy
+public import RequestProject.TopologicalSingular.TriangleBasedNormalization
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 open scoped unitInterval Topology

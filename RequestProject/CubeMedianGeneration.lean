@@ -1,5 +1,9 @@
-import RequestProject.CubeGeneration
-import RequestProject.CubeMedianGraph
+module
+
+public import RequestProject.CubeGeneration
+public import RequestProject.CubeMedianGraph
+
+@[expose] public section
 
 /-!
 # The generation step with the CAT(0) input in its median-graph form

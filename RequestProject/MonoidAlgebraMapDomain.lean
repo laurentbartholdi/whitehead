@@ -1,4 +1,8 @@
-import Mathlib.Algebra.MonoidAlgebra.Basic
+module
+
+public import Mathlib.Algebra.MonoidAlgebra.Basic
+
+@[expose] public section
 
 namespace MonoidAlgebra
 

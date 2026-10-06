@@ -1,6 +1,10 @@
-import RequestProject.UniversalOrderThreeNaturality
-import RequestProject.UniversalCoverPi1Injection
-import RequestProject.ComponentComplex
+module
+
+public import RequestProject.UniversalOrderThreeNaturality
+public import RequestProject.UniversalCoverPi1Injection
+public import RequestProject.ComponentComplex
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 universe u

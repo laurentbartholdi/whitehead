@@ -1,4 +1,8 @@
-import RequestProject.Fox
+module
+
+public import RequestProject.Fox
+
+@[expose] public section
 
 /-!
 # Naturality of the Fox derivative under an inclusion of generators

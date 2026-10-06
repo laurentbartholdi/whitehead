@@ -1,9 +1,13 @@
-import RequestProject.FoxNaturality
-import RequestProject.PresentationDictionary
-import RequestProject.NecessityAlgebraicMod
-import RequestProject.CycleLifting
-import RequestProject.Pi2Dictionary
-import RequestProject.PresentationNecessity
+module
+
+public import RequestProject.FoxNaturality
+public import RequestProject.PresentationDictionary
+public import RequestProject.NecessityAlgebraicMod
+public import RequestProject.CycleLifting
+public import RequestProject.Pi2Dictionary
+public import RequestProject.PresentationNecessity
+
+@[expose] public section
 
 /-!
 # Chains of presentation complexes

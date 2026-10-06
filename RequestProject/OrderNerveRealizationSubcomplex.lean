@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveRealizationPaths
-import Mathlib.Topology.CWComplex.Classical.Subcomplex
+module
+
+public import RequestProject.OrderNerveRealizationPaths
+public import Mathlib.Topology.CWComplex.Classical.Subcomplex
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

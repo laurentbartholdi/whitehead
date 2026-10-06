@@ -1,5 +1,9 @@
-import RequestProject.WallSpaceDual
-import RequestProject.RollerGraphMetric
+module
+
+public import RequestProject.WallSpaceDual
+public import RequestProject.RollerGraphMetric
+
+@[expose] public section
 
 /-!
 # The dual of a wall space is a connected median graph

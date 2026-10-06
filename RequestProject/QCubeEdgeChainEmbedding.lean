@@ -1,4 +1,8 @@
-import RequestProject.QCubeEdgeSubdivision
+module
+
+public import RequestProject.QCubeEdgeSubdivision
+
+@[expose] public section
 
 /-! Faithful subdivision of finite chains on actual one-dimensional quotient cubes. -/
 open scoped Classical

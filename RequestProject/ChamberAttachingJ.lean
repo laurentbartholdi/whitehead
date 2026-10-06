@@ -1,4 +1,8 @@
-import RequestProject.DavisSimplyConnected
+module
+
+public import RequestProject.DavisSimplyConnected
+
+@[expose] public section
 
 /-!
 # The attaching intersection of a chamber is `J_w`, not the whole outer boundary

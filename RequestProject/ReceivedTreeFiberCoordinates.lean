@@ -1,4 +1,8 @@
-import RequestProject.ReceivedTreeComparison
+module
+
+public import RequestProject.ReceivedTreeComparison
+
+@[expose] public section
 
 /-! Exact sheet coordinates over each cell when the geometric receiver is
 surjective. This applies before substitution to the spine/old-block group

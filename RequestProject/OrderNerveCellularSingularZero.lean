@@ -1,6 +1,10 @@
-import RequestProject.OrderNerveCellularSingularChains
-import RequestProject.OrderNerveSmallHomotopyZero
-import RequestProject.OrderNerveSmallCellularChainMap
+module
+
+public import RequestProject.OrderNerveCellularSingularChains
+public import RequestProject.OrderNerveSmallHomotopyZero
+public import RequestProject.OrderNerveSmallCellularChainMap
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

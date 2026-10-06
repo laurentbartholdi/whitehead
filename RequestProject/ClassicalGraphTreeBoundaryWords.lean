@@ -1,6 +1,10 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.ClassicalGraphTreeWords
-import RequestProject.ClassicalGraphBoundaryWords
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.ClassicalGraphTreeWords
+public import RequestProject.ClassicalGraphBoundaryWords
+
+@[expose] public section
 
 /-! Collapsing the graph's spanning tree changes the actual boundary
 map to the word obtained by deleting tree letters. The homotopy is

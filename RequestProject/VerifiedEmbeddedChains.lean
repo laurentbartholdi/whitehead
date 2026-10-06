@@ -1,6 +1,10 @@
-import RequestProject.VerifiedChamberPi2
-import RequestProject.OrderEmbeddedTopologicalChains
-import RequestProject.ChamberRelativeCells
+module
+
+public import RequestProject.VerifiedChamberPi2
+public import RequestProject.OrderEmbeddedTopologicalChains
+public import RequestProject.ChamberRelativeCells
+
+@[expose] public section
 
 /-! # Actual cell-preserving embeddings and compatible CW chains
 

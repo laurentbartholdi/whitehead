@@ -1,6 +1,10 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.PresRealizationWordDiskComparison
-import RequestProject.OrderRoseRealizationHomeomorph
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.PresRealizationWordDiskComparison
+public import RequestProject.OrderRoseRealizationHomeomorph
+
+@[expose] public section
 
 /-! A presentation realization and a literal bouquet of interval circles
 with genuine two-disks have a constructed homotopy equivalence. All cone,

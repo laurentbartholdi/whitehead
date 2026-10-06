@@ -1,5 +1,9 @@
-import RequestProject.ClassicalCellAttachmentMaps
-import Mathlib.Topology.Separation.Hausdorff
+module
+
+public import RequestProject.ClassicalCellAttachmentMaps
+public import Mathlib.Topology.Separation.Hausdorff
+
+@[expose] public section
 
 /-! Explicit Hausdorff separation for arbitrary families of attached normed
 disks. Old open sets extend through radial annuli; there is no local finiteness
@@ -117,7 +121,7 @@ theorem oldCollar_disjoint (r : BoundaryFamily J E → X) (c : ℝ) (hc : 0 ≤ 
     obtain ⟨h', hh'⟩ := hy
     exact Set.disjoint_left.mp hUV hh hh'
 
-private theorem separate_old_fresh (r : BoundaryFamily J E → X) (hr : Continuous r)
+theorem separate_old_fresh (r : BoundaryFamily J E → X) (hr : Continuous r)
     (x : X) (d : {d : DiskFamily J E // d ∉ Set.range (boundaryFamilyInclusion J E)}) :
     ∃ U V : Set (DiskAttachment r), IsOpen U ∧ IsOpen V ∧
       old r (boundaryFamilyInclusion J E) x ∈ U ∧

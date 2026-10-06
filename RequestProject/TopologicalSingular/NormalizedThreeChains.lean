@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.CoherentTetrahedronNormalization
-import RequestProject.TopologicalSingular.NormalizedTwoCycles
+module
+
+public import RequestProject.TopologicalSingular.CoherentTetrahedronNormalization
+public import RequestProject.TopologicalSingular.NormalizedTwoCycles
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 open scoped unitInterval Topology

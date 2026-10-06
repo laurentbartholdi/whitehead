@@ -1,7 +1,11 @@
-import RequestProject.GenusCappedSingularHomologyPushdown
-import RequestProject.OrderRealizationCockcroft
-import RequestProject.ChamberZConnected
-import RequestProject.PresPosetConnected
+module
+
+public import RequestProject.GenusCappedSingularHomologyPushdown
+public import RequestProject.OrderRealizationCockcroft
+public import RequestProject.ChamberZConnected
+public import RequestProject.PresPosetConnected
+
+@[expose] public section
 
 namespace FiniteChains.Davis.Genus
 open RACG Mirror Comb PresModel

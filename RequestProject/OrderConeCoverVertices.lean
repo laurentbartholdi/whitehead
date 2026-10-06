@@ -1,5 +1,9 @@
-import RequestProject.OrderConeChains
-import RequestProject.CombUniversalCover
+module
+
+public import RequestProject.OrderConeChains
+public import RequestProject.CombUniversalCover
+
+@[expose] public section
 
 /-! Actual reference vertices for lifting the explicit cone fan. -/
 set_option backward.defeqAttrib.useBackward true

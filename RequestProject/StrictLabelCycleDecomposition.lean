@@ -1,4 +1,8 @@
-import RequestProject.StrictOrderChains
+module
+
+public import RequestProject.StrictOrderChains
+
+@[expose] public section
 
 /-! Finite cycle decomposition by labels constant on actual comparable vertices. -/
 set_option backward.defeqAttrib.useBackward true

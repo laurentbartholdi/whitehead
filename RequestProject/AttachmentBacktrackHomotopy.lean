@@ -1,6 +1,10 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.AttachmentBaseChange
-import RequestProject.CylinderBoundaryHomotopyCorrection
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.AttachmentBaseChange
+public import RequestProject.CylinderBoundaryHomotopyCorrection
+
+@[expose] public section
 
 /-! Cancelling a homotopy of attaching maps followed by its reverse. The
 boundary contraction is explicit; full-cylinder extension makes the disk
@@ -10,7 +14,7 @@ noncomputable section
 namespace FiniteChains.RelativeAttachment
 open scoped unitInterval Topology Classical
 
-private def backtrackTime (t : I) : I :=
+def backtrackTime (t : I) : I :=
   ⟨min (2 * (t : ℝ)) (2 - 2 * (t : ℝ)), by
     have hl := t.2.1
     have hu := t.2.2
@@ -20,15 +24,15 @@ private def backtrackTime (t : I) : I :=
       · exact (min_le_left _ _).trans (by linarith)
       · exact (min_le_right _ _).trans (by linarith)⟩
 
-private theorem backtrackTime_continuous : Continuous backtrackTime := by
+theorem backtrackTime_continuous : Continuous backtrackTime := by
   unfold backtrackTime
   fun_prop
 
-private theorem backtrackTime_zero : backtrackTime 0 = 0 := by
+theorem backtrackTime_zero : backtrackTime 0 = 0 := by
   apply Subtype.ext
   norm_num [backtrackTime]
 
-private theorem backtrackTime_one : backtrackTime 1 = 0 := by
+theorem backtrackTime_one : backtrackTime 1 = 0 := by
   apply Subtype.ext
   norm_num [backtrackTime]
 

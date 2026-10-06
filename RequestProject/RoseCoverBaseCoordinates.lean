@@ -1,5 +1,9 @@
-import RequestProject.PosetCoverEdgeFibreEquiv
-import RequestProject.RoseCoverGeneratorEquiv
+module
+
+public import RequestProject.PosetCoverEdgeFibreEquiv
+public import RequestProject.RoseCoverGeneratorEquiv
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

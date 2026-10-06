@@ -1,5 +1,9 @@
-import RequestProject.GenusCappedCockcroft
-import RequestProject.PresUniversalCockcroftCoordinates
+module
+
+public import RequestProject.GenusCappedCockcroft
+public import RequestProject.PresUniversalCockcroftCoordinates
+
+@[expose] public section
 
 namespace FiniteChains.Davis.Genus
 open Comb PresModel

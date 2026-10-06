@@ -1,5 +1,9 @@
-import RequestProject.PresPosetPartialOrder
-import RequestProject.OrderThreeNormalization
+module
+
+public import RequestProject.PresPosetPartialOrder
+public import RequestProject.OrderThreeNormalization
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

@@ -1,5 +1,9 @@
-import RequestProject.PresentationInclusionFinsupp
-import RequestProject.RelativeNormalizedRestrictions
+module
+
+public import RequestProject.PresentationInclusionFinsupp
+public import RequestProject.RelativeNormalizedRestrictions
+
+@[expose] public section
 
 /-! Actual chain squares for restricted genus replacement. The filling
 coefficients are the fixed marked-spine coefficients, transported by the

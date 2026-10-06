@@ -1,10 +1,14 @@
-import RequestProject.GenusSpineConnected
-import RequestProject.GenusNamedSpineComparison
-import RequestProject.ReceivedTreeFiberCoordinates
-import RequestProject.StrictOrderPullbackHom
-import RequestProject.UniversalOrderChainBridge
-import RequestProject.GenusOldCoverSpineFaithfulness
-import RequestProject.GenusOldCoverSpineGeneration
+module
+
+public import RequestProject.GenusSpineConnected
+public import RequestProject.GenusNamedSpineComparison
+public import RequestProject.ReceivedTreeFiberCoordinates
+public import RequestProject.StrictOrderPullbackHom
+public import RequestProject.UniversalOrderChainBridge
+public import RequestProject.GenusOldCoverSpineFaithfulness
+public import RequestProject.GenusOldCoverSpineGeneration
+
+@[expose] public section
 
 /-! The full pulled-back spine in the universal old cover has actual named
 tree-cover coordinates before substitution. Pending final Lean verification.
@@ -20,7 +24,7 @@ namespace FiniteChains.Comb
 universe u
 variable {K Y Z : Complex2.{u}}
 
-private theorem universal_pi1Map_comp (f : Hom K Y) (g : Hom Y Z) (a : K.V)
+theorem universal_pi1Map_comp (f : Hom K Y) (g : Hom Y Z) (a : K.V)
     (z : Pi1 K a) :
     pi1Map (g.comp f) a z = pi1Map g (f.onV a) (pi1Map f a z) := by
   refine Quotient.inductionOn z ?_
@@ -29,7 +33,7 @@ private theorem universal_pi1Map_comp (f : Hom K Y) (g : Hom Y Z) (a : K.V)
   apply Subtype.ext
   simp only [mapPath, Hom.comp, List.map_map, Function.comp_def]
 
-private theorem universal_chain2_comp (f : Hom K Y) (g : Hom Y Z) (c : K.F →₀ ℤ) :
+theorem universal_chain2_comp (f : Hom K Y) (g : Hom Y Z) (c : K.F →₀ ℤ) :
     chain2 (g.comp f) c = chain2 g (chain2 f c) := by
   change Finsupp.mapDomain (g.onF ∘ f.onF) c =
     Finsupp.mapDomain g.onF (Finsupp.mapDomain f.onF c)
@@ -149,7 +153,7 @@ noncomputable def universalReceivedToPullback :
     (universalReceivedOrderMap q) (universalReceivedStrictSpine q)
     (universalReceived_spine_square q)
 
-private theorem universalPullbackFace_ext
+theorem universalPullbackFace_ext
     (t s : StrictOrdTri (universalSpinePullback q))
     (hp : (strictPullbackOriginal uOrderEnd (genusSpineCellToOld q)).onF t =
       (strictPullbackOriginal uOrderEnd (genusSpineCellToOld q)).onF s)

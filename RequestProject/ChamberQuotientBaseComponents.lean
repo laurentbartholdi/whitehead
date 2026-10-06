@@ -1,6 +1,10 @@
-import RequestProject.ChamberQuotientBaseSimplyConnected
-import RequestProject.OrderComponentCover
-import RequestProject.SimplyConnectedCoverEquiv
+module
+
+public import RequestProject.ChamberQuotientBaseSimplyConnected
+public import RequestProject.OrderComponentCover
+public import RequestProject.SimplyConnectedCoverEquiv
+
+@[expose] public section
 
 /-! Genuine universal-cover cells and cycles in each actual lifted base component. -/
 namespace FiniteChains.Davis

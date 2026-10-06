@@ -1,5 +1,9 @@
-import RequestProject.OrderUniversalPosetHom
-import RequestProject.StrictOrderChains
+module
+
+public import RequestProject.OrderUniversalPosetHom
+public import RequestProject.StrictOrderChains
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 universe u

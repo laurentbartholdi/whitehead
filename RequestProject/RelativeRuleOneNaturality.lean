@@ -1,5 +1,9 @@
-import RequestProject.RelativeBlockNaturality
-import RequestProject.RelativeStructuralOperation
+module
+
+public import RequestProject.RelativeBlockNaturality
+public import RequestProject.RelativeStructuralOperation
+
+@[expose] public section
 
 /-! Actual rule-1 squares for shared ambient generator labels. All stage
 inclusions are literal labelled presentation inclusions. Unverified source.

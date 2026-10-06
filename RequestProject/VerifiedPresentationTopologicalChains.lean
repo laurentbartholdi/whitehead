@@ -1,6 +1,10 @@
-import RequestProject.VerifiedPresentationPi2Naturality
-import RequestProject.PresChainRealization
-import RequestProject.AsphericalFiniteTopologicalChains
+module
+
+public import RequestProject.VerifiedPresentationPi2Naturality
+public import RequestProject.PresChainRealization
+public import RequestProject.AsphericalFiniteTopologicalChains
+
+@[expose] public section
 
 /-! Successive order embeddings now construct their compatible embeddings
 in the last stage, yielding the exact CW-subcomplex chain of Challenge.

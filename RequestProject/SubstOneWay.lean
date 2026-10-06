@@ -1,4 +1,8 @@
-import RequestProject.BlockFamilySubst
+module
+
+public import RequestProject.BlockFamilySubst
+
+@[expose] public section
 
 /-!
 # The one-way comparison which makes the structural map of a substitution injective

@@ -1,5 +1,9 @@
-import RequestProject.CylinderPoset
-import RequestProject.ConeAdjPoset
+module
+
+public import RequestProject.CylinderPoset
+public import RequestProject.ConeAdjPoset
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

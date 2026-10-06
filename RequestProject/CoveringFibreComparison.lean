@@ -1,4 +1,8 @@
-import Mathlib.Topology.Homotopy.Lifting
+module
+
+public import Mathlib.Topology.Homotopy.Lifting
+
+@[expose] public section
 
 /-! A continuous map over a covering projection is a homeomorphism if
 its fibre map is bijective at points meeting every path component.

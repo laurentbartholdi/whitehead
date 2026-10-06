@@ -1,7 +1,11 @@
-import RequestProject.RoseStrictEdges
-import RequestProject.RootedPathClasses
-import RequestProject.OrderReflexiveConjugation
-import RequestProject.CombLoopWord
+module
+
+public import RequestProject.RoseStrictEdges
+public import RequestProject.RootedPathClasses
+public import RequestProject.OrderReflexiveConjugation
+public import RequestProject.CombLoopWord
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

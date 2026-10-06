@@ -1,4 +1,8 @@
-import RequestProject.CoverComplexPres
+module
+
+public import RequestProject.CoverComplexPres
+
+@[expose] public section
 
 /-!
 # The universal cover of a presentation complex and its two-cycles

@@ -1,5 +1,9 @@
-import RequestProject.GenusCappedMathlibHomologyPushdown
-import RequestProject.OrderNerveSingularHomologyComparison
+module
+
+public import RequestProject.GenusCappedMathlibHomologyPushdown
+public import RequestProject.OrderNerveSingularHomologyComparison
+
+@[expose] public section
 
 namespace FiniteChains.Davis.Genus
 open RACG Mirror Comb PresModel CategoryTheory

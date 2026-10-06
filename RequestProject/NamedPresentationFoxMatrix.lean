@@ -1,6 +1,10 @@
-import RequestProject.NamedPresentation
-import RequestProject.FoxNaturality
-import RequestProject.PresentationDictionary
+module
+
+public import RequestProject.NamedPresentation
+public import RequestProject.FoxNaturality
+public import RequestProject.PresentationDictionary
+
+@[expose] public section
 
 /-! The actual Fox matrix after adjoining names for the marked words. -/
 set_option backward.defeqAttrib.useBackward true

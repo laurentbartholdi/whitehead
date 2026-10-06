@@ -1,4 +1,8 @@
-import RequestProject.NerveDegreeGluing
+module
+
+public import RequestProject.NerveDegreeGluing
+
+@[expose] public section
 
 /-! Ambient generation in one piece forces generation by the intersection in the other. -/
 namespace FiniteChains.Nerve

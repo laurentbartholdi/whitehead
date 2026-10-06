@@ -1,6 +1,10 @@
-import RequestProject.OriginalChainNecessity
-import RequestProject.OriginalCoverChains
-import RequestProject.OriginalAcyclicChains
+module
+
+public import RequestProject.OriginalChainNecessity
+public import RequestProject.OriginalCoverChains
+public import RequestProject.OriginalAcyclicChains
+
+@[expose] public section
 
 /-! Proof of Theorem A. The definitions in the statement (`TwoComplex`, `KillsPi2`, `HasChain`,
 ...) come from `RequestProject.Statement`, whose text is identical to that of `Challenge.lean`;

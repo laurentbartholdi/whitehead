@@ -1,5 +1,9 @@
-import RequestProject.GenusSpineComponent
-import RequestProject.BlockConnected
+module
+
+public import RequestProject.GenusSpineComponent
+public import RequestProject.BlockConnected
+
+@[expose] public section
 
 /-! The full surviving spine is connected. The paths use only the retained
 vertices and edges, together with a downward edge from the starting cell.
@@ -19,10 +23,10 @@ noncomputable def spineSignEdge (v : GenusVertex q) (ξ : GenusVertex q → ZMod
   ⟨Sum.inl (oneCube v ξ), genusSpineCellSet_of_dimension_lt_two q _ (by
     simp [truncatedCellDimension, oneCube])⟩
 
-private theorem spineReach_refl (a : GenusSpineCell q) :
+theorem spineReach_refl (a : GenusSpineCell q) :
     Reach (orderCx (GenusSpineCell q)) a a := reach_self _ _
 
-private theorem spineReach_trans {a b c : GenusSpineCell q}
+theorem spineReach_trans {a b c : GenusSpineCell q}
     (h : Reach (orderCx (GenusSpineCell q)) a b)
     (h' : Reach (orderCx (GenusSpineCell q)) b c) :
     Reach (orderCx (GenusSpineCell q)) a c := by
@@ -30,13 +34,13 @@ private theorem spineReach_trans {a b c : GenusSpineCell q}
   obtain ⟨r, hr⟩ := h'
   exact ⟨p ++ r, hp.append hr⟩
 
-private theorem spineReach_le {a b : GenusSpineCell q} (h : a ≤ b) :
+theorem spineReach_le {a b : GenusSpineCell q} (h : a ≤ b) :
     Reach (orderCx (GenusSpineCell q)) a b := ⟨[ordPos h], isPath_ordPos h⟩
 
-private theorem spineReach_ge {a b : GenusSpineCell q} (h : b ≤ a) :
+theorem spineReach_ge {a b : GenusSpineCell q} (h : b ≤ a) :
     Reach (orderCx (GenusSpineCell q)) a b := ⟨[ordNeg h], isPath_ordNeg h⟩
 
-private theorem spineSignVertex_flip (ξ : GenusVertex q → ZMod 2) (hξ : ξ ≠ 0)
+theorem spineSignVertex_flip (ξ : GenusVertex q → ZMod 2) (hξ : ξ ≠ 0)
     (v : GenusVertex q) (b : ZMod 2) (h' : Function.update ξ v b ≠ 0) :
     Reach (orderCx (GenusSpineCell q)) (spineSignVertex q ξ hξ)
       (spineSignVertex q (Function.update ξ v b) h') :=

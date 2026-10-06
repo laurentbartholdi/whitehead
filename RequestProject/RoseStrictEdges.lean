@@ -1,5 +1,9 @@
-import RequestProject.PresPosetPartialOrder
-import RequestProject.StrictOrderComplex
+module
+
+public import RequestProject.PresPosetPartialOrder
+public import RequestProject.StrictOrderComplex
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

@@ -1,6 +1,10 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.AttachmentBaseChange
-import RequestProject.BallHomotopyExtension
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.AttachmentBaseChange
+public import RequestProject.BallHomotopyExtension
+
+@[expose] public section
 
 /-! Attaching a contractible pointed space at one old point preserves
 the homotopy type by an explicit contraction. This is the geometric

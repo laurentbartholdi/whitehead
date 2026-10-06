@@ -1,6 +1,10 @@
-import RequestProject.TopologicalSingular.SimplexCoordinates
-import RequestProject.OrderNerveRealizationInterior
-import RequestProject.OrderNerveRealizationNondegenerate
+module
+
+public import RequestProject.TopologicalSingular.SimplexCoordinates
+public import RequestProject.OrderNerveRealizationInterior
+public import RequestProject.OrderNerveRealizationNondegenerate
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

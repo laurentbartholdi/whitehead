@@ -1,5 +1,9 @@
-import RequestProject.PosetCoverRoofCycles
-import RequestProject.ChamberZCoverOrdinaryCycles
+module
+
+public import RequestProject.PosetCoverRoofCycles
+public import RequestProject.ChamberZCoverOrdinaryCycles
+
+@[expose] public section
 
 /-! Actual finite fillings in lifted attaching intersections. -/
 namespace FiniteChains.Davis

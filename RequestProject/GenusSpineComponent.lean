@@ -1,6 +1,10 @@
-import RequestProject.GenusSpineMarking
-import RequestProject.ComponentComplex
-import RequestProject.SpanningTree
+module
+
+public import RequestProject.GenusSpineMarking
+public import RequestProject.ComponentComplex
+public import RequestProject.SpanningTree
+
+@[expose] public section
 
 /-! The genuine connected component carrying the canonical spine marking. -/
 set_option backward.defeqAttrib.useBackward true

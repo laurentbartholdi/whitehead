@@ -1,6 +1,10 @@
-import RequestProject.PresCylinderCoverCycles
-import RequestProject.ConeAdjBaseCover
-import RequestProject.StrictSubposetChains
+module
+
+public import RequestProject.PresCylinderCoverCycles
+public import RequestProject.ConeAdjBaseCover
+public import RequestProject.StrictSubposetChains
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

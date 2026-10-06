@@ -1,5 +1,9 @@
-import RequestProject.ChamberQuotientCover
-import RequestProject.OrderPosetCoverThree
+module
+
+public import RequestProject.ChamberQuotientCover
+public import RequestProject.OrderPosetCoverThree
+
+@[expose] public section
 
 /-! The full Davis nerve covers the quotient cube poset, including its three-cells. -/
 

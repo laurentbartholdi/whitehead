@@ -1,5 +1,9 @@
-import RequestProject.RelativeStructuralOperation
-import RequestProject.GenusTerminalSpineFinsupp
+module
+
+public import RequestProject.RelativeStructuralOperation
+public import RequestProject.GenusTerminalSpineFinsupp
+
+@[expose] public section
 
 /-! The actual fixed-core T/Q terminal step. Original extra words need not
 already be products of commutators: normalization supplies them. No assumed

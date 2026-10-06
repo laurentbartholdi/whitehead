@@ -1,5 +1,9 @@
-import RequestProject.OrderUniversalPosetCells
-import RequestProject.UnivCoverIncl
+module
+
+public import RequestProject.OrderUniversalPosetCells
+public import RequestProject.UnivCoverIncl
+
+@[expose] public section
 
 /-! The cellular identification of the genuine universal-cover order complex. -/
 set_option backward.defeqAttrib.useBackward true

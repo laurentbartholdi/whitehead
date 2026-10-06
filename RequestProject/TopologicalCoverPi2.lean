@@ -1,6 +1,10 @@
-import RequestProject.Statement
-import RequestProject.SquareBoundary
-import Mathlib.Topology.Homotopy.Lifting
+module
+
+public import RequestProject.Statement
+public import RequestProject.SquareBoundary
+public import Mathlib.Topology.Homotopy.Lifting
+
+@[expose] public section
 
 /-! General topological covering/pi2 results moved unchanged from Solution. -/
 

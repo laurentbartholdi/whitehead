@@ -1,7 +1,11 @@
-import RequestProject.OrderNerveWithTopCone
-import RequestProject.QuotientSameFibersHomeomorph
-import RequestProject.BallHomotopyExtension
-import Mathlib.Analysis.Normed.Module.FiniteDimension
+module
+
+public import RequestProject.OrderNerveWithTopCone
+public import RequestProject.QuotientSameFibersHomeomorph
+public import RequestProject.BallHomotopyExtension
+public import Mathlib.Analysis.Normed.Module.FiniteDimension
+
+@[expose] public section
 
 /-! Radial identification of an actual order-nerve cone with a genuine normed
 disk. The input is the boundary homeomorphism; the extension, its inverse,
@@ -13,7 +17,7 @@ open scoped unitInterval Classical
 
 variable (E : Type) [NormedAddCommGroup E] [NormedSpace ℝ E]
 
-private theorem radialPoint_mem_ball (r : I) (x : UnitBoundary E) :
+theorem radialPoint_mem_ball (r : I) (x : UnitBoundary E) :
     ‖(r : ℝ) • x.val‖ ≤ 1 := by
   rw [norm_smul, Real.norm_of_nonneg r.property.1, x.property, mul_one]
   exact r.property.2
@@ -89,12 +93,12 @@ variable {P : Type} [PartialOrder P] [Fintype P] [Nonempty P]
     {E : Type} [NormedAddCommGroup E] [NormedSpace ℝ E] [ProperSpace E]
     (e : orderNerveRealization P ≃ₜ UnitBoundary E)
 
-private def coneBallQuotient : C(I × orderNerveRealization P, ClosedUnitBall E) :=
+def coneBallQuotient : C(I × orderNerveRealization P, ClosedUnitBall E) :=
   (ballRadialQuotient E).comp
     ⟨fun rx => (rx.1, e rx.2), continuous_fst.prodMk (e.continuous.comp continuous_snd)⟩
 
 omit [Fintype P] [ProperSpace E] in
-private theorem coneBallQuotient_surjective : Function.Surjective (coneBallQuotient e) := by
+theorem coneBallQuotient_surjective : Function.Surjective (coneBallQuotient e) := by
   let p₀ : P := Classical.choice inferInstance
   intro x
   obtain ⟨⟨r, u⟩, hu⟩ := ballRadialQuotient_surjective E
@@ -103,7 +107,7 @@ private theorem coneBallQuotient_surjective : Function.Surjective (coneBallQuoti
     ContinuousMap.coe_mk, Homeomorph.apply_symm_apply] using hu⟩
 
 omit [Fintype P] [Nonempty P] [ProperSpace E] in
-private theorem coneBallQuotient_fibers (a b : I × orderNerveRealization P) :
+theorem coneBallQuotient_fibers (a b : I × orderNerveRealization P) :
     orderNerveRadialCone P a = orderNerveRadialCone P b ↔
       coneBallQuotient e a = coneBallQuotient e b := by
   rw [orderNerveRadialCone_eq_iff]

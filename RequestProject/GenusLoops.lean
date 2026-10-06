@@ -1,5 +1,9 @@
-import RequestProject.GenusData
-import RequestProject.SurfaceRev
+module
+
+public import RequestProject.GenusData
+public import RequestProject.SurfaceRev
+
+@[expose] public section
 
 /-!
 # The boundary of the polygon of genus `q`: the surface relator is filled

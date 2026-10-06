@@ -1,5 +1,9 @@
-import RequestProject.SurfaceFilling
-import RequestProject.BlockSurfaceFilling
+module
+
+public import RequestProject.SurfaceFilling
+public import RequestProject.BlockSurfaceFilling
+
+@[expose] public section
 
 /-!
 # Reversed sides of the polygon, and the classes of its boundary loops

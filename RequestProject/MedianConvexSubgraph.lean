@@ -1,5 +1,9 @@
-import RequestProject.MedianGate
-import RequestProject.MedianSimplyConnected
+module
+
+public import RequestProject.MedianGate
+public import RequestProject.MedianSimplyConnected
+
+@[expose] public section
 
 /-!
 # Convex subcomplexes are isometrically embedded and simply connected

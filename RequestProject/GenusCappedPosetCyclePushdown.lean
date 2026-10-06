@@ -1,8 +1,12 @@
-import RequestProject.OrderNerveH2Maps
-import RequestProject.GenusCappedPosetCockcroft
-import RequestProject.PresCoverCyclePushdownZero
-import RequestProject.PresUniversalCockcroftWeakPushdown
-import RequestProject.OrderUniversalChainProjection
+module
+
+public import RequestProject.OrderNerveH2Maps
+public import RequestProject.GenusCappedPosetCockcroft
+public import RequestProject.PresCoverCyclePushdownZero
+public import RequestProject.PresUniversalCockcroftWeakPushdown
+public import RequestProject.OrderUniversalChainProjection
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

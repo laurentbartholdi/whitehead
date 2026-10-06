@@ -1,5 +1,9 @@
-import RequestProject.DavisUniversalThree
-import RequestProject.UniversalThreeAugmentation
+module
+
+public import RequestProject.DavisUniversalThree
+public import RequestProject.UniversalThreeAugmentation
+
+@[expose] public section
 
 /-! Independence of actual universal-cover fillings modulo three-boundaries. -/
 namespace FiniteChains.Davis

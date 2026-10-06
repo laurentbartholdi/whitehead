@@ -1,6 +1,10 @@
-import RequestProject.OrderNervePositiveHomologyIso
-import Mathlib.AlgebraicTopology.DoldKan.HomotopyEquivalence
-import Mathlib.AlgebraicTopology.DoldKan.Degeneracies
+module
+
+public import RequestProject.OrderNervePositiveHomologyIso
+public import Mathlib.AlgebraicTopology.DoldKan.HomotopyEquivalence
+public import Mathlib.AlgebraicTopology.DoldKan.Degeneracies
+
+@[expose] public section
 
 /-! Actual singular homology vanishes above the dimension of the order nerve. -/
 set_option backward.defeqAttrib.useBackward true

@@ -1,5 +1,9 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.SquareBoundaryNormHomeomorph
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.SquareBoundaryNormHomeomorph
+
+@[expose] public section
 
 /-! Move both endpoints of a path along prescribed paths, extending the
 motion continuously over the whole interval by the actual disk HEP. -/

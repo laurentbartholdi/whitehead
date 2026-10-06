@@ -1,6 +1,10 @@
-import RequestProject.PosetCoverComparableLifts
-import RequestProject.OrderComparableCycleHomotopy
-import RequestProject.OrderComparableOneHomotopy
+module
+
+public import RequestProject.PosetCoverComparableLifts
+public import RequestProject.OrderComparableCycleHomotopy
+public import RequestProject.OrderComparableOneHomotopy
+
+@[expose] public section
 
 /-! Actual cycle fillings in every cover of a poset with a three-leg contraction. -/
 set_option backward.defeqAttrib.useBackward true

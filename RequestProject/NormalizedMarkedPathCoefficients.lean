@@ -1,4 +1,8 @@
-import RequestProject.GenusNamedSurfaceCover
+module
+
+public import RequestProject.GenusNamedSurfaceCover
+
+@[expose] public section
 
 /-! Exact first-edge coefficients after a monotone map and order-chain
 normalization. Degenerate tail edges are allowed. Written, unverified proofs. -/

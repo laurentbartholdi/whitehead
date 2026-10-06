@@ -1,5 +1,9 @@
-import RequestProject.CombCellularIso
-import RequestProject.MapChainDescent
+module
+
+public import RequestProject.CombCellularIso
+public import RequestProject.MapChainDescent
+
+@[expose] public section
 
 /-!
 # The generation statement (3.5) for an isomorphism, and the pushout along an isomorphism

@@ -1,7 +1,11 @@
-import RequestProject.SquareComplexHyperplane
-import RequestProject.SquareComplexCovering
-import RequestProject.GraphQuadrangleMedian
-import RequestProject.MedianGraphMetric
+module
+
+public import RequestProject.SquareComplexHyperplane
+public import RequestProject.SquareComplexCovering
+public import RequestProject.GraphQuadrangleMedian
+public import RequestProject.MedianGraphMetric
+
+@[expose] public section
 
 /-!
 # From the quadrangle condition and convex halfspaces to a median one-skeleton

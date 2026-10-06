@@ -1,4 +1,8 @@
-import RequestProject.CubeCartanHadamard
+module
+
+public import RequestProject.CubeCartanHadamard
+
+@[expose] public section
 
 /-!
 # CAT(0) cube complexes in their combinatorial (Roller) form, and `H₂ = 0`

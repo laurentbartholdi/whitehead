@@ -1,5 +1,9 @@
-import RequestProject.CockcroftKill
-import RequestProject.AsphericalChains
+module
+
+public import RequestProject.CockcroftKill
+public import RequestProject.AsphericalChains
+
+@[expose] public section
 
 /-!
 # The pass of `CockcroftKillStep` is not vacuous

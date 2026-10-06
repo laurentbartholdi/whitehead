@@ -1,5 +1,9 @@
-import RequestProject.ChamberQuotient
-import RequestProject.OrderPosetCovering
+module
+
+public import RequestProject.ChamberQuotient
+public import RequestProject.OrderPosetCovering
+
+@[expose] public section
 
 /-!
 # The projection `Z → Q = Z/Γ` is a covering

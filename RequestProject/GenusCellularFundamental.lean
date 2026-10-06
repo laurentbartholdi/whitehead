@@ -1,6 +1,10 @@
-import RequestProject.GenusFundamentalChain
-import RequestProject.OrderNerveDecoding
-import RequestProject.StrictChainCoefficients
+module
+
+public import RequestProject.GenusFundamentalChain
+public import RequestProject.OrderNerveDecoding
+public import RequestProject.StrictChainCoefficients
+
+@[expose] public section
 
 /-! Cellular coordinates of the explicit genus fundamental cycle. -/
 

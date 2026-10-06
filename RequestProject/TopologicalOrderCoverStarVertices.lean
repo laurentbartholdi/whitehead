@@ -1,5 +1,9 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.TopologicalOrderCoverStarLift
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.TopologicalOrderCoverStarLift
+
+@[expose] public section
 
 /-! The continuous closed-star lift takes every reconstructed vertex to
 its actual point in the given covering space. This is the overlap datum

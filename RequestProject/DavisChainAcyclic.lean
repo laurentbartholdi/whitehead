@@ -1,5 +1,9 @@
-import RequestProject.DavisSimplyConnected
-import RequestProject.NerveSupport
+module
+
+public import RequestProject.DavisSimplyConnected
+public import RequestProject.NerveSupport
+
+@[expose] public section
 
 /-!
 # The chamber complex `𝒟` is acyclic: `H_*(𝒟) = 0`, in particular `H₂(𝒟) = 0`
@@ -144,11 +148,11 @@ theorem acyclicIn_upto (A : CommRel V) : ∀ n : ℕ, AcyclicIn (Upto (A := A) n
 /-! ### Acyclicity of the whole complex -/
 
 /-- A bound on the lengths of the representatives of the vertices occurring in a chain. -/
-private noncomputable def chainBound (z : Nerve.Ch (Sph A)) : ℕ :=
+noncomputable def chainBound (z : Nerve.Ch (Sph A)) : ℕ :=
   z.support.sup (fun l => (l.map (fun p : Sph A => RACG.clen A p.rep)).sum)
 
 omit [Fintype V] in
-private theorem mem_incOn_upto_chainBound {z : Nerve.Ch (Sph A)} (hz : z ∈ Nerve.Inc (Sph A)) :
+theorem mem_incOn_upto_chainBound {z : Nerve.Ch (Sph A)} (hz : z ∈ Nerve.Inc (Sph A)) :
     z ∈ Nerve.IncOn (Upto (A := A) (chainBound z)) := by
   rw [Nerve.mem_incOn_iff]
   intro l hl

@@ -1,4 +1,8 @@
-import RequestProject.BlockFamilyAmalgamation
+module
+
+public import RequestProject.BlockFamilyAmalgamation
+
+@[expose] public section
 
 /-!
 # Individual factors of a simultaneous substitution

@@ -1,7 +1,11 @@
-import RequestProject.ConeAdjDiskAttachment
-import RequestProject.RelatorCircleFinite
-import RequestProject.PresCylinderRealizationEquiv
-import RequestProject.DiskFamilyHomotopyBaseChange
+module
+
+public import RequestProject.ConeAdjDiskAttachment
+public import RequestProject.RelatorCircleFinite
+public import RequestProject.PresCylinderRealizationEquiv
+public import RequestProject.DiskFamilyHomotopyBaseChange
+
+@[expose] public section
 
 /-! The presentation-poset realization is equivalent to actual disks
 attached to its subdivided rose. The attaching map of each disk is
@@ -20,7 +24,7 @@ open scoped Topology
 variable {A J : Type} (w : J → List (A × Bool)) (hw : ∀ j, w j ≠ [])
 
 local instance relatorCircleFintype (j : J) : Fintype (RelatorCircle w j) := Fintype.ofFinite _
-private def relatorCircleNonempty (j : J) : Nonempty (RelatorCircle w j) :=
+def relatorCircleNonempty (j : J) : Nonempty (RelatorCircle w j) :=
   relatorCircle_nonempty w j (hw j)
 
 def presOldCylinderHomeomorph :

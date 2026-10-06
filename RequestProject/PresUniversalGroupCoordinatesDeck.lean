@@ -1,5 +1,9 @@
-import RequestProject.PresUniversalRelatorGroupCoordinates
-import RequestProject.PresUniversalRelatorDeck
+module
+
+public import RequestProject.PresUniversalRelatorGroupCoordinates
+public import RequestProject.PresUniversalRelatorDeck
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

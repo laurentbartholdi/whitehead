@@ -1,4 +1,8 @@
-import RequestProject.PresentationChain
+module
+
+public import RequestProject.PresentationChain
+
+@[expose] public section
 
 /-!
 # The stages of a chain of presentations are subcomplexes

@@ -1,7 +1,11 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.ClassicalGraphPathStraightening
-import RequestProject.IntervalEndpointHomotopyExtension
-import RequestProject.SquareBoundaryNormHomeomorph
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.ClassicalGraphPathStraightening
+public import RequestProject.IntervalEndpointHomotopyExtension
+public import RequestProject.SquareBoundaryNormHomeomorph
+
+@[expose] public section
 
 /-! Genuine attaching-circle maps into a graph can be replaced by finite
 words in its actual edges, through homotopies entirely in that graph. Four
@@ -63,22 +67,22 @@ def loopWord : List (J × Bool) :=
       (Comb.revPath (X := graphCx r) (W.word (0, true))))
     (Comb.revPath (X := graphCx r) (W.word (1, false)))
 
-private theorem corner01 : squareSideMap (0, false) 1 = squareSideMap (1, true) 0 := by
+theorem corner01 : squareSideMap (0, false) 1 = squareSideMap (1, true) 0 := by
   apply Subtype.ext
   funext i
   fin_cases i <;> rfl
 
-private theorem corner11 : squareSideMap (1, true) 1 = squareSideMap (0, true) 1 := by
+theorem corner11 : squareSideMap (1, true) 1 = squareSideMap (0, true) 1 := by
   apply Subtype.ext
   funext i
   fin_cases i <;> rfl
 
-private theorem corner10 : squareSideMap (0, true) 0 = squareSideMap (1, false) 1 := by
+theorem corner10 : squareSideMap (0, true) 0 = squareSideMap (1, false) 1 := by
   apply Subtype.ext
   funext i
   fin_cases i <;> rfl
 
-private theorem corner00 : squareSideMap (1, false) 0 = squareSideMap (0, false) 0 := by
+theorem corner00 : squareSideMap (1, false) 0 = squareSideMap (0, false) 0 := by
   apply Subtype.ext
   funext i
   fin_cases i <;> rfl

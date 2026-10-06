@@ -1,6 +1,10 @@
-import RequestProject.FoxFinsupp
-import RequestProject.CoverHomologyOne
-import RequestProject.MagnusKernel
+module
+
+public import RequestProject.FoxFinsupp
+public import RequestProject.CoverHomologyOne
+public import RequestProject.MagnusKernel
+
+@[expose] public section
 
 /-! The Crowell sequence with finite chains and arbitrary cell-index types. -/
 

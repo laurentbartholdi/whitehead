@@ -1,6 +1,10 @@
-import RequestProject.GenusSpineCells
-import RequestProject.TruncatedCellIncidence
-import RequestProject.OrderComplexFreeFace
+module
+
+public import RequestProject.GenusSpineCells
+public import RequestProject.TruncatedCellIncidence
+public import RequestProject.OrderComplexFreeFace
+
+@[expose] public section
 
 /-! Homotopy reflection for deletion of an actual free face at a genus collapse stage. -/
 namespace FiniteChains.Davis.Genus

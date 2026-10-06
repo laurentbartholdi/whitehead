@@ -1,8 +1,12 @@
-import RequestProject.CoreSignedCollapse
-import RequestProject.GenusCappedCockcroft
-import RequestProject.GenusMarkedSpineFamily
-import RequestProject.CockcroftRelatorReindex
-import RequestProject.LemmaTerminal
+module
+
+public import RequestProject.CoreSignedCollapse
+public import RequestProject.GenusCappedCockcroft
+public import RequestProject.GenusMarkedSpineFamily
+public import RequestProject.CockcroftRelatorReindex
+public import RequestProject.LemmaTerminal
+
+@[expose] public section
 
 /-! B3 for the actual terminal presentation.  The stable generators are capped,
 the original core is retained, and every extra relation is replaced by its actual
@@ -82,14 +86,14 @@ def terminalSpinePres : (M ⊕ K) ⊕ (Σ s, NamedSpineRel (q s)) →
     FreeGroup ((A ⊕ K) ⊕ (Σ s, SpinePresentationGen (q s))) :=
   corePres (terminalSpineCore (K := K) core) (terminalSpineExtra q u)
 
-private def terminalNamedWordMap (s : S) : FreeGroup (NamedSpineGen (q s)) →*
+def terminalNamedWordMap (s : S) : FreeGroup (NamedSpineGen (q s)) →*
     FreeGroup ((A ⊕ K) ⊕ (Σ s, SpinePresentationGen (q s))) :=
   (FreeGroup.map (genEmb (Zt := fun s => SpinePresentationGen (q s)) s)).comp
     ((blockSubst (Zt := fun _ : PUnit.{1} => SpinePresentationGen (q s))
       (fun _ => u s) PUnit.unit).comp (FreeGroup.map Sum.swap))
 
 omit [Fintype A] [Fintype K] [Fintype S] [DecidableEq A] [DecidableEq K] [DecidableEq S] in
-private theorem terminalNamedWordMap_old (s : S)
+theorem terminalNamedWordMap_old (s : S)
     (w : FreeGroup (SpinePresentationGen (q s))) :
     terminalNamedWordMap q u s (FreeGroup.map Sum.inl w) =
       FreeGroup.map (terminalSpineGen (A := A) (K := K) q s) w := by
@@ -101,7 +105,7 @@ private theorem terminalNamedWordMap_old (s : S)
   exact DFunLike.congr_fun h w
 
 omit [Fintype A] [Fintype K] [Fintype S] [DecidableEq A] [DecidableEq K] [DecidableEq S] in
-private theorem terminalNamedWordMap_mark (s : S) (x : Fin (q s) × Bool) :
+theorem terminalNamedWordMap_mark (s : S) (x : Fin (q s) × Bool) :
     terminalNamedWordMap q u s (FreeGroup.of (Sum.inr x)) =
       FreeGroup.map Sum.inl (u s x) := by
   change FreeGroup.map (genEmb (Zt := fun s => SpinePresentationGen (q s)) s)
@@ -147,7 +151,7 @@ def terminalSpineReverse : (Σ s, NamedSpineRel (q s)) → Bool
   | ⟨_, .inr _⟩ => true
 
 omit [Fintype A] [Fintype K] [Fintype S] [DecidableEq A] [DecidableEq K] [DecidableEq S] in
-private theorem terminalSpineGen_drop (s : S)
+theorem terminalSpineGen_drop (s : S)
     (w : FreeGroup (SpinePresentationGen (q s))) :
     CoreSignedCollapse.dropCore
       (FreeGroup.map (terminalSpineGen (A := A) (K := K) q s) w) =

@@ -1,7 +1,11 @@
-import RequestProject.PushoutUniversalEmbedding
-import RequestProject.ZeroPi2Descent
-import RequestProject.CellularChainMapZero
-import RequestProject.DeckChainTransport
+module
+
+public import RequestProject.PushoutUniversalEmbedding
+public import RequestProject.ZeroPi2Descent
+public import RequestProject.CellularChainMapZero
+public import RequestProject.DeckChainTransport
+
+@[expose] public section
 
 /-! Genuine copies of the acyclic cover inside the universal cover of
 K∪D L, with explicit supported H1 fillings and H2 vanishing. The same

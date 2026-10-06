@@ -1,4 +1,8 @@
-import RequestProject.TreeChainTopological
+module
+
+public import RequestProject.TreeChainTopological
+
+@[expose] public section
 
 /-! Triviality on pi1 reflects across a compatible spanning-tree
 collapse, at every original vertex. Pending final Lean verification. -/

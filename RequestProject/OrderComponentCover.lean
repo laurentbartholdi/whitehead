@@ -1,5 +1,9 @@
-import RequestProject.OrderComponentLabels
-import RequestProject.OrderPosetCovering
+module
+
+public import RequestProject.OrderComponentLabels
+public import RequestProject.OrderPosetCovering
+
+@[expose] public section
 
 /-! Every actual reachable component of a poset cover covers a connected base. -/
 set_option backward.defeqAttrib.useBackward true

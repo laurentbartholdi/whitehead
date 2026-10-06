@@ -1,4 +1,8 @@
-import Mathlib
+module
+
+public import Mathlib
+
+@[expose] public section
 
 /-!
 # The double mapping cylinder and step 1 of Lemma 3.6 (Davis–Januszkiewicz–Weinberger 3.1)

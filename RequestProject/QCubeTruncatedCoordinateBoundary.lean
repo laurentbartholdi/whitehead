@@ -1,4 +1,8 @@
-import RequestProject.QCubeThreeCoordinateIncidence
+module
+
+public import RequestProject.QCubeThreeCoordinateIncidence
+
+@[expose] public section
 
 /-! Genuine finite truncated cube boundaries, including their cut-face coefficients. -/
 set_option backward.defeqAttrib.useBackward true

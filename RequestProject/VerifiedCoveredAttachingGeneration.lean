@@ -1,7 +1,11 @@
-import RequestProject.VerifiedCoveredSpineHomology
-import RequestProject.GenusOldCoverSpineHomology
-import RequestProject.ChamberQuotientAttachingCycles
-import RequestProject.ChamberQuotientOldCover
+module
+
+public import RequestProject.VerifiedCoveredSpineHomology
+public import RequestProject.GenusOldCoverSpineHomology
+public import RequestProject.ChamberQuotientAttachingCycles
+public import RequestProject.ChamberQuotientOldCover
+
+@[expose] public section
 
 /-!
 Checked integration point for two actual geometric inputs of the relative block

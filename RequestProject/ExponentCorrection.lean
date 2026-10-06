@@ -1,4 +1,8 @@
-import RequestProject.Commutators
+module
+
+public import RequestProject.Commutators
+
+@[expose] public section
 
 /-!
 # Rule 2 of Section 3.4: cancelling the exponent sums by core relators

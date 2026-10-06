@@ -1,4 +1,8 @@
-import RequestProject.OrderCocycleFlatSections
+module
+
+public import RequestProject.OrderCocycleFlatSections
+
+@[expose] public section
 
 /-! Comparing arbitrary nonabelian cocycles by their action on a torsor. -/
 namespace FiniteChains.Comb.OrdCocycle

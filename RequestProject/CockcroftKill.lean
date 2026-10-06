@@ -1,5 +1,9 @@
-import RequestProject.MapChainDescent
-import RequestProject.TheoremAAcyclic
+module
+
+public import RequestProject.MapChainDescent
+public import RequestProject.TheoremAAcyclic
+
+@[expose] public section
 
 /-!
 # Killing `π₁` inside the Cockcroft world: the extension step without `π₂`

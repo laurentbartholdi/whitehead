@@ -1,8 +1,12 @@
-import RequestProject.PuncturedCubeCoverFillings
-import RequestProject.PosetCoverPuncturedLower
-import RequestProject.NerveMaximalDeletion
-import RequestProject.OrderNervePositiveFillings
-import RequestProject.GenusOrdinaryPairCollapse
+module
+
+public import RequestProject.PuncturedCubeCoverFillings
+public import RequestProject.PosetCoverPuncturedLower
+public import RequestProject.NerveMaximalDeletion
+public import RequestProject.OrderNervePositiveFillings
+public import RequestProject.GenusOrdinaryPairCollapse
+
+@[expose] public section
 
 /-! The actual ordinary genus-collapse top-cell step preserves H2 in every cover. -/
 namespace FiniteChains.Davis.Genus

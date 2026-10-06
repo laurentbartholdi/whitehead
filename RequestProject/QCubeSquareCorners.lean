@@ -1,4 +1,8 @@
-import RequestProject.QCubeSquareFlagIndex
+module
+
+public import RequestProject.QCubeSquareFlagIndex
+
+@[expose] public section
 
 /-! The four actual corners of a square, with their faithful coordinate index. -/
 namespace FiniteChains.Davis

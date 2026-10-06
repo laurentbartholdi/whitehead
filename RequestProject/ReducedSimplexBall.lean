@@ -1,4 +1,8 @@
-import RequestProject.ReducedSimplexInterior
+module
+
+public import RequestProject.ReducedSimplexInterior
+
+@[expose] public section
 
 namespace FiniteChains
 

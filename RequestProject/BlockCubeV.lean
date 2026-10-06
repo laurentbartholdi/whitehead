@@ -1,5 +1,9 @@
-import RequestProject.BlockRelativeQuotient
-import RequestProject.CubeMedianGraph
+module
+
+public import RequestProject.BlockRelativeQuotient
+public import RequestProject.CubeMedianGraph
+
+@[expose] public section
 
 /-!
 # The collapsed space `V` as a cube complex, and the relative vanishing it gives

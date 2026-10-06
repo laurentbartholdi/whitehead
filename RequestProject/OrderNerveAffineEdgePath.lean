@@ -1,7 +1,11 @@
-import RequestProject.OrderNerveRealizationContraction
-import RequestProject.OrderNerveFiniteCoordinates
-import RequestProject.OrderNerveRealizationMapCoordinates
-import RequestProject.SimpleLoopBoundaryHomeomorph
+module
+
+public import RequestProject.OrderNerveRealizationContraction
+public import RequestProject.OrderNerveFiniteCoordinates
+public import RequestProject.OrderNerveRealizationMapCoordinates
+public import RequestProject.SimpleLoopBoundaryHomeomorph
+
+@[expose] public section
 
 /-! Explicit affine paths along actual realization edges, with exact
 barycentric coordinates and injectivity. Unlike an arbitrary chosen path
@@ -21,14 +25,14 @@ open CategoryTheory Simplicial
 
 variable {P : Type} [PartialOrder P]
 
-private def affineEdgeSimplex {a b : P} (h : a ≤ b) :
+def affineEdgeSimplex {a b : P} (h : a ≤ b) :
     (nerve P).obj (Opposite.op ⦋1⦌) := ComposableArrows.mk₁ (homOfLE h)
 
-private def affineEdgeEndpoint {a b : P} (h : a ≤ b) (i : Fin 2) :
+def affineEdgeEndpoint {a b : P} (h : a ≤ b) (i : Fin 2) :
     SimplexCategory.toTop.obj ⦋1⦌ :=
   Classical.choose (orderNerveRealizationVertex_mem_simplex (affineEdgeSimplex h) i)
 
-private theorem affineEdgeEndpoint_spec {a b : P} (h : a ≤ b) (i : Fin 2) :
+theorem affineEdgeEndpoint_spec {a b : P} (h : a ≤ b) (i : Fin 2) :
     orderNerveRealizationSimplex P (affineEdgeSimplex h) (affineEdgeEndpoint h i) =
       orderNerveRealizationVertex ((affineEdgeSimplex h).obj i) :=
   Classical.choose_spec (orderNerveRealizationVertex_mem_simplex (affineEdgeSimplex h) i)

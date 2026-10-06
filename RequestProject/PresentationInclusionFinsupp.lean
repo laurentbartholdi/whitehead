@@ -1,4 +1,8 @@
-import RequestProject.FreeGeneratorPaddingFinsupp
+module
+
+public import RequestProject.FreeGeneratorPaddingFinsupp
+
+@[expose] public section
 
 /-! Literal labelled presentation inclusions as actual supported structural
 maps. The boundary proof includes both generator and cell index changes.

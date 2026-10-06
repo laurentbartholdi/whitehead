@@ -1,5 +1,9 @@
-import RequestProject.CombEdgeLabels
-import RequestProject.CombCoveringLift
+module
+
+public import RequestProject.CombEdgeLabels
+public import RequestProject.CombCoveringLift
+
+@[expose] public section
 
 /-! Actual group-valued sheet coordinates of a regular cellular covering.
 Edge compatibility of its deck maps is recorded explicitly: the older

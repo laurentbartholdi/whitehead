@@ -1,5 +1,9 @@
-import RequestProject.OrderComplexSurface
-import RequestProject.SurfaceLabel
+module
+
+public import RequestProject.OrderComplexSurface
+public import RequestProject.SurfaceLabel
+
+@[expose] public section
 
 /-!
 # The polygon with identified sides is a closed surface: the local conditions

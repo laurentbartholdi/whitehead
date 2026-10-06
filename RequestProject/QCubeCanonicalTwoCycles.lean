@@ -1,4 +1,8 @@
-import RequestProject.QCubeTwoCycleSubdivision
+module
+
+public import RequestProject.QCubeTwoCycleSubdivision
+
+@[expose] public section
 
 /-! The actual square cells and their unconditional finite two-cycle subdivision dictionary. -/
 set_option backward.defeqAttrib.useBackward true

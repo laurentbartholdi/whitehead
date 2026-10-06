@@ -1,7 +1,11 @@
-import RequestProject.PresUnivCoverIso
-import RequestProject.PresentationChain
-import RequestProject.PresentationConsistency
-import RequestProject.CombData
+module
+
+public import RequestProject.PresUnivCoverIso
+public import RequestProject.PresentationChain
+public import RequestProject.PresentationConsistency
+public import RequestProject.CombData
+
+@[expose] public section
 
 /-!
 # Chains of presentation complexes with the topological hypothesis

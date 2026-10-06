@@ -1,5 +1,9 @@
-import RequestProject.NecessityAlgebraicMod
-import RequestProject.Fox
+module
+
+public import RequestProject.NecessityAlgebraicMod
+public import RequestProject.Fox
+
+@[expose] public section
 
 /-! The compactness argument needs finite attaching words, not finite cell sets. -/
 

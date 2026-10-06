@@ -1,7 +1,11 @@
-import RequestProject.ContinuousEdgeWords
-import RequestProject.CombPi1
-import Mathlib.AlgebraicTopology.FundamentalGroupoid.Basic
-import Mathlib.Data.List.OfFn
+module
+
+public import RequestProject.ContinuousEdgeWords
+public import RequestProject.CombPi1
+public import Mathlib.AlgebraicTopology.FundamentalGroupoid.Basic
+public import Mathlib.Data.List.OfFn
+
+@[expose] public section
 
 /-! Endpoint-preserving reversal and naturality for actual finite edge-word
 paths. These statements concern continuous paths, not only their fundamental
@@ -16,7 +20,7 @@ set_option backward.isDefEq.respectTransparency.types false
 
 namespace FiniteChains.ContinuousEdgeWords
 
-private theorem realize_congr_list {V E X : Type} [TopologicalSpace X]
+theorem realize_congr_list {V E X : Type} [TopologicalSpace X]
     (src tgt : E → V) (v : V → X) (edge : ∀ e, Path (v (src e)) (v (tgt e)))
     {l m : List (E × Bool)} {a b : V}
     (hl : Comb.IsPath src tgt l a b) (hm : Comb.IsPath src tgt m a b) (he : l = m) :
@@ -27,7 +31,7 @@ private theorem realize_congr_list {V E X : Type} [TopologicalSpace X]
 variable {K : Comb.Complex2} {X Y : Type} [TopologicalSpace X] [TopologicalSpace Y]
   (v : K.V → X) (edge : ∀ e, Path (v (K.src e)) (v (K.tgt e)))
 
-private theorem reversed_single (g : K.E × Bool) :
+theorem reversed_single (g : K.E × Bool) :
     (germPath K.src K.tgt v edge g).symm.Homotopic
       (realize K.src K.tgt v edge [Comb.revGerm (X := K) g]
         (by simp [Comb.IsPath])) := by

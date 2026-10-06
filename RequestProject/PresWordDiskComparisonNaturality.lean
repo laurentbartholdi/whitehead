@@ -1,5 +1,9 @@
-import RequestProject.PresWordDiskNaturality
-import RequestProject.PresConeBallNaturality
+module
+
+public import RequestProject.PresWordDiskNaturality
+public import RequestProject.PresConeBallNaturality
+
+@[expose] public section
 
 /-! Naturality of the entire presentation-to-disk-model comparison.
 The proof uses the actual old/cone quotient cover and the actual radial

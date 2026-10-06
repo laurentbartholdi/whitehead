@@ -1,5 +1,9 @@
-import RequestProject.NormalizedStrictBoundary
-import RequestProject.PresCoverConeCylinderDecomposition
+module
+
+public import RequestProject.NormalizedStrictBoundary
+public import RequestProject.PresCoverConeCylinderDecomposition
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

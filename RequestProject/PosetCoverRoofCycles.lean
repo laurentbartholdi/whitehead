@@ -1,6 +1,10 @@
-import RequestProject.PosetCoverRoofTransform
-import RequestProject.OrderComparableCycleHomotopy
-import RequestProject.OrderComparableOneHomotopy
+module
+
+public import RequestProject.PosetCoverRoofTransform
+public import RequestProject.OrderComparableCycleHomotopy
+public import RequestProject.OrderComparableOneHomotopy
+
+@[expose] public section
 
 /-! Finite positive-degree fillings for covered posets with a two-leg contraction. -/
 namespace FiniteChains.Comb

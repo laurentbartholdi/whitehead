@@ -1,4 +1,8 @@
-import RequestProject.CombPi1
+module
+
+public import RequestProject.CombPi1
+
+@[expose] public section
 
 /-!
 # The universal cover of a combinatorial two-complex

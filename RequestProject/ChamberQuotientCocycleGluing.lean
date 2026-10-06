@@ -1,8 +1,12 @@
-import RequestProject.BlockSpinePres
-import RequestProject.OrderCocycleChains
-import RequestProject.OrderCocyclePotential
-import RequestProject.GenusSurfaceMonodromyExt
-import RequestProject.GenusChainCollapse
+module
+
+public import RequestProject.BlockSpinePres
+public import RequestProject.OrderCocycleChains
+public import RequestProject.OrderCocyclePotential
+public import RequestProject.GenusSurfaceMonodromyExt
+public import RequestProject.GenusChainCollapse
+
+@[expose] public section
 
 /-! Explicit nonabelian cocycle gluing on the actual quotient Q.
 

@@ -1,6 +1,10 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.SingularPathHomotopy
+public import RequestProject.TopologicalSingular.SingularPathHomotopy
+
+@[expose] public section
 
 /-! # Path concatenation is addition modulo actual singular boundaries -/
 

@@ -1,4 +1,8 @@
-import RequestProject.GenusSpineCoordinateSupport
+module
+
+public import RequestProject.GenusSpineCoordinateSupport
+
+@[expose] public section
 
 /-! Actual old-spine square coefficients vanish after the capped-cover augmentation. -/
 namespace FiniteChains.Davis.Genus

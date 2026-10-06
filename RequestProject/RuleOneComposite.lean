@@ -1,4 +1,8 @@
-import RequestProject.LemmaStructural
+module
+
+public import RequestProject.LemmaStructural
+
+@[expose] public section
 
 /-!
 # Rule 1 for one extra generator, without any hypothesis

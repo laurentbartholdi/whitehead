@@ -1,5 +1,9 @@
-import RequestProject.CanonicalPresentationTopologicalChains
-import RequestProject.PresentationChainFinsupp
+module
+
+public import RequestProject.CanonicalPresentationTopologicalChains
+public import RequestProject.PresentationChainFinsupp
+
+@[expose] public section
 
 namespace FiniteChains
 open PresModel

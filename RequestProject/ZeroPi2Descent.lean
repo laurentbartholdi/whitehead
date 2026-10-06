@@ -1,5 +1,9 @@
-import RequestProject.UniversalToCover
-import RequestProject.PushoutChain
+module
+
+public import RequestProject.UniversalToCover
+public import RequestProject.PushoutChain
+
+@[expose] public section
 
 /-!
 # The inclusion of the base into the pushout is zero on `π₂`

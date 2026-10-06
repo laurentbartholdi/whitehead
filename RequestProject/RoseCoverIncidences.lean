@@ -1,5 +1,9 @@
-import RequestProject.PosetCoverStrictEdgeLift
-import RequestProject.RoseStrictEdges
+module
+
+public import RequestProject.PosetCoverStrictEdgeLift
+public import RequestProject.RoseStrictEdges
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

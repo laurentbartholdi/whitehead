@@ -1,6 +1,10 @@
-import RequestProject.ClassicalGraphModel
-import RequestProject.ContinuousEdgeWords
-import RequestProject.DiskAttachmentVertexStars
+module
+
+public import RequestProject.ClassicalGraphModel
+public import RequestProject.ContinuousEdgeWords
+public import RequestProject.DiskAttachmentVertexStars
+
+@[expose] public section
 
 /-! Every continuous path between vertices of the literal graph attachment
 is homotopic relative endpoints to a finite word in its original edges.
@@ -32,7 +36,7 @@ def graphBallSegment (x y : GraphBall) : Path x y where
   source' := Subtype.ext (Path.segment x.val y.val).source
   target' := Subtype.ext (Path.segment x.val y.val).target
 
-private theorem graphBall_simplyConnected : SimplyConnectedSpace GraphBall := by
+theorem graphBall_simplyConnected : SimplyConnectedSpace GraphBall := by
   letI := Metric.contractibleSpace_closedBall (E := Fin 1 → ℝ) (x := 0) zero_le_one
   let e : Metric.closedBall (0 : Fin 1 → ℝ) 1 ≃ₜ GraphBall := Homeomorph.setCongr (by
     ext x
@@ -86,7 +90,7 @@ theorem graphSnap_of_mem_vertexStar {v : V} {z : DiskAttachment r}
     obtain ⟨hx, hv⟩ := hz
     simpa only [graphSnap, graphSnapBoundary, dif_pos hx] using (Set.mem_singleton_iff.mp hv)
 
-private theorem graphConnector_eq_radial (hr : Continuous r)
+theorem graphConnector_eq_radial (hr : Continuous r)
     (z : puncturedAttachment r) :
     ∀ t : I, graphConnector r z.val t = radialCoreHomotopy r hr (t, z) := by
   rcases z with ⟨v | d, hz⟩
@@ -125,7 +129,7 @@ def graphBoundaryPath (j : J) (a b : UnitBoundary (Fin 1 → ℝ))
     (cell_boundary r _ (boundaryFamilyInclusion_isClosedEmbedding J _).injective ⟨j, a⟩).symm
     (cell_boundary r _ (boundaryFamilyInclusion_isClosedEmbedding J _).injective ⟨j, b⟩).symm
 
-private def graphClosedEdgePath :
+def graphClosedEdgePath :
     Path (unitBoundaryInclusion _ graphBoundaryNeg) (unitBoundaryInclusion _ graphBoundaryPos) where
   toFun := graphDiskHomeomorph
   continuous_toFun := graphDiskHomeomorph.continuous
@@ -169,7 +173,7 @@ theorem graphBoundaryPath_isWord (j : J) (a b : UnitBoundary (Fin 1 → ℝ))
     rw [graphBoundaryPath_refl] at h'
     exact h'
 
-private theorem lift_openDisk_path (j : J) (x y : OpenNormBall (Fin 1 → ℝ))
+theorem lift_openDisk_path (j : J) (x y : OpenNormBall (Fin 1 → ℝ))
     (p : Path (openDiskMap r j x) (openDiskMap r j y))
     (hp : Set.range p ⊆ openDisk r j) :
     ∃ P : Path (⟨x.val, x.property.le⟩ : GraphBall) ⟨y.val, y.property.le⟩,

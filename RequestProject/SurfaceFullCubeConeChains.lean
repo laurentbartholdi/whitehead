@@ -1,5 +1,9 @@
-import RequestProject.OrderConeChains
-import RequestProject.SurfaceFullCubeFilling
+module
+
+public import RequestProject.OrderConeChains
+public import RequestProject.SurfaceFullCubeFilling
+
+@[expose] public section
 
 /-! Explicit cone-edge fans for the actual cut-surface inclusion. -/
 namespace FiniteChains.Davis

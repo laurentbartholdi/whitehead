@@ -1,5 +1,9 @@
-import RequestProject.QCubeSquareSubdivision
-import RequestProject.StrictLowerIntervalChains
+module
+
+public import RequestProject.QCubeSquareSubdivision
+public import RequestProject.StrictLowerIntervalChains
+
+@[expose] public section
 
 /-! Actual strict subdivisions of quotient three-cubes. -/
 namespace FiniteChains.Davis

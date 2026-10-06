@@ -1,4 +1,8 @@
-import RequestProject.GenusNonemptyWords
+module
+
+public import RequestProject.GenusNonemptyWords
+
+@[expose] public section
 
 /-! Actual marking paths for the connected, nonempty-word base model.
 

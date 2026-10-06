@@ -1,5 +1,9 @@
-import RequestProject.ChamberZCoverDegreeGeneration
-import RequestProject.OrderNormalizationSupport
+module
+
+public import RequestProject.ChamberZCoverDegreeGeneration
+public import RequestProject.OrderNormalizationSupport
+
+@[expose] public section
 
 /-! Genuine finite cellular two-cycle generation in the actual covering poset. -/
 set_option backward.defeqAttrib.useBackward true

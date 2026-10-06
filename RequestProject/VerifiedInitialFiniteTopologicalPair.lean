@@ -1,5 +1,9 @@
-import RequestProject.VerifiedFiniteCockcroft
-import RequestProject.InitialFiniteTopologicalPair
+module
+
+public import RequestProject.VerifiedFiniteCockcroft
+public import RequestProject.InitialFiniteTopologicalPair
+
+@[expose] public section
 
 /-! The first actual finite CW extension has been constructed from the initial
 Fox pair. Literal labelled presentation embeddings preserve the selected word

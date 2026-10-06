@@ -1,5 +1,9 @@
-import RequestProject.ChainFormula
-import RequestProject.FoxRequirementMod
+module
+
+public import RequestProject.ChainFormula
+public import RequestProject.FoxRequirementMod
+
+@[expose] public section
 
 /-!
 # Formula (2.3) modulo an integer

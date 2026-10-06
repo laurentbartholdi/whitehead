@@ -1,5 +1,9 @@
-import RequestProject.MathlibOrderNerveChainBoundary
-import RequestProject.OrderNerveH2
+module
+
+public import RequestProject.MathlibOrderNerveChainBoundary
+public import RequestProject.OrderNerveH2
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

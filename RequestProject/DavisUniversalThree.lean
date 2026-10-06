@@ -1,6 +1,10 @@
-import RequestProject.DavisNerveCover
-import RequestProject.DavisCellularAcyclic
-import RequestProject.OrderUniversalThree
+module
+
+public import RequestProject.DavisNerveCover
+public import RequestProject.DavisCellularAcyclic
+public import RequestProject.OrderUniversalThree
+
+@[expose] public section
 
 /-! Full-nerve degree-two exactness for the actual path-class universal cover of the cube quotient. -/
 

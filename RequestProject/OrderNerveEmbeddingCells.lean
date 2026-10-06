@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveRealizationSubtypeCells
-import RequestProject.OrderNervePosetCoverVertexStars
+module
+
+public import RequestProject.OrderNerveRealizationSubtypeCells
+public import RequestProject.OrderNervePosetCoverVertexStars
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory Topology

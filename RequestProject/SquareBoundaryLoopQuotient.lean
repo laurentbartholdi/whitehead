@@ -1,6 +1,10 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.SquareSideQuotient
-import Mathlib.Topology.Homotopy.Path
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.SquareSideQuotient
+public import Mathlib.Topology.Homotopy.Path
+
+@[expose] public section
 
 /-! A genuine once-around interval parametrization of the square boundary.
 Its only repeated point is the pair of interval endpoints, so based loop

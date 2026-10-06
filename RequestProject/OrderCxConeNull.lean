@@ -1,5 +1,9 @@
-import RequestProject.OrderCxMonodromy
-import RequestProject.OrderCxNatHtpy
+module
+
+public import RequestProject.OrderCxMonodromy
+public import RequestProject.OrderCxNatHtpy
+
+@[expose] public section
 
 /-!
 # Loops dominated by a monotone map into a cone

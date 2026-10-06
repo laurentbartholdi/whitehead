@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveEmbeddingCells
-import RequestProject.OrderTopologicalChains
+module
+
+public import RequestProject.OrderNerveEmbeddingCells
+public import RequestProject.OrderTopologicalChains
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory Topology

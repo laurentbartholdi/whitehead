@@ -1,4 +1,8 @@
-import RequestProject.QCubeThreeComponentRecovery
+module
+
+public import RequestProject.QCubeThreeComponentRecovery
+
+@[expose] public section
 
 /-! Exact finite decomposition of a strict three-chain by its actual top cubes. -/
 open scoped Classical

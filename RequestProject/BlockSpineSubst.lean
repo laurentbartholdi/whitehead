@@ -1,4 +1,8 @@
-import RequestProject.BlockSpinePres
+module
+
+public import RequestProject.BlockSpinePres
+
+@[expose] public section
 
 /-!
 # The substitution by the block of the article, applied

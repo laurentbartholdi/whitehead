@@ -1,7 +1,11 @@
-import RequestProject.GenusOrdinaryLiftedTopHomology
-import RequestProject.GenusFreeFaceCoverHomology
-import RequestProject.NerveMaximalFamilyDeletion
-import RequestProject.NerveGenerationComposition
+module
+
+public import RequestProject.GenusOrdinaryLiftedTopHomology
+public import RequestProject.GenusFreeFaceCoverHomology
+public import RequestProject.NerveMaximalFamilyDeletion
+public import RequestProject.NerveGenerationComposition
+
+@[expose] public section
 
 /-! Full ordinary recorded collapse pairs preserve H2 in arbitrary covering spaces. -/
 namespace FiniteChains.Davis.Genus

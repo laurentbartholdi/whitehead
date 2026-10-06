@@ -1,4 +1,8 @@
-import RequestProject.ClassicalCWCellEmbedding
+module
+
+public import RequestProject.ClassicalCWCellEmbedding
+
+@[expose] public section
 
 /-! Replace the characteristic maps on an embedded subcomplex by the
 literal transported maps of its given CW structure. All ambient open and

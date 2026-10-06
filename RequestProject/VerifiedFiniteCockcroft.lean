@@ -1,5 +1,9 @@
-import RequestProject.VerifiedFinitePresentationModel
-import RequestProject.PresFiniteTopologicalCockcroft
+module
+
+public import RequestProject.VerifiedFinitePresentationModel
+public import RequestProject.PresFiniteTopologicalCockcroft
+
+@[expose] public section
 
 /-! The actual finite presentation model inherits the genuine topological
 Cockcroft property from the already checked Fox calculation. The comparison

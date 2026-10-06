@@ -1,5 +1,9 @@
-import RequestProject.SurfaceCocycleCollar
-import RequestProject.SurfaceFilling
+module
+
+public import RequestProject.SurfaceCocycleCollar
+public import RequestProject.SurfaceFilling
+
+@[expose] public section
 
 /-! A flat section on the boundary extends through the actual polygon fan. -/
 namespace FiniteChains.Davis.SurfaceSection

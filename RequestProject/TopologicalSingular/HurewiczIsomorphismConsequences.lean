@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.HurewiczIsomorphism
-import RequestProject.TopologicalSingular.HurewiczSurjectivityConsequences
+module
+
+public import RequestProject.TopologicalSingular.HurewiczIsomorphism
+public import RequestProject.TopologicalSingular.HurewiczSurjectivityConsequences
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

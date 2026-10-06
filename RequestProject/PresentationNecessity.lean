@@ -1,6 +1,10 @@
-import RequestProject.NecessityAlgebraicMod
-import RequestProject.CoverComplexPres
-import RequestProject.PresentationConsistency
+module
+
+public import RequestProject.NecessityAlgebraicMod
+public import RequestProject.CoverComplexPres
+public import RequestProject.PresentationConsistency
+
+@[expose] public section
 
 /-!
 # `(1) ⇒ (2)` of Theorem A for a presented complex, with the cover constructed

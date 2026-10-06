@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveCellMaps
-import RequestProject.NerveDegree
+module
+
+public import RequestProject.OrderNerveCellMaps
+public import RequestProject.NerveDegree
+
+@[expose] public section
 
 /-! Actual finite three-chains for downward order homotopies on two-cycles. -/
 set_option backward.defeqAttrib.useBackward true

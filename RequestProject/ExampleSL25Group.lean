@@ -1,4 +1,8 @@
-import RequestProject.SL25Table
+module
+
+public import RequestProject.SL25Table
+
+@[expose] public section
 
 /-!
 # Remark 2: the group of the presentation `A` is `SL(2,5)`

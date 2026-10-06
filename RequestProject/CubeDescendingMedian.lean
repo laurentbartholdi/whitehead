@@ -1,5 +1,9 @@
-import RequestProject.SquareComplexMedianCriterion
-import RequestProject.MedianSimplyConnected
+module
+
+public import RequestProject.SquareComplexMedianCriterion
+public import RequestProject.MedianSimplyConnected
+
+@[expose] public section
 
 /-!
 # Uniqueness of medians from the descending–square property

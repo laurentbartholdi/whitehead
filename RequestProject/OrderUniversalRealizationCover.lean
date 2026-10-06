@@ -1,7 +1,11 @@
-import RequestProject.OrderNerveRealizationRegular
-import RequestProject.OrderUniversalPosetCover
-import RequestProject.OrderUniversalDeck
-import RequestProject.OrderUniversalPosetCells
+module
+
+public import RequestProject.OrderNerveRealizationRegular
+public import RequestProject.OrderUniversalPosetCover
+public import RequestProject.OrderUniversalDeck
+public import RequestProject.OrderUniversalPosetCells
+
+@[expose] public section
 
 /-! Genuine regular topological covers from the constructed path-class order cover. -/
 

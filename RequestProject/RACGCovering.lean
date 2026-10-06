@@ -1,4 +1,8 @@
-import RequestProject.RACGCayleyGraph
+module
+
+public import RequestProject.RACGCayleyGraph
+
+@[expose] public section
 
 /-!
 # The Cayley graph covers the one-skeleton of `C(L)`

@@ -1,5 +1,9 @@
-import RequestProject.OrderUniversalCocycleReading
-import RequestProject.OrderUniversalPoset
+module
+
+public import RequestProject.OrderUniversalCocycleReading
+public import RequestProject.OrderUniversalPoset
+
+@[expose] public section
 
 namespace FiniteChains.Comb.OrdCocycle
 universe u v

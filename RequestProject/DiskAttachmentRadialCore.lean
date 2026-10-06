@@ -1,4 +1,8 @@
-import RequestProject.DiskAttachmentAvoidCenters
+module
+
+public import RequestProject.DiskAttachmentAvoidCenters
+
+@[expose] public section
 
 /-! Explicit radial deformation of the complement of the disk centers to
 the literal old space. Continuity is proved with the actual attachment
@@ -14,7 +18,7 @@ namespace FiniteChains.RelativeAttachment
 variable {E X J : Type} [NormedAddCommGroup E] [NormedSpace ℝ E]
   [TopologicalSpace X]
 
-private def radialDiskPoint (t : I) (x : ClosedUnitBall E) : ClosedUnitBall E :=
+def radialDiskPoint (t : I) (x : ClosedUnitBall E) : ClosedUnitBall E :=
   ⟨((1 - (t : ℝ)) + (t : ℝ) / ‖x.val‖) • x.val, by
     have ht0 := t.property.1
     have ht1 := t.property.2
@@ -28,28 +32,28 @@ private def radialDiskPoint (t : I) (x : ClosedUnitBall E) : ClosedUnitBall E :=
     · rw [div_mul_cancel₀ _ hx]
       nlinarith⟩
 
-private theorem radialDiskPoint_zero (x : ClosedUnitBall E) : radialDiskPoint 0 x = x := by
+theorem radialDiskPoint_zero (x : ClosedUnitBall E) : radialDiskPoint 0 x = x := by
   apply Subtype.ext
   simp [radialDiskPoint]
 
-private theorem radialDiskPoint_boundary (t : I) (x : UnitBoundary E) :
+theorem radialDiskPoint_boundary (t : I) (x : UnitBoundary E) :
     radialDiskPoint t (unitBoundaryInclusion E x) = unitBoundaryInclusion E x := by
   apply Subtype.ext
   simp [radialDiskPoint, unitBoundaryInclusion, x.property]
 
-private theorem radialDiskPoint_one (x : ClosedUnitBall E) (hx : 0 < ‖x.val‖) :
+theorem radialDiskPoint_one (x : ClosedUnitBall E) (hx : 0 < ‖x.val‖) :
     radialDiskPoint 1 x =
       unitBoundaryInclusion E (annulusBoundary 0 le_rfl ⟨x, hx⟩) := by
   apply Subtype.ext
   simp [radialDiskPoint, annulusBoundary, unitBoundaryInclusion, one_div]
 
-private theorem radialDiskPoint_continuous (x : ClosedUnitBall E) :
+theorem radialDiskPoint_continuous (x : ClosedUnitBall E) :
     Continuous (fun t : I => radialDiskPoint t x) := by
   apply Continuous.subtype_mk
   exact ((continuous_const.sub continuous_subtype_val).add
     (continuous_subtype_val.div_const _)).smul continuous_const
 
-private theorem radialDiskPoint_continuous_positive :
+theorem radialDiskPoint_continuous_positive :
     Continuous (fun z : {x : ClosedUnitBall E // 0 < ‖x.val‖} × I =>
       radialDiskPoint z.2 z.1.val) := by
   apply Continuous.subtype_mk
@@ -86,16 +90,16 @@ theorem radialCoreBack_continuous (r : BoundaryFamily J E → X) (hr : Continuou
   rw [he]
   exact (oldCollar_isOpen r hr 0 le_rfl zero_lt_one U hU).preimage continuous_subtype_val
 
-private def radialDiskPath (r : BoundaryFamily J E → X) (j : J) (x : ClosedUnitBall E) :
+def radialDiskPath (r : BoundaryFamily J E → X) (j : J) (x : ClosedUnitBall E) :
     C(I, DiskAttachment r) :=
   ⟨fun t => cell r (boundaryFamilyInclusion J E) ⟨j, radialDiskPoint t x⟩,
     (cell_continuous r _).comp (continuous_sigmaMk.comp (radialDiskPoint_continuous x))⟩
 
-private def radialFamily (r : BoundaryFamily J E → X) : DiskAttachment r → C(I, DiskAttachment r)
+def radialFamily (r : BoundaryFamily J E → X) : DiskAttachment r → C(I, DiskAttachment r)
   | Sum.inl x => ContinuousMap.const I (old r (boundaryFamilyInclusion J E) x)
   | Sum.inr d => radialDiskPath r d.val.1 d.val.2
 
-private theorem radialFamily_cell (r : BoundaryFamily J E → X) (d : DiskFamily J E) :
+theorem radialFamily_cell (r : BoundaryFamily J E → X) (d : DiskFamily J E) :
     radialFamily r (cell r (boundaryFamilyInclusion J E) d) = radialDiskPath r d.1 d.2 := by
   by_cases hd : d ∈ Set.range (boundaryFamilyInclusion J E)
   · obtain ⟨a, rfl⟩ := hd
@@ -109,14 +113,14 @@ private theorem radialFamily_cell (r : BoundaryFamily J E → X) (d : DiskFamily
   · rw [cell_of_not_mem r _ d hd]
     rfl
 
-private theorem radialDiskPath_continuous_positive (r : BoundaryFamily J E → X) (j : J) :
+theorem radialDiskPath_continuous_positive (r : BoundaryFamily J E → X) (j : J) :
     Continuous (fun x : {x : ClosedUnitBall E // 0 < ‖x.val‖} => radialDiskPath r j x.val) := by
   let F : C({x : ClosedUnitBall E // 0 < ‖x.val‖} × I, DiskAttachment r) :=
     ⟨fun z => cell r (boundaryFamilyInclusion J E) ⟨j, radialDiskPoint z.2 z.1.val⟩,
       (cell_continuous r _).comp (continuous_sigmaMk.comp radialDiskPoint_continuous_positive)⟩
   exact F.curry.continuous
 
-private theorem radialFamily_continuousOn (r : BoundaryFamily J E → X) (hr : Continuous r) :
+theorem radialFamily_continuousOn (r : BoundaryFamily J E → X) (hr : Continuous r) :
     ContinuousOn (radialFamily r) (puncturedAttachment r) := by
   have hq : IsQuotientMap (quotientMap r (boundaryFamilyInclusion J E)) :=
     ⟨⟨rfl⟩, quotientMap_surjective r _⟩
@@ -176,7 +180,7 @@ theorem radialCoreHomotopy_old (r : BoundaryFamily J E → X) (hr : Continuous r
     radialCoreHomotopy r hr (t, ⟨old r (boundaryFamilyInclusion J E) x, trivial⟩) =
       old r (boundaryFamilyInclusion J E) x := rfl
 
-private theorem radialDiskPoint_positive (t : I) (x : ClosedUnitBall E)
+theorem radialDiskPoint_positive (t : I) (x : ClosedUnitBall E)
     (hx : 0 < ‖x.val‖) : 0 < ‖(radialDiskPoint t x).val‖ := by
   have hs : 0 < (1 - (t : ℝ)) + (t : ℝ) / ‖x.val‖ := by
     by_cases ht : (t : ℝ) < 1
@@ -189,7 +193,7 @@ private theorem radialDiskPoint_positive (t : I) (x : ClosedUnitBall E)
   rw [norm_smul, Real.norm_of_nonneg hs.le]
   exact mul_pos hs hx
 
-private theorem radialDiskPoint_normalize (t : I) (x : ClosedUnitBall E)
+theorem radialDiskPoint_normalize (t : I) (x : ClosedUnitBall E)
     (hx : 0 < ‖x.val‖) :
     annulusBoundary 0 le_rfl ⟨radialDiskPoint t x, radialDiskPoint_positive t x hx⟩ =
       annulusBoundary 0 le_rfl ⟨x, hx⟩ := by

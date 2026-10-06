@@ -1,4 +1,8 @@
-import RequestProject.TreeCover
+module
+
+public import RequestProject.TreeCover
+
+@[expose] public section
 
 /-! Actual lifted paths with coefficients in an arbitrary receiving group. -/
 set_option backward.defeqAttrib.useBackward true

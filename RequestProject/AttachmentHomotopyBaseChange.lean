@@ -1,5 +1,9 @@
-import RequestProject.AttachingHomotopyEquiv
-import RequestProject.HomotopyEquivCancellation
+module
+
+public import RequestProject.AttachingHomotopyEquiv
+public import RequestProject.HomotopyEquivCancellation
+
+@[expose] public section
 
 /-! Homotopy invariance of actual cell attachments under change of their
 base. Both required homotopy extension properties are supplied for disks

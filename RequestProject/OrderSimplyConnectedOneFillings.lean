@@ -1,6 +1,10 @@
-import RequestProject.OrderComponentLabels
-import RequestProject.CellularHomotopyChain
-import RequestProject.OrderNervePositiveFillings
+module
+
+public import RequestProject.OrderComponentLabels
+public import RequestProject.CellularHomotopyChain
+public import RequestProject.OrderNervePositiveFillings
+
+@[expose] public section
 
 /-! Finite one-cycle fillings when every component has trivial edge-path pi1. -/
 set_option backward.defeqAttrib.useBackward true

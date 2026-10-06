@@ -1,5 +1,9 @@
-import RequestProject.PresUnivCoverIso
-import RequestProject.PresentationChainFinsupp
+module
+
+public import RequestProject.PresUnivCoverIso
+public import RequestProject.PresentationChainFinsupp
+
+@[expose] public section
 
 /-! Arbitrary presentation chains in the cellular edge-path model. -/
 

@@ -1,6 +1,10 @@
-import RequestProject.SubstOneWay
-import RequestProject.BlockSurfaceFilling
-import Mathlib.GroupTheory.PushoutI
+module
+
+public import RequestProject.SubstOneWay
+public import RequestProject.BlockSurfaceFilling
+public import Mathlib.GroupTheory.PushoutI
+
+@[expose] public section
 
 /-! Independent block receivers can be combined by a wide amalgamated product. -/
 

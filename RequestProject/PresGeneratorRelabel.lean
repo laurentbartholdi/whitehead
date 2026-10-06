@@ -1,5 +1,9 @@
-import RequestProject.PresSubcomplex
-import RequestProject.CombPi2RetractionSquares
+module
+
+public import RequestProject.PresSubcomplex
+public import RequestProject.CombPi2RetractionSquares
+
+@[expose] public section
 
 /-! Literal cellular isomorphisms for a bijective change of generator
 labels, with two-cell labels fixed. Pending final Lean verification. -/

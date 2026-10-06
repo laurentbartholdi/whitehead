@@ -1,6 +1,10 @@
-import RequestProject.FiniteCycleWordComparison
-import RequestProject.OrderRoseRealizationHomeomorph
-import RequestProject.PresPosetAlpha
+module
+
+public import RequestProject.FiniteCycleWordComparison
+public import RequestProject.OrderRoseRealizationHomeomorph
+public import RequestProject.PresPosetAlpha
+
+@[expose] public section
 
 /-! The literal four-edge rose word and its actual continuous reading.
 The positive generator is the specified once-around interval loop.

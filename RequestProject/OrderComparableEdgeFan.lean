@@ -1,4 +1,8 @@
-import RequestProject.StrictOrderChains
+module
+
+public import RequestProject.StrictOrderChains
+
+@[expose] public section
 
 /-! Explicit one-cycle fillings for a downward componentwise collapse. -/
 set_option backward.defeqAttrib.useBackward true

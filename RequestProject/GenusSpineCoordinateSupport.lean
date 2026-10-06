@@ -1,5 +1,9 @@
-import RequestProject.GenusSquareCoefficientSupport
-import RequestProject.GenusOldCoordinateCollapse
+module
+
+public import RequestProject.GenusSquareCoefficientSupport
+public import RequestProject.GenusOldCoordinateCollapse
+
+@[expose] public section
 
 /-! Actual recovered coordinate chains are supported on the surviving genus spine. -/
 set_option backward.defeqAttrib.useBackward true

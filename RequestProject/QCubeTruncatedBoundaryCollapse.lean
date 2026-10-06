@@ -1,4 +1,8 @@
-import RequestProject.QCubeTruncatedCoordinateBoundary
+module
+
+public import RequestProject.QCubeTruncatedCoordinateBoundary
+
+@[expose] public section
 
 /-! The actual finite truncated three-boundaries are killed by their geometric collapse. -/
 namespace FiniteChains.Davis

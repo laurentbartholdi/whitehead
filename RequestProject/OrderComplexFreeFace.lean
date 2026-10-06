@@ -1,4 +1,8 @@
-import RequestProject.OrderComplexRetraction
+module
+
+public import RequestProject.OrderComplexRetraction
+
+@[expose] public section
 
 /-! The first half of an elementary face-poset collapse: delete the free face while
 retaining its unique coface. The resulting monotone retraction reflects homotopies. -/

@@ -1,7 +1,11 @@
-import RequestProject.OrderPathCoverPi2Criterion
-import RequestProject.ChamberQuotientImageFillings
-import RequestProject.ChamberTopologicalCockcroft
-import RequestProject.OrderPi1TrivialLift
+module
+
+public import RequestProject.OrderPathCoverPi2Criterion
+public import RequestProject.ChamberQuotientImageFillings
+public import RequestProject.ChamberTopologicalCockcroft
+public import RequestProject.OrderPi1TrivialLift
+
+@[expose] public section
 
 namespace FiniteChains.Davis
 open RACG Mirror Comb

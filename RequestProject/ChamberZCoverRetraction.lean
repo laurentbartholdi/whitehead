@@ -1,7 +1,11 @@
-import RequestProject.ChamberZCellular
-import RequestProject.PosetCoverDownTransform
-import RequestProject.PosetCoverRestriction
-import RequestProject.OrderUniversalPosetCover
+module
+
+public import RequestProject.ChamberZCellular
+public import RequestProject.PosetCoverDownTransform
+public import RequestProject.PosetCoverRestriction
+public import RequestProject.OrderUniversalPosetCover
+
+@[expose] public section
 
 /-! The actual marked-chamber retraction on covering posets. -/
 namespace FiniteChains.Davis

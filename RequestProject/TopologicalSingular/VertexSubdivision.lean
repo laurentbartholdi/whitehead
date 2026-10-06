@@ -1,6 +1,10 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.VertexChains
+public import RequestProject.TopologicalSingular.VertexChains
+
+@[expose] public section
 
 /-! # Recursive subdivision of vertex chains
 

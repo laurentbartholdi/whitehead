@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveClosedBallChart
-import Mathlib.Logic.Equiv.PartialEquiv
+module
+
+public import RequestProject.OrderNerveClosedBallChart
+public import Mathlib.Logic.Equiv.PartialEquiv
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

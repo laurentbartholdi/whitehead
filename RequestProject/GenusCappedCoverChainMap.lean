@@ -1,7 +1,11 @@
-import RequestProject.GenusCappedLiftedPaths
-import RequestProject.GenusFullCubeCoverFillings
-import RequestProject.DeckChainTransport
-import RequestProject.DavisUniversalThree
+module
+
+public import RequestProject.GenusCappedLiftedPaths
+public import RequestProject.GenusFullCubeCoverFillings
+public import RequestProject.DeckChainTransport
+public import RequestProject.DavisUniversalThree
+
+@[expose] public section
 
 /-! The constructed two-chain comparison from the genuine capped tree cover. -/
 set_option backward.defeqAttrib.useBackward true

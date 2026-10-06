@@ -1,5 +1,9 @@
-import RequestProject.GenerationStepFinsupp
-import RequestProject.GenusActualSpineB2
+module
+
+public import RequestProject.GenerationStepFinsupp
+public import RequestProject.GenusActualSpineB2
+
+@[expose] public section
 
 /-! The actual genus-block operation as a supported structural map.
 

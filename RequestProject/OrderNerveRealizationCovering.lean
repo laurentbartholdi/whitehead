@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveRealizationStarSheets
-import Mathlib.Topology.Covering.Basic
+module
+
+public import RequestProject.OrderNerveRealizationStarSheets
+public import Mathlib.Topology.Covering.Basic
+
+@[expose] public section
 
 /-! Actual topological coverings obtained from the already constructed open-star sheets. -/
 
@@ -7,7 +11,7 @@ namespace FiniteChains.Comb
 open Topology
 open scoped Classical
 
-private theorem open_iff_of_sheet {E X : Type*}
+theorem open_iff_of_sheet {E X : Type*}
     [TopologicalSpace E] [TopologicalSpace X] (f : C(E, X))
     {U : Set E} {V : Set X} (hU : IsOpen U) (hV : IsOpen V)
     (e : U ≃ₜ V) (he : ∀ z : U, (e z).val = f z.val)

@@ -1,4 +1,8 @@
-import RequestProject.GenusSurfaceMarkingCoefficients
+module
+
+public import RequestProject.GenusSurfaceMarkingCoefficients
+
+@[expose] public section
 
 /-! The boundary of the actual polygon reconstruction recovers the complete
 marked boundary before old-chain comparison. No independent marking-scalar

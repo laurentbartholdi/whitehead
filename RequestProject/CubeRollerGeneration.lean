@@ -1,5 +1,9 @@
-import RequestProject.CubeGeneration
-import RequestProject.CubeRollerModel
+module
+
+public import RequestProject.CubeGeneration
+public import RequestProject.CubeRollerModel
+
+@[expose] public section
 
 /-!
 # The generation step with the CAT(0) input in its standard combinatorial form

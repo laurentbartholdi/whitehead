@@ -1,9 +1,13 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.VertexSubdivision
-import RequestProject.TopologicalSingular.SingularChainMaps
-import Mathlib.Analysis.Convex.StdSimplex
-import Mathlib.Analysis.Normed.Module.Basic
+public import RequestProject.TopologicalSingular.VertexSubdivision
+public import RequestProject.TopologicalSingular.SingularChainMaps
+public import Mathlib.Analysis.Convex.StdSimplex
+public import Mathlib.Analysis.Normed.Module.Basic
+
+@[expose] public section
 
 /-! # Realization of vertex chains as affine singular simplices
 

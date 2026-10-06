@@ -1,5 +1,9 @@
-import RequestProject.MathlibOrderNerveHomology
-import RequestProject.MathlibOrderNerveCycleNaturality
+module
+
+public import RequestProject.MathlibOrderNerveHomology
+public import RequestProject.MathlibOrderNerveCycleNaturality
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

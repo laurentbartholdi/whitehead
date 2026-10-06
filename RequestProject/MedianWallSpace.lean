@@ -1,5 +1,9 @@
-import RequestProject.MedianHalfspaces
-import RequestProject.WallSpaceDualConnected
+module
+
+public import RequestProject.MedianHalfspaces
+public import RequestProject.WallSpaceDualConnected
+
+@[expose] public section
 
 /-!
 # A median graph is a wall space, and its walls count the distance

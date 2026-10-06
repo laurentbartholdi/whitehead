@@ -1,5 +1,9 @@
-import RequestProject.VerifiedCoveredOrdinaryCollapse
-import RequestProject.GenusCoveredSpineCycleFaithfulness
+module
+
+public import RequestProject.VerifiedCoveredOrdinaryCollapse
+public import RequestProject.GenusCoveredSpineCycleFaithfulness
+
+@[expose] public section
 
 /-!
 Checked integration point for the full chosen genus-block collapse in arbitrary

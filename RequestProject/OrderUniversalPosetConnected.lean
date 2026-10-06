@@ -1,5 +1,9 @@
-import RequestProject.OrderUniversalPosetHom
-import RequestProject.CombCellularIso
+module
+
+public import RequestProject.OrderUniversalPosetHom
+public import RequestProject.CombCellularIso
+
+@[expose] public section
 
 /-! Connectivity of the actual path-class universal-cover order complex. -/
 set_option backward.defeqAttrib.useBackward true

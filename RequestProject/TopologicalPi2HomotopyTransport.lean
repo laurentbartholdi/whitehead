@@ -1,5 +1,9 @@
-import RequestProject.TopologicalCoverPi2
-import RequestProject.SquareMovingBasepoint
+module
+
+public import RequestProject.TopologicalCoverPi2
+public import RequestProject.SquareMovingBasepoint
+
+@[expose] public section
 
 /-! Invariance of the challenge's actual based-square zero condition under ordinary
 homotopies and homotopy equivalences. Base points need not be fixed by the homotopies. -/

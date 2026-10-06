@@ -1,5 +1,9 @@
-import RequestProject.PresUniversalFoxKernelEquiv
-import RequestProject.Cockcroft
+module
+
+public import RequestProject.PresUniversalFoxKernelEquiv
+public import RequestProject.Cockcroft
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

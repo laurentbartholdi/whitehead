@@ -1,5 +1,9 @@
-import RequestProject.AttCycleLoop
-import RequestProject.BlockSpineSubst
+module
+
+public import RequestProject.AttCycleLoop
+public import RequestProject.BlockSpineSubst
+
+@[expose] public section
 
 /-!
 # The concrete block: the theorem applied

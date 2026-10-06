@@ -1,6 +1,10 @@
-import RequestProject.PresCylinderCoverRose
-import RequestProject.PosetCoverRestriction
-import RequestProject.PosetCoverTargetIso
+module
+
+public import RequestProject.PresCylinderCoverRose
+public import RequestProject.PosetCoverRestriction
+public import RequestProject.PosetCoverTargetIso
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.VertexEdgeNormalization
-import RequestProject.TopologicalSingular.SingularEdgeNullHomotopy
+module
+
+public import RequestProject.TopologicalSingular.VertexEdgeNormalization
+public import RequestProject.TopologicalSingular.SingularEdgeNullHomotopy
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 open scoped unitInterval Topology

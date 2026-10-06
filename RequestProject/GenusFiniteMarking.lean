@@ -1,5 +1,9 @@
-import RequestProject.GenusApply
-import RequestProject.ChamberQuotientFinite
+module
+
+public import RequestProject.GenusApply
+public import RequestProject.ChamberQuotientFinite
+
+@[expose] public section
 
 /-!
 Finite marking of the genus block. The canonical loops are indexed by `Fin q × Bool`,

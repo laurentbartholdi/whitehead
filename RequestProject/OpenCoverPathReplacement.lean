@@ -1,5 +1,9 @@
-import Mathlib.Topology.Subpath
-import Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected
+module
+
+public import Mathlib.Topology.Subpath
+public import Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected
+
+@[expose] public section
 
 /-! A finite open-cover argument for replacing a path after moving its
 vertices along specified connector paths. The result is an actual path and
@@ -18,7 +22,7 @@ namespace FiniteChains.PathReplacement
 
 variable {X : Type} [TopologicalSpace X]
 
-private theorem quotient_cancel_middle {x y z w : X}
+theorem quotient_cancel_middle {x y z w : X}
     (A : Path.Homotopic.Quotient x y) (C : Path.Homotopic.Quotient y z)
     (B : Path.Homotopic.Quotient y w) :
     (A.trans C).trans (C.symm.trans B) = A.trans B := by

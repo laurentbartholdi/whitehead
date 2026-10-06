@@ -1,7 +1,11 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.SingularSubdivision
-import Mathlib.Topology.Algebra.Module.LinearMapPiProd
+public import RequestProject.TopologicalSingular.SingularSubdivision
+public import Mathlib.Topology.Algebra.Module.LinearMapPiProd
+
+@[expose] public section
 
 /-! # Iterated subdivision agrees with the explicit affine models -/
 

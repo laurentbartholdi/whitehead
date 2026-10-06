@@ -1,5 +1,9 @@
-import RequestProject.OrderDownwardCycleHomotopy
-import RequestProject.OrderNormalizationNaturality
+module
+
+public import RequestProject.OrderDownwardCycleHomotopy
+public import RequestProject.OrderNormalizationNaturality
+
+@[expose] public section
 
 /-! Actual strict cycle fillings from a componentwise downward collapse. -/
 set_option backward.defeqAttrib.useBackward true

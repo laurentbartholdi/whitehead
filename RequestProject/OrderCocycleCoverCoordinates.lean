@@ -1,6 +1,10 @@
-import RequestProject.OrderCocycleCover
-import RequestProject.OrderUniversalPosetConnected
-import RequestProject.PosetCoverStrictEdgeLift
+module
+
+public import RequestProject.OrderCocycleCover
+public import RequestProject.OrderUniversalPosetConnected
+public import RequestProject.PosetCoverStrictEdgeLift
+
+@[expose] public section
 
 namespace FiniteChains.Comb.OrdCocycle
 universe u

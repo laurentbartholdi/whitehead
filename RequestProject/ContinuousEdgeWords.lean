@@ -1,5 +1,9 @@
-import RequestProject.CellComplex
-import RequestProject.OpenCoverPathReplacement
+module
+
+public import RequestProject.CellComplex
+public import RequestProject.OpenCoverPathReplacement
+
+@[expose] public section
 
 /-! Actual continuous realizations of finite oriented edge words. The open
 cover criterion retains a finite word, not merely a replacement continuous

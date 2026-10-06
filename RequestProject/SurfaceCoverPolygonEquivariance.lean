@@ -1,5 +1,9 @@
-import RequestProject.SurfaceCoverPolygonLift
-import RequestProject.StrictOrderNormalizationMaps
+module
+
+public import RequestProject.SurfaceCoverPolygonLift
+public import RequestProject.StrictOrderNormalizationMaps
+
+@[expose] public section
 
 /-! Naturality and deck reconstruction of the actual lifted polygon filling. -/
 set_option backward.defeqAttrib.useBackward true

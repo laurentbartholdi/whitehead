@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveRealizationStarContractible
-import RequestProject.TopologicalSingular.SingularChains
+module
+
+public import RequestProject.OrderNerveRealizationStarContractible
+public import RequestProject.TopologicalSingular.SingularChains
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory Simplicial

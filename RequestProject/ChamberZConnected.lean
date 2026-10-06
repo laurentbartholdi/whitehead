@@ -1,5 +1,9 @@
-import RequestProject.ChamberZPi1Base
-import RequestProject.OrderComponentLabels
+module
+
+public import RequestProject.ChamberZPi1Base
+public import RequestProject.OrderComponentLabels
+
+@[expose] public section
 
 namespace FiniteChains.Davis
 open RACG Mirror Comb

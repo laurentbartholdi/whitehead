@@ -1,6 +1,10 @@
-import RequestProject.GenusUniversalPolygonReference
-import RequestProject.GenusQuotientRelativeCorrection
-import RequestProject.GenusNormalizedSpineFoxFilling
+module
+
+public import RequestProject.GenusUniversalPolygonReference
+public import RequestProject.GenusQuotientRelativeCorrection
+public import RequestProject.GenusNormalizedSpineFoxFilling
+
+@[expose] public section
 
 /-! The pre-substitution correction uses precisely the old marking corrections
 already used after substitution. Pending final Lean verification. -/

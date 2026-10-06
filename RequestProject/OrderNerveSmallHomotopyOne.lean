@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveSmallSingularApproximation
+module
+
+public import RequestProject.OrderNerveSmallSingularApproximation
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open TopologicalSingular SingularSubdivision

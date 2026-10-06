@@ -1,7 +1,11 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.PointAttachmentFilling
-import RequestProject.PointAttachmentBaseChange
-import RequestProject.OrderRoseRealizationHomeomorph
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.PointAttachmentFilling
+public import RequestProject.PointAttachmentBaseChange
+public import RequestProject.OrderRoseRealizationHomeomorph
+
+@[expose] public section
 
 /-! Adding one dummy loop and its filling disk is a genuine homotopy
 equivalence on an arbitrary old space. The equivalence's forward map is

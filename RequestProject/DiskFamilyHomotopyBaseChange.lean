@@ -1,9 +1,13 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.ClassicalCellAttachmentMaps
-import RequestProject.SigmaCylinderHomotopyExtension
-import RequestProject.AttachmentBoundaryReparam
-import RequestProject.AttachmentHomotopyBaseChange
-import RequestProject.TopologicalPi2HomotopyTransport
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.ClassicalCellAttachmentMaps
+public import RequestProject.SigmaCylinderHomotopyExtension
+public import RequestProject.AttachmentBoundaryReparam
+public import RequestProject.AttachmentHomotopyBaseChange
+public import RequestProject.TopologicalPi2HomotopyTransport
+
+@[expose] public section
 
 /-! Homotopy invariance for arbitrary families of actual disk attachments.
 All extension inputs are discharged by the explicit ball/cylinder maps.

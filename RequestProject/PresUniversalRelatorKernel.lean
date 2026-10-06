@@ -1,4 +1,8 @@
-import RequestProject.PresUniversalRelatorHomology
+module
+
+public import RequestProject.PresUniversalRelatorHomology
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 universe u

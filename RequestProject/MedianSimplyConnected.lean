@@ -1,5 +1,9 @@
-import RequestProject.MedianSquareComplexWalls
-import RequestProject.SquareComplexWalkHomotopy
+module
+
+public import RequestProject.MedianSquareComplexWalls
+public import RequestProject.SquareComplexWalkHomotopy
+
+@[expose] public section
 
 /-!
 # The square complex of a median graph is simply connected, and its links are flag

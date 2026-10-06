@@ -1,5 +1,9 @@
-import RequestProject.ChamberQuotientBaseComponents
-import RequestProject.OrderUniversalDeck
+module
+
+public import RequestProject.ChamberQuotientBaseComponents
+public import RequestProject.OrderUniversalDeck
+
+@[expose] public section
 
 /-! Deck transformations permute the actual lifted base components transitively. -/
 set_option backward.defeqAttrib.useBackward true

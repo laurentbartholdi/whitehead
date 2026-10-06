@@ -1,4 +1,8 @@
-import RequestProject.BlockSpinePres
+module
+
+public import RequestProject.BlockSpinePres
+
+@[expose] public section
 
 /-! Finiteness of the quotient's cube poset and its order-complex cells. -/
 

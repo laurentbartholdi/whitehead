@@ -1,5 +1,9 @@
-import RequestProject.GenerationStep
-import RequestProject.FoxFinsupp
+module
+
+public import RequestProject.GenerationStep
+public import RequestProject.FoxFinsupp
+
+@[expose] public section
 
 /-! Structural maps and equation (3.3) with actual finite-support chains.
 

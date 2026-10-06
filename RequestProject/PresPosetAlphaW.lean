@@ -1,4 +1,8 @@
-import RequestProject.PresPosetReading
+module
+
+public import RequestProject.PresPosetReading
+
+@[expose] public section
 
 /-!
 # The comparison with the model built on a prescribed choice of relator words

@@ -1,6 +1,10 @@
-import RequestProject.GenusLiftedMarkingCorrection
-import RequestProject.OrderConeCoverFans
-import RequestProject.SurfaceFullCubeConeChains
+module
+
+public import RequestProject.GenusLiftedMarkingCorrection
+public import RequestProject.OrderConeCoverFans
+public import RequestProject.SurfaceFullCubeConeChains
+
+@[expose] public section
 
 /-! Controlled cap fillings in the actual full cube universal cover. -/
 set_option backward.defeqAttrib.useBackward true

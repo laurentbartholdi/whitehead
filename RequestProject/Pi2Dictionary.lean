@@ -1,5 +1,9 @@
-import RequestProject.UniversalCoverPi2
-import RequestProject.CycleLifting
+module
+
+public import RequestProject.UniversalCoverPi2
+public import RequestProject.CycleLifting
+
+@[expose] public section
 
 /-!
 # The condition "the inclusion is zero on `π₂`" in cellular and in Fox coordinates

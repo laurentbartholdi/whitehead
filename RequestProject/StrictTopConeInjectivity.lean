@@ -1,4 +1,8 @@
-import RequestProject.StrictTopConeThreeChains
+module
+
+public import RequestProject.StrictTopConeThreeChains
+
+@[expose] public section
 
 /-! The genuine strict cone maps preserve all finite-chain coefficients. -/
 namespace FiniteChains.Comb

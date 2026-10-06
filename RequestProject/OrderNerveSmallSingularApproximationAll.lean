@@ -1,6 +1,10 @@
-import RequestProject.OrderNerveGradedBoundary
-import RequestProject.OrderNerveSmallChainMapAll
-import RequestProject.OrderNerveSmallSingularApproximation
+module
+
+public import RequestProject.OrderNerveGradedBoundary
+public import RequestProject.OrderNerveSmallChainMapAll
+public import RequestProject.OrderNerveSmallSingularApproximation
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

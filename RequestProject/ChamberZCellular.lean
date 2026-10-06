@@ -1,5 +1,9 @@
-import RequestProject.ChamberZDegree
-import RequestProject.OrderNerveDecoding
+module
+
+public import RequestProject.ChamberZDegree
+public import RequestProject.OrderNerveDecoding
+
+@[expose] public section
 
 /-! Cellular two-cycle generation for the actual modified-chamber poset. -/
 

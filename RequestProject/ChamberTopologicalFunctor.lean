@@ -1,6 +1,10 @@
-import RequestProject.ChamberTopologicalPi2Descent
-import RequestProject.ChamberQuotientFunctor
-import RequestProject.SolutionLemmas
+module
+
+public import RequestProject.ChamberTopologicalPi2Descent
+public import RequestProject.ChamberQuotientFunctor
+public import RequestProject.SolutionLemmas
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 variable {P Q R : Type} [PartialOrder P] [PartialOrder Q] [PartialOrder R]

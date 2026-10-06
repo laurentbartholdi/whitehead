@@ -1,5 +1,9 @@
-import Mathlib.Combinatorics.SimpleGraph.Metric
-import Mathlib.Tactic
+module
+
+public import Mathlib.Combinatorics.SimpleGraph.Metric
+public import Mathlib.Tactic
+
+@[expose] public section
 
 /-!
 # The quadrangle condition produces medians

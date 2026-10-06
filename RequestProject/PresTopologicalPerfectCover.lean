@@ -1,7 +1,11 @@
-import RequestProject.PresCocyclePerfectCover
-import RequestProject.OrderAcyclicRegularCover
-import RequestProject.PresPosetDimension
-import RequestProject.PresentationChainFinsupp
+module
+
+public import RequestProject.PresCocyclePerfectCover
+public import RequestProject.OrderAcyclicRegularCover
+public import RequestProject.PresPosetDimension
+public import RequestProject.PresentationChainFinsupp
+
+@[expose] public section
 
 /-! Realization of the explicit perfect-subgroup cocycle cover. All covering,
 regularity and singular-acyclicity data are constructed, not additional inputs.

@@ -1,5 +1,9 @@
-import RequestProject.ChamberZCoverRetraction
-import RequestProject.PosetCoverConeCycles
+module
+
+public import RequestProject.ChamberZCoverRetraction
+public import RequestProject.PosetCoverConeCycles
+
+@[expose] public section
 
 /-! Genuine finite fillings in actual lifted ordinary chambers. -/
 namespace FiniteChains.Davis

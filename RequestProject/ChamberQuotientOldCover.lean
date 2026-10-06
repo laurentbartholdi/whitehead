@@ -1,7 +1,11 @@
-import RequestProject.BlockSpinePres
-import RequestProject.ChamberQuotientOldStar
-import RequestProject.ChamberQuotientEquivariantGeneration
-import RequestProject.ChamberZConnected
+module
+
+public import RequestProject.BlockSpinePres
+public import RequestProject.ChamberQuotientOldStar
+public import RequestProject.ChamberQuotientEquivariantGeneration
+public import RequestProject.ChamberZConnected
+
+@[expose] public section
 
 /-! The old-block part of the actual quotient universal cover is an actual poset cover. -/
 set_option backward.defeqAttrib.useBackward true

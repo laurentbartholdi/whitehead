@@ -1,4 +1,8 @@
-import RequestProject.TopologicalSingular.NormalizedPi2Boundaries
+module
+
+public import RequestProject.TopologicalSingular.NormalizedPi2Boundaries
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 variable {X : Type} [TopologicalSpace X] [SimplyConnectedSpace X]

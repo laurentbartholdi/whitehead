@@ -1,5 +1,9 @@
-import RequestProject.GenusSpineFamilyGeneration
-import RequestProject.GenusReceivedSpineCover
+module
+
+public import RequestProject.GenusSpineFamilyGeneration
+public import RequestProject.GenusReceivedSpineCover
+
+@[expose] public section
 
 /-! Exact sheet and marking coordinates of the normalized reference after
 arbitrary substitutions. Pending final Lean verification. -/

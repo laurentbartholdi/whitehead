@@ -1,5 +1,9 @@
-import RequestProject.QCubeCoordinateFacetRecovery
-import RequestProject.QCubeFacetIndex
+module
+
+public import RequestProject.QCubeCoordinateFacetRecovery
+public import RequestProject.QCubeFacetIndex
+
+@[expose] public section
 
 /-! Finite coordinate facet chains realize the collapse's ordinary cubical boundary. -/
 namespace FiniteChains.Davis

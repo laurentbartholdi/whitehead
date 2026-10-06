@@ -1,5 +1,9 @@
-import RequestProject.UnivCoverIncl
-import RequestProject.OrderComplexGluing
+module
+
+public import RequestProject.UnivCoverIncl
+public import RequestProject.OrderComplexGluing
+
+@[expose] public section
 
 /-! Explicit finite cellular cone fillings, rather than unspecified null-homotopy witnesses. -/
 set_option backward.defeqAttrib.useBackward true

@@ -1,6 +1,10 @@
-import RequestProject.GenusFullCubeMarking
-import RequestProject.CombUniversalCover
-import RequestProject.CellularHomotopyChain
+module
+
+public import RequestProject.GenusFullCubeMarking
+public import RequestProject.CombUniversalCover
+public import RequestProject.CellularHomotopyChain
+
+@[expose] public section
 
 /-! Genuine cap fillings in the path-class universal cover of the full cube quotient. -/
 set_option backward.defeqAttrib.useBackward true

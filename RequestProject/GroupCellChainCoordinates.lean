@@ -1,5 +1,9 @@
-import Mathlib.LinearAlgebra.Finsupp.Defs
-import Mathlib.Algebra.MonoidAlgebra.Basic
+module
+
+public import Mathlib.LinearAlgebra.Finsupp.Defs
+public import Mathlib.Algebra.MonoidAlgebra.Basic
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

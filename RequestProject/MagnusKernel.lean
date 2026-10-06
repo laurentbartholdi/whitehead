@@ -1,5 +1,9 @@
-import RequestProject.CoverChainComplex
-import RequestProject.SchreierTransversal
+module
+
+public import RequestProject.CoverChainComplex
+public import RequestProject.SchreierTransversal
+
+@[expose] public section
 
 /-!
 # The Magnus/Blanchfield theorem: the kernel of the Fox vector map is `[Ñ, Ñ]`

@@ -1,4 +1,8 @@
-import RequestProject.FrameworkNecessityMod
+module
+
+public import RequestProject.FrameworkNecessityMod
+
+@[expose] public section
 
 /-!
 # `(1) ⇒ (2)` with the Hurewicz input in the form "torsion freeness of `N/[N, N]`"

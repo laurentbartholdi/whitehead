@@ -1,6 +1,10 @@
-import RequestProject.TopologicalSingular.SquareSingularHomotopy
-import RequestProject.TopologicalSingular.CycleClasses
-import RequestProject.TopologicalSingular.MathlibComparison
+module
+
+public import RequestProject.TopologicalSingular.SquareSingularHomotopy
+public import RequestProject.TopologicalSingular.CycleClasses
+public import RequestProject.TopologicalSingular.MathlibComparison
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

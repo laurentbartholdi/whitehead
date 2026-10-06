@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.NormalizedTwoCycles
-import RequestProject.TopologicalSingular.CycleClassModule
+module
+
+public import RequestProject.TopologicalSingular.NormalizedTwoCycles
+public import RequestProject.TopologicalSingular.CycleClassModule
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 open CategoryTheory AlgebraicTopology

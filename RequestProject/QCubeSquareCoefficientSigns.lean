@@ -1,4 +1,8 @@
-import RequestProject.QCubeSquareFlagIndex
+module
+
+public import RequestProject.QCubeSquareFlagIndex
+
+@[expose] public section
 
 /-! Actual coefficients of the square fundamental subdivision in its faithful flag index. -/
 set_option backward.defeqAttrib.useBackward true

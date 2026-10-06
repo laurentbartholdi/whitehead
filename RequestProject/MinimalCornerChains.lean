@@ -1,4 +1,8 @@
-import RequestProject.OrderNormalizationHomotopy
+module
+
+public import RequestProject.OrderNormalizationHomotopy
+
+@[expose] public section
 
 /-! Relative chains at a minimal vertex of an actual order complex. -/
 set_option backward.defeqAttrib.useBackward true

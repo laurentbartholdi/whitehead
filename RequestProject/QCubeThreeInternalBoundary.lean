@@ -1,5 +1,9 @@
-import RequestProject.StrictLowerConeBoundary
-import RequestProject.QCubeImmediateFaces
+module
+
+public import RequestProject.StrictLowerConeBoundary
+public import RequestProject.QCubeImmediateFaces
+
+@[expose] public section
 
 /-! Top-cube isolation of actual strict tetrahedron boundaries in cube dimension three. -/
 open scoped Classical

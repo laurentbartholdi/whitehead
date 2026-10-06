@@ -1,5 +1,9 @@
-import RequestProject.QCubeThreeFaceIndex
-import RequestProject.QCubeOrderedSquareFacets
+module
+
+public import RequestProject.QCubeThreeFaceIndex
+public import RequestProject.QCubeOrderedSquareFacets
+
+@[expose] public section
 
 /-! Geometric edge identifications for the six-face coefficient index. -/
 namespace FiniteChains.Davis

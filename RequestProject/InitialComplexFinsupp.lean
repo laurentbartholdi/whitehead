@@ -1,5 +1,9 @@
-import RequestProject.InitialComplex
-import RequestProject.CoreSignedCollapseFinsupp
+module
+
+public import RequestProject.InitialComplex
+public import RequestProject.CoreSignedCollapseFinsupp
+
+@[expose] public section
 
 /-! The actual initial presentation `relY` is Cockcroft for an arbitrary
 acyclic core. All cycle computations use finite-support chains. The
@@ -27,7 +31,7 @@ theorem expSurjective_of_expMatrix_surjective
 
 /-- A supported cycle can be read through any additive coefficient
 functional which detects one cell. -/
-private theorem fs_boundary_extract {A L : Type} [DecidableEq A]
+theorem fs_boundary_extract {A L : Type} [DecidableEq A]
     (ρ : L → FreeGroup A) (ψ : MonoidAlgebra ℤ (PresGroup ρ) →+ ℤ)
     (a : A) (k : L) (s : ℤ)
     (hterm : ∀ (j : L) (z : MonoidAlgebra ℤ (PresGroup ρ)),
@@ -44,7 +48,7 @@ private theorem fs_boundary_extract {A L : Type} [DecidableEq A]
         simp
       · simp [hj]
 
-private theorem psiY_mid_cross_zero (hM : ExpSurjective r) (i : I)
+theorem psiY_mid_cross_zero (hM : ExpSurjective r) (i : I)
     (c : CrossY I) (z : MonoidAlgebra ℤ (GroupY r)) :
     psiY r (i, true)
       (z * foxMatrixPres (relY r) (Sum.inr (i, false)) (Sum.inr (Sum.inr c))) = 0 := by
@@ -71,7 +75,7 @@ private theorem psiY_mid_cross_zero (hM : ExpSurjective r) (i : I)
   · rw [if_neg h₁, if_neg h₂]
     simp
 
-private theorem psiY_mid_cell (hM : ExpSurjective r) (i : I)
+theorem psiY_mid_cell (hM : ExpSurjective r) (i : I)
     (c : CellY I J) (z : MonoidAlgebra ℤ (GroupY r)) :
     psiY r (i, true) (z * foxMatrixPres (relY r) (Sum.inr (i, false)) c) =
       if c = Sum.inr (Sum.inl i) then augPres (relY r) z else 0 := by
@@ -100,7 +104,7 @@ theorem fs_aug_cycle_mid (hM : ExpSurjective r)
   rw [hv, Finsupp.zero_apply, map_zero, one_mul] at h
   exact h.symm
 
-private theorem psiY_cross_mid_zero (hM : ExpSurjective r) {p q : I} (hpq : p < q)
+theorem psiY_cross_mid_zero (hM : ExpSurjective r) {p q : I} (hpq : p < q)
     (u w : Bool) (k : I) (z : MonoidAlgebra ℤ (GroupY r)) :
     psiY r (q, w)
       (z * foxMatrixPres (relY r) (Sum.inr (p, u)) (Sum.inr (Sum.inl k))) = 0 := by
@@ -118,7 +122,7 @@ private theorem psiY_cross_mid_zero (hM : ExpSurjective r) {p q : I} (hpq : p < 
         if_neg (hne false), mul_zero, neg_zero]
   · rw [if_neg hk, mul_zero, map_zero]
 
-private theorem psiY_cross_cross_extract (hM : ExpSurjective r)
+theorem psiY_cross_cross_extract (hM : ExpSurjective r)
     (c₀ c : CrossY I) (z : MonoidAlgebra ℤ (GroupY r)) :
     psiY r (c₀.1.1.2, c₀.2.2)
       (z * foxMatrixPres (relY r) (Sum.inr (c₀.1.1.1, c₀.2.1))
@@ -162,7 +166,7 @@ private theorem psiY_cross_cross_extract (hM : ExpSurjective r)
     · rw [if_neg h₁, if_neg h₂]
       simp
 
-private theorem psiY_cross_cell (hM : ExpSurjective r) (c₀ : CrossY I)
+theorem psiY_cross_cell (hM : ExpSurjective r) (c₀ : CrossY I)
     (c : CellY I J) (z : MonoidAlgebra ℤ (GroupY r)) :
     psiY r (c₀.1.1.2, c₀.2.2)
       (z * foxMatrixPres (relY r) (Sum.inr (c₀.1.1.1, c₀.2.1)) c) =

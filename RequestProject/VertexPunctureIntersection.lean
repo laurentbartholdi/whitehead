@@ -1,5 +1,9 @@
-import RequestProject.VertexPuncturedCube
-import RequestProject.OrderComplexRetraction
+module
+
+public import RequestProject.VertexPuncturedCube
+public import RequestProject.OrderComplexRetraction
+
+@[expose] public section
 
 namespace FiniteChains.Davis
 open Comb
@@ -54,7 +58,7 @@ theorem vertexIntersection_links : ∀ i : Fin 7, ∃ j k : Fin 7,
     vertexIntersectionAdjacent i j ∧ vertexIntersectionAdjacent j k ∧
       vertexIntersectionAdjacent k 0 := by decide
 
-private theorem intersection_path_of_adjacent (i j : Fin 7)
+theorem intersection_path_of_adjacent (i j : Fin 7)
     (h : vertexIntersectionAdjacent i j) :
     ∃ p, IsPath (orderCx VertexPuncturedCube).src (orderCx VertexPuncturedCube).tgt
       p (vertexIntersectionCell i) (vertexIntersectionCell j) ∧

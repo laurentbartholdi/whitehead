@@ -1,7 +1,11 @@
-import RequestProject.ChamberZChain
-import RequestProject.ChamberZPi1
-import RequestProject.OrderComplexPi1Transfer
-import RequestProject.CombCoveringLift
+module
+
+public import RequestProject.ChamberZChain
+public import RequestProject.ChamberZPi1
+public import RequestProject.OrderComplexPi1Transfer
+public import RequestProject.CombCoveringLift
+
+@[expose] public section
 
 /-!
 # A copy of the base is injective in `π₁(Z)` — with no extension over the cone

@@ -1,5 +1,9 @@
-import RequestProject.PushoutOldCoverCopies
-import RequestProject.EmbeddedAcyclicUnion
+module
+
+public import RequestProject.PushoutOldCoverCopies
+public import RequestProject.EmbeddedAcyclicUnion
+
+@[expose] public section
 
 /-! Actual global homology of the inverse image of K in the universal
 cover of K ∪ D L.  This discharges the old-part H1/H2 exactness used in

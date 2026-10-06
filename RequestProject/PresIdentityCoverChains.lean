@@ -1,6 +1,10 @@
-import RequestProject.PresCoverRelativeConeCylinder
-import RequestProject.PresCoverConeCircleProjection
-import RequestProject.StrictNormalizedOneMaps
+module
+
+public import RequestProject.PresCoverRelativeConeCylinder
+public import RequestProject.PresCoverConeCircleProjection
+public import RequestProject.StrictNormalizedOneMaps
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

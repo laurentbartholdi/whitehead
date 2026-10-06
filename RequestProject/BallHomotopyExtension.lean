@@ -1,7 +1,11 @@
-import Mathlib.Analysis.Normed.Module.Basic
-import Mathlib.Topology.Homotopy.Basic
-import Mathlib.Topology.ContinuousOn
-import Mathlib.Tactic
+module
+
+public import Mathlib.Analysis.Normed.Module.Basic
+public import Mathlib.Topology.Homotopy.Basic
+public import Mathlib.Topology.ContinuousOn
+public import Mathlib.Tactic
+
+@[expose] public section
 
 /-! An explicit homotopy extension for the boundary of a closed unit ball.
 Projection away from `(2, 0)` retracts the cylinder onto its bottom and sides.
@@ -26,16 +30,16 @@ abbrev BallCylinderBoundary :=
 
 variable {E}
 
-private def cylinderDenominator (z : I × ClosedUnitBall E) : ℝ :=
+def cylinderDenominator (z : I × ClosedUnitBall E) : ℝ :=
   max (2 - (z.1 : ℝ)) (2 * ‖z.2.val‖)
 
-private theorem cylinderDenominator_pos (z : I × ClosedUnitBall E) :
+theorem cylinderDenominator_pos (z : I × ClosedUnitBall E) :
     0 < cylinderDenominator z := by
   have h := z.1.2.2
   have hle : 2 - (z.1 : ℝ) ≤ cylinderDenominator z := le_max_left _ _
   linarith
 
-private theorem cylinderDenominator_le_two (z : I × ClosedUnitBall E) :
+theorem cylinderDenominator_le_two (z : I × ClosedUnitBall E) :
     cylinderDenominator z ≤ 2 := by
   apply max_le
   · have h := z.1.2.1
@@ -43,30 +47,30 @@ private theorem cylinderDenominator_le_two (z : I × ClosedUnitBall E) :
   · have h := z.2.2
     linarith
 
-private def cylinderScale (z : I × ClosedUnitBall E) : ℝ :=
+def cylinderScale (z : I × ClosedUnitBall E) : ℝ :=
   2 / cylinderDenominator z
 
-private theorem cylinderScale_nonneg (z : I × ClosedUnitBall E) :
+theorem cylinderScale_nonneg (z : I × ClosedUnitBall E) :
     0 ≤ cylinderScale z :=
   div_nonneg (by norm_num) (cylinderDenominator_pos z).le
 
-private theorem cylinderScale_mul_denominator (z : I × ClosedUnitBall E) :
+theorem cylinderScale_mul_denominator (z : I × ClosedUnitBall E) :
     cylinderScale z * cylinderDenominator z = 2 :=
   div_mul_cancel₀ _ (ne_of_gt (cylinderDenominator_pos z))
 
-private theorem cylinderScale_one_le (z : I × ClosedUnitBall E) :
+theorem cylinderScale_one_le (z : I × ClosedUnitBall E) :
     1 ≤ cylinderScale z := by
   apply (le_div_iff₀ (cylinderDenominator_pos z)).mpr
   simpa only [one_mul] using cylinderDenominator_le_two z
 
-private theorem cylinderScale_continuous :
+theorem cylinderScale_continuous :
     Continuous (cylinderScale : I × ClosedUnitBall E → ℝ) := by
   apply continuous_const.div
   · unfold cylinderDenominator
     fun_prop
   · exact fun z => ne_of_gt (cylinderDenominator_pos z)
 
-private def cylinderTime (z : I × ClosedUnitBall E) : I :=
+def cylinderTime (z : I × ClosedUnitBall E) : I :=
   ⟨2 - cylinderScale z * (2 - (z.1 : ℝ)), by
     have hscale := cylinderScale_nonneg z
     have hmul := cylinderScale_mul_denominator z
@@ -79,14 +83,14 @@ private def cylinderTime (z : I × ClosedUnitBall E) : I :=
       have hlower := mul_le_mul_of_nonneg_left ht hscale
       linarith⟩
 
-private theorem cylinderTime_continuous :
+theorem cylinderTime_continuous :
     Continuous (cylinderTime : I × ClosedUnitBall E → I) :=
   (continuous_const.sub (cylinderScale_continuous.mul
     (continuous_const.sub continuous_fst.subtype_val))).subtype_mk _
 
 variable [NormedSpace ℝ E]
 
-private def cylinderPoint (z : I × ClosedUnitBall E) : ClosedUnitBall E :=
+def cylinderPoint (z : I × ClosedUnitBall E) : ClosedUnitBall E :=
   ⟨cylinderScale z • z.2.val, by
     rw [norm_smul, Real.norm_eq_abs, abs_of_nonneg (cylinderScale_nonneg z)]
     have hden : 2 * ‖z.2.val‖ ≤ cylinderDenominator z := le_max_right _ _
@@ -94,11 +98,11 @@ private def cylinderPoint (z : I × ClosedUnitBall E) : ClosedUnitBall E :=
     have he := cylinderScale_mul_denominator z
     nlinarith⟩
 
-private theorem cylinderPoint_continuous :
+theorem cylinderPoint_continuous :
     Continuous (cylinderPoint : I × ClosedUnitBall E → ClosedUnitBall E) :=
   (cylinderScale_continuous.smul continuous_snd.subtype_val).subtype_mk _
 
-private theorem cylinderTime_or_point_boundary (z : I × ClosedUnitBall E) :
+theorem cylinderTime_or_point_boundary (z : I × ClosedUnitBall E) :
     cylinderTime z = 0 ∨ ‖(cylinderPoint z).val‖ = 1 := by
   by_cases h : 2 * ‖z.2.val‖ ≤ 2 - (z.1 : ℝ)
   · left
@@ -120,7 +124,7 @@ def ballCylinderRetraction : C(I × ClosedUnitBall E, BallCylinderBoundary E) :=
     (cylinderTime_continuous.prodMk cylinderPoint_continuous).subtype_mk _⟩
 
 omit [NormedSpace ℝ E] in
-private theorem cylinderScale_eq_one (z : I × ClosedUnitBall E)
+theorem cylinderScale_eq_one (z : I × ClosedUnitBall E)
     (hz : z.1 = 0 ∨ ‖z.2.val‖ = 1) : cylinderScale z = 1 := by
   have hden : cylinderDenominator z = 2 := by
     apply le_antisymm (cylinderDenominator_le_two z)
@@ -147,19 +151,19 @@ theorem ballCylinderRetraction_fixed (z : BallCylinderBoundary E) :
 
 variable {Z : Type v} [TopologicalSpace Z]
 
-private def ballBoundaryPastingFun (f : C(ClosedUnitBall E, Z))
+def ballBoundaryPastingFun (f : C(ClosedUnitBall E, Z))
     (H : C(I × UnitBoundary E, Z)) (z : BallCylinderBoundary E) : Z :=
   if ht : z.val.1 = 0 then f z.val.2
   else H (z.val.1, ⟨z.val.2.val, z.property.resolve_left ht⟩)
 
 omit [NormedSpace ℝ E] in
-private theorem ballBoundaryPastingFun_bottom (f : C(ClosedUnitBall E, Z))
+theorem ballBoundaryPastingFun_bottom (f : C(ClosedUnitBall E, Z))
     (H : C(I × UnitBoundary E, Z)) (z : BallCylinderBoundary E) (hz : z.val.1 = 0) :
     ballBoundaryPastingFun f H z = f z.val.2 := by
   simp only [ballBoundaryPastingFun]; rw [dite_eq_left hz]
 
 omit [NormedSpace ℝ E] in
-private theorem ballBoundaryPastingFun_side (f : C(ClosedUnitBall E, Z))
+theorem ballBoundaryPastingFun_side (f : C(ClosedUnitBall E, Z))
     (H : C(I × UnitBoundary E, Z))
     (h₀ : ∀ x, H (0, x) = f (unitBoundaryInclusion E x))
     (z : BallCylinderBoundary E) (hz : ‖z.val.2.val‖ = 1) :

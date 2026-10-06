@@ -1,4 +1,8 @@
-import RequestProject.PushoutOldCoverAcyclic
+module
+
+public import RequestProject.PushoutOldCoverAcyclic
+
+@[expose] public section
 
 /-! The actual old copies cover every old cell. Two copies meeting at a
 vertex agree after a genuine deck transformation of D, on all cells.

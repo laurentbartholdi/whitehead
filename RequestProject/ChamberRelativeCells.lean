@@ -1,8 +1,12 @@
-import RequestProject.StrictChamberInjection
-import RequestProject.OrderNerveEmbeddingCells
-import RequestProject.ChamberQuotientFunctor
-import RequestProject.ChamberQuotientFinite
-import RequestProject.OrderNerveRealizationFinite
+module
+
+public import RequestProject.StrictChamberInjection
+public import RequestProject.OrderNerveEmbeddingCells
+public import RequestProject.ChamberQuotientFunctor
+public import RequestProject.ChamberQuotientFinite
+public import RequestProject.OrderNerveRealizationFinite
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

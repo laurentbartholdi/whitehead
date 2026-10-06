@@ -1,6 +1,10 @@
-import RequestProject.TopologicalSingular.TetrahedronGeneralFaceRelation
-import RequestProject.TopologicalSingular.CoherentTetrahedronNormalization
-import RequestProject.TopologicalSingular.HurewiczSurjectivity
+module
+
+public import RequestProject.TopologicalSingular.TetrahedronGeneralFaceRelation
+public import RequestProject.TopologicalSingular.CoherentTetrahedronNormalization
+public import RequestProject.TopologicalSingular.HurewiczSurjectivity
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 variable {X : Type} [TopologicalSpace X] [SimplyConnectedSpace X]

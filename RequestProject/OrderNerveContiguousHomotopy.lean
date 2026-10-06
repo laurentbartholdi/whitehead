@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveCommonSimplex
+module
+
+public import RequestProject.OrderNerveCommonSimplex
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory Simplicial

@@ -1,6 +1,10 @@
-import Mathlib.Topology.CWComplex.Classical.Subcomplex
-import Mathlib.Topology.ContinuousOn
-import RequestProject.ExplicitRelativeAttachment
+module
+
+public import Mathlib.Topology.CWComplex.Classical.Subcomplex
+public import Mathlib.Topology.ContinuousOn
+public import RequestProject.ExplicitRelativeAttachment
+
+@[expose] public section
 
 /-! Transport an existing classical CW structure onto its actual closed
 embedded image. The cell indices and all characteristic maps are retained.
@@ -18,7 +22,7 @@ universe u
 variable {X Y : Type u} [TopologicalSpace X] [TopologicalSpace Y] [Nonempty X]
   [CWComplex (Set.univ : Set X)] (f : X → Y) (hf : IsClosedEmbedding f)
 
-private def basePartial : PartialEquiv X Y :=
+def basePartial : PartialEquiv X Y :=
   hf.injective.injOn.toPartialEquiv f Set.univ
 
 def imageCharacteristic (n : ℕ) (j : RelCWComplex.cell (Set.univ : Set X) n) :

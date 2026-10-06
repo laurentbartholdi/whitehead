@@ -1,7 +1,11 @@
-import RequestProject.PresWordEmbeddingFoxPi2
-import RequestProject.PresWordEmbeddingTopology
-import RequestProject.PresWordEmbeddingPi1
-import RequestProject.PresValidPi2
+module
+
+public import RequestProject.PresWordEmbeddingFoxPi2
+public import RequestProject.PresWordEmbeddingTopology
+public import RequestProject.PresWordEmbeddingPi1
+public import RequestProject.PresValidPi2
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

@@ -1,10 +1,14 @@
-import RequestProject.GenusFaithfulComparison
-import RequestProject.ChamberQuotientAttachingCover
-import RequestProject.PosetCoverPullback
-import RequestProject.PosetCoverComparableLifts
-import RequestProject.OrderNormalizationNaturality
-import RequestProject.GenusReceivedPolygonCoefficient
-import RequestProject.NerveDegree
+module
+
+public import RequestProject.GenusFaithfulComparison
+public import RequestProject.ChamberQuotientAttachingCover
+public import RequestProject.PosetCoverPullback
+public import RequestProject.PosetCoverComparableLifts
+public import RequestProject.OrderNormalizationNaturality
+public import RequestProject.GenusReceivedPolygonCoefficient
+public import RequestProject.NerveDegree
+
+@[expose] public section
 
 /-!
 The genuine surface cover under the lifted attaching locus of the named

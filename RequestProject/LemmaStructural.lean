@@ -1,6 +1,10 @@
-import RequestProject.SlideMor
-import RequestProject.TietzeElimination
-import RequestProject.BlockSubstitutionMor
+module
+
+public import RequestProject.SlideMor
+public import RequestProject.TietzeElimination
+public import RequestProject.BlockSubstitutionMor
+
+@[expose] public section
 
 /-!
 # Lemma 3.9: the structural operation `T`

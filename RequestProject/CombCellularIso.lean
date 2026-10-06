@@ -1,4 +1,8 @@
-import RequestProject.CombPi1
+module
+
+public import RequestProject.CombPi1
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 universe u
@@ -6,7 +10,7 @@ universe u
 section Inverse
 
 /-- The two-sided inverse supplied by `Function.surjInv` for a bijection. -/
-private theorem surjInv_apply_apply {α β : Type u} {f : α → β} (hf : Function.Bijective f)
+theorem surjInv_apply_apply {α β : Type u} {f : α → β} (hf : Function.Bijective f)
     (x : α) : Function.surjInv hf.2 (f x) = x :=
   hf.1 (Function.surjInv_eq hf.2 (f x))
 
@@ -14,14 +18,14 @@ variable {L E : Complex2.{u}} (ι : Hom L E)
 variable (hV : Function.Bijective ι.onV) (hE : Function.Bijective ι.onE)
   (hF : Function.Bijective ι.onF)
 
-private theorem map_surjInv_map (q : List (L.E × Bool)) :
+theorem map_surjInv_map (q : List (L.E × Bool)) :
     ((q.map fun eb => (ι.onE eb.1, eb.2)).map
       fun eb => (Function.surjInv hE.2 eb.1, eb.2)) = q := by
   induction q with
   | nil => rfl
   | cons a t ih => simp [ih, surjInv_apply_apply hE]
 
-private theorem map_map_surjInv (q : List (E.E × Bool)) :
+theorem map_map_surjInv (q : List (E.E × Bool)) :
     ((q.map fun eb => (Function.surjInv hE.2 eb.1, eb.2)).map
       fun eb => (ι.onE eb.1, eb.2)) = q := by
   induction q with

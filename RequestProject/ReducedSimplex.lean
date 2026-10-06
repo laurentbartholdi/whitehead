@@ -1,5 +1,9 @@
-import Mathlib.Analysis.Convex.StdSimplex
-import Mathlib.Analysis.Convex.GaugeRescale
+module
+
+public import Mathlib.Analysis.Convex.StdSimplex
+public import Mathlib.Analysis.Convex.GaugeRescale
+
+@[expose] public section
 
 namespace FiniteChains
 

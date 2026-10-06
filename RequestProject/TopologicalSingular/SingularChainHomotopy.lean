@@ -1,10 +1,14 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.SingularPrism
-import Mathlib.Algebra.Homology.Homotopy
-import Mathlib.Algebra.Homology.ShortComplex.ModuleCat
-import Mathlib.Topology.Homotopy.Equiv
-import Mathlib.CategoryTheory.Whiskering
+public import RequestProject.TopologicalSingular.SingularPrism
+public import Mathlib.Algebra.Homology.Homotopy
+public import Mathlib.Algebra.Homology.ShortComplex.ModuleCat
+public import Mathlib.Topology.Homotopy.Equiv
+public import Mathlib.CategoryTheory.Whiskering
+
+@[expose] public section
 
 /-! # Continuous homotopies induce actual chain homotopies
 

@@ -1,4 +1,8 @@
-import RequestProject.PresPosetAlpha
+module
+
+public import RequestProject.PresPosetAlpha
+
+@[expose] public section
 
 /-!
 # The reading homomorphism of the poset model, and injectivity of the comparison

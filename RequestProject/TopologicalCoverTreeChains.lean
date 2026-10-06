@@ -1,7 +1,11 @@
-import RequestProject.TopologicalCoverCellChains
-import RequestProject.RegularCoverFreshCells
-import RequestProject.TreeChainPresentationRealization
-import RequestProject.StrictTriangleTreeGenerator
+module
+
+public import RequestProject.TopologicalCoverCellChains
+public import RequestProject.RegularCoverFreshCells
+public import RequestProject.TreeChainPresentationRealization
+public import RequestProject.StrictTriangleTreeGenerator
+
+@[expose] public section
 
 /-! Assemble all sufficiency steps after a specified initial tree-model
 comparison. The displayed comparison is the outstanding geometric input;

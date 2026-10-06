@@ -1,5 +1,9 @@
-import RequestProject.GenusCollapseIteration
-import RequestProject.OrderComplexMaximalPath
+module
+
+public import RequestProject.GenusCollapseIteration
+public import RequestProject.OrderComplexMaximalPath
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

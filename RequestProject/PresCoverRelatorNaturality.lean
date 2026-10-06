@@ -1,5 +1,9 @@
-import RequestProject.PresCoverConeCircleProjection
-import RequestProject.PosetCoverTopTriangle
+module
+
+public import RequestProject.PresCoverConeCircleProjection
+public import RequestProject.PosetCoverTopTriangle
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

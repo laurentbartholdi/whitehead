@@ -1,6 +1,10 @@
-import RequestProject.SquareComplexMedianCriterion
-import RequestProject.MedianSquareComplexWalls
-import RequestProject.MedianSimplyConnected
+module
+
+public import RequestProject.SquareComplexMedianCriterion
+public import RequestProject.MedianSquareComplexWalls
+public import RequestProject.MedianSimplyConnected
+
+@[expose] public section
 
 /-!
 # The hypotheses of the criterion are exactly those of a median complex

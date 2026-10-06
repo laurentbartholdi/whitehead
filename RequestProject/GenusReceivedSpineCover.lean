@@ -1,6 +1,10 @@
-import RequestProject.GenusSpineSubstitutedBoundary
-import RequestProject.ReceivedTreeComparison
-import RequestProject.ReceivedTreeFoxCoordinates
+module
+
+public import RequestProject.GenusSpineSubstitutedBoundary
+public import RequestProject.ReceivedTreeComparison
+public import RequestProject.ReceivedTreeFoxCoordinates
+
+@[expose] public section
 
 /-! A genuine spine cover with the actual substituted group as its sheet set. -/
 set_option backward.defeqAttrib.useBackward true

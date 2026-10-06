@@ -1,6 +1,10 @@
-import RequestProject.GenusCellularFundamental
-import RequestProject.StrictSimplicialCoordinates
-import RequestProject.GenusChainCollapse
+module
+
+public import RequestProject.GenusCellularFundamental
+public import RequestProject.StrictSimplicialCoordinates
+public import RequestProject.GenusChainCollapse
+
+@[expose] public section
 
 /-! The actual oriented genus cycle in the coordinates of the cubical collapse. -/
 

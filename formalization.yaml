@@ -4,9 +4,9 @@ version: "v0.4"
 project:
   name: "Finite Chains of Two-Complexes and Acyclic Covers"
   description: >-
-    A Lean formalization of Theorem A, characterizing the existence of connected
-    regular acyclic covers of connected two-dimensional CW complexes by strict
-    finite chains of two-complexes, including the finite acyclic clause.
+    A Lean formalization of the main theorem of the article: given a two-dimensional
+    CW complex K, there exists an arbitrarily long chain of inclusions K ⊂ K₁ ⊂ ... ⊂ Kₙ which are 0 on π₂ if and
+    only if K admits a regular acyclic cover.
   authors:
     - "Laurent Bartholdi"
     - "Roman Mikhailov"
@@ -14,8 +14,11 @@ project:
   responsible_maintainers:
     - "Laurent Bartholdi"
 classification:
-  arxiv: ["math.AT"]
-  msc2020: ["55P15", "57M20"]
+  arxiv:
+    - math.AT
+  msc2020:
+    - 55P15
+    - 57M20
 sources:
   - title: "Finite Chains of Two-Complexes and Acyclic Covers"
     authors:
@@ -29,7 +32,7 @@ related_formalizations: []
 status:
   scope: >-
     Formalizes Theorem A as stated in Challenge.lean, including both directions
-    of the arbitrary-chain characterization and the finite acyclic conclusion.
+    of the arbitrary-chain characterization and the finite complex enhancement.
   sorry_count: 0
   sorry_in_definitions: 0
   axioms: ["propext", "Classical.choice", "Quot.sound"]

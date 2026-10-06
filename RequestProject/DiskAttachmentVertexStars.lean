@@ -1,5 +1,9 @@
-import RequestProject.DiskAttachmentRadialCore
-import Mathlib.Topology.Homotopy.Contractible
+module
+
+public import RequestProject.DiskAttachmentRadialCore
+public import Mathlib.Topology.Homotopy.Contractible
+
+@[expose] public section
 
 /-! Each radial vertex star in an arbitrary disk attachment is genuinely
 contractible. The contraction fixes the old vertex and works for infinitely

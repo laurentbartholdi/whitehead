@@ -1,5 +1,9 @@
-import RequestProject.QCubeSquareBoundary
-import RequestProject.StrictTopConeChains
+module
+
+public import RequestProject.QCubeSquareBoundary
+public import RequestProject.StrictTopConeChains
+
+@[expose] public section
 
 /-! Actual strict barycentric subdivisions of quotient two-cubes. -/
 set_option backward.defeqAttrib.useBackward true

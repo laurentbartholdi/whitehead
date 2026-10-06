@@ -1,6 +1,10 @@
-import RequestProject.MathlibOrderNerveNaturality
-import RequestProject.MathlibOrderNerveCycles
-import RequestProject.OrderNerveH2Maps
+module
+
+public import RequestProject.MathlibOrderNerveNaturality
+public import RequestProject.MathlibOrderNerveCycles
+public import RequestProject.OrderNerveH2Maps
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

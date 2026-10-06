@@ -1,5 +1,9 @@
-import RequestProject.GenusCollapseIteration
-import RequestProject.SurfaceCellularCycle
+module
+
+public import RequestProject.GenusCollapseIteration
+public import RequestProject.SurfaceCellularCycle
+
+@[expose] public section
 
 /-! The canonical surface relation fills in the actual surviving genus spine. -/
 set_option backward.defeqAttrib.useBackward true

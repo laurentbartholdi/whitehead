@@ -1,4 +1,8 @@
-import RequestProject.FlagComplex
+module
+
+public import RequestProject.FlagComplex
+
+@[expose] public section
 
 /-!
 # The cube complex `C(L)` and the fundamental cycle of Lemma 3.2 (i), (iii)

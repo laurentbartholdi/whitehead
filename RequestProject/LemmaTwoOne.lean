@@ -1,7 +1,11 @@
-import Mathlib
-import RequestProject.GroupRingReduction
-import RequestProject.QuotientInjectivity
-import RequestProject.TorsionFreeGroupRing
+module
+
+public import Mathlib
+public import RequestProject.GroupRingReduction
+public import RequestProject.QuotientInjectivity
+public import RequestProject.TorsionFreeGroupRing
+
+@[expose] public section
 
 /-!
 # Lemma 2.1: injectivity detected by the quotient `Q → Q/H`

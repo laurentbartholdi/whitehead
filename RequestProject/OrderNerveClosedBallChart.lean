@@ -1,6 +1,10 @@
-import RequestProject.TopologicalSingular.SimplexCoordinates
-import RequestProject.ReducedSimplexBall
-import RequestProject.OrderNerveRealizationWeakTopology
+module
+
+public import RequestProject.TopologicalSingular.SimplexCoordinates
+public import RequestProject.ReducedSimplexBall
+public import RequestProject.OrderNerveRealizationWeakTopology
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

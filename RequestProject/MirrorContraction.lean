@@ -1,5 +1,9 @@
-import RequestProject.NervePrism
-import RequestProject.ChamberDescent
+module
+
+public import RequestProject.NervePrism
+public import RequestProject.ChamberDescent
+
+@[expose] public section
 
 /-!
 # The union of the descending mirrors is contractible

@@ -1,5 +1,9 @@
-import RequestProject.CellularChainMapZero
-import RequestProject.OrderThreeNormalization
+module
+
+public import RequestProject.CellularChainMapZero
+public import RequestProject.OrderThreeNormalization
+
+@[expose] public section
 
 /-! Upper cones in the genuine strict simplicial cell model. -/
 set_option backward.defeqAttrib.useBackward true

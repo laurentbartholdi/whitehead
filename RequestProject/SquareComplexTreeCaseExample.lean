@@ -1,4 +1,8 @@
-import RequestProject.SquareComplexTreeCase
+module
+
+public import RequestProject.SquareComplexTreeCase
+
+@[expose] public section
 
 /-!
 # The one-dimensional criterion is not vacuous

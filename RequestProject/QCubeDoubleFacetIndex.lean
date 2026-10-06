@@ -1,6 +1,10 @@
-import RequestProject.QCubeFacetIndex
-import RequestProject.QCubeEdgeChainEmbedding
-import RequestProject.QCubeThreeSubdivision
+module
+
+public import RequestProject.QCubeFacetIndex
+public import RequestProject.QCubeEdgeChainEmbedding
+public import RequestProject.QCubeThreeSubdivision
+
+@[expose] public section
 
 /-! Actual codimension-two faces and their coordinate signs. -/
 namespace FiniteChains.Davis

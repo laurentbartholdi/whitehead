@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveRealizationNestedSubcomplex
-import RequestProject.PosetCoverUpTransform
+module
+
+public import RequestProject.OrderNerveRealizationNestedSubcomplex
+public import RequestProject.PosetCoverUpTransform
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory Simplicial Topology

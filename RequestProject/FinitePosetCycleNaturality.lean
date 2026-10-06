@@ -1,5 +1,9 @@
-import RequestProject.FinitePosetCycleRealization
-import RequestProject.OrderNerveRealizationMapCoordinates
+module
+
+public import RequestProject.FinitePosetCycleRealization
+public import RequestProject.OrderNerveRealizationMapCoordinates
+
+@[expose] public section
 
 /-! The explicit cycle boundary parametrization is natural under a map
 preserving the ordered vertex enumeration. Pending Lean verification. -/

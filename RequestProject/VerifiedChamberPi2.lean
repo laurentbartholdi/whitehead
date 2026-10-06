@@ -1,5 +1,9 @@
-import RequestProject.ChamberTopologicalFunctor
-import RequestProject.OrderTwoDimensionalH2Injection
+module
+
+public import RequestProject.ChamberTopologicalFunctor
+public import RequestProject.OrderTwoDimensionalH2Injection
+
+@[expose] public section
 
 /-! # Actual pi2 descent for the constructed chamber quotient
 

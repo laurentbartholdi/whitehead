@@ -1,5 +1,9 @@
-import RequestProject.DiskRoseMaps
-import RequestProject.ClassicalCWModelSequenceTransfer
+module
+
+public import RequestProject.DiskRoseMaps
+public import RequestProject.ClassicalCWModelSequenceTransfer
+
+@[expose] public section
 
 /-! A literal inclusion of disk presentations is a relative one-cell
 attachment followed by a relative two-cell attachment. The cell sets are
@@ -44,7 +48,7 @@ def sourceMap : C(DiskAttachment r, DiskAttachment s) :=
 def oneAttaching : C(BoundaryFamily (NewGenerators f) (Fin 1 → ℝ), DiskAttachment r) :=
   ContinuousMap.const _ (old r (boundaryFamilyInclusion J _) (roseVertex A))
 
-private def roseDiskIntoOne : C(DiskFamily B (Fin 1 → ℝ), DiskAttachment (oneAttaching f r)) where
+def roseDiskIntoOne : C(DiskFamily B (Fin 1 → ℝ), DiskAttachment (oneAttaching f r)) where
   toFun d := if hb : d.1 ∈ Set.range f then
     old (oneAttaching f r) (boundaryFamilyInclusion (NewGenerators f) _)
       (old r (boundaryFamilyInclusion J _)

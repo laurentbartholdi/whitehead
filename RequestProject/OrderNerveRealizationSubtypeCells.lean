@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveRealizationSubtypeHomeomorph
-import RequestProject.OrderNerveTwoComplex
+module
+
+public import RequestProject.OrderNerveRealizationSubtypeHomeomorph
+public import RequestProject.OrderNerveTwoComplex
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory Simplicial Topology

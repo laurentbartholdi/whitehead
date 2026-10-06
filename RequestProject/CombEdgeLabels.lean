@@ -1,4 +1,8 @@
-import RequestProject.CombPi1
+module
+
+public import RequestProject.CombPi1
+
+@[expose] public section
 
 /-! Group-valued edge labels and path choices. These read actual edge-path
 homotopy classes and will detect the two factors in the descent pushout.

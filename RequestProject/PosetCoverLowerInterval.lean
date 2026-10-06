@@ -1,5 +1,9 @@
-import RequestProject.PosetCoverUpTransform
-import RequestProject.StrictTopLinkChains
+module
+
+public import RequestProject.PosetCoverUpTransform
+public import RequestProject.StrictTopLinkChains
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 universe u

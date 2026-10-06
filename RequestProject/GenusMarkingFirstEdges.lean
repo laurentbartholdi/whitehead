@@ -1,4 +1,8 @@
-import RequestProject.GenusBoundaryCoordinates
+module
+
+public import RequestProject.GenusBoundaryCoordinates
+
+@[expose] public section
 
 /-! Distinguished first-edge detection for the actual geometric marking loops. -/
 set_option backward.defeqAttrib.useBackward true

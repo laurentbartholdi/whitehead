@@ -1,4 +1,8 @@
-import RequestProject.QCubeTruncatedBoundaryCollapse
+module
+
+public import RequestProject.QCubeTruncatedBoundaryCollapse
+
+@[expose] public section
 
 /-! Actual finite three-cube coefficients, ordinary boundary and positive cut coefficients. -/
 set_option backward.defeqAttrib.useBackward true

@@ -1,5 +1,9 @@
-import RequestProject.RelativeNormalizedRestrictions
-import RequestProject.SimultaneousCoreSlidesFinsupp
+module
+
+public import RequestProject.RelativeNormalizedRestrictions
+public import RequestProject.SimultaneousCoreSlidesFinsupp
+
+@[expose] public section
 
 /-! Actual finite-support simultaneous rule 2. The correction chains are
 chosen in the core-only presentation, before any extra relators are imposed.
@@ -79,7 +83,7 @@ def pairCoreToNormalized : PresGroup (pairCorePresentation (Z := Z) core) →*
     rintro _ ⟨c, rfl⟩
     exact Subgroup.subset_normalClosure ⟨Sum.inl c, rfl⟩)
 
-private theorem ringMap_quotient_word {G H : Subgroup (FreeGroup (PairGen A Z))}
+theorem ringMap_quotient_word {G H : Subgroup (FreeGroup (PairGen A Z))}
     [G.Normal] [H.Normal] (f : (FreeGroup (PairGen A Z) ⧸ G) →*
       (FreeGroup (PairGen A Z) ⧸ H))
     (hf : ∀ w, f (QuotientGroup.mk w) = QuotientGroup.mk w)
@@ -94,7 +98,7 @@ private theorem ringMap_quotient_word {G H : Subgroup (FreeGroup (PairGen A Z))}
         (Finsupp.single w a)) = Finsupp.mapDomain (QuotientGroup.mk' H) (Finsupp.single w a)
       simp only [Finsupp.mapDomain_single, QuotientGroup.mk'_apply, hf]
 
-private theorem gradient_groupMap {G H : Subgroup (FreeGroup (PairGen A Z))}
+theorem gradient_groupMap {G H : Subgroup (FreeGroup (PairGen A Z))}
     [G.Normal] [H.Normal] (f : (FreeGroup (PairGen A Z) ⧸ G) →*
       (FreeGroup (PairGen A Z) ⧸ H))
     (hf : ∀ w, f (QuotientGroup.mk w) = QuotientGroup.mk w)

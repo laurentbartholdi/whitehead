@@ -1,4 +1,8 @@
-import RequestProject.CutSurfaceSpine
+module
+
+public import RequestProject.CutSurfaceSpine
+
+@[expose] public section
 
 /-! Chosen free faces of geometric collapses, retained alongside their chain retractions. -/
 

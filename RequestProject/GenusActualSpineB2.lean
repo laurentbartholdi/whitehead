@@ -1,5 +1,9 @@
-import RequestProject.GenusNormalizedReferenceTransport
-import RequestProject.GenusPolygonCoefficientGeneration
+module
+
+public import RequestProject.GenusNormalizedReferenceTransport
+public import RequestProject.GenusPolygonCoefficientGeneration
+
+@[expose] public section
 
 /-! B2 for the actual finite genus spine, and its arbitrary-family
 finite-support consequence. All geometric reference hypotheses are discharged

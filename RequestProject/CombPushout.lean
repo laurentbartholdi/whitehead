@@ -1,4 +1,8 @@
-import RequestProject.CombData
+module
+
+public import RequestProject.CombData
+
+@[expose] public section
 
 /-!
 # The cellular pushout `E = K ∪_p L` of Proposition 3.11
@@ -132,14 +136,14 @@ section
 variable (p : Hom D K) (i : Hom D L)
   (hiV : Function.Injective i.onV) (hiE : Function.Injective i.onE)
 
-private noncomputable def psrc : K.E ⊕ OffE i → K.V ⊕ OffV i :=
+noncomputable def psrc : K.E ⊕ OffE i → K.V ⊕ OffV i :=
   Sum.elim (fun e => Sum.inl (K.src e)) (fun e => pushV p i (L.src e.1))
 
-private noncomputable def ptgt : K.E ⊕ OffE i → K.V ⊕ OffV i :=
+noncomputable def ptgt : K.E ⊕ OffE i → K.V ⊕ OffV i :=
   Sum.elim (fun e => Sum.inl (K.tgt e)) (fun e => pushV p i (L.tgt e.1))
 
 include hiV hiE in
-private theorem psrc_pushE (e : L.E) : psrc p i (pushE p i e) = pushV p i (L.src e) := by
+theorem psrc_pushE (e : L.E) : psrc p i (pushE p i e) = pushV p i (L.src e) := by
   by_cases h : ∃ d, i.onE d = e
   · obtain ⟨d, rfl⟩ := h
     rw [pushE_of_mem p hiE d]
@@ -151,7 +155,7 @@ private theorem psrc_pushE (e : L.E) : psrc p i (pushE p i e) = pushV p i (L.src
     rfl
 
 include hiV hiE in
-private theorem ptgt_pushE (e : L.E) : ptgt p i (pushE p i e) = pushV p i (L.tgt e) := by
+theorem ptgt_pushE (e : L.E) : ptgt p i (pushE p i e) = pushV p i (L.tgt e) := by
   by_cases h : ∃ d, i.onE d = e
   · obtain ⟨d, rfl⟩ := h
     rw [pushE_of_mem p hiE d]
@@ -209,7 +213,7 @@ theorem sub_pushoutComplex : Sub K (pushoutComplex p i hiV hiE) :=
     fun _ _ h => Sum.inl_injective h⟩
 
 include hiV hiE in
-private theorem att_pushF (hiF : Function.Injective i.onF) (f : L.F) :
+theorem att_pushF (hiF : Function.Injective i.onF) (f : L.F) :
     (pushoutComplex p i hiV hiE).att (pushF p i f) =
       (L.att f).map fun eb => (pushE p i eb.1, eb.2) := by
   by_cases h : ∃ d, i.onF d = f
@@ -222,7 +226,7 @@ private theorem att_pushF (hiF : Function.Injective i.onF) (f : L.F) :
     rfl
 
 include hiV hiE in
-private theorem base_pushF (hiF : Function.Injective i.onF) (f : L.F) :
+theorem base_pushF (hiF : Function.Injective i.onF) (f : L.F) :
     (pushoutComplex p i hiV hiE).base (pushF p i f) = pushV p i (L.base f) := by
   by_cases h : ∃ d, i.onF d = f
   · obtain ⟨d, rfl⟩ := h
@@ -410,7 +414,7 @@ section Functor
 
 variable {L' : Complex2.{u}}
 
-private theorem functor_hV (p : Hom D K) (j : Hom D L) (j' : Hom D L') (k : Hom L L')
+theorem functor_hV (p : Hom D K) (j : Hom D L) (j' : Hom D L') (k : Hom L L')
     (hj'V : Function.Injective j'.onV) (hj'E : Function.Injective j'.onE)
     (hj'F : Function.Injective j'.onF) (hkj : k.comp j = j') (d : D.V) :
     ((pushoutMap p j' hj'V hj'E hj'F).comp k).onV (j.onV d) =
@@ -419,7 +423,7 @@ private theorem functor_hV (p : Hom D K) (j : Hom D L) (j' : Hom D L') (k : Hom 
   rw [show k.onV (j.onV d) = j'.onV d from congrFun (congrArg Hom.onV hkj) d,
     pushV_of_mem p hj'V]
 
-private theorem functor_hE (p : Hom D K) (j : Hom D L) (j' : Hom D L') (k : Hom L L')
+theorem functor_hE (p : Hom D K) (j : Hom D L) (j' : Hom D L') (k : Hom L L')
     (hj'V : Function.Injective j'.onV) (hj'E : Function.Injective j'.onE)
     (hj'F : Function.Injective j'.onF) (hkj : k.comp j = j') (d : D.E) :
     ((pushoutMap p j' hj'V hj'E hj'F).comp k).onE (j.onE d) =

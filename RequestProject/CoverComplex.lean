@@ -1,5 +1,9 @@
-import RequestProject.CellComplex
-import RequestProject.CoverAcyclic
+module
+
+public import RequestProject.CellComplex
+public import RequestProject.CoverAcyclic
+
+@[expose] public section
 
 /-!
 # The presentation complex, its covers, and the dictionary with the Fox complex

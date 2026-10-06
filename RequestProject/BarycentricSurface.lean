@@ -1,4 +1,8 @@
-import RequestProject.FlagComplex
+module
+
+public import RequestProject.FlagComplex
+
+@[expose] public section
 
 /-!
 # The barycentric subdivision of a closed surface is again a closed surface
@@ -88,13 +92,13 @@ theorem mem_barycentric_triple {K : ASC V} {a b c : K.Face} :
 
 /-- The statement "the edge `{a, b}` of the barycentric subdivision lies in exactly two
 triangles", spelled out. -/
-private def TwoFlags (K : ASC V) (a b : K.Face) : Prop :=
+def TwoFlags (K : ASC V) (a b : K.Face) : Prop :=
   ExactlyTwo (fun c : K.Face => c ∉ ({a, b} : Finset K.Face) ∧
     insert c ({a, b} : Finset K.Face) ∈ K.barycentric.faces)
 
 /-- Case `v ⊂ e`: an edge of the subdivision joining a vertex to an edge of `K` extends by
 the two triangles of `K` containing that edge. -/
-private theorem twoFlags_vertex_edge {K : ASC V} (h2 : EdgeInTwoTriangles K)
+theorem twoFlags_vertex_edge {K : ASC V} (h2 : EdgeInTwoTriangles K)
     (hdim : ∀ s ∈ K.faces, s.card ≤ 3) {a b : K.Face} (hab : a ≤ b) (hA : a.1.card = 1)
     (hB : b.1.card = 2) : TwoFlags K a b := by
   obtain ⟨v₁, v₂, hv, hv1, hv2, huniq⟩ := h2 b.1 b.2.1 hB
@@ -187,7 +191,7 @@ private theorem twoFlags_vertex_edge {K : ASC V} (h2 : EdgeInTwoTriangles K)
 
 /-- Case `v ⊂ t`: an edge of the subdivision joining a vertex to a triangle of `K` extends
 by the two edges of that triangle through the vertex. -/
-private theorem twoFlags_vertex_triangle {K : ASC V} (hdim : ∀ s ∈ K.faces, s.card ≤ 3)
+theorem twoFlags_vertex_triangle {K : ASC V} (hdim : ∀ s ∈ K.faces, s.card ≤ 3)
     {a b : K.Face} (hab : a ≤ b) (hA : a.1.card = 1) (hB : b.1.card = 3) :
     TwoFlags K a b := by
   obtain ⟨v, hv⟩ := Finset.card_eq_one.mp hA
@@ -307,7 +311,7 @@ private theorem twoFlags_vertex_triangle {K : ASC V} (hdim : ∀ s ∈ K.faces, 
 
 /-- Case `e ⊂ t`: an edge of the subdivision joining an edge to a triangle of `K` extends by
 the two vertices of that edge. -/
-private theorem twoFlags_edge_triangle {K : ASC V} (hdim : ∀ s ∈ K.faces, s.card ≤ 3)
+theorem twoFlags_edge_triangle {K : ASC V} (hdim : ∀ s ∈ K.faces, s.card ≤ 3)
     {a b : K.Face} (hab : a ≤ b) (hA : a.1.card = 2) (hB : b.1.card = 3) :
     TwoFlags K a b := by
   obtain ⟨p, q, hpq, hab2⟩ := Finset.card_eq_two.mp hA

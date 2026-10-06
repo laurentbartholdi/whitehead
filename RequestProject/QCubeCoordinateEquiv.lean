@@ -1,6 +1,10 @@
-import RequestProject.ChamberQuotient
-import RequestProject.TruncatedCube
-import RequestProject.CmpNerve
+module
+
+public import RequestProject.ChamberQuotient
+public import RequestProject.TruncatedCube
+public import RequestProject.CmpNerve
+
+@[expose] public section
 
 /-! The quotient cube cells are the actual coordinate cubes used in the geometric collapse. -/
 

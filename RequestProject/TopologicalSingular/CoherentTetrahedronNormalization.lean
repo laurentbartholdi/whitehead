@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.CoherentSimplexExtension
-import RequestProject.TopologicalSingular.CoherentTriangleNormalization
+module
+
+public import RequestProject.TopologicalSingular.CoherentSimplexExtension
+public import RequestProject.TopologicalSingular.CoherentTriangleNormalization
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 open scoped unitInterval Topology

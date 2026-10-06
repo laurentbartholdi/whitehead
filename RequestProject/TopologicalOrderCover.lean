@@ -1,6 +1,10 @@
-import RequestProject.LocalSystemPosetCover
-import RequestProject.OrderNerveRealizationFundamental
-import Mathlib.Topology.Homotopy.Lifting
+module
+
+public import RequestProject.LocalSystemPosetCover
+public import RequestProject.OrderNerveRealizationFundamental
+public import Mathlib.Topology.Homotopy.Lifting
+
+@[expose] public section
 
 /-! Recover an actual poset cover from a genuine topological cover of an
 order realization. Its vertices are actual points above the original

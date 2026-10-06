@@ -1,6 +1,10 @@
-import RequestProject.OrderNerveGradedDictionary
-import RequestProject.OrderNerveExplicitSingularMap
-import RequestProject.TopologicalSingular.SupportedFillings
+module
+
+public import RequestProject.OrderNerveGradedDictionary
+public import RequestProject.OrderNerveExplicitSingularMap
+public import RequestProject.TopologicalSingular.SupportedFillings
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

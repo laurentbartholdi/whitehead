@@ -1,7 +1,11 @@
-import RequestProject.MathlibOrderNerveNaturality
-import Mathlib.AlgebraicTopology.SingularSet
-import Mathlib.Algebra.Homology.ShortComplex.HomologicalComplex
-import Mathlib.Algebra.Category.ModuleCat.Abelian
+module
+
+public import RequestProject.MathlibOrderNerveNaturality
+public import Mathlib.AlgebraicTopology.SingularSet
+public import Mathlib.Algebra.Homology.ShortComplex.HomologicalComplex
+public import Mathlib.Algebra.Category.ModuleCat.Abelian
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

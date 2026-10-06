@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveSingularInverseMap
+module
+
+public import RequestProject.OrderNerveSingularInverseMap
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

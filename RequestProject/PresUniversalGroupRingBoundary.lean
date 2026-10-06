@@ -1,5 +1,9 @@
-import RequestProject.PresUniversalGroupBoundaryColumns
-import RequestProject.GroupCellChainCoordinates
+module
+
+public import RequestProject.PresUniversalGroupBoundaryColumns
+public import RequestProject.GroupCellChainCoordinates
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

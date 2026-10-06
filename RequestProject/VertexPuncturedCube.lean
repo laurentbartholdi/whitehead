@@ -1,4 +1,8 @@
-import RequestProject.CoordinateFacetContraction
+module
+
+public import RequestProject.CoordinateFacetContraction
+
+@[expose] public section
 
 /-! Coordinate regions of the proper three-cube boundary with its positive vertex removed. -/
 namespace FiniteChains.Davis

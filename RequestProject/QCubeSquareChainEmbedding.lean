@@ -1,4 +1,8 @@
-import RequestProject.QCubeSquareSupport
+module
+
+public import RequestProject.QCubeSquareSupport
+
+@[expose] public section
 
 /-! Faithful finite square-chain subdivision, separated by actual top cubes. -/
 open scoped Classical

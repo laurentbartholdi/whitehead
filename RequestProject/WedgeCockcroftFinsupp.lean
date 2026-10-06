@@ -1,6 +1,10 @@
-import RequestProject.WedgeSigma
-import RequestProject.GenerationStepFinsupp
-import RequestProject.BlockFamilyBlockwiseFinsupp
+module
+
+public import RequestProject.WedgeSigma
+public import RequestProject.GenerationStepFinsupp
+public import RequestProject.BlockFamilyBlockwiseFinsupp
+
+@[expose] public section
 
 /-! An arbitrary wedge of finite Cockcroft presentations is Cockcroft for
 actual supported chains.  Retraction onto one factor reads its finite cycle

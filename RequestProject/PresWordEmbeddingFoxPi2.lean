@@ -1,8 +1,12 @@
-import RequestProject.PresWordEmbeddingUniversal
-import RequestProject.PresUniversalFoxKernelEquiv
-import RequestProject.OrderRealizationPi2Criterion
-import RequestProject.StrictOrderNormalizationMaps
-import RequestProject.OrderNormalizationHomotopy
+module
+
+public import RequestProject.PresWordEmbeddingUniversal
+public import RequestProject.PresUniversalFoxKernelEquiv
+public import RequestProject.OrderRealizationPi2Criterion
+public import RequestProject.StrictOrderNormalizationMaps
+public import RequestProject.OrderNormalizationHomotopy
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

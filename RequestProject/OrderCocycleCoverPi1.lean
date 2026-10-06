@@ -1,7 +1,11 @@
-import RequestProject.OrderCocycleCoverCoordinates
-import RequestProject.CombCoveringLift
-import RequestProject.CombPerfectOneFillings
-import RequestProject.StrictNormalizedOneMaps
+module
+
+public import RequestProject.OrderCocycleCoverCoordinates
+public import RequestProject.CombCoveringLift
+public import RequestProject.CombPerfectOneFillings
+public import RequestProject.StrictNormalizedOneMaps
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

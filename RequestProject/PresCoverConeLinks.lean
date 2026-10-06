@@ -1,6 +1,10 @@
-import RequestProject.StrictTopLinkChains
-import RequestProject.PresConeIntervals
-import RequestProject.PosetCoverUpTransform
+module
+
+public import RequestProject.StrictTopLinkChains
+public import RequestProject.PresConeIntervals
+public import RequestProject.PosetCoverUpTransform
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

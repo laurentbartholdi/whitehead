@@ -1,5 +1,9 @@
-import RequestProject.GenusSpineRetractionHomotopy
-import RequestProject.OrderNormalizedMapInjectivity
+module
+
+public import RequestProject.GenusSpineRetractionHomotopy
+public import RequestProject.OrderNormalizedMapInjectivity
+
+@[expose] public section
 
 /-! The actual normalized full-cube map reflects zero on surviving-spine two-cycles. -/
 set_option backward.defeqAttrib.useBackward true

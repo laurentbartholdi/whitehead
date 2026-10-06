@@ -1,4 +1,8 @@
-import RequestProject.GenusNormalizedSpineBaseChange
+module
+
+public import RequestProject.GenusNormalizedSpineBaseChange
+
+@[expose] public section
 
 /-! The fixed normalized reference in one actual substituted spine, and its
 compatibility with the arbitrary-family reference. Awaiting Lean verification. -/

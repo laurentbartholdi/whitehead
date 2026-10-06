@@ -1,7 +1,11 @@
-import RequestProject.GenusCutLiftedLinkFillings
-import RequestProject.GenusFreeFaceCoverHomology
-import RequestProject.NerveMaximalFamilyDeletion
-import RequestProject.NerveGenerationComposition
+module
+
+public import RequestProject.GenusCutLiftedLinkFillings
+public import RequestProject.GenusFreeFaceCoverHomology
+public import RequestProject.NerveMaximalFamilyDeletion
+public import RequestProject.NerveGenerationComposition
+
+@[expose] public section
 
 /-! Both cells of a recorded cut pair may be deleted in every covering sheet. -/
 namespace FiniteChains.Davis.Genus

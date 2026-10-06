@@ -1,6 +1,10 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.SingularTriangleGeometry
+public import RequestProject.TopologicalSingular.SingularTriangleGeometry
+
+@[expose] public section
 
 /-! # A path homotopy gives an explicit bounding singular two-chain -/
 

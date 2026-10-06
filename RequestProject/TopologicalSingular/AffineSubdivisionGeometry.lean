@@ -1,8 +1,12 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.AffineVertexChains
-import RequestProject.TopologicalSingular.VertexCarriers
-import Mathlib.Analysis.Normed.Module.Convex
+public import RequestProject.TopologicalSingular.AffineVertexChains
+public import RequestProject.TopologicalSingular.VertexCarriers
+public import Mathlib.Analysis.Normed.Module.Convex
+
+@[expose] public section
 
 /-! # Convex carriers and barycenter distance estimates
 

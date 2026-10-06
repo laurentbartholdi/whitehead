@@ -1,6 +1,10 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.PointAttachmentHomotopyEquiv
-import RequestProject.AttachmentQuotientHomeomorph
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.PointAttachmentHomotopyEquiv
+public import RequestProject.AttachmentQuotientHomeomorph
+
+@[expose] public section
 
 /-! Fill an attached pointed circle (or, more generally, a pointed
 boundary space) by its disk. The resulting iterated attachment is

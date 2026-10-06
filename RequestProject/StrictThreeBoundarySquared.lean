@@ -1,4 +1,8 @@
-import RequestProject.StrictTopConeThreeChains
+module
+
+public import RequestProject.StrictTopConeThreeChains
+
+@[expose] public section
 
 /-! Boundary squared vanishes for genuine nondegenerate order tetrahedra. -/
 set_option backward.defeqAttrib.useBackward true

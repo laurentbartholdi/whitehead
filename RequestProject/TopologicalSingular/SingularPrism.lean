@@ -1,7 +1,11 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.PrismGeometry
-import RequestProject.TopologicalSingular.PrismCancellation
+public import RequestProject.TopologicalSingular.PrismGeometry
+public import RequestProject.TopologicalSingular.PrismCancellation
+
+@[expose] public section
 
 /-! # The singular prism identity for actual continuous homotopies -/
 

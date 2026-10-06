@@ -1,5 +1,9 @@
-import RequestProject.PresConeIntervals
-import RequestProject.PresPosetConnected
+module
+
+public import RequestProject.PresConeIntervals
+public import RequestProject.PresPosetConnected
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

@@ -1,4 +1,8 @@
-import RequestProject.CubeRollerModel
+module
+
+public import RequestProject.CubeRollerModel
+
+@[expose] public section
 
 /-!
 # Wall spaces and their dual cube complex

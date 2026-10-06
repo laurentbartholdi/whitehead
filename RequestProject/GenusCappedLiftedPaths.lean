@@ -1,6 +1,10 @@
-import RequestProject.GenusCappedRootedGauge
-import RequestProject.GenusCappedSpine
-import RequestProject.TreeCover
+module
+
+public import RequestProject.GenusCappedRootedGauge
+public import RequestProject.GenusCappedSpine
+public import RequestProject.TreeCover
+
+@[expose] public section
 
 /-! Exact lifted-path comparison between the capped tree cover and the full cube cover. -/
 set_option backward.defeqAttrib.useBackward true

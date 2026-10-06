@@ -1,4 +1,8 @@
-import RequestProject.CoverFoxPrefixSum
+module
+
+public import RequestProject.CoverFoxPrefixSum
+
+@[expose] public section
 
 namespace FiniteChains
 variable {α : Type*} [DecidableEq α]

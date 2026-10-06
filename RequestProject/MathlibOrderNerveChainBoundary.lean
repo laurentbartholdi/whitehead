@@ -1,6 +1,10 @@
-import RequestProject.MathlibOrderNerveCells
-import Mathlib.Algebra.Category.ModuleCat.Adjunctions
-import Mathlib.AlgebraicTopology.AlternatingFaceMapComplex
+module
+
+public import RequestProject.MathlibOrderNerveCells
+public import Mathlib.Algebra.Category.ModuleCat.Adjunctions
+public import Mathlib.AlgebraicTopology.AlternatingFaceMapComplex
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

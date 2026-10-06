@@ -1,4 +1,8 @@
-import RequestProject.CombPi1
+module
+
+public import RequestProject.CombPi1
+
+@[expose] public section
 
 /-!
 # Spanning trees of combinatorial two-complexes
@@ -124,10 +128,10 @@ theorem isTree_of_mem_treePath (a : K.V) {g : K.E × Bool} (hg : g ∈ T.treePat
 section Existence
 
 /-- The lengths of edge paths from a fixed vertex. -/
-private def reach (K : Complex2.{u}) (r a : K.V) : Set ℕ := {n | ∃ p : List (K.E × Bool),
+def reach (K : Complex2.{u}) (r a : K.V) : Set ℕ := {n | ∃ p : List (K.E × Bool),
   p.length = n ∧ IsPath K.src K.tgt p r a}
 
-private theorem reach_nonempty (hconn : IsConnected K) (r a : K.V) :
+theorem reach_nonempty (hconn : IsConnected K) (r a : K.V) :
     (reach K r a).Nonempty := by
   obtain ⟨p, hp⟩ := hconn r a
   exact ⟨p.length, p, rfl, hp⟩

@@ -1,5 +1,9 @@
-import RequestProject.PushoutUniversalEmbedding
-import RequestProject.CombCoveringLift
+module
+
+public import RequestProject.PushoutUniversalEmbedding
+public import RequestProject.CombCoveringLift
+
+@[expose] public section
 
 /-! The actual L-copy in the universal pushout is injective on all cells.
 The base map itself identifies old cells; source/base vertices and the

@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.SmallChainHomology
-import RequestProject.TopologicalSingular.RelativeSingularMaps
+module
+
+public import RequestProject.TopologicalSingular.SmallChainHomology
+public import RequestProject.TopologicalSingular.RelativeSingularMaps
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 universe u

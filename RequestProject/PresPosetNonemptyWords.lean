@@ -1,4 +1,8 @@
-import RequestProject.PresPosetAlpha
+module
+
+public import RequestProject.PresPosetAlpha
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 universe u

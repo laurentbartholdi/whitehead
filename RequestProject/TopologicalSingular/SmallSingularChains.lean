@@ -1,10 +1,14 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.SubdivisionRealization
-import RequestProject.TopologicalSingular.BarycentricMesh
-import Mathlib.Topology.MetricSpace.Pseudo.Lemmas
-import Mathlib.Algebra.Order.Archimedean.Basic
-import Mathlib.Algebra.Module.LinearMap.End
+public import RequestProject.TopologicalSingular.SubdivisionRealization
+public import RequestProject.TopologicalSingular.BarycentricMesh
+public import Mathlib.Topology.MetricSpace.Pseudo.Lemmas
+public import Mathlib.Algebra.Order.Archimedean.Basic
+public import Mathlib.Algebra.Module.LinearMap.End
+
+@[expose] public section
 
 /-! # Sufficient subdivision makes every singular chain small
 

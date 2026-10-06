@@ -1,6 +1,10 @@
-import RequestProject.RelatorCircleBoundaryHomeomorph
-import RequestProject.PresPosetAlpha
-import Mathlib.Data.List.OfFn
+module
+
+public import RequestProject.RelatorCircleBoundaryHomeomorph
+public import RequestProject.PresPosetAlpha
+public import Mathlib.Data.List.OfFn
+
+@[expose] public section
 
 /-! Exact enumeration of the actual circle edges as the four edges of each
 successive letter. This is a list identity, including the final closing

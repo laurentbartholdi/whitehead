@@ -1,4 +1,8 @@
-import RequestProject.CmpNerve
+module
+
+public import RequestProject.CmpNerve
+
+@[expose] public section
 
 /-!
 # The face poset of a polygon with identified boundary

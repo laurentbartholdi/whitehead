@@ -1,4 +1,8 @@
-import RequestProject.OrderPosetCovering
+module
+
+public import RequestProject.OrderPosetCovering
+
+@[expose] public section
 
 /-! Actual interval-covering maps remain covering maps after an order isomorphism. -/
 namespace FiniteChains.Comb.IsPosetCover

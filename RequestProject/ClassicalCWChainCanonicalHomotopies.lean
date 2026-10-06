@@ -1,7 +1,11 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.ClassicalCWChainCanonicalWords
-import RequestProject.NaturalDiskAttachingEquiv
-import RequestProject.PresWordDiskComparisonNaturality
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.ClassicalCWChainCanonicalWords
+public import RequestProject.NaturalDiskAttachingEquiv
+public import RequestProject.PresWordDiskComparisonNaturality
+
+@[expose] public section
 
 /-! Canonical attaching homotopies are chosen once, when a cell first
 appears, and pushed through the later generator inclusions. Consequently

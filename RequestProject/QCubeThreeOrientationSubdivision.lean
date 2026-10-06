@@ -1,5 +1,9 @@
-import RequestProject.QCubeThreeOrderedCoordinates
-import RequestProject.CubicalThreeOrientationChain
+module
+
+public import RequestProject.QCubeThreeOrderedCoordinates
+public import RequestProject.CubicalThreeOrientationChain
+
+@[expose] public section
 
 /-! The indexed oriented six-face chain subdivides to the actual three-cube boundary. -/
 namespace FiniteChains.Davis

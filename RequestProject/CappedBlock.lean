@@ -1,6 +1,10 @@
-import RequestProject.LemmaTerminal
-import RequestProject.TietzeElimination
-import RequestProject.BlockSubstitutionPi1
+module
+
+public import RequestProject.LemmaTerminal
+public import RequestProject.TietzeElimination
+public import RequestProject.BlockSubstitutionPi1
+
+@[expose] public section
 
 /-!
 # Property (B3): Cockcroftness after capping

@@ -1,4 +1,8 @@
-import RequestProject.CombPi1
+module
+
+public import RequestProject.CombPi1
+
+@[expose] public section
 
 /-!
 # Lifting of edge paths and homotopies along a combinatorial covering

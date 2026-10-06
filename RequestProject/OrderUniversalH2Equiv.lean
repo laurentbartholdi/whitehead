@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveH2
-import RequestProject.PresUniversalRelatorKernel
+module
+
+public import RequestProject.OrderNerveH2
+public import RequestProject.PresUniversalRelatorKernel
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

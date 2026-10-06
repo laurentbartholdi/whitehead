@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.StationaryEdgeNormalization
-import RequestProject.TopologicalSingular.CoherentSimplexExtension
+module
+
+public import RequestProject.TopologicalSingular.StationaryEdgeNormalization
+public import RequestProject.TopologicalSingular.CoherentSimplexExtension
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 open scoped unitInterval Topology

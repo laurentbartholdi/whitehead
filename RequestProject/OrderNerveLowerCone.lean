@@ -1,6 +1,10 @@
-import RequestProject.OrderNerveConeBall
-import RequestProject.OrderNervePosetCoverVertexStars
-import RequestProject.PosetCoverLowerInterval
+module
+
+public import RequestProject.OrderNerveConeBall
+public import RequestProject.OrderNervePosetCoverVertexStars
+public import RequestProject.PosetCoverLowerInterval
+
+@[expose] public section
 
 /-! A closed principal lower ideal is literally the order cone on its strict
 lower interval. The realized identification respects the boundary inclusion. -/

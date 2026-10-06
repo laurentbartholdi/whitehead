@@ -1,4 +1,8 @@
-import RequestProject.Framework
+module
+
+public import RequestProject.Framework
+
+@[expose] public section
 
 /-!
 # The finiteness supplement of Theorem A

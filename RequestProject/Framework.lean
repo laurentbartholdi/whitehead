@@ -1,5 +1,9 @@
-import RequestProject.Pigeonhole
-import RequestProject.SubgroupCompactness
+module
+
+public import RequestProject.Pigeonhole
+public import RequestProject.SubgroupCompactness
+
+@[expose] public section
 
 /-!
 # Theorem A: the formal skeleton

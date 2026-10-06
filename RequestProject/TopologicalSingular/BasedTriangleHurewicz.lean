@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.TriangleSquareGeometry
-import RequestProject.TopologicalSingular.Pi2HurewiczHom
+module
+
+public import RequestProject.TopologicalSingular.TriangleSquareGeometry
+public import RequestProject.TopologicalSingular.Pi2HurewiczHom
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 open CategoryTheory AlgebraicTopology

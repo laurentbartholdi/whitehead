@@ -1,5 +1,9 @@
-import RequestProject.QCubeCanonicalTwoCycles
-import RequestProject.QCubeSquareCoefficientSigns
+module
+
+public import RequestProject.QCubeCanonicalTwoCycles
+public import RequestProject.QCubeSquareCoefficientSigns
+
+@[expose] public section
 
 /-! A two-cycle avoiding the positive origin has no positive-square coefficients. -/
 namespace FiniteChains.Davis

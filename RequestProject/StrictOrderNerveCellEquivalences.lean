@@ -1,5 +1,9 @@
-import RequestProject.MathlibOrderNerveCells
-import RequestProject.StrictOrderComplex
+module
+
+public import RequestProject.MathlibOrderNerveCells
+public import RequestProject.StrictOrderComplex
+
+@[expose] public section
 
 /-! Literal identification of strict combinatorial vertices, edges and
 triangles with the nondegenerate cells of the actual poset nerve. Pending

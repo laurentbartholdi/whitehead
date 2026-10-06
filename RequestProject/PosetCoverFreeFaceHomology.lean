@@ -1,6 +1,10 @@
-import RequestProject.NerveUpperRetraction
-import RequestProject.PosetCoverUpTransform
-import RequestProject.PosetCoverRestriction
+module
+
+public import RequestProject.NerveUpperRetraction
+public import RequestProject.PosetCoverUpTransform
+public import RequestProject.PosetCoverRestriction
+
+@[expose] public section
 
 /-! Deleting the whole inverse image of a free face preserves finite chain homology. -/
 set_option backward.defeqAttrib.useBackward true

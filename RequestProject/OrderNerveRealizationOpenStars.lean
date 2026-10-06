@@ -1,4 +1,8 @@
-import RequestProject.OrderNervePosetCoverVertexStars
+module
+
+public import RequestProject.OrderNervePosetCoverVertexStars
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory Simplicial Topology

@@ -1,5 +1,9 @@
-import RequestProject.ChamberZStrictCellular
-import RequestProject.StrictSubposetChains
+module
+
+public import RequestProject.ChamberZStrictCellular
+public import RequestProject.StrictSubposetChains
+
+@[expose] public section
 
 /-! The actual base-subcomplex chain map in modified-chamber generation. -/
 namespace FiniteChains.Davis

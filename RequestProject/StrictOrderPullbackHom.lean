@@ -1,7 +1,11 @@
-import RequestProject.PosetCoverPullback
-import RequestProject.StrictOrderComplex
-import RequestProject.PosetCoverUpTransform
-import RequestProject.ComponentComplex
+module
+
+public import RequestProject.PosetCoverPullback
+public import RequestProject.StrictOrderComplex
+public import RequestProject.PosetCoverUpTransform
+public import RequestProject.ComponentComplex
+
+@[expose] public section
 
 /-! Actual cellular maps into a pulled-back ordered cover.
 
@@ -25,7 +29,7 @@ noncomputable def strictPullbackProjection :
   strictOrderCxMap (posetPullbackProjection f g) (hf.pullback g hg).strictMono
 
 omit [PartialOrder Q] in
-private theorem pullback_lt {a b : PosetCoverPullback f g}
+theorem pullback_lt {a b : PosetCoverPullback f g}
     (hp : a.1.1 ≤ b.1.1) (hr : a.1.2 < b.1.2) : a < b := by
   exact lt_iff_le_not_ge.mpr ⟨⟨hp, hr.le⟩, fun h => (not_le_of_gt hr) h.2⟩
 
@@ -69,7 +73,7 @@ theorem strictPullbackFace_second (t : K.F) :
     (strictPullbackProjection f hf g hg).onF (strictPullbackFace f hf g hg r s h t) =
       s.onF t := rfl
 
-private theorem list_eq_of_two_maps {A B C : Type*} (p : A → B) (q : A → C)
+theorem list_eq_of_two_maps {A B C : Type*} (p : A → B) (q : A → C)
     (hi : ∀ x y, p x = p y → q x = q y → x = y)
     (l m : List A) (hp : l.map p = m.map p) (hq : l.map q = m.map q) : l = m := by
   induction l generalizing m with
@@ -82,7 +86,7 @@ private theorem list_eq_of_two_maps {A B C : Type*} (p : A → B) (q : A → C)
           obtain ⟨hq0, hq1⟩ := List.cons.inj hq
           exact congrArg₂ List.cons (hi x y hp0 hq0) (ih m hp1 hq1)
 
-private theorem pullback_germ_ext
+theorem pullback_germ_ext
     (x y : (strictOrderCx (PosetCoverPullback f g)).E × Bool)
     (hp : ((strictPullbackOriginal f g).onE x.1, x.2) =
       ((strictPullbackOriginal f g).onE y.1, y.2))

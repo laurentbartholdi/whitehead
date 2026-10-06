@@ -1,11 +1,15 @@
-import RequestProject.NerveBoundaryReflection
+module
+
+public import RequestProject.NerveBoundaryReflection
+
+@[expose] public section
 
 /-! Both homology comparisons for deleting a maximal cell, with explicit finite chains. -/
 namespace FiniteChains.Nerve
 universe u
 variable {P : Type u} [PartialOrder P]
 
-private theorem maximalDeletion_unmixed {C : P → Prop} {t : P}
+theorem maximalDeletion_unmixed {C : P → Prop} {t : P}
     (hmax : ∀ x, C x → t ≤ x → x = t) :
     ∀ a b : P, a ≤ b → C a → C b →
       ((C a ∧ a ≠ t) ∧ (C b ∧ b ≠ t)) ∨ ((C a ∧ a ≤ t) ∧ (C b ∧ b ≤ t)) := by

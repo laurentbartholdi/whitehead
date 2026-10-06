@@ -1,5 +1,9 @@
-import RequestProject.OrderConeChains
-import RequestProject.OrderNerveCellMaps
+module
+
+public import RequestProject.OrderConeChains
+public import RequestProject.OrderNerveCellMaps
+
+@[expose] public section
 
 /-! Actual tetrahedron cone chains and their cellular boundary. -/
 set_option backward.defeqAttrib.useBackward true

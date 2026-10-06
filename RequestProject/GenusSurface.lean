@@ -1,5 +1,9 @@
-import RequestProject.SurfaceLink
-import RequestProject.GenusLoops
+module
+
+public import RequestProject.SurfaceLink
+public import RequestProject.GenusLoops
+
+@[expose] public section
 
 /-!
 # The nerve of the block of genus `q` is a closed surface

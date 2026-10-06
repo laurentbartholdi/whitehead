@@ -1,6 +1,10 @@
-import RequestProject.CombPi1
-import RequestProject.CoverComplex
-import RequestProject.PresentationDictionary
+module
+
+public import RequestProject.CombPi1
+public import RequestProject.CoverComplex
+public import RequestProject.PresentationDictionary
+
+@[expose] public section
 
 /-!
 # The fundamental group of a presentation complex

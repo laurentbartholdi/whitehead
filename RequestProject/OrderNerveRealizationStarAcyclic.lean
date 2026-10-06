@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveRealizationStarContractible
-import RequestProject.TopologicalSingular.MathlibComparison
+module
+
+public import RequestProject.OrderNerveRealizationStarContractible
+public import RequestProject.TopologicalSingular.MathlibComparison
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 

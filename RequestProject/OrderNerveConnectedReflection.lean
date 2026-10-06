@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveRealizationSubtypeHomeomorph
-import RequestProject.OrderNerveRealizationOpenStars
+module
+
+public import RequestProject.OrderNerveRealizationSubtypeHomeomorph
+public import RequestProject.OrderNerveRealizationOpenStars
+
+@[expose] public section
 
 /-! Connectedness of the actual realization reflects combinatorial
 connectedness. Components give clopen induced subcomplexes; the argument

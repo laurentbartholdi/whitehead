@@ -1,5 +1,9 @@
-import RequestProject.PresentationDictionary
-import RequestProject.ChainConsistency
+module
+
+public import RequestProject.PresentationDictionary
+public import RequestProject.ChainConsistency
+
+@[expose] public section
 
 /-!
 # The presented form of `(1) ⇒ (2)` is not vacuous

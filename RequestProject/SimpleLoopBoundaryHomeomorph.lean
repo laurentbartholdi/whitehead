@@ -1,5 +1,9 @@
-import RequestProject.SquareBoundaryLoopQuotient
-import RequestProject.SquareBoundaryNormHomeomorph
+module
+
+public import RequestProject.SquareBoundaryLoopQuotient
+public import RequestProject.SquareBoundaryNormHomeomorph
+
+@[expose] public section
 
 /-! Elementary simple-arc gluing and an explicit homeomorphism from the
 actual normed-circle boundary onto a once-traversed Hausdorff simple loop.

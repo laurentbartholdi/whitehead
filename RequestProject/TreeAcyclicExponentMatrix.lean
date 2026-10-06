@@ -1,6 +1,10 @@
-import RequestProject.CellularAcyclicBijection
-import RequestProject.TreeCoverAcyclicReflection
-import RequestProject.InitialRelChainW
+module
+
+public import RequestProject.CellularAcyclicBijection
+public import RequestProject.TreeCoverAcyclicReflection
+public import RequestProject.InitialRelChainW
+
+@[expose] public section
 
 /-! Acyclicity of an arbitrary combinatorial two-complex gives the
 bijective exponent boundary of its actual spanning-tree presentation.
@@ -18,7 +22,7 @@ theorem bdry2_presComplex_eq_expMatrix {A J : Type u} [DecidableEq A]
   apply congrArg (Finsupp.linearCombination ℤ)
   exact funext (expCol_eq_expVec ρ)
 
-private theorem oneSheetProjection_bijective {Q B : Type u} [One Q] [Subsingleton Q] :
+theorem oneSheetProjection_bijective {Q B : Type u} [One Q] [Subsingleton Q] :
     Function.Bijective (Prod.snd : Q × B → B) := by
   constructor
   · intro a b h

@@ -1,5 +1,9 @@
-import RequestProject.GenusMarkedSpineInjection
-import RequestProject.BlockFamilyBlockwise
+module
+
+public import RequestProject.GenusMarkedSpineInjection
+public import RequestProject.BlockFamilyBlockwise
+
+@[expose] public section
 
 /-! Simultaneous substitution by the actual finite surviving two-dimensional spines. -/
 namespace FiniteChains.Davis.Genus

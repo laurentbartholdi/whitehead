@@ -1,4 +1,8 @@
-import RequestProject.UnivCoverIncl
+module
+
+public import RequestProject.UnivCoverIncl
+
+@[expose] public section
 
 /-! Vertex-chain naturality of actual cellular maps. -/
 namespace FiniteChains.Comb

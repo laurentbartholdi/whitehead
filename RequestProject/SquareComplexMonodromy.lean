@@ -1,4 +1,8 @@
-import RequestProject.SquareComplexPi1
+module
+
+public import RequestProject.SquareComplexPi1
+
+@[expose] public section
 
 /-!
 # Monodromy of a covering of square complexes

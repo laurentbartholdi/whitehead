@@ -1,4 +1,8 @@
-import RequestProject.PresentationWordTopologicalChains
+module
+
+public import RequestProject.PresentationWordTopologicalChains
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

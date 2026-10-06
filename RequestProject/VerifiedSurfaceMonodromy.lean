@@ -1,5 +1,9 @@
-import RequestProject.VerifiedReceivedCover
-import RequestProject.GenusSurfaceMonodromyExt
+module
+
+public import RequestProject.VerifiedReceivedCover
+public import RequestProject.GenusSurfaceMonodromyExt
+
+@[expose] public section
 
 /-!
 For the actual subdivided polygon surface, fixing the standard marked loops

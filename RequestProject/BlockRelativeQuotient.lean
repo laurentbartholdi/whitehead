@@ -1,4 +1,8 @@
-import RequestProject.BlockQuotientModel
+module
+
+public import RequestProject.BlockQuotientModel
+
+@[expose] public section
 
 /-!
 # Property (B2) with the geometric input in its article form: `H₂(W̃, U) = 0`

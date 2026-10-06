@@ -1,7 +1,11 @@
-import RequestProject.CoverAcyclic
-import RequestProject.HurewiczDictionary
-import RequestProject.HurewiczIso
-import RequestProject.PresentationDictionary
+module
+
+public import RequestProject.CoverAcyclic
+public import RequestProject.HurewiczDictionary
+public import RequestProject.HurewiczIso
+public import RequestProject.PresentationDictionary
+
+@[expose] public section
 
 /-!
 # Cycles lift modulo `m`: a theorem, not a citation

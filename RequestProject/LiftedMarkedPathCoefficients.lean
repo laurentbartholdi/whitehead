@@ -1,4 +1,8 @@
-import RequestProject.ReceivedTreeMarkedComparison
+module
+
+public import RequestProject.ReceivedTreeMarkedComparison
+
+@[expose] public section
 
 /-! Exact coefficient recovery from distinct first edges of actual lifted
 marking paths. 

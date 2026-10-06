@@ -1,5 +1,9 @@
-import RequestProject.PresPosetDimension
-import RequestProject.OrderUniversalPosetCells
+module
+
+public import RequestProject.PresPosetDimension
+public import RequestProject.OrderUniversalPosetCells
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 universe u

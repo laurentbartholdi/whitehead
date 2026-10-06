@@ -1,5 +1,9 @@
-import RequestProject.NerveRelativeGluing
-import RequestProject.NerveDegree
+module
+
+public import RequestProject.NerveRelativeGluing
+public import RequestProject.NerveDegree
+
+@[expose] public section
 
 /-! Relative generation in a specified degree needs intersection fillings only
 one degree lower, and does not require augmented acyclicity of disconnected pieces. -/

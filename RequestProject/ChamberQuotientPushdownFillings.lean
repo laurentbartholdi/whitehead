@@ -1,6 +1,10 @@
-import RequestProject.OrderNerveH2Maps
-import RequestProject.ChamberQuotientConnectedGeneration
-import RequestProject.OrderUniversalBoundaryProjection
+module
+
+public import RequestProject.OrderNerveH2Maps
+public import RequestProject.ChamberQuotientConnectedGeneration
+public import RequestProject.OrderUniversalBoundaryProjection
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

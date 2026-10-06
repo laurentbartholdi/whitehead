@@ -1,7 +1,11 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.PresRoseAffineWordReading
-import RequestProject.SquareBoundaryLoopQuotient
-import Mathlib.GroupTheory.FreeGroup.Reduce
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.PresRoseAffineWordReading
+public import RequestProject.SquareBoundaryLoopQuotient
+public import Mathlib.GroupTheory.FreeGroup.Reduce
+
+@[expose] public section
 
 /-! Free reduction and insertion of a cancelling pair give actual based
 path homotopies in the literal disk rose, and hence actual homotopies of
@@ -26,7 +30,7 @@ theorem classicalRoseRead_append (l m : List (A × Bool)) :
     rcases p with ⟨a, b⟩
     exact (Path.Homotopic.trans_assoc _ _ _).trans ((Path.Homotopic.refl _).hcomp ih)
 
-private theorem classicalRoseRead_cancelHead (a : A) (b : Bool) (l : List (A × Bool)) :
+theorem classicalRoseRead_cancelHead (a : A) (b : Bool) (l : List (A × Bool)) :
     (classicalRoseRead ((a, b) :: (a, !b) :: l)).Homotopic (classicalRoseRead l) := by
   cases b
   · change (((graphEdgePath (roseAttaching A) a).symm).trans

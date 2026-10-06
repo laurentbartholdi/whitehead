@@ -1,7 +1,11 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import Mathlib
-import Mathlib.Topology.UnitInterval
+public import Mathlib
+public import Mathlib.Topology.UnitInterval
+
+@[expose] public section
 
 /-! # Finite path subdivisions subordinate to open covers
 

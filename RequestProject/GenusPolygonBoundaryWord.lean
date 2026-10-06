@@ -1,5 +1,9 @@
-import RequestProject.SurfaceCellularCycle
-import RequestProject.CombLoopWord
+module
+
+public import RequestProject.SurfaceCellularCycle
+public import RequestProject.CombLoopWord
+
+@[expose] public section
 
 /-! The literal signed word and literal edge path around the genus polygon.
 The equality is before passing to homotopy or to edge-chain augmentation.

@@ -1,7 +1,11 @@
-import RequestProject.FreshLoopTreeStrictness
-import RequestProject.StrictOrderComplex
-import RequestProject.OriginalCoverCellChains
-import RequestProject.PresIdentityCoverChains
+module
+
+public import RequestProject.FreshLoopTreeStrictness
+public import RequestProject.StrictOrderComplex
+public import RequestProject.OriginalCoverCellChains
+public import RequestProject.PresIdentityCoverChains
+
+@[expose] public section
 
 /-! A triangle forces a non-tree edge, independently of the chosen
 spanning tree. The canonical model always has such a triangle from its

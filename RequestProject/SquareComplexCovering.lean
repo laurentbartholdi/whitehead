@@ -1,4 +1,8 @@
-import RequestProject.SquareComplexWalkHomotopy
+module
+
+public import RequestProject.SquareComplexWalkHomotopy
+
+@[expose] public section
 
 /-!
 # Combinatorial covering theory of square complexes

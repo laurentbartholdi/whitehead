@@ -1,6 +1,10 @@
-import RequestProject.Statement
-import RequestProject.ClassicalCellAttachmentCW
-import Mathlib.Analysis.Normed.Module.Connected
+module
+
+public import RequestProject.Statement
+public import RequestProject.ClassicalCellAttachmentCW
+public import Mathlib.Analysis.Normed.Module.Connected
+
+@[expose] public section
 
 /-! Disk attachments as the actual two-complexes of the challenge. The
 old space is a closed subcomplex retaining precisely its original cells.

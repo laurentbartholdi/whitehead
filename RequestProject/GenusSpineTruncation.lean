@@ -1,5 +1,9 @@
-import RequestProject.GenusSpineMarking
-import RequestProject.TruncatedCubePi1
+module
+
+public import RequestProject.GenusSpineMarking
+public import RequestProject.TruncatedCubePi1
+
+@[expose] public section
 
 /-! Factor the marked spine comparison through the genuine truncated face poset. -/
 set_option backward.defeqAttrib.useBackward true

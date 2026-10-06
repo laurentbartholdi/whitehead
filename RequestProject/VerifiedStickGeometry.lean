@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.TetrahedronStickShell
-import RequestProject.TopologicalSingular.SingularHornFilling
+module
+
+public import RequestProject.TopologicalSingular.TetrahedronStickShell
+public import RequestProject.TopologicalSingular.SingularHornFilling
+
+@[expose] public section
 
 /-!
 # Stick coordinates, based triangles, and explicit horn fillers

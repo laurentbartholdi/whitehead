@@ -1,6 +1,10 @@
-import RequestProject.ChamberZCoverCellularGeneration
-import RequestProject.OrderSubposetChains
-import RequestProject.OrderNerveH2Maps
+module
+
+public import RequestProject.ChamberZCoverCellularGeneration
+public import RequestProject.OrderSubposetChains
+public import RequestProject.OrderNerveH2Maps
+
+@[expose] public section
 
 namespace FiniteChains.Davis
 open RACG Mirror Comb

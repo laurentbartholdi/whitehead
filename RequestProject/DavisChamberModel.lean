@@ -1,4 +1,8 @@
-import RequestProject.MirrorSimplyConnected
+module
+
+public import RequestProject.MirrorSimplyConnected
+
+@[expose] public section
 
 /-!
 # The concrete chamber model of the Davis complex, and its chamber intersections
@@ -286,14 +290,20 @@ theorem interTop_spx (hx : x ≠ 1) : (interTop hx).1.spx = rdescFinset A x := r
 
 /-- The contraction `ρ(σ) = σ ∩ D(x)` of the text, inside the model. -/
 noncomputable def interRho (p : ChamberInter A x) : ChamberInter A x :=
-  ⟨chamberPt x (isSimplex_subset A Finset.inter_subset_left p.1.isSimplex),
-    chamberPt_inChamber x _, by
-      show ((p.1.spx ∩ rdescFinset A x) ∩ rdescFinset A x).Nonempty
+  let hsubset : p.1.spx ∩ rdescFinset A x ⊆ p.1.spx := Finset.inter_subset_left
+  let hsimplex := isSimplex_subset A hsubset p.1.isSimplex
+  ⟨chamberPt x hsimplex,
+    chamberPt_inChamber x hsimplex, by
+      have hspx : (chamberPt x hsimplex).spx = p.1.spx ∩ rdescFinset A x :=
+        chamberPt_spx x hsimplex
+      rw [hspx]
       rw [Finset.inter_assoc, Finset.inter_self]
       exact p.2.2⟩
 
 theorem interRho_spx (p : ChamberInter A x) :
-    (interRho p).1.spx = p.1.spx ∩ rdescFinset A x := rfl
+    (interRho p).1.spx = p.1.spx ∩ rdescFinset A x := by
+  dsimp only [interRho]
+  exact chamberPt_spx x _
 
 theorem interRho_le (p : ChamberInter A x) : interRho p ≤ p := by
   refine le_of_inChamber (interRho p).2.1 p.2.1 ?_

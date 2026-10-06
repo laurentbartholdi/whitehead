@@ -1,6 +1,10 @@
-import RequestProject.OrderConstructionPartialOrder
-import RequestProject.PosetCoverRestriction
-import RequestProject.PosetCoverTargetIso
+module
+
+public import RequestProject.OrderConstructionPartialOrder
+public import RequestProject.PosetCoverRestriction
+public import RequestProject.PosetCoverTargetIso
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 universe u

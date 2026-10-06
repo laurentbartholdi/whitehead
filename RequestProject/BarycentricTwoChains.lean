@@ -1,5 +1,9 @@
-import RequestProject.CmpNerve
-import RequestProject.OrderNormalizationNaturality
+module
+
+public import RequestProject.CmpNerve
+public import RequestProject.OrderNormalizationNaturality
+
+@[expose] public section
 
 /-! Explicit finite barycentric subdivision in degrees one and two.
 Proof terms only; not compiled under the current workflow. -/
@@ -146,7 +150,7 @@ theorem barycentricChain2_boundary (c : OrdTri P →₀ ℤ) :
     simpa only [barycentricChain2, Finsupp.linearCombination_single, one_smul] using
       barycentricTriangle_boundary t
 
-private theorem barycentric_mapDomain_sub {I J : Type u} (f : I → J) (x y : I →₀ ℤ) :
+theorem barycentric_mapDomain_sub {I J : Type u} (f : I → J) (x y : I →₀ ℤ) :
     Finsupp.mapDomain f (x - y) = Finsupp.mapDomain f x - Finsupp.mapDomain f y :=
   (Finsupp.mapDomain.addMonoidHom f).map_sub x y
 

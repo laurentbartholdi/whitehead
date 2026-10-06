@@ -1,4 +1,8 @@
-import RequestProject.ConeAdjPoset
+module
+
+public import RequestProject.ConeAdjPoset
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 universe u

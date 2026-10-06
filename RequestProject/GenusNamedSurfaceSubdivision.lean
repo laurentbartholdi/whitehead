@@ -1,7 +1,11 @@
-import RequestProject.GenusNamedSurfaceCover
-import RequestProject.BarycentricTwoChains
-import RequestProject.OrderTwoMapPrism
-import RequestProject.OrderNervePositiveFillings
+module
+
+public import RequestProject.GenusNamedSurfaceCover
+public import RequestProject.BarycentricTwoChains
+public import RequestProject.OrderTwoMapPrism
+public import RequestProject.OrderNervePositiveFillings
+
+@[expose] public section
 
 /-!
 Reverse comparison for the actual lifted attaching surface. The six-triangle

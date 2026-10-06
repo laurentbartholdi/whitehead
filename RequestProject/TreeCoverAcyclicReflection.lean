@@ -1,4 +1,8 @@
-import RequestProject.TreeCoverRelativeBoundary
+module
+
+public import RequestProject.TreeCoverRelativeBoundary
+
+@[expose] public section
 
 /-! The converse homology comparison for spanning-tree collapse.
 No finiteness assumption on the original cells or cover is used.

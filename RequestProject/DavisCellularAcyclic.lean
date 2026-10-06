@@ -1,5 +1,9 @@
-import RequestProject.DavisChainAcyclic
-import RequestProject.OrderNerveDecoding
+module
+
+public import RequestProject.DavisChainAcyclic
+public import RequestProject.OrderNerveDecoding
+
+@[expose] public section
 
 /-! Exactness in degree two of the full cellular nerve of the actual Davis poset. -/
 

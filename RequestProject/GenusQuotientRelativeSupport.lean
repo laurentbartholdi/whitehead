@@ -1,5 +1,9 @@
-import RequestProject.GenusQuotientRelativeCorrection
-import RequestProject.UniversalOrderChainBridge
+module
+
+public import RequestProject.GenusQuotientRelativeCorrection
+public import RequestProject.UniversalOrderChainBridge
+
+@[expose] public section
 
 /-! The actual quotient correction stays over the old subposet, before and after
 deck translation and conversion to nerve chains. Pending final Lean verification.

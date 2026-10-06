@@ -1,4 +1,8 @@
-import RequestProject.ClassicalCWChainHomotopies
+module
+
+public import RequestProject.ClassicalCWChainHomotopies
+
+@[expose] public section
 
 /-! Actual graph-and-word-disk models for all stages of an original CW
 chain. These equivalences use the original characteristic disks and the

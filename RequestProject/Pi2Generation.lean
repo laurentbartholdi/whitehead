@@ -1,5 +1,9 @@
-import RequestProject.Pi2Extension
-import RequestProject.BaseChangeCycles
+module
+
+public import RequestProject.Pi2Extension
+public import RequestProject.BaseChangeCycles
+
+@[expose] public section
 
 /-!
 # Generation of `π₂` over the enlarged group ring (equation (3.3) for one extension step)

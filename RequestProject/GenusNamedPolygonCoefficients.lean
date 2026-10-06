@@ -1,6 +1,10 @@
-import RequestProject.GenusNamedSurfaceCover
-import RequestProject.SurfaceCoverPolygonEquivariance
-import RequestProject.OrderUniversalDeck
+module
+
+public import RequestProject.GenusNamedSurfaceCover
+public import RequestProject.SurfaceCoverPolygonEquivariance
+public import RequestProject.OrderUniversalDeck
+
+@[expose] public section
 
 /-!
 Actual group-ring polygon coefficients for the named quotient's surface cover.

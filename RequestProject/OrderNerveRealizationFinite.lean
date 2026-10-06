@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveTwoComplex
+module
+
+public import RequestProject.OrderNerveTwoComplex
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory Topology

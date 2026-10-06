@@ -1,5 +1,9 @@
-import RequestProject.HurewiczIso
-import RequestProject.CoverAcyclic
+module
+
+public import RequestProject.HurewiczIso
+public import RequestProject.CoverAcyclic
+
+@[expose] public section
 
 /-!
 # Remark 1 of the paper, in algebraic form: acyclicity of `K_N` characterises `N`

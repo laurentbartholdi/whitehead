@@ -1,5 +1,9 @@
-import RequestProject.QCubeCanonicalTwoCycles
-import RequestProject.QCubeImmediateFaces
+module
+
+public import RequestProject.QCubeCanonicalTwoCycles
+public import RequestProject.QCubeImmediateFaces
+
+@[expose] public section
 
 /-! Faithful indexing of the actual facets of a quotient cube. -/
 namespace FiniteChains.Davis

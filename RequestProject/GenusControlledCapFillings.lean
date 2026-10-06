@@ -1,5 +1,9 @@
-import RequestProject.SurfaceFullCubeConeChains
-import RequestProject.GenusFullCubeMarking
+module
+
+public import RequestProject.SurfaceFullCubeConeChains
+public import RequestProject.GenusFullCubeMarking
+
+@[expose] public section
 
 /-! Concrete cap fillings split into an old-block marking correction and a positive cone fan. -/
 set_option backward.defeqAttrib.useBackward true

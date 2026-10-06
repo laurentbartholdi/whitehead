@@ -1,5 +1,9 @@
-import RequestProject.GenusPositiveSquareCoefficients
-import RequestProject.OrderNormalizationSupport
+module
+
+public import RequestProject.GenusPositiveSquareCoefficients
+public import RequestProject.OrderNormalizationSupport
+
+@[expose] public section
 
 /-! Recovered square coefficients occur only on actual surviving ordinary spine faces. -/
 namespace FiniteChains.Davis.Genus

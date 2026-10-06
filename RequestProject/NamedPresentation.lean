@@ -1,4 +1,8 @@
-import RequestProject.SurfaceWordExpansion
+module
+
+public import RequestProject.SurfaceWordExpansion
+
+@[expose] public section
 
 /-! Adjoining names for concrete words preserves a presented group. -/
 namespace FiniteChains.NamedPresentation

@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveRealizationSimplices
-import RequestProject.OrderNerveDimension
+module
+
+public import RequestProject.OrderNerveRealizationSimplices
+public import RequestProject.OrderNerveDimension
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory Simplicial

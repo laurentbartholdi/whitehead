@@ -1,5 +1,9 @@
-import RequestProject.GenusSpineCells
-import RequestProject.GenusLoops
+module
+
+public import RequestProject.GenusSpineCells
+public import RequestProject.GenusLoops
+
+@[expose] public section
 
 /-! Canonical surface-generator paths in the actual surviving finite spine. -/
 
@@ -61,7 +65,7 @@ theorem isPath_spineBdEdge (p : Fin (8 * q)) :
       (spineCutSingleton q (cV (gc q) p)) (spineCutSingleton q (cV (gc q) (p + 1))) :=
   (isPath_spineEdgeHop q _).append (isPath_revPath (isPath_spineEdgeHop q _))
 
-private theorem marking_mapPath_rev {X Y : Complex2} (f : Hom X Y)
+theorem marking_mapPath_rev {X Y : Complex2} (f : Hom X Y)
     (p : List (X.E × Bool)) : mapPath f (revPath p) = revPath (mapPath f p) := by
   simp [mapPath, revPath, revGerm, List.map_map, Function.comp_def, List.map_reverse]
 

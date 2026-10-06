@@ -1,4 +1,8 @@
-import Mathlib
+module
+
+public import Mathlib
+
+@[expose] public section
 
 /-!
 # Cancelling the polygon-cylinder three-cell against the replaced two-cell

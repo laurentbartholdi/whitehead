@@ -1,4 +1,8 @@
-import RequestProject.Fox
+module
+
+public import RequestProject.Fox
+
+@[expose] public section
 
 namespace FiniteChains
 variable {α : Type*} [DecidableEq α]

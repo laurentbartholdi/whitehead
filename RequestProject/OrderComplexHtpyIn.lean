@@ -1,4 +1,8 @@
-import RequestProject.OrderComplexGluing
+module
+
+public import RequestProject.OrderComplexGluing
+
+@[expose] public section
 
 /-!
 # Homotopies of edge paths *inside* a subposet

@@ -1,5 +1,9 @@
-import RequestProject.GenusBoundaryCoordinates
-import RequestProject.SurfaceCocycleExtension
+module
+
+public import RequestProject.GenusBoundaryCoordinates
+public import RequestProject.SurfaceCocycleExtension
+
+@[expose] public section
 
 /-! The actual marked loops control all nonabelian surface monodromy. -/
 namespace FiniteChains.Davis.Genus

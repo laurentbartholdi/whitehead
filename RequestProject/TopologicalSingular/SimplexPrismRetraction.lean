@@ -1,4 +1,8 @@
-import RequestProject.TopologicalSingular.SingularChains
+module
+
+public import RequestProject.TopologicalSingular.SingularChains
+
+@[expose] public section
 
 /-! An explicit retraction of a simplex prism onto its bottom and its sides.
 The radial projection is taken from height two above the barycentre. Its

@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveRealizationVertexCoherence
-import RequestProject.TopologyPaths.OpenCoverPaths
+module
+
+public import RequestProject.OrderNerveRealizationVertexCoherence
+public import RequestProject.TopologyPaths.OpenCoverPaths
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

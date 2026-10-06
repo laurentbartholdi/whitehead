@@ -1,4 +1,8 @@
-import RequestProject.RollerGraphMetric
+module
+
+public import RequestProject.RollerGraphMetric
+
+@[expose] public section
 
 /-!
 # Non-vacuity of the gated Roller model

@@ -1,4 +1,8 @@
-import RequestProject.OrderPosetCovering
+module
+
+public import RequestProject.OrderPosetCovering
+
+@[expose] public section
 
 /-! An actual set-valued local system on a poset gives a poset covering.
 The construction retains the whole fibre; no choice of group coordinates

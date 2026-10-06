@@ -1,6 +1,10 @@
-import RequestProject.SurfaceCoverRelativeRigidity
-import RequestProject.SurfaceFundamentalChain
-import RequestProject.OrderNerveDecoding
+module
+
+public import RequestProject.SurfaceCoverRelativeRigidity
+public import RequestProject.SurfaceFundamentalChain
+public import RequestProject.OrderNerveDecoding
+
+@[expose] public section
 
 /-! The actual polygon disk lifted from each centre of a surface poset cover. -/
 open scoped Classical

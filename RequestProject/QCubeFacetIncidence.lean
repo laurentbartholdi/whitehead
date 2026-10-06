@@ -1,5 +1,9 @@
-import RequestProject.QCubeThreeSubdivision
-import RequestProject.MomentAngle
+module
+
+public import RequestProject.QCubeThreeSubdivision
+public import RequestProject.MomentAngle
+
+@[expose] public section
 
 /-! Actual quotient facets have the cubical collapse's coordinate incidence signs. -/
 namespace FiniteChains.Davis

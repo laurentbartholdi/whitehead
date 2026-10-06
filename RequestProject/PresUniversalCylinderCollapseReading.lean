@@ -1,5 +1,9 @@
-import RequestProject.PresUniversalRelatorMidpointReading
-import RequestProject.PresCoverCylinderRelatorBoundary
+module
+
+public import RequestProject.PresUniversalRelatorMidpointReading
+public import RequestProject.PresCoverCylinderRelatorBoundary
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

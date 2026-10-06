@@ -1,6 +1,10 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.AttachmentDiagramHomeomorph
-import RequestProject.ClassicalCellAttachmentMaps
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.AttachmentDiagramHomeomorph
+public import RequestProject.ClassicalCellAttachmentMaps
+
+@[expose] public section
 
 /-! Relabel a family of actual disks without changing its parameters.
 The base points and individual characteristic-disk points are retained

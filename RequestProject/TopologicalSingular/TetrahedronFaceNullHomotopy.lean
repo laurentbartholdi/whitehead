@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.BasedTriangleHomotopy
-import RequestProject.TopologicalSingular.SimplexFaceIntersections
+module
+
+public import RequestProject.TopologicalSingular.BasedTriangleHomotopy
+public import RequestProject.TopologicalSingular.SimplexFaceIntersections
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 open scoped unitInterval Topology

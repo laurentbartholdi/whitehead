@@ -1,6 +1,10 @@
-import RequestProject.TopologicalSingular.CoherentTriangleNormalization
-import RequestProject.TopologicalSingular.CoherentPrism
-import RequestProject.TopologicalSingular.BasedTriangleHurewicz
+module
+
+public import RequestProject.TopologicalSingular.CoherentTriangleNormalization
+public import RequestProject.TopologicalSingular.CoherentPrism
+public import RequestProject.TopologicalSingular.BasedTriangleHurewicz
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 open scoped Topology

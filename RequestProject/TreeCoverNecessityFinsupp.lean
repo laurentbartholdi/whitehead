@@ -1,5 +1,9 @@
-import RequestProject.TreeCoverAcyclic
-import RequestProject.PresentationChainFinsupp
+module
+
+public import RequestProject.TreeCoverAcyclic
+public import RequestProject.PresentationChainFinsupp
+
+@[expose] public section
 
 /-! Necessity cover construction after spanning-tree collapse, for arbitrary cell sets. -/
 

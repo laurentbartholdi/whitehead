@@ -1,4 +1,8 @@
-import RequestProject.DavisChamberGluing
+module
+
+public import RequestProject.DavisChamberGluing
+
+@[expose] public section
 
 /-!
 # The Davis complex of a right-angled Coxeter group is simply connected
@@ -181,11 +185,11 @@ theorem nullIn_upto (A : CommRel V) : ∀ n : ℕ,
 /-! ### Simple connectivity of the whole complex -/
 
 /-- A bound on the lengths of the representatives occurring along an edge path. -/
-private noncomputable def pathBound (l : List ((orderCx (Sph A)).E × Bool)) : ℕ :=
+noncomputable def pathBound (l : List ((orderCx (Sph A)).E × Bool)) : ℕ :=
   (l.map (fun e => RACG.clen A (e.1.1.1).rep + RACG.clen A (e.1.1.2).rep)).sum
 
 omit [Fintype V] in
-private theorem pathIn_upto_pathBound (l : List ((orderCx (Sph A)).E × Bool)) :
+theorem pathIn_upto_pathBound (l : List ((orderCx (Sph A)).E × Bool)) :
     PathIn (Upto (A := A) (pathBound l)) l := by
   intro e he
   have hmem : RACG.clen A (e.1.1.1).rep + RACG.clen A (e.1.1.2).rep ∈

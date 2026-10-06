@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveOneDecoding
+module
+
+public import RequestProject.OrderNerveOneDecoding
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open FreeAbelianGroup

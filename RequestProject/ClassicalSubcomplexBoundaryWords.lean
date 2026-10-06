@@ -1,6 +1,10 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.ClassicalSubcomplexGraphNaturality
-import RequestProject.BoundaryWordNaturality
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.ClassicalSubcomplexGraphNaturality
+public import RequestProject.BoundaryWordNaturality
+
+@[expose] public section
 
 /-! Every original two-cell has a boundary word in the exact graph of
 its subcomplex. These data can be pushed along original inclusions,

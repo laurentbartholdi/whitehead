@@ -1,7 +1,11 @@
-import RequestProject.PresCoverRelatorNaturality
-import RequestProject.OrderUniversalDeck
-import RequestProject.OrderUniversalPosetCover
-import RequestProject.PresPosetConnected
+module
+
+public import RequestProject.PresCoverRelatorNaturality
+public import RequestProject.OrderUniversalDeck
+public import RequestProject.OrderUniversalPosetCover
+public import RequestProject.PresPosetConnected
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

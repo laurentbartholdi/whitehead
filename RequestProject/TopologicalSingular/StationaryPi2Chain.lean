@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.StationaryTriangleNormalization
-import RequestProject.TopologicalSingular.TetrahedronGeneralFaceRelation
+module
+
+public import RequestProject.TopologicalSingular.StationaryTriangleNormalization
+public import RequestProject.TopologicalSingular.TetrahedronGeneralFaceRelation
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 variable {X : Type} [TopologicalSpace X] [SimplyConnectedSpace X]

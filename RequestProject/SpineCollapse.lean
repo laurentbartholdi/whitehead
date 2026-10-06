@@ -1,6 +1,10 @@
-import RequestProject.Collapse
-import RequestProject.BarycentricSurface
-import RequestProject.MomentAngleExample
+module
+
+public import RequestProject.Collapse
+public import RequestProject.BarycentricSurface
+public import RequestProject.MomentAngleExample
+
+@[expose] public section
 
 /-!
 # Lemma 3.2 (ii) for the explicit model: the three-cubes of `C(L)` collapse away

@@ -1,4 +1,8 @@
-import RequestProject.RACGMedianGraph
+module
+
+public import RequestProject.RACGMedianGraph
+
+@[expose] public section
 
 /-!
 # A concrete right-angled Coxeter group

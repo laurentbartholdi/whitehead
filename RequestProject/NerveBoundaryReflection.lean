@@ -1,4 +1,8 @@
-import RequestProject.NerveDegreeTransfer
+module
+
+public import RequestProject.NerveDegreeTransfer
+
+@[expose] public section
 
 /-! Reflection of actual fillings under deletion of an acyclic attaching piece. -/
 namespace FiniteChains.Nerve

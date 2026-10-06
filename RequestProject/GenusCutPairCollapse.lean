@@ -1,5 +1,9 @@
-import RequestProject.GenusOrdinaryPairCollapse
-import RequestProject.PositiveBoundaryCoordinates
+module
+
+public import RequestProject.GenusOrdinaryPairCollapse
+public import RequestProject.PositiveBoundaryCoordinates
+
+@[expose] public section
 
 namespace FiniteChains.Davis.Genus
 open RACG Mirror Comb

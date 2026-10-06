@@ -1,8 +1,12 @@
-import RequestProject.ChamberZUniversalCycleGeneration
-import RequestProject.UniversalCoverCoverMap
-import RequestProject.UniversalOrderThreeNaturality
-import RequestProject.ChamberQuotientCover
-import RequestProject.StrictChamberInjection
+module
+
+public import RequestProject.ChamberZUniversalCycleGeneration
+public import RequestProject.UniversalCoverCoverMap
+public import RequestProject.UniversalOrderThreeNaturality
+public import RequestProject.ChamberQuotientCover
+public import RequestProject.StrictChamberInjection
+
+@[expose] public section
 
 /-! Genuine universal-cover two-cycle generation in the quotient chamber model. -/
 set_option backward.defeqAttrib.useBackward true

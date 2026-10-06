@@ -1,6 +1,10 @@
-import RequestProject.OrderComplexLoopRepresentatives
-import RequestProject.CmpNerve
-import RequestProject.OrderCxMonodromy
+module
+
+public import RequestProject.OrderComplexLoopRepresentatives
+public import RequestProject.CmpNerve
+public import RequestProject.OrderCxMonodromy
+
+@[expose] public section
 
 /-! Replace a passage through a top cell by an actual path in its remaining boundary. -/
 namespace FiniteChains.Comb

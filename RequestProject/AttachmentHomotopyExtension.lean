@@ -1,6 +1,10 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.ExplicitRelativeAttachment
-import RequestProject.BallHomotopyExtension
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.ExplicitRelativeAttachment
+public import RequestProject.BallHomotopyExtension
+
+@[expose] public section
 
 /-! Homotopy extension for the literal old subspace of an attachment.
 Currying in the compact time coordinate proves joint continuity on the

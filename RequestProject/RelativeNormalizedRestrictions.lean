@@ -1,4 +1,8 @@
-import RequestProject.RelativeNormalizedWords
+module
+
+public import RequestProject.RelativeNormalizedWords
+
+@[expose] public section
 
 /-! Restrictions of the single ambient normalization. No correction or
 commutator factorization is re-chosen when a stage is restricted.
@@ -100,7 +104,7 @@ def blockCellIncl :
     (C ⊕ (Σ s : {s // t s}, NamedSpineRel (restrictedGenus core hcore extra t s))) :=
   Sum.map id (fun m => ⟨labelIncl hpt m.1, m.2⟩)
 
-private theorem sigma_labelIncl_injective {F : S → Type}
+theorem sigma_labelIncl_injective {F : S → Type}
     : Function.Injective (fun z : Σ s : {s // p s}, F s.val =>
         (⟨labelIncl hpt z.1, z.2⟩ : Σ s : {s // t s}, F s.val)) := by
   rintro ⟨s, x⟩ ⟨s', x'⟩ h

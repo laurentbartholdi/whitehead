@@ -1,5 +1,9 @@
-import RequestProject.OrderUniversalPosetHom
-import RequestProject.OrderUniversalThree
+module
+
+public import RequestProject.OrderUniversalPosetHom
+public import RequestProject.OrderUniversalThree
+
+@[expose] public section
 
 /-! The actual lifted three-boundary under the universal-cover order identification. -/
 set_option backward.defeqAttrib.useBackward true

@@ -1,5 +1,9 @@
-import RequestProject.OrderAcyclicRegularCover
-import RequestProject.OrderTwoDimensionalH2Injection
+module
+
+public import RequestProject.OrderAcyclicRegularCover
+public import RequestProject.OrderTwoDimensionalH2Injection
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

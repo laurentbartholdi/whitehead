@@ -1,9 +1,13 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.RelativeChainHomotopy
-import RequestProject.TopologicalSingular.ContractibleSingularChains
-import Mathlib.Algebra.Homology.HomologySequence
-import Mathlib.Algebra.Category.ModuleCat.EpiMono
+public import RequestProject.TopologicalSingular.RelativeChainHomotopy
+public import RequestProject.TopologicalSingular.ContractibleSingularChains
+public import Mathlib.Algebra.Homology.HomologySequence
+public import Mathlib.Algebra.Category.ModuleCat.EpiMono
+
+@[expose] public section
 
 /-! # The long exact sequence of an actual topological pair
 

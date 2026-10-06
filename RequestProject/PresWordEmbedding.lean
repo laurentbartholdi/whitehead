@@ -1,4 +1,8 @@
-import RequestProject.PresValidPoset
+module
+
+public import RequestProject.PresValidPoset
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

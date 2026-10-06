@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveRealizationSubtypeHomeomorph
+module
+
+public import RequestProject.OrderNerveRealizationSubtypeHomeomorph
+
+@[expose] public section
 
 /-! A family of induced subposets containing every simplex realizes as
 an actual quotient cover, even for infinitely many pieces. This is a

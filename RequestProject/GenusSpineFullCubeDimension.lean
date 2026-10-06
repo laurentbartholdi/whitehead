@@ -1,6 +1,10 @@
-import RequestProject.GenusCubicalBoundaryCollapse
-import RequestProject.GenusFullCubeMarking
-import RequestProject.OrderThreeNormalization
+module
+
+public import RequestProject.GenusCubicalBoundaryCollapse
+public import RequestProject.GenusFullCubeMarking
+public import RequestProject.OrderThreeNormalization
+
+@[expose] public section
 
 /-! The actual marked-spine image is supported in quotient cube dimension at most two. -/
 set_option backward.defeqAttrib.useBackward true

@@ -1,4 +1,8 @@
-import RequestProject.GenusQuotientRelativeSupport
+module
+
+public import RequestProject.GenusQuotientRelativeSupport
+
+@[expose] public section
 
 /-! Lift the actual surface markings to the genuine attaching cover and apply
 the relative old-chain filling theorem. Pending final Lean verification.

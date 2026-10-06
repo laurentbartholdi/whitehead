@@ -1,4 +1,8 @@
-import RequestProject.GenusReceivedCoveredSpine
+module
+
+public import RequestProject.GenusReceivedCoveredSpine
+
+@[expose] public section
 
 /-! The received spine on every sheet of the actual quotient group.
 The change of coefficient group is a cellular map, and old-cover

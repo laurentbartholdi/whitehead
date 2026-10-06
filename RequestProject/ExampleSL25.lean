@@ -1,4 +1,8 @@
-import RequestProject.Fox
+module
+
+public import RequestProject.Fox
+
+@[expose] public section
 
 /-!
 # The acyclic presentation of Remark 2

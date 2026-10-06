@@ -1,6 +1,10 @@
-import RequestProject.TreeCoverAcyclic
-import RequestProject.CombPi2
-import RequestProject.UniversalCoverPi2
+module
+
+public import RequestProject.TreeCoverAcyclic
+public import RequestProject.CombPi2
+public import RequestProject.UniversalCoverPi2
+
+@[expose] public section
 
 /-!
 # Collapsing a spanning tree does not change `π₂`

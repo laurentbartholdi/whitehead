@@ -1,4 +1,8 @@
-import RequestProject.BlockSpinePres
+module
+
+public import RequestProject.BlockSpinePres
+
+@[expose] public section
 
 /-!
 # The block is connected, so it carries a spanning tree

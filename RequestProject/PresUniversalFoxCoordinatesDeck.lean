@@ -1,5 +1,9 @@
-import RequestProject.PresUniversalFoxKernelEquiv
-import RequestProject.PresUniversalGroupCoordinatesDeck
+module
+
+public import RequestProject.PresUniversalFoxKernelEquiv
+public import RequestProject.PresUniversalGroupCoordinatesDeck
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

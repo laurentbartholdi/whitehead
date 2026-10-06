@@ -1,4 +1,8 @@
-import RequestProject.ChamberZBaseGeneration
+module
+
+public import RequestProject.ChamberZBaseGeneration
+
+@[expose] public section
 
 /-! Extraction of actual base-copy cycles from the modified-chamber base. -/
 set_option backward.defeqAttrib.useBackward true

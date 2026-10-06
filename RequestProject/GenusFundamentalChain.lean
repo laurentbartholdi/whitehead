@@ -1,5 +1,9 @@
-import RequestProject.SurfaceFundamentalChain
-import RequestProject.GenusSurface
+module
+
+public import RequestProject.SurfaceFundamentalChain
+public import RequestProject.GenusSurface
+
+@[expose] public section
 
 /-! The oriented fundamental chain of the concrete genus polygon. -/
 

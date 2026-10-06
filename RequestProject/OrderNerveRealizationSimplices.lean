@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveRealizationComparison
+module
+
+public import RequestProject.OrderNerveRealizationComparison
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

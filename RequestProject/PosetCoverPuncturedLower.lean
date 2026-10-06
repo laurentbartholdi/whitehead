@@ -1,5 +1,9 @@
-import RequestProject.PosetCoverLowerInterval
-import RequestProject.PosetCoverTargetIso
+module
+
+public import RequestProject.PosetCoverLowerInterval
+public import RequestProject.PosetCoverTargetIso
+
+@[expose] public section
 
 /-! A punctured lower link stays in the sheet of its specified lifted top cell. -/
 set_option backward.defeqAttrib.useBackward true

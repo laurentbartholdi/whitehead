@@ -1,4 +1,8 @@
-import RequestProject.OrderComparableCollapse
+module
+
+public import RequestProject.OrderComparableCollapse
+
+@[expose] public section
 
 /-! Finite strict three-chains witnessing a pointwise order homotopy. -/
 set_option backward.defeqAttrib.useBackward true

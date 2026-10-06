@@ -1,5 +1,9 @@
-import RequestProject.PresValidRealization
-import RequestProject.TopologicalDeformationPi2
+module
+
+public import RequestProject.PresValidRealization
+public import RequestProject.TopologicalDeformationPi2
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

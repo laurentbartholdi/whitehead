@@ -1,5 +1,9 @@
-import RequestProject.ChamberZCoverCellularGeneration
-import RequestProject.OrderUniversalPosetThree
+module
+
+public import RequestProject.ChamberZCoverCellularGeneration
+public import RequestProject.OrderUniversalPosetThree
+
+@[expose] public section
 
 /-! Base-cycle generation in the genuine path-class universal-cover cells. -/
 set_option backward.defeqAttrib.useBackward true

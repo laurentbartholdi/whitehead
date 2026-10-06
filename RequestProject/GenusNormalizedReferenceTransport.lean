@@ -1,5 +1,9 @@
-import RequestProject.GenusUniversalPolygonTransport
-import RequestProject.GenusSingleSpineReference
+module
+
+public import RequestProject.GenusUniversalPolygonTransport
+public import RequestProject.GenusSingleSpineReference
+
+@[expose] public section
 
 /-! The chosen source spine filling and its exact marking corrections map
 to the actual substituted reference. This supplies its geometric reference

@@ -1,4 +1,8 @@
-import RequestProject.QCubeFacetIndex
+module
+
+public import RequestProject.QCubeFacetIndex
+
+@[expose] public section
 
 /-! Exact coefficient coordinates for finite chains on the six actual facets of a three-cube. -/
 namespace FiniteChains.Davis

@@ -1,5 +1,9 @@
-import RequestProject.BlockFamilySubst
-import RequestProject.FoxFinsupp
+module
+
+public import RequestProject.BlockFamilySubst
+public import RequestProject.FoxFinsupp
+
+@[expose] public section
 
 /-!
 Arbitrary-family assembly of the block-local surface-generation statement.

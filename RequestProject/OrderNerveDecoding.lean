@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveDictionary
-import RequestProject.NerveDegree
+module
+
+public import RequestProject.OrderNerveDictionary
+public import RequestProject.NerveDegree
+
+@[expose] public section
 
 /-! Recover actual cellular two- and three-chains from homogeneous increasing nerve chains. -/
 

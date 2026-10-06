@@ -1,5 +1,9 @@
-import RequestProject.GenusFiniteMarking
-import RequestProject.SurfaceWordExpansion
+module
+
+public import RequestProject.GenusFiniteMarking
+public import RequestProject.SurfaceWordExpansion
+
+@[expose] public section
 
 /-! Structural group injectivity for substitution of arbitrary words in a finite genus block. -/
 

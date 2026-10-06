@@ -1,5 +1,9 @@
-import RequestProject.CylinderBoundaryHomotopyCorrection
-import Mathlib.Topology.Homeomorph.Lemmas
+module
+
+public import RequestProject.CylinderBoundaryHomotopyCorrection
+public import Mathlib.Topology.Homeomorph.Lemmas
+
+@[expose] public section
 
 /-! Disk and cylinder homotopy extension for arbitrary disjoint families.
 The construction never puts a finiteness condition on the family. -/

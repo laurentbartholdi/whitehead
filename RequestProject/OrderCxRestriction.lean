@@ -1,5 +1,9 @@
-import RequestProject.OrderComplexGluing
-import RequestProject.ComponentComplex
+module
+
+public import RequestProject.OrderComplexGluing
+public import RequestProject.ComponentComplex
+
+@[expose] public section
 
 /-! Corestrict an actual cellular map to an induced subposet using only its
 vertex support. The other face vertices are recovered from the attaching path.
@@ -57,7 +61,7 @@ def orderCxRestrictFace (t : K.F) : OrdTri {p : P // S p} :=
     ⟨(k.onF t).1.2.1, (orderCxRestrict_face_support k S hk t).2.1⟩,
     ⟨(k.onF t).1.2.2, (orderCxRestrict_face_support k S hk t).2.2⟩), (k.onF t).2⟩
 
-private theorem orderCxRestrict_germ_injective :
+theorem orderCxRestrict_germ_injective :
     Function.Injective (fun eb : (orderCx {p : P // S p}).E × Bool =>
       ((subposetHom S).onE eb.1, eb.2)) := by
   intro x y h

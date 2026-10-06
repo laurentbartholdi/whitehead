@@ -1,6 +1,10 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.SingularChains
+public import RequestProject.TopologicalSingular.SingularChains
+
+@[expose] public section
 
 /-! # Functorial maps on the explicit singular chain groups -/
 

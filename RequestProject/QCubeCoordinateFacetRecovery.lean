@@ -1,5 +1,9 @@
-import RequestProject.QCubeFacets
-import RequestProject.CutSurfaceSpine
+module
+
+public import RequestProject.QCubeFacets
+public import RequestProject.CutSurfaceSpine
+
+@[expose] public section
 
 /-! Fixed coordinate facets and the actual quotient-cube coefficient boundary. -/
 namespace FiniteChains.Davis

@@ -1,5 +1,9 @@
-import RequestProject.QCubeEdgeChainEmbedding
-import RequestProject.QCubeSquareFrameUniqueness
+module
+
+public import RequestProject.QCubeEdgeChainEmbedding
+public import RequestProject.QCubeSquareFrameUniqueness
+
+@[expose] public section
 
 /-! The actual cubical edge boundary and its faithful strict subdivision. -/
 namespace FiniteChains.Davis

@@ -1,6 +1,10 @@
-import RequestProject.VerifiedRelativeBoundaryFillings
-import RequestProject.GenusSpineSubstitutedBoundary
-import RequestProject.TreeCoverRelativeBoundary
+module
+
+public import RequestProject.VerifiedRelativeBoundaryFillings
+public import RequestProject.GenusSpineSubstitutedBoundary
+public import RequestProject.TreeCoverRelativeBoundary
+
+@[expose] public section
 
 /-!
 The internal Fox boundary of the actual substituted finite spine has been

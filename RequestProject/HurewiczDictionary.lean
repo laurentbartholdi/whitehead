@@ -1,6 +1,10 @@
-import RequestProject.MagnusKernel
-import RequestProject.CoverHomologyOne
-import RequestProject.UniversalCoefficients
+module
+
+public import RequestProject.MagnusKernel
+public import RequestProject.CoverHomologyOne
+public import RequestProject.UniversalCoefficients
+
+@[expose] public section
 
 /-!
 # The Hurewicz dictionary `H₁(K_N) = N/[N, N]`, proved

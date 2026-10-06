@@ -1,4 +1,8 @@
-import RequestProject.OrderComplexRetraction
+module
+
+public import RequestProject.OrderComplexRetraction
+
+@[expose] public section
 
 /-!
 # Transferring path statements along monotone maps and order isomorphisms

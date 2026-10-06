@@ -1,5 +1,9 @@
-import RequestProject.PresWordEmbeddingCombPi2
-import RequestProject.OrderEmbeddingOneChain
+module
+
+public import RequestProject.PresWordEmbeddingCombPi2
+public import RequestProject.OrderEmbeddingOneChain
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

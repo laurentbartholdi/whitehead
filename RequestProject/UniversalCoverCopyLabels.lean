@@ -1,5 +1,9 @@
-import RequestProject.UnivCoverCopies
-import RequestProject.DeckChainTransport
+module
+
+public import RequestProject.UnivCoverCopies
+public import RequestProject.DeckChainTransport
+
+@[expose] public section
 
 /-! Actual components of the pullback of a universal cover to L, described
 without choosing coset representatives.  The label keeps the L-vertex as

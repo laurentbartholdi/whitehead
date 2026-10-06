@@ -1,7 +1,11 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.SingularChainHomotopy
-import RequestProject.TopologicalSingular.RelativeSingularPrism
+public import RequestProject.TopologicalSingular.SingularChainHomotopy
+public import RequestProject.TopologicalSingular.RelativeSingularPrism
+
+@[expose] public section
 
 /-! # Chain maps and homotopies for actual topological pairs -/
 

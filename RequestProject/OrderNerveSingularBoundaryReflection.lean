@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveReturnHomotopy
+module
+
+public import RequestProject.OrderNerveReturnHomotopy
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

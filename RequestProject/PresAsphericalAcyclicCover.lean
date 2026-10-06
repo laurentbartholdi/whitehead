@@ -1,6 +1,10 @@
-import RequestProject.OrderUniversalRealizationAcyclicity
-import RequestProject.PresWordEmbeddingCombPi2
-import RequestProject.AsphericalFiniteTopologicalChains
+module
+
+public import RequestProject.OrderUniversalRealizationAcyclicity
+public import RequestProject.PresWordEmbeddingCombPi2
+public import RequestProject.AsphericalFiniteTopologicalChains
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

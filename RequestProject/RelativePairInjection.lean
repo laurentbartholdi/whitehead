@@ -1,6 +1,10 @@
-import RequestProject.RelativeNormalizedWords
-import RequestProject.HNNEmbedding
-import Mathlib.GroupTheory.PushoutI
+module
+
+public import RequestProject.RelativeNormalizedWords
+public import RequestProject.HNNEmbedding
+public import Mathlib.GroupTheory.PushoutI
+
+@[expose] public section
 
 /-! Simultaneous rule 1 is injective for arbitrary presentations. Independent
 HNN receivers share the old group through a wide amalgam; no finite ordering

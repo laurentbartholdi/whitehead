@@ -1,7 +1,11 @@
-import RequestProject.GenusMarkedSpineFamily
-import RequestProject.GenusCappedSpineFox
-import RequestProject.BlockSubstitutionFoxCoordinates
-import RequestProject.NamedPresentationRelativeBoundary
+module
+
+public import RequestProject.GenusMarkedSpineFamily
+public import RequestProject.GenusCappedSpineFox
+public import RequestProject.BlockSubstitutionFoxCoordinates
+public import RequestProject.NamedPresentationRelativeBoundary
+
+@[expose] public section
 
 /-! Exact relative boundary of a genuinely substituted finite genus spine. -/
 set_option backward.defeqAttrib.useBackward true

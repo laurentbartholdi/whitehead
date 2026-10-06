@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveRealizationSmallChains
-import RequestProject.OrderNerveSingularCarrierFillings
+module
+
+public import RequestProject.OrderNerveRealizationSmallChains
+public import RequestProject.OrderNerveSingularCarrierFillings
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open TopologicalSingular SingularSubdivision

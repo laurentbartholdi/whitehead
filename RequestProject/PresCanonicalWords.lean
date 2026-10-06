@@ -1,5 +1,9 @@
-import RequestProject.PresWordEmbedding
-import RequestProject.PresSubcomplex
+module
+
+public import RequestProject.PresWordEmbedding
+public import RequestProject.PresSubcomplex
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 universe u

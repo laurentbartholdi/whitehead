@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveRealizationHausdorff
+module
+
+public import RequestProject.OrderNerveRealizationHausdorff
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory Simplicial

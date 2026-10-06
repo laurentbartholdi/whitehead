@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.SingularChainH1
-import RequestProject.TopologicalSingular.MathlibComparison
+module
+
+public import RequestProject.TopologicalSingular.SingularChainH1
+public import RequestProject.TopologicalSingular.MathlibComparison
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

@@ -1,6 +1,10 @@
-import RequestProject.ChamberZPi1Base
-import RequestProject.ChamberZAction
-import RequestProject.RACGSpecialParity
+module
+
+public import RequestProject.ChamberZPi1Base
+public import RequestProject.ChamberZAction
+public import RequestProject.RACGSpecialParity
+
+@[expose] public section
 
 /-!
 # The quotient `Q = Z/Γ` of the complex of modified chambers

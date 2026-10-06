@@ -1,8 +1,12 @@
-import RequestProject.InitialChain
-import RequestProject.PresCockcroftDictionary
-import RequestProject.PresentationComplexAcyclic
-import RequestProject.CombHurewicz1Pres
-import RequestProject.TheoremAAcyclic
+module
+
+public import RequestProject.InitialChain
+public import RequestProject.PresCockcroftDictionary
+public import RequestProject.PresentationComplexAcyclic
+public import RequestProject.CombHurewicz1Pres
+public import RequestProject.TheoremAAcyclic
+
+@[expose] public section
 
 /-!
 # The initial pair of Lemma 3.1 as a map-carrying relative chain

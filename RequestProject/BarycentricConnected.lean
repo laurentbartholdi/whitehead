@@ -1,5 +1,9 @@
-import RequestProject.BarycentricSurface
-import RequestProject.MomentAngleConnected
+module
+
+public import RequestProject.BarycentricSurface
+public import RequestProject.MomentAngleConnected
+
+@[expose] public section
 
 /-!
 # The dual graph of the barycentric subdivision is connected

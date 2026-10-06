@@ -1,7 +1,11 @@
-import RequestProject.PresCocycleCoverFoxBoundary
-import RequestProject.PresPosetGroupEquiv
-import RequestProject.PresPosetConnected
-import RequestProject.ConnectedCellularZeroFillings
+module
+
+public import RequestProject.PresCocycleCoverFoxBoundary
+public import RequestProject.PresPosetGroupEquiv
+public import RequestProject.PresPosetConnected
+public import RequestProject.ConnectedCellularZeroFillings
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

@@ -1,4 +1,8 @@
-import RequestProject.QCubeFacets
+module
+
+public import RequestProject.QCubeFacets
+
+@[expose] public section
 
 /-! The actual oriented edge cycle of a two-dimensional quotient cube. -/
 open scoped Classical

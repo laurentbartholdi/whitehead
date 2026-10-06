@@ -1,5 +1,9 @@
-import RequestProject.ClassicalCWOneTwoDiskTransfer
-import RequestProject.ClassicalCWSequentialChains
+module
+
+public import RequestProject.ClassicalCWOneTwoDiskTransfer
+public import RequestProject.ClassicalCWSequentialChains
+
+@[expose] public section
 
 /-! Transfer a whole sequence of relative one/two-cell models to the
 literal original CW complex. Each stage is constructed from the preceding

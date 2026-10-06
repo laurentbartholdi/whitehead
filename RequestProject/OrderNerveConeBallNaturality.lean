@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveLowerCone
-import Mathlib.Order.Hom.WithTopBot
+module
+
+public import RequestProject.OrderNerveLowerCone
+public import Mathlib.Order.Hom.WithTopBot
+
+@[expose] public section
 
 /-! The actual radial cone/disk identification commutes with a relabelling
 of its boundary poset when the boundary parametrizations agree. -/

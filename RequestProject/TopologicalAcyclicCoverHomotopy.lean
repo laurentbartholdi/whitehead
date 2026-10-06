@@ -1,5 +1,9 @@
-import RequestProject.TopologicalCoverPullbackHomotopy
-import RequestProject.TopologicalSingular.MathlibComparison
+module
+
+public import RequestProject.TopologicalCoverPullbackHomotopy
+public import RequestProject.TopologicalSingular.MathlibComparison
+
+@[expose] public section
 
 /-! Homotopy invariance of the acyclic regular covering condition in the
 original statement. The covering is the concrete pullback, and its total

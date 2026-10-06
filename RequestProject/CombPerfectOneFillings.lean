@@ -1,4 +1,8 @@
-import RequestProject.CellularHomotopyChain
+module
+
+public import RequestProject.CellularHomotopyChain
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 universe u

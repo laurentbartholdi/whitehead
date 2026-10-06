@@ -1,4 +1,8 @@
-import RequestProject.CellComplex
+module
+
+public import RequestProject.CellComplex
+
+@[expose] public section
 
 /-! A finitely supported chain can be split by incidence labels.  The
 boundary identity below requires homogeneity only at cells in its actual

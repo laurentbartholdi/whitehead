@@ -1,4 +1,8 @@
-import RequestProject.StrictTopConeChains
+module
+
+public import RequestProject.StrictTopConeChains
+
+@[expose] public section
 
 /-! Genuine strict tetrahedron fans, with their alternating boundary. -/
 set_option backward.defeqAttrib.useBackward true

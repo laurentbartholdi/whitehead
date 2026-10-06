@@ -1,5 +1,9 @@
-import RequestProject.Statement
-import RequestProject.OrderNerveRealizationPaths
+module
+
+public import RequestProject.Statement
+public import RequestProject.OrderNerveRealizationPaths
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory Topology

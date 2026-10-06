@@ -1,5 +1,9 @@
-import RequestProject.Pi2Generation
-import RequestProject.HNNEmbedding
+module
+
+public import RequestProject.Pi2Generation
+public import RequestProject.HNNEmbedding
+
+@[expose] public section
 
 /-!
 # The two extension steps of rule 1 really do contain the old group

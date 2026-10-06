@@ -1,4 +1,8 @@
-import RequestProject.GenusSpineCoordinateSupport
+module
+
+public import RequestProject.GenusSpineCoordinateSupport
+
+@[expose] public section
 
 /-! The actual surviving spine is closed under the retained-cube retraction. -/
 namespace FiniteChains.Davis.Genus

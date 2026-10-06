@@ -1,7 +1,11 @@
-import RequestProject.GenusMarkingFirstEdges
-import RequestProject.LiftedMarkedPathCoefficients
-import RequestProject.GenusQuotientAttachingFilling
-import RequestProject.GenusReceivedCoveredSpine
+module
+
+public import RequestProject.GenusMarkingFirstEdges
+public import RequestProject.LiftedMarkedPathCoefficients
+public import RequestProject.GenusQuotientAttachingFilling
+public import RequestProject.GenusReceivedCoveredSpine
+
+@[expose] public section
 
 /-! Exact group-ring coefficient recovery from the original lifted surface
 markings in the actual quotient.  -/

@@ -1,5 +1,9 @@
-import RequestProject.Framework
-import RequestProject.NecessityAlgebraic
+module
+
+public import RequestProject.Framework
+public import RequestProject.NecessityAlgebraic
+
+@[expose] public section
 
 /-!
 # The hypotheses of `(1) ⇒ (2)` reduced to their genuinely topological part

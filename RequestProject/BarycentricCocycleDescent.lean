@@ -1,5 +1,9 @@
-import RequestProject.CmpNerve
-import RequestProject.OrderCocycleFlatSections
+module
+
+public import RequestProject.CmpNerve
+public import RequestProject.OrderCocycleFlatSections
+
+@[expose] public section
 
 /-! Recover a nonabelian cocycle on a face poset from its actual subdivision. -/
 namespace FiniteChains.Davis

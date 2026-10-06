@@ -1,5 +1,9 @@
-import RequestProject.CylinderCoverCollapsedLetterCoefficients
-import RequestProject.PresCoverRelatorGeneratorBoundary
+module
+
+public import RequestProject.CylinderCoverCollapsedLetterCoefficients
+public import RequestProject.PresCoverRelatorGeneratorBoundary
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

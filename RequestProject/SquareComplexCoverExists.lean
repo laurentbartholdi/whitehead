@@ -1,5 +1,9 @@
-import RequestProject.SquareComplexMonodromy
-import RequestProject.SquareComplexUniversalCover
+module
+
+public import RequestProject.SquareComplexMonodromy
+public import RequestProject.SquareComplexUniversalCover
+
+@[expose] public section
 
 /-!
 # Existence of the universal cover of a square complex

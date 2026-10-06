@@ -1,5 +1,9 @@
-import Mathlib.Analysis.Convex.StdSimplex
-import Mathlib.Topology.Homeomorph.Lemmas
+module
+
+public import Mathlib.Analysis.Convex.StdSimplex
+public import Mathlib.Topology.Homeomorph.Lemmas
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 

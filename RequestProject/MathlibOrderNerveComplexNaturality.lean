@@ -1,5 +1,9 @@
-import RequestProject.MathlibOrderNerveCategoricalNaturality
-import Mathlib.Algebra.Homology.ShortComplex.HomologicalComplex
+module
+
+public import RequestProject.MathlibOrderNerveCategoricalNaturality
+public import Mathlib.Algebra.Homology.ShortComplex.HomologicalComplex
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

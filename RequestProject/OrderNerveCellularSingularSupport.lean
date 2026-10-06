@@ -1,6 +1,10 @@
-import RequestProject.OrderNerveCellularSingularChains
-import RequestProject.OrderNerveSingularCarrierExactness
-import RequestProject.OrderNerveDecoding
+module
+
+public import RequestProject.OrderNerveCellularSingularChains
+public import RequestProject.OrderNerveSingularCarrierExactness
+public import RequestProject.OrderNerveDecoding
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

@@ -1,4 +1,8 @@
-import RequestProject.RelativeTreeExtension
+module
+
+public import RequestProject.RelativeTreeExtension
+
+@[expose] public section
 
 /-! Cell inclusions between relative tree extensions with the same
 extra generators. Pending final Lean verification. -/

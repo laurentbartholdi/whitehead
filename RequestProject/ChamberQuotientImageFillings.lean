@@ -1,5 +1,9 @@
-import RequestProject.ChamberQuotientConnectedGeneration
-import RequestProject.UniversalOrderDeckThree
+module
+
+public import RequestProject.ChamberQuotientConnectedGeneration
+public import RequestProject.UniversalOrderDeckThree
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

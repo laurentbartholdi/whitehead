@@ -1,4 +1,8 @@
-import RequestProject.OrderEmbeddedTopologicalChains
+module
+
+public import RequestProject.OrderEmbeddedTopologicalChains
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory Topology

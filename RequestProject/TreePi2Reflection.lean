@@ -1,4 +1,8 @@
-import RequestProject.TreeChainTopological
+module
+
+public import RequestProject.TreeChainTopological
+
+@[expose] public section
 
 /-! The reverse direction of the spanning-tree comparison for actual
 cellular inclusions. It lets a relative presentation extension be moved

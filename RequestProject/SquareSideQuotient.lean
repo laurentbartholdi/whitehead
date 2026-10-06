@@ -1,7 +1,11 @@
-import RequestProject.SquareBoundary
-import Mathlib.Topology.ContinuousMap.Compact
-import Mathlib.Topology.Separation.Hausdorff
-import Mathlib.Tactic
+module
+
+public import RequestProject.SquareBoundary
+public import Mathlib.Topology.ContinuousMap.Compact
+public import Mathlib.Topology.Separation.Hausdorff
+public import Mathlib.Tactic
+
+@[expose] public section
 
 /-! The four closed sides give an actual compact quotient presentation
 of the square boundary. Maps and homotopies on the sides descend whenever

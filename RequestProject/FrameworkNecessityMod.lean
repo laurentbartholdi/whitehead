@@ -1,6 +1,10 @@
-import RequestProject.FrameworkNecessity
-import RequestProject.ChainFormulaMod
-import RequestProject.FoxCommutatorMod
+module
+
+public import RequestProject.FrameworkNecessity
+public import RequestProject.ChainFormulaMod
+public import RequestProject.FoxCommutatorMod
+
+@[expose] public section
 
 /-!
 # `(1) ⇒ (2)` with the full family of requirements (2.2)

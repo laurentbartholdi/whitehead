@@ -1,6 +1,10 @@
-import RequestProject.SimpleLoopBoundaryHomeomorph
-import Mathlib.Topology.Subpath
-import Mathlib.AlgebraicTopology.FundamentalGroupoid.Basic
+module
+
+public import RequestProject.SimpleLoopBoundaryHomeomorph
+public import Mathlib.Topology.Subpath
+public import Mathlib.AlgebraicTopology.FundamentalGroupoid.Basic
+
+@[expose] public section
 
 /-! Nonempty finite concatenation without an inserted constant initial or
 terminal segment. It preserves injectivity when different arcs only meet

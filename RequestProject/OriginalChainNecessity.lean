@@ -1,6 +1,10 @@
-import RequestProject.ClassicalCWFixedPresentationComparison
-import RequestProject.PresTopologicalPerfectCover
-import RequestProject.TopologicalAcyclicCoverHomotopy
+module
+
+public import RequestProject.ClassicalCWFixedPresentationComparison
+public import RequestProject.PresTopologicalPerfectCover
+public import RequestProject.TopologicalAcyclicCoverHomotopy
+
+@[expose] public section
 
 /-! The original necessity direction, with one fixed presentation chosen
 before any chain length or ambient CW complex. The result is an actual

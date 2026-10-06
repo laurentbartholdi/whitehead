@@ -1,4 +1,8 @@
-import RequestProject.AttCycle
+module
+
+public import RequestProject.AttCycle
+
+@[expose] public section
 
 /-!
 # The concrete attaching map and the loop along which it spells the prescribed word

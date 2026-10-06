@@ -1,5 +1,9 @@
-import RequestProject.PresPosetDimension
-import RequestProject.OrderComparableCycleHomotopy
+module
+
+public import RequestProject.PresPosetDimension
+public import RequestProject.OrderComparableCycleHomotopy
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

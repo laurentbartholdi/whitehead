@@ -1,6 +1,10 @@
-import RequestProject.ComponentChain
-import RequestProject.IdentityCover
-import RequestProject.Consistency
+module
+
+public import RequestProject.ComponentChain
+public import RequestProject.IdentityCover
+public import RequestProject.Consistency
+
+@[expose] public section
 
 /-!
 # The minimal path to a complete proof of Theorem A

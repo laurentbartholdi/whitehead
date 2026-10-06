@@ -1,4 +1,8 @@
-import Mathlib
+module
+
+public import Mathlib
+
+@[expose] public section
 
 /-!
 # Fox derivatives (Remark 1)
@@ -69,7 +73,7 @@ noncomputable def foxHom (i : α) :
 noncomputable def fox (i : α) (w : FreeGroup α) : FreeGroupRing α :=
   ((foxHom i w : Matrix (Fin 2) (Fin 2) (FreeGroupRing α))) 0 1
 
-private theorem foxHom_entries (i : α) (w : FreeGroup α) :
+theorem foxHom_entries (i : α) (w : FreeGroup α) :
     (foxHom i w : Matrix (Fin 2) (Fin 2) (FreeGroupRing α)) 0 0 = grp w ∧
     (foxHom i w : Matrix (Fin 2) (Fin 2) (FreeGroupRing α)) 1 0 = 0 ∧
     (foxHom i w : Matrix (Fin 2) (Fin 2) (FreeGroupRing α)) 1 1 = 1 := by

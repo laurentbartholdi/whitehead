@@ -1,6 +1,10 @@
-import Mathlib.Topology.Homeomorph.Lemmas
-import Mathlib.Topology.Constructions.SumProd
-import Mathlib.Topology.ContinuousMap.Basic
+module
+
+public import Mathlib.Topology.Homeomorph.Lemmas
+public import Mathlib.Topology.Constructions.SumProd
+public import Mathlib.Topology.ContinuousMap.Basic
+
+@[expose] public section
 
 /-! An explicit attachment space retaining every point of its base. The
 base is proved to embed as a closed subspace when the boundary inclusion is
@@ -148,10 +152,10 @@ theorem old_union_fresh (r : A → X) (i : A → D) :
 
 variable {Z : Type u} [TopologicalSpace Z]
 
-private def descFun (r : A → X) (i : A → D) (f : C(X, Z)) (g : C(D, Z)) :
+def descFun (r : A → X) (i : A → D) (f : C(X, Z)) (g : C(D, Z)) :
     Space r i → Z := Sum.elim f (fun d => g d.val)
 
-private theorem descFun_cell (r : A → X) (i : A → D) (f : C(X, Z)) (g : C(D, Z))
+theorem descFun_cell (r : A → X) (i : A → D) (f : C(X, Z)) (g : C(D, Z))
     (h : ∀ a, f (r a) = g (i a)) (d : D) : descFun r i f g (cell r i d) = g d := by
   simp only [cell, descFun]
   split_ifs with hd

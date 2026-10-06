@@ -1,4 +1,8 @@
-import RequestProject.CombPi2
+module
+
+public import RequestProject.CombPi2
+
+@[expose] public section
 
 /-! An injective fundamental-group inclusion embeds its genuine universal-cover vertices. -/
 namespace FiniteChains.Comb

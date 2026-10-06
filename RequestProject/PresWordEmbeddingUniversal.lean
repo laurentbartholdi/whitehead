@@ -1,10 +1,14 @@
-import RequestProject.PresWordEmbeddingRelators
-import RequestProject.PresWordEmbeddingCocycle
-import RequestProject.PresUniversalRelatorGroupCoordinates
-import RequestProject.PresUniversalRelatorDeck
-import RequestProject.PresPosetCoverDimension
-import RequestProject.OrderUniversalMap
-import RequestProject.UnivCoverIncl
+module
+
+public import RequestProject.PresWordEmbeddingRelators
+public import RequestProject.PresWordEmbeddingCocycle
+public import RequestProject.PresUniversalRelatorGroupCoordinates
+public import RequestProject.PresUniversalRelatorDeck
+public import RequestProject.PresPosetCoverDimension
+public import RequestProject.OrderUniversalMap
+public import RequestProject.UnivCoverIncl
+
+@[expose] public section
 
 namespace FiniteChains.PresModel.PresWordEmbedding
 open Comb

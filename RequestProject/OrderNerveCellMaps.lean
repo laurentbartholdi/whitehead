@@ -1,7 +1,10 @@
-import RequestProject.OrderPosetCoverThree
-import RequestProject.UnivCoverIncl
+module
 
-import RequestProject.OrderNerveDecoding
+public import RequestProject.OrderPosetCoverThree
+public import RequestProject.UnivCoverIncl
+public import RequestProject.OrderNerveDecoding
+
+@[expose] public section
 
 /-! Naturality of actual cellular order chains in the full nerve. -/
 set_option backward.defeqAttrib.useBackward true

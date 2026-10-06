@@ -1,7 +1,11 @@
-import RequestProject.ClassicalCWChainDiskNaturality
-import RequestProject.GraphWordDiskConnectedReflection
-import RequestProject.TopologicalAcyclicCoverHomotopy
-import RequestProject.TreeChain
+module
+
+public import RequestProject.ClassicalCWChainDiskNaturality
+public import RequestProject.GraphWordDiskConnectedReflection
+public import RequestProject.TopologicalAcyclicCoverHomotopy
+public import RequestProject.TreeChain
+
+@[expose] public section
 
 /-! Connectedness and compatible spanning trees for the simultaneous
 original-cell models. The input is exactly connectedness of the given

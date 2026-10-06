@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveAffineCoordinates
-import Mathlib.Order.WellFounded
+module
+
+public import RequestProject.OrderNerveAffineCoordinates
+public import Mathlib.Order.WellFounded
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

@@ -1,5 +1,9 @@
-import RequestProject.IsoGeneration
-import RequestProject.IdentityCover
+module
+
+public import RequestProject.IsoGeneration
+public import RequestProject.IdentityCover
+
+@[expose] public section
 
 /-!
 # Theorem A for a finite connected *acyclic* two-complex

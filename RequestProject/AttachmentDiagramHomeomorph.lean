@@ -1,5 +1,9 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.ExplicitRelativeAttachment
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.ExplicitRelativeAttachment
+
+@[expose] public section
 
 /-! An isomorphism of actual attaching diagrams gives an actual
 homeomorphism of their attachment spaces. Both old and cell maps are

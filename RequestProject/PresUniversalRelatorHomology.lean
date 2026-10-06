@@ -1,8 +1,12 @@
-import RequestProject.OrderUniversalTetLift
-import RequestProject.PresPosetCoverDimension
-import RequestProject.PresUniversalRelatorCoordinates
-import RequestProject.OrderNormalizationHomotopy
-import RequestProject.OrderUniversalPosetThree
+module
+
+public import RequestProject.OrderUniversalTetLift
+public import RequestProject.PresPosetCoverDimension
+public import RequestProject.PresUniversalRelatorCoordinates
+public import RequestProject.OrderNormalizationHomotopy
+public import RequestProject.OrderUniversalPosetThree
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

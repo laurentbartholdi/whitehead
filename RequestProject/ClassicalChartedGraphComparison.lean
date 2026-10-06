@@ -1,6 +1,10 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.ClassicalCWRecharacterization
-import RequestProject.ClassicalSubcomplexBoundaryWords
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.ClassicalCWRecharacterization
+public import RequestProject.ClassicalSubcomplexBoundaryWords
+
+@[expose] public section
 
 /-! An embedding preserving characteristic maps identifies the literal
 old graph, its intervals, and every original two-cell boundary with the
@@ -43,7 +47,7 @@ theorem skeleton_image (n : ℕ) :
     rw [← CWComplex.iUnion_openCell_eq_skeletonLT]
     exact Set.mem_iUnion.mpr ⟨m, Set.mem_iUnion.mpr ⟨hm, Set.mem_iUnion.mpr ⟨a, hx⟩⟩⟩
 
-private theorem skeletonMap_mem (n : ℕ) (x : SkeletonCarrier (Set.univ : Set K) n) :
+theorem skeletonMap_mem (n : ℕ) (x : SkeletonCarrier (Set.univ : Set K) n) :
     e.map x.val ∈ (CWComplex.skeletonLT (e.imageSubcomplex : Set L) (n : ℕ∞) : Set L) :=
   (skeleton_image e n).subset ⟨x.val, x.property, rfl⟩
 

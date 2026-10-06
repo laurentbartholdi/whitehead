@@ -1,9 +1,13 @@
-import RequestProject.PresWordDiskExtension
-import RequestProject.PresWordDiskComparisonNaturality
-import RequestProject.PresWordEmbeddingCombPi2
-import RequestProject.ClassicalCWModelSequenceTransfer
-import RequestProject.CanonicalPresentationTopologicalChains
-import RequestProject.PresentationChainFinsupp
+module
+
+public import RequestProject.PresWordDiskExtension
+public import RequestProject.PresWordDiskComparisonNaturality
+public import RequestProject.PresWordEmbeddingCombPi2
+public import RequestProject.ClassicalCWModelSequenceTransfer
+public import RequestProject.CanonicalPresentationTopologicalChains
+public import RequestProject.PresentationChainFinsupp
+
+@[expose] public section
 
 /-! The actual relative disk models turn an algebraic presentation chain
 into a chain retaining the original CW cells. The only initial comparison

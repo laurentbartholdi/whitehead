@@ -1,6 +1,10 @@
-import RequestProject.RelatorCircleAttachingStrict
-import RequestProject.PresCylinderCollapsedRoseLinear
-import RequestProject.RoseCoverLetterChain
+module
+
+public import RequestProject.RelatorCircleAttachingStrict
+public import RequestProject.PresCylinderCollapsedRoseLinear
+public import RequestProject.RoseCoverLetterChain
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

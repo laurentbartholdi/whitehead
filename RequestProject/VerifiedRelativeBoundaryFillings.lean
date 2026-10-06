@@ -1,6 +1,10 @@
-import RequestProject.VerifiedCoveredAttachingGeneration
-import RequestProject.ChamberQuotientAttachingRelativeChains
-import RequestProject.NamedPresentationRelativeBoundary
+module
+
+public import RequestProject.VerifiedCoveredAttachingGeneration
+public import RequestProject.ChamberQuotientAttachingRelativeChains
+public import RequestProject.NamedPresentationRelativeBoundary
+
+@[expose] public section
 
 /-!
 The relative comparison now treats old two-chains whose boundary is on the

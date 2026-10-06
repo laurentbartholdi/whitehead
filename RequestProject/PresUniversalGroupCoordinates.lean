@@ -1,6 +1,10 @@
-import RequestProject.PresPosetGroupEquiv
-import RequestProject.OrderUniversalCocycleReading
-import RequestProject.PresPosetConnected
+module
+
+public import RequestProject.PresPosetGroupEquiv
+public import RequestProject.OrderUniversalCocycleReading
+public import RequestProject.PresPosetConnected
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

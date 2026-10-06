@@ -1,5 +1,9 @@
-import RequestProject.CombPi2
-import RequestProject.CombCoveringLift
+module
+
+public import RequestProject.CombPi2
+public import RequestProject.CombCoveringLift
+
+@[expose] public section
 
 /-! A genuine covering induces bijective universal-cover vertices and two-cells. -/
 set_option backward.defeqAttrib.useBackward true

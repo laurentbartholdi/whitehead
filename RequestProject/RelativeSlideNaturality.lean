@@ -1,5 +1,9 @@
-import RequestProject.RelativeRuleOneNaturality
-import RequestProject.RelativeCoreSlides
+module
+
+public import RequestProject.RelativeRuleOneNaturality
+public import RequestProject.RelativeCoreSlides
+
+@[expose] public section
 
 /-! Simultaneous core slides respect all restrictions of the shared ambient
 relator labels. This completes actual zero-arrow preservation for rules

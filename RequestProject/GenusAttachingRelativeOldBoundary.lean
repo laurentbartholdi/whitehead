@@ -1,9 +1,13 @@
-import RequestProject.GenusNamedSurfaceSubdivision
-import RequestProject.GenusNamedPolygonCoefficients
-import RequestProject.GenusQuotientAttachingFilling
-import RequestProject.StrictOrderNormalizationMaps
-import RequestProject.OrderUniversalDeckChains
-import RequestProject.GenusAllQuotientRelativeRigidity
+module
+
+public import RequestProject.GenusNamedSurfaceSubdivision
+public import RequestProject.GenusNamedPolygonCoefficients
+public import RequestProject.GenusQuotientAttachingFilling
+public import RequestProject.StrictOrderNormalizationMaps
+public import RequestProject.OrderUniversalDeckChains
+public import RequestProject.GenusAllQuotientRelativeRigidity
+
+@[expose] public section
 
 /-! Polygon reconstruction yields a boundary supported on actual old cells.
 All deck coefficients are retained in the actual quotient group.

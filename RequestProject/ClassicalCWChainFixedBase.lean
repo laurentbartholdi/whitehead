@@ -1,4 +1,8 @@
-import RequestProject.ClassicalCWChainSeeded
+module
+
+public import RequestProject.ClassicalCWChainSeeded
+
+@[expose] public section
 
 /-! Rebasing the constructed chain on prescribed original words and a
 prescribed original tree. The base maps are genuine injective maps of

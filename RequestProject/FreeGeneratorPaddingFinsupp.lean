@@ -1,5 +1,9 @@
-import RequestProject.RelativeStructuralOperation
-import RequestProject.FoxNaturality
+module
+
+public import RequestProject.RelativeStructuralOperation
+public import RequestProject.FoxNaturality
+
+@[expose] public section
 
 /-! Padding a presentation by any set of free generators preserves the
 generation equation, including for infinite cell sets. This lets all

@@ -1,4 +1,8 @@
-import RequestProject.CombPresPi1
+module
+
+public import RequestProject.CombPresPi1
+
+@[expose] public section
 
 /-!
 # Hurewicz in degree one for a presentation complex

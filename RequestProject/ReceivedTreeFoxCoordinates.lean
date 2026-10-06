@@ -1,5 +1,9 @@
-import RequestProject.ReceivedTreeCover
-import RequestProject.FoxWordBoundary
+module
+
+public import RequestProject.ReceivedTreeCover
+public import RequestProject.FoxWordBoundary
+
+@[expose] public section
 
 /-! Fox coordinates of the actual cover over the receiving group. -/
 set_option backward.defeqAttrib.useBackward true

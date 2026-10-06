@@ -1,5 +1,9 @@
-import RequestProject.StrictOrderComplex
-import RequestProject.CombUniversalCover
+module
+
+public import RequestProject.StrictOrderComplex
+public import RequestProject.CombUniversalCover
+
+@[expose] public section
 
 /-! The order on the genuine path-class universal cover of a partial-order nerve. -/
 set_option backward.defeqAttrib.useBackward true

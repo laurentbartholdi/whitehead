@@ -1,5 +1,9 @@
-import RequestProject.PosetCoverUpTransform
-import RequestProject.StrictOrderComplex
+module
+
+public import RequestProject.PosetCoverUpTransform
+public import RequestProject.StrictOrderComplex
+
+@[expose] public section
 
 namespace FiniteChains.Comb.IsPosetCover
 universe u

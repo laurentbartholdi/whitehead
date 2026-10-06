@@ -1,5 +1,9 @@
-import RequestProject.ChamberZBaseSheets
-import RequestProject.CombData
+module
+
+public import RequestProject.ChamberZBaseSheets
+public import RequestProject.CombData
+
+@[expose] public section
 
 /-! Finite generation by actual base-copy cycles in the modified chambers. -/
 set_option backward.defeqAttrib.useBackward true

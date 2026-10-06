@@ -1,5 +1,9 @@
-import RequestProject.PresRealizationWordDisks
-import RequestProject.RelatorCircleBoundaryHomeomorph
+module
+
+public import RequestProject.PresRealizationWordDisks
+public import RequestProject.RelatorCircleBoundaryHomeomorph
+
+@[expose] public section
 
 /-! Specialize the actual cone/disk comparison to the explicit relator
 circle geometry. No boundary-homeomorphism input remains in this API. -/

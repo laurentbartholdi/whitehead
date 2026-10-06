@@ -1,4 +1,8 @@
-import RequestProject.TopologicalSingular.SingularSimplicialHelpers
+module
+
+public import RequestProject.TopologicalSingular.SingularSimplicialHelpers
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

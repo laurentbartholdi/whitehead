@@ -1,6 +1,10 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.ClassicalCellAttachmentTwoComplex
-import RequestProject.TopologicalPi2HomotopyTransport
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.ClassicalCellAttachmentTwoComplex
+public import RequestProject.TopologicalPi2HomotopyTransport
+
+@[expose] public section
 
 /-! Closed embeddings retaining the actual open cells of classical CW
 complexes. Compatible embeddings into a final stage give the exact chain

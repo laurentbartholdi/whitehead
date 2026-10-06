@@ -1,4 +1,8 @@
-import RequestProject.TopologicalSingular.PointedSingularTriangle
+module
+
+public import RequestProject.TopologicalSingular.PointedSingularTriangle
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

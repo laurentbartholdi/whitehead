@@ -1,4 +1,8 @@
-import RequestProject.SubgroupCompactness
+module
+
+public import RequestProject.SubgroupCompactness
+
+@[expose] public section
 
 /-!
 # The requirements of Section 2 are finitely determined

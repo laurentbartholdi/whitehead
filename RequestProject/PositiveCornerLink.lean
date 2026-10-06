@@ -1,4 +1,8 @@
-import RequestProject.SurfaceFullCubeFilling
+module
+
+public import RequestProject.SurfaceFullCubeFilling
+
+@[expose] public section
 
 /-! The actual link poset of the restored positive corner. -/
 namespace FiniteChains.Davis

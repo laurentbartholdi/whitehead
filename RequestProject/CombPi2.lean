@@ -1,5 +1,9 @@
-import RequestProject.CombUniversalCover
-import RequestProject.UnivCoverIncl
+module
+
+public import RequestProject.CombUniversalCover
+public import RequestProject.UnivCoverIncl
+
+@[expose] public section
 
 /-!
 # `π₂` of a combinatorial two-complex, the Hurewicz map and the Cockcroft property

@@ -1,4 +1,8 @@
-import RequestProject.ExplicitRelativeAttachment
+module
+
+public import RequestProject.ExplicitRelativeAttachment
+
+@[expose] public section
 
 /-! Reparametrizing the boundary changes neither the literal old points
 nor the attached disk points, and gives a genuine homeomorphism. -/

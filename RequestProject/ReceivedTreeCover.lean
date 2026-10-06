@@ -1,4 +1,8 @@
-import RequestProject.ReceivedTreePaths
+module
+
+public import RequestProject.ReceivedTreePaths
+
+@[expose] public section
 
 /-! A genuine regular cover on all sheets of the receiving group. -/
 set_option backward.defeqAttrib.useBackward true

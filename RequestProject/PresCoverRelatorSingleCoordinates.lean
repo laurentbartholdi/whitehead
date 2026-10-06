@@ -1,4 +1,8 @@
-import RequestProject.PresCoverFirstTriangleFibreEquiv
+module
+
+public import RequestProject.PresCoverFirstTriangleFibreEquiv
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

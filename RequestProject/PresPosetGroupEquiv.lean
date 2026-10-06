@@ -1,6 +1,10 @@
-import RequestProject.PresCylinderInclusionPi1
-import RequestProject.RoseRootedLoops
-import RequestProject.PresPosetReadingSurjective
+module
+
+public import RequestProject.PresCylinderInclusionPi1
+public import RequestProject.RoseRootedLoops
+public import RequestProject.PresPosetReadingSurjective
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

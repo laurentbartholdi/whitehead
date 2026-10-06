@@ -1,5 +1,9 @@
-import RequestProject.OrderConeCoverVertices
-import RequestProject.CombPi2
+module
+
+public import RequestProject.OrderConeCoverVertices
+public import RequestProject.CombPi2
+
+@[expose] public section
 
 /-! Finite lifted cone fans with their exact cellular boundary. -/
 set_option backward.defeqAttrib.useBackward true

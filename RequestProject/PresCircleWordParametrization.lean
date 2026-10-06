@@ -1,7 +1,11 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.RelatorCircleTraversalWord
-import RequestProject.PresRoseAffineWordReading
-import RequestProject.PresClassicalDiskComparison
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.RelatorCircleTraversalWord
+public import RequestProject.PresRoseAffineWordReading
+public import RequestProject.PresClassicalDiskComparison
+
+@[expose] public section
 
 /-! Match the canonical relator-circle parametrization with the actual
 finite edge-word attaching loop. Both sides are maps of the genuine disk

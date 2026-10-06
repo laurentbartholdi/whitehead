@@ -1,5 +1,9 @@
-import RequestProject.FrameworkFinite
-import RequestProject.Consistency
+module
+
+public import RequestProject.FrameworkFinite
+public import RequestProject.Consistency
+
+@[expose] public section
 
 /-!
 # The finiteness input is consistent

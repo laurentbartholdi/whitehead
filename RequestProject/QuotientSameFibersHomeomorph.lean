@@ -1,5 +1,9 @@
-import Mathlib.Topology.Homeomorph.Defs
-import Mathlib.Topology.Maps.Basic
+module
+
+public import Mathlib.Topology.Homeomorph.Defs
+public import Mathlib.Topology.Maps.Basic
+
+@[expose] public section
 
 /-! Two quotient maps with exactly the same fibers identify their targets by
 an actual homeomorphism. Its value on every quotient representative is fixed. -/
@@ -12,11 +16,11 @@ variable {X Y Z : Type*} [TopologicalSpace X] [TopologicalSpace Y] [TopologicalS
     (f : X → Y) (g : X → Z) (hf : IsQuotientMap f) (hg : IsQuotientMap g)
     (hfg : ∀ a b, f a = f b ↔ g a = g b)
 
-private def sameFiberForward (y : Y) : Z := g (hf.surjective y).choose
+def sameFiberForward (y : Y) : Z := g (hf.surjective y).choose
 
 include hfg in
 omit [TopologicalSpace Z] in
-private theorem sameFiberForward_apply (x : X) :
+theorem sameFiberForward_apply (x : X) :
     sameFiberForward f g hf (f x) = g x :=
   (hfg _ _).mp (hf.surjective (f x)).choose_spec
 

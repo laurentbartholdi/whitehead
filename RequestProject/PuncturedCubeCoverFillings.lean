@@ -1,6 +1,10 @@
-import RequestProject.PosetCoverZigzagCycles
-import RequestProject.OrdinaryTruncatedBoundary
-import RequestProject.PosetCoverRestriction
+module
+
+public import RequestProject.PosetCoverZigzagCycles
+public import RequestProject.OrdinaryTruncatedBoundary
+public import RequestProject.PosetCoverRestriction
+
+@[expose] public section
 
 /-! Finite one- and two-cycle fillings in the actual covered punctured cube boundaries. -/
 namespace FiniteChains.Davis

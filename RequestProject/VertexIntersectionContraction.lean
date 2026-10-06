@@ -1,6 +1,10 @@
-import RequestProject.VertexPunctureIntersection
-import RequestProject.NerveThreeLegContraction
-import RequestProject.NerveSupport
+module
+
+public import RequestProject.VertexPunctureIntersection
+public import RequestProject.NerveThreeLegContraction
+public import RequestProject.NerveSupport
+
+@[expose] public section
 
 /-! An explicit contraction of the actual seven-cell intersection path. -/
 namespace FiniteChains.Davis

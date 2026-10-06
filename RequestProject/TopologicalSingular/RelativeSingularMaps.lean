@@ -1,6 +1,10 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.RelativeSingularChains
+public import RequestProject.TopologicalSingular.RelativeSingularChains
+
+@[expose] public section
 
 /-! # Functorial relative singular chains for maps of topological pairs -/
 

@@ -1,6 +1,10 @@
-import RequestProject.TreeChainFinsupp
-import RequestProject.FreshLoopTreeStrictness
-import RequestProject.PresWordDiskTopologicalChains
+module
+
+public import RequestProject.TreeChainFinsupp
+public import RequestProject.FreshLoopTreeStrictness
+public import RequestProject.PresWordDiskTopologicalChains
+
+@[expose] public section
 
 /-! Collapse a chain along compatible spanning trees, preserving the
 initial tree literally and retaining strictness from fresh loops/faces.

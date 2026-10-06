@@ -1,4 +1,8 @@
-import RequestProject.SquareComplexWallsSeparation
+module
+
+public import RequestProject.SquareComplexWallsSeparation
+
+@[expose] public section
 
 /-!
 # Hyperplanes of a square complex

@@ -1,5 +1,9 @@
-import RequestProject.TopologicalOrderCoverStarVertices
-import RequestProject.OrderNerveRealizationCover
+module
+
+public import RequestProject.TopologicalOrderCoverStarVertices
+public import RequestProject.OrderNerveRealizationCover
+
+@[expose] public section
 
 /-! Covering-space lifts on induced subposets glue from their vertex values.
 The gluing uses the realization quotient topology, with no finiteness
@@ -89,12 +93,12 @@ theorem orderNerveCoverLifts_agree (j k : J)
 variable (hc : ∀ (n : SimplexCategory) (s : (nerve S).obj (Opposite.op n)),
   ∃ j, ∀ i, s.obj i ∈ A j)
 
-private def coverLiftValue (x : orderNerveRealization S) : E :=
+def coverLiftValue (x : orderNerveRealization S) : E :=
   let y := (orderNervePieceQuotient_surjective A hc x).choose
   l y.1 y.2
 
 include hp hl hv in
-private theorem coverLiftValue_piece (j : J) (z : orderNerveRealization (A j)) :
+theorem coverLiftValue_piece (j : J) (z : orderNerveRealization (A j)) :
     coverLiftValue A l hc (orderNervePieceMap A j z) = l j z := by
   let y := (orderNervePieceQuotient_surjective A hc (orderNervePieceMap A j z)).choose
   apply orderNerveCoverLifts_agree p hp A F l v hl hv y.1 j y.2 z

@@ -1,4 +1,8 @@
-import RequestProject.SubstOneWayBlockLoops
+module
+
+public import RequestProject.SubstOneWayBlockLoops
+
+@[expose] public section
 
 /-!
 # Block maps which are actually written down: the retracting blocks

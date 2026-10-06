@@ -1,6 +1,10 @@
-import RequestProject.ClassicalSpanningTreeContraction
-import RequestProject.DiskAttachmentPartition
-import RequestProject.DiskFamilyHomotopyBaseChange
+module
+
+public import RequestProject.ClassicalSpanningTreeContraction
+public import RequestProject.DiskAttachmentPartition
+public import RequestProject.DiskFamilyHomotopyBaseChange
+
+@[expose] public section
 
 /-! Collapse an actual arbitrary spanning tree in a disk graph. The forward
 map collapses all vertices and tree disks, and retains every other disk

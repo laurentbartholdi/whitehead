@@ -1,4 +1,8 @@
-import RequestProject.SurfacePoset
+module
+
+public import RequestProject.SurfacePoset
+
+@[expose] public section
 
 /-!
 # The cells of the surface poset, their incidences and the paths of the subdivision

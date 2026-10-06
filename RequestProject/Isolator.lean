@@ -1,5 +1,9 @@
-import Mathlib
-import RequestProject.FoxCommutatorMod
+module
+
+public import Mathlib
+public import RequestProject.FoxCommutatorMod
+
+@[expose] public section
 
 /-!
 # The requirements pass to the isolator of the commutator subgroup

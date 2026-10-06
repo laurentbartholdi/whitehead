@@ -1,6 +1,10 @@
-import RequestProject.TopologicalSingular.SingularSimplicialHelpers
-import RequestProject.TopologicalSingular.TetrahedronStickShell
-import RequestProject.TopologicalSingular.BasedTriangleHomotopy
+module
+
+public import RequestProject.TopologicalSingular.SingularSimplicialHelpers
+public import RequestProject.TopologicalSingular.TetrahedronStickShell
+public import RequestProject.TopologicalSingular.BasedTriangleHomotopy
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

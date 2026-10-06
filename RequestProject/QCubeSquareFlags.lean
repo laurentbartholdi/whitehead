@@ -1,5 +1,9 @@
-import RequestProject.QCubeSquareSubdivision
-import RequestProject.QCubeImmediateFaces
+module
+
+public import RequestProject.QCubeSquareSubdivision
+public import RequestProject.QCubeImmediateFaces
+
+@[expose] public section
 
 /-! The eight actual nondegenerate vertex-edge-square flags of a square subdivision. -/
 set_option backward.defeqAttrib.useBackward true

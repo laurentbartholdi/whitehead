@@ -1,6 +1,10 @@
-import RequestProject.UniversalPathGauge
-import RequestProject.TreePresentation
-import RequestProject.ZeroPi2Descent
+module
+
+public import RequestProject.UniversalPathGauge
+public import RequestProject.TreePresentation
+public import RequestProject.ZeroPi2Descent
+
+@[expose] public section
 
 /-! The actual path-class cover gauge determined by a spanning tree and a cellular map. -/
 namespace FiniteChains.Comb.SpanningTree

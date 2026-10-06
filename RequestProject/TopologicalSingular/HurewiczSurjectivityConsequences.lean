@@ -1,4 +1,8 @@
-import RequestProject.TopologicalSingular.HurewiczSurjectivity
+module
+
+public import RequestProject.TopologicalSingular.HurewiczSurjectivity
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

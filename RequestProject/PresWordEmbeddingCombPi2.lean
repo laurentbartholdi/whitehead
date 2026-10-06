@@ -1,6 +1,10 @@
-import RequestProject.PresWordEmbeddingValidPi2
-import RequestProject.Pi2DictionaryFinsupp
-import RequestProject.PresUnivCoverIso
+module
+
+public import RequestProject.PresWordEmbeddingValidPi2
+public import RequestProject.Pi2DictionaryFinsupp
+public import RequestProject.PresUnivCoverIso
+
+@[expose] public section
 
 namespace FiniteChains
 open Comb

@@ -1,6 +1,10 @@
-import RequestProject.OrderNerveSmallChainMapLow
-import RequestProject.OrderNerveExplicitSingularMap
-import RequestProject.OrderNerveSingularCarrierExactness
+module
+
+public import RequestProject.OrderNerveSmallChainMapLow
+public import RequestProject.OrderNerveExplicitSingularMap
+public import RequestProject.OrderNerveSingularCarrierExactness
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory TopologicalSingular SingularSubdivision

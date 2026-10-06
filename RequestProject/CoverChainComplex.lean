@@ -1,5 +1,9 @@
-import RequestProject.MonoidAlgebraMapDomain
-import RequestProject.FoxLinear
+module
+
+public import RequestProject.MonoidAlgebraMapDomain
+public import RequestProject.FoxLinear
+
+@[expose] public section
 
 /-!
 # The chain complex of the cover `K_N` and the Crowell exact sequence

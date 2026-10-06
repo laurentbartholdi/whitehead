@@ -1,3 +1,5 @@
+module
+
 /-
 Copyright (c) 2026 Vasily Ilin. All rights reserved.
 Released under Apache 2.0 license.
@@ -6,9 +8,11 @@ c66523531ff172d7f41913d94e56921e790a1b47.
 The simplex-specific dependency has been removed; cube-face definitions
 are copied from the same revision of Hurewicz/StickSimplex.lean.
 -/
-import Mathlib.Topology.Homotopy.HomotopyGroup
-import Mathlib.Topology.UnitInterval
-import Mathlib.Tactic
+public import Mathlib.Topology.Homotopy.HomotopyGroup
+public import Mathlib.Topology.UnitInterval
+public import Mathlib.Tactic
+
+@[expose] public section
 
 /-!
 # Cubical shells in a pointed space

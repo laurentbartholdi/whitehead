@@ -1,4 +1,8 @@
-import RequestProject.ChamberQuotientCycleGeneration
+module
+
+public import RequestProject.ChamberQuotientCycleGeneration
+
+@[expose] public section
 
 /-! The quotient is an unmixed union of its actual old cells and the inserted-base star. -/
 namespace FiniteChains.Davis

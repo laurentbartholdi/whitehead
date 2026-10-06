@@ -1,4 +1,8 @@
-import RequestProject.FoxWordBoundary
+module
+
+public import RequestProject.FoxWordBoundary
+
+@[expose] public section
 
 namespace FiniteChains
 variable {α : Type*} [DecidableEq α]

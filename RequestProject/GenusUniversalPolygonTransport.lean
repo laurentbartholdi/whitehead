@@ -1,5 +1,9 @@
-import RequestProject.GenusUniversalPolygonReference
-import RequestProject.GenusAttachingRelativeOldBoundary
+module
+
+public import RequestProject.GenusUniversalPolygonReference
+public import RequestProject.GenusAttachingRelativeOldBoundary
+
+@[expose] public section
 
 /-! Transport of the explicit pre-substitution degree-one polygon to the
 actual named quotient. All chains retain their actual cover sheets.

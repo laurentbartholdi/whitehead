@@ -1,5 +1,9 @@
-import RequestProject.QCubeFacets
-import RequestProject.OrderThreeNormalization
+module
+
+public import RequestProject.QCubeFacets
+public import RequestProject.OrderThreeNormalization
+
+@[expose] public section
 
 /-! Strict quotient-cube order increases dimension, and all immediate faces are actual facets. -/
 namespace FiniteChains.Davis

@@ -1,9 +1,13 @@
-import RequestProject.GenusQuotientRelativeSupport
-import RequestProject.GenusOldCoverSpineFaithfulness
-import RequestProject.ChamberQuotientOldCover
-import RequestProject.StrictOrderPullbackHom
-import RequestProject.OrderCxRestriction
-import RequestProject.UniversalCoverPi1Injection
+module
+
+public import RequestProject.GenusQuotientRelativeSupport
+public import RequestProject.GenusOldCoverSpineFaithfulness
+public import RequestProject.ChamberQuotientOldCover
+public import RequestProject.StrictOrderPullbackHom
+public import RequestProject.OrderCxRestriction
+public import RequestProject.UniversalCoverPi1Injection
+
+@[expose] public section
 
 /-! The received spine is mapped into the genuine pulled-back old-cover spine.
 

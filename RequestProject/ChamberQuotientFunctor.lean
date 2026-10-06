@@ -1,4 +1,8 @@
-import RequestProject.ChamberQuotient
+module
+
+public import RequestProject.ChamberQuotient
+
+@[expose] public section
 
 namespace FiniteChains.Davis
 open RACG Mirror Comb

@@ -1,10 +1,14 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.OrderTriangleBoundaryWords
-import RequestProject.ClassicalGraphTreeBoundaryWords
-import RequestProject.ClassicalRoseWordNaturality
-import RequestProject.ClassicalRoseWordReduction
-import RequestProject.PresCircleWordParametrization
-import RequestProject.PresCanonicalWords
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.OrderTriangleBoundaryWords
+public import RequestProject.ClassicalGraphTreeBoundaryWords
+public import RequestProject.ClassicalRoseWordNaturality
+public import RequestProject.ClassicalRoseWordReduction
+public import RequestProject.PresCircleWordParametrization
+public import RequestProject.PresCanonicalWords
+
+@[expose] public section
 
 /-! The canonical presentation of a strict order complex is an actual
 homotopy model of its realization. The prescribed spanning tree is

@@ -1,4 +1,8 @@
-import RequestProject.SquareComplexCovering
+module
+
+public import RequestProject.SquareComplexCovering
+
+@[expose] public section
 
 /-!
 # Uniqueness of the simply connected covering

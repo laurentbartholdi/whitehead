@@ -1,7 +1,11 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.ClassicalCWChainWords
-import RequestProject.DiskFamilyHomotopyBaseChange
-import RequestProject.NaturalDiskAttachingEquiv
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.ClassicalCWChainWords
+public import RequestProject.DiskFamilyHomotopyBaseChange
+public import RequestProject.NaturalDiskAttachingEquiv
+
+@[expose] public section
 
 /-! The actual attaching homotopies are chosen at birth as well. Their
 naturality is a pointwise equality, not a fresh choice of homotopy at

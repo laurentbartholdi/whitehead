@@ -1,6 +1,10 @@
-import Mathlib.Topology.Path
-import Mathlib.Topology.Homotopy.Basic
-import Mathlib.Tactic
+module
+
+public import Mathlib.Topology.Path
+public import Mathlib.Topology.Homotopy.Basic
+public import Mathlib.Tactic
+
+@[expose] public section
 
 /-! A square filling obtained by sliding along a single concatenated path.
 It extends an arbitrary contraction path at the initial end of an edge. -/

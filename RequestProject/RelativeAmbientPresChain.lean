@@ -1,5 +1,9 @@
-import RequestProject.RelativeAmbientChain
-import RequestProject.PresChainRealization
+module
+
+public import RequestProject.RelativeAmbientChain
+public import RequestProject.PresChainRealization
+
+@[expose] public section
 
 /-! The concrete relative induction as `PresChainFS` and hence as actual
 topological presentation chains. The zeroth presentation is the original

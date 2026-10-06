@@ -1,4 +1,8 @@
-import RequestProject.BlockSubstitutionMor
+module
+
+public import RequestProject.BlockSubstitutionMor
+
+@[expose] public section
 
 /-!
 # Rule 3 for a family of simultaneously replaced entries

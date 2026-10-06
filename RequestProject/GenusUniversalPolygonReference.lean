@@ -1,7 +1,11 @@
-import RequestProject.GenusUniversalCoveredSpine
-import RequestProject.GenusQuotientReceiver
-import RequestProject.BarycentricCocycleCover
-import RequestProject.CoveredPolygonBarycentricBoundary
+module
+
+public import RequestProject.GenusUniversalCoveredSpine
+public import RequestProject.GenusQuotientReceiver
+public import RequestProject.BarycentricCocycleCover
+public import RequestProject.CoveredPolygonBarycentricBoundary
+
+@[expose] public section
 
 /-! An explicit degree-one polygon in actual pre-substitution old-cover
 sheets. No arbitrary surface nullhomotopy is used to select its class.

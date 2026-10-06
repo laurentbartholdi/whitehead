@@ -1,6 +1,10 @@
-import RequestProject.ChamberQuotientCover
-import RequestProject.BlockFamilySubst
-import RequestProject.TreePresentation
+module
+
+public import RequestProject.ChamberQuotientCover
+public import RequestProject.BlockFamilySubst
+public import RequestProject.TreePresentation
+
+@[expose] public section
 
 /-!
 # What is still needed to turn the covering into the algebraic `hinj`

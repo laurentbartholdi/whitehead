@@ -1,5 +1,9 @@
-import RequestProject.CoreCollapse
-import RequestProject.FoxCoordinateSubstitution
+module
+
+public import RequestProject.CoreCollapse
+public import RequestProject.FoxCoordinateSubstitution
+
+@[expose] public section
 
 /-! The actual core-collapse map, including reversed orientations of surviving cells.
 The only input describing the quotient is an equality of free-group words.  The

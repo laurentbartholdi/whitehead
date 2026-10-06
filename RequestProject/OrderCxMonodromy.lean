@@ -1,4 +1,8 @@
-import RequestProject.OrderComplexGluing
+module
+
+public import RequestProject.OrderComplexGluing
+
+@[expose] public section
 
 /-!
 # Reading homomorphisms out of the fundamental group of an order complex

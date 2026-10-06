@@ -1,6 +1,10 @@
-import RequestProject.PushoutActualCycleGeneration
-import RequestProject.Pi2GenerationBaseChange
-import RequestProject.MapChainDescent
+module
+
+public import RequestProject.PushoutActualCycleGeneration
+public import RequestProject.Pi2GenerationBaseChange
+public import RequestProject.MapChainDescent
+
+@[expose] public section
 
 /-! The geometric generation input for regular-cover descent is now a
 theorem. The explicit edge/face compatibility records actual deck maps,

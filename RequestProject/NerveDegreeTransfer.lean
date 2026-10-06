@@ -1,4 +1,8 @@
-import RequestProject.NerveDegreeGluing
+module
+
+public import RequestProject.NerveDegreeGluing
+
+@[expose] public section
 
 /-! Homogeneous positive-degree fillings transfer from an actual induced subposet. -/
 namespace FiniteChains.Nerve

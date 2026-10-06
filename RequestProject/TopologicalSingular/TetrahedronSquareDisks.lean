@@ -1,4 +1,8 @@
-import RequestProject.TopologicalSingular.SimplexFaceIntersections
+module
+
+public import RequestProject.TopologicalSingular.SimplexFaceIntersections
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 open scoped unitInterval Topology

@@ -1,5 +1,9 @@
-import RequestProject.SolutionLemmas
-import RequestProject.OrderPi1TrivialLift
+module
+
+public import RequestProject.SolutionLemmas
+public import RequestProject.OrderPi1TrivialLift
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory Topology

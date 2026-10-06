@@ -1,8 +1,12 @@
-import RequestProject.GenusChainCollapse
-import RequestProject.TruncatedCellDimension
-import RequestProject.ChamberQuotientFinite
-import RequestProject.StrictOrderComplex
-import RequestProject.CombData
+module
+
+public import RequestProject.GenusChainCollapse
+public import RequestProject.TruncatedCellDimension
+public import RequestProject.ChamberQuotientFinite
+public import RequestProject.StrictOrderComplex
+public import RequestProject.CombData
+
+@[expose] public section
 
 /-! Surviving cells of the actual chosen truncated genus-block collapse. -/
 

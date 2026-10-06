@@ -1,4 +1,8 @@
-import RequestProject.ChamberQuotientAttachingCover
+module
+
+public import RequestProject.ChamberQuotientAttachingCover
+
+@[expose] public section
 
 /-! The whole base star retracts down onto the actual inserted base. -/
 namespace FiniteChains.Davis

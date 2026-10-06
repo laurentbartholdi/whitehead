@@ -1,5 +1,9 @@
-import RequestProject.ClassicalGraphContraction
-import Mathlib.Topology.Homotopy.Contractible
+module
+
+public import RequestProject.ClassicalGraphContraction
+public import Mathlib.Topology.Homotopy.Contractible
+
+@[expose] public section
 
 /-! A genuine continuous contraction of the disk realization of an arbitrary
 spanning tree. Only each vertex's natural-number height is finite. -/
@@ -24,7 +28,7 @@ abbrev TreeSpace := DiskAttachment (treeAttaching r T)
 def treeVertex (a : V) : TreeSpace r T :=
   old (treeAttaching r T) (boundaryFamilyInclusion {j : J // T.isTree j} _) a
 
-private def treeUpPath (a : V) (ha : a ≠ T.root) :
+def treeUpPath (a : V) (ha : a ≠ T.root) :
     Path (treeVertex r T a) (treeVertex r T (T.parent a ha)) :=
   (graphGermPath (treeAttaching r T)
     (⟨(T.up a ha).1, T.isTree_up ha⟩, (T.up a ha).2)).cast

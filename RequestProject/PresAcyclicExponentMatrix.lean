@@ -1,9 +1,13 @@
-import RequestProject.PresIdentityCoverChains
-import RequestProject.RelatorCircleExponentChain
-import RequestProject.ExponentCorrection
-import RequestProject.OrderStrictAcyclicityComparison
-import RequestProject.OrderNerveDimension
-import RequestProject.PresPosetConnected
+module
+
+public import RequestProject.PresIdentityCoverChains
+public import RequestProject.RelatorCircleExponentChain
+public import RequestProject.ExponentCorrection
+public import RequestProject.OrderStrictAcyclicityComparison
+public import RequestProject.OrderNerveDimension
+public import RequestProject.PresPosetConnected
+
+@[expose] public section
 
 /-! Actual singular acyclicity of a presentation realization forces its
 finitely supported exponent matrix to be bijective. The alphabets and relator

@@ -1,6 +1,10 @@
-import RequestProject.SpineCollapse
-import RequestProject.BarycentricConnected
-import RequestProject.BarycentricSurfaceExample
+module
+
+public import RequestProject.SpineCollapse
+public import RequestProject.BarycentricConnected
+public import RequestProject.BarycentricSurfaceExample
+
+@[expose] public section
 
 /-!
 # Lemma 3.2 (ii) for the complex of the paper

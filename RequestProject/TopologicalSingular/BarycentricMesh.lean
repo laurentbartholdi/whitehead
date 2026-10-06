@@ -1,6 +1,10 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.AffineSubdivisionGeometry
+public import RequestProject.TopologicalSingular.AffineSubdivisionGeometry
+
+@[expose] public section
 
 /-! # Barycentric subdivision strictly decreases mesh
 

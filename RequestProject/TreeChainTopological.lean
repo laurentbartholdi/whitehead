@@ -1,5 +1,9 @@
-import RequestProject.TreeUnivCoverIso
-import RequestProject.TreeChain
+module
+
+public import RequestProject.TreeUnivCoverIso
+public import RequestProject.TreeChain
+
+@[expose] public section
 
 /-!
 # `(1) ⇒ (2)` of Theorem A for chains of arbitrary two-complexes, topologically

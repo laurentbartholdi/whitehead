@@ -1,4 +1,8 @@
-import RequestProject.PresConeLinkOrderIso
+module
+
+public import RequestProject.PresConeLinkOrderIso
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

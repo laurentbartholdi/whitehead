@@ -1,4 +1,8 @@
-import RequestProject.TransitiveGeneration
+module
+
+public import RequestProject.TransitiveGeneration
+
+@[expose] public section
 
 /-!
 # Step 2–3 of Lemma 3.6: from `H₂(W̃, U) = 0` to generation of `π₂(W)`

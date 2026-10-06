@@ -1,6 +1,10 @@
-import RequestProject.PresValidFinite
-import RequestProject.OrderNerveFiniteCoordinates
-import RequestProject.OrderNerveRealizationMapCoordinates
+module
+
+public import RequestProject.PresValidFinite
+public import RequestProject.OrderNerveFiniteCoordinates
+public import RequestProject.OrderNerveRealizationMapCoordinates
+
+@[expose] public section
 
 /-! The weak topology and exact intersection rule of an arbitrary realized
 rose. Every simplex lies in one four-vertex circle or at the common vertex.
@@ -53,20 +57,20 @@ theorem realizedMap_vertex {P Q : Type} [PartialOrder P] [PartialOrder Q]
 theorem roseCopyRealization_injective (a : α) : Function.Injective (roseCopyRealization a) :=
   orderNerveRealizationMap_injective (roseCopy a) (roseCopy a).monotone (roseCopy a).injective
 
-private theorem rose_le_base (p : Rose α) (hp : p ≤ .base) : p = .base := by
+theorem rose_le_base (p : Rose α) (hp : p ≤ .base) : p = .base := by
   cases p with
   | base => rfl
   | mid a => exact hp.elim
   | edg a b => exact hp.elim
 
-private theorem rose_le_mid_has_copy (a : α) (p : Rose α) (hp : p ≤ .mid a) :
+theorem rose_le_mid_has_copy (a : α) (p : Rose α) (hp : p ≤ .mid a) :
     ∃ q, roseCopy a q = p := by
   cases p with
   | base => exact hp.elim
   | mid b => exact ⟨.mid PUnit.unit, congrArg Rose.mid hp.symm⟩
   | edg b s => exact hp.elim
 
-private theorem rose_le_edg_has_copy (a : α) (b : Bool) (p : Rose α)
+theorem rose_le_edg_has_copy (a : α) (b : Bool) (p : Rose α)
     (hp : p ≤ .edg a b) : ∃ q, roseCopy a q = p := by
   cases p with
   | base => exact ⟨.base, rfl⟩
@@ -75,7 +79,7 @@ private theorem rose_le_edg_has_copy (a : α) (b : Bool) (p : Rose α)
       change c = a ∧ s = b at hp
       exact ⟨.edg PUnit.unit s, congrArg (fun c => Rose.edg c s) hp.1.symm⟩
 
-private theorem roseSimplex_copy_lift {n : SimplexCategory}
+theorem roseSimplex_copy_lift {n : SimplexCategory}
     (s : (nerve (Rose α)).obj (Opposite.op n)) (a : α)
     (hs : ∀ i, ∃ p, roseCopy a p = s.obj i) :
     ∃ t : (nerve (Rose PUnit)).obj (Opposite.op n),
@@ -88,7 +92,7 @@ private theorem roseSimplex_copy_lift {n : SimplexCategory}
         exact leOfHom (s.map (homOfLE hij)))).functor
   exact ⟨t, CategoryTheory.Functor.ext hp⟩
 
-private theorem roseSimplex_cases {n : SimplexCategory}
+theorem roseSimplex_cases {n : SimplexCategory}
     (s : (nerve (Rose α)).obj (Opposite.op n)) :
     (∀ i, s.obj i = .base) ∨
       ∃ (a : α) (t : (nerve (Rose PUnit)).obj (Opposite.op n)),
@@ -107,7 +111,7 @@ private theorem roseSimplex_cases {n : SimplexCategory}
         (fun i => rose_le_edg_has_copy a b _ (he ▸ hle i))
       exact Or.inr ⟨a, t, ht⟩
 
-private theorem constantSimplex_vertex {P : Type} [PartialOrder P]
+theorem constantSimplex_vertex {P : Type} [PartialOrder P]
     {n : SimplexCategory} (s : (nerve P).obj (Opposite.op n)) (p : P)
     (hs : ∀ i, s.obj i = p) (z : SimplexCategory.toTop.obj n) :
     orderNerveRealizationSimplex P s z = orderNerveRealizationVertex p := by
@@ -152,12 +156,12 @@ theorem orderRoseRealization_cases (x : orderNerveRealization (Rose α)) :
       (orderNerveRealizationSimplex_natural (roseCopy a) (roseCopy a).monotone t)
     simpa only [ht, roseCopyRealization, TopCat.comp_app, Function.comp_apply] using h
 
-private theorem roseCopy_outside {a b : α} (hab : a ≠ b) (q : Rose PUnit)
+theorem roseCopy_outside {a b : α} (hab : a ≠ b) (q : Rose PUnit)
     (hq : q ≠ .base) : roseCopy a q ∉ Set.range (roseCopy b) := by
   rintro ⟨p, hp⟩
   cases q <;> cases p <;> simp_all [roseCopy, RelEmbedding.coe_mk]
 
-private theorem smallRose_eq_base (x : orderNerveRealization (Rose PUnit))
+theorem smallRose_eq_base (x : orderNerveRealization (Rose PUnit))
     (hx : ∀ q, q ≠ .base → orderNerveRealizationCoordinates (Rose PUnit) x q = 0) :
     x = orderRoseBase PUnit := by
   letI : Fintype (Rose PUnit) := Fintype.ofFinite _

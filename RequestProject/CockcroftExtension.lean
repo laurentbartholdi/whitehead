@@ -1,5 +1,9 @@
-import RequestProject.Cockcroft
-import RequestProject.Pi2Dictionary
+module
+
+public import RequestProject.Cockcroft
+public import RequestProject.Pi2Dictionary
+
+@[expose] public section
 
 /-!
 # Cockcroft complexes and two-dimensional extensions killing `π₂`

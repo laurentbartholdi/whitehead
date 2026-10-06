@@ -1,4 +1,8 @@
-import RequestProject.ExplicitRelativeAttachment
+module
+
+public import RequestProject.ExplicitRelativeAttachment
+
+@[expose] public section
 
 /-! Identify the explicit attachment with an actual quotient covered by
 an old piece and disk pieces. Boundary identifications and separation of

@@ -1,5 +1,9 @@
-import RequestProject.BlockFoxModel
-import RequestProject.GenerationIterate
+module
+
+public import RequestProject.BlockFoxModel
+public import RequestProject.GenerationIterate
+
+@[expose] public section
 
 /-!
 # The hypotheses of the constructed block model are satisfiable

@@ -1,5 +1,9 @@
-import RequestProject.OrderConeThreeChains
-import RequestProject.PositiveCornerChainExtraction
+module
+
+public import RequestProject.OrderConeThreeChains
+public import RequestProject.PositiveCornerChainExtraction
+
+@[expose] public section
 
 /-! Actual positive-corner three-fans and their surface extraction. -/
 set_option backward.defeqAttrib.useBackward true

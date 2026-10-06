@@ -1,7 +1,11 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.SingularPrism
-import RequestProject.TopologicalSingular.RelativeSingularMaps
+public import RequestProject.TopologicalSingular.SingularPrism
+public import RequestProject.TopologicalSingular.RelativeSingularMaps
+
+@[expose] public section
 
 /-! # The prism identity for homotopies of topological pairs -/
 

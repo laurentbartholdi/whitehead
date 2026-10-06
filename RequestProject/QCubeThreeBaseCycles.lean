@@ -1,5 +1,9 @@
-import RequestProject.QCubeThreeInternalBoundary
-import RequestProject.QCubeCanonicalTwoCycles
+module
+
+public import RequestProject.QCubeThreeInternalBoundary
+public import RequestProject.QCubeCanonicalTwoCycles
+
+@[expose] public section
 
 /-! Recovered actual square cycles beneath each component of a strict three-boundary. -/
 open scoped Classical

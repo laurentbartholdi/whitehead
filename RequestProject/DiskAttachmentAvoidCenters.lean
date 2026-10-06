@@ -1,8 +1,12 @@
-import RequestProject.ClassicalCellAttachmentHausdorff
-import RequestProject.OpenCoverCorePaths
-import Mathlib.Analysis.Normed.Module.Connected
-import Mathlib.Analysis.Normed.Module.Ball.Homeomorph
-import Mathlib.LinearAlgebra.Dimension.Constructions
+module
+
+public import RequestProject.ClassicalCellAttachmentHausdorff
+public import RequestProject.OpenCoverCorePaths
+public import Mathlib.Analysis.Normed.Module.Connected
+public import Mathlib.Analysis.Normed.Module.Ball.Homeomorph
+public import Mathlib.LinearAlgebra.Dimension.Constructions
+
+@[expose] public section
 
 /-! Actual path cellularization away from the centers of arbitrary families
 of attached disks of dimension at least two. All chart and intersection
@@ -20,16 +24,16 @@ variable {E X J : Type} [NormedAddCommGroup E] [NormedSpace ℝ E]
 
 abbrev OpenNormBall (E : Type) [Norm E] := {x : E // ‖x‖ < 1}
 
-private def normBallHomeomorph : E ≃ₜ OpenNormBall E :=
+def normBallHomeomorph : E ≃ₜ OpenNormBall E :=
   Homeomorph.unitBall.trans (Homeomorph.setCongr (by
     ext x
     change dist x 0 < 1 ↔ ‖x‖ < 1
     rw [dist_zero_right]))
 
-private theorem normBallHomeomorph_zero : (normBallHomeomorph (E := E) 0).val = 0 :=
+theorem normBallHomeomorph_zero : (normBallHomeomorph (E := E) 0).val = 0 :=
   Homeomorph.coe_unitBall_apply_zero
 
-private theorem puncturedNormBall_pathConnected (hdim : 1 < Module.rank ℝ E) :
+theorem puncturedNormBall_pathConnected (hdim : 1 < Module.rank ℝ E) :
     IsPathConnected {x : OpenNormBall E | x.val ≠ 0} := by
   have hp := (isPathConnected_compl_singleton_of_one_lt_rank hdim (0 : E)).image
     (normBallHomeomorph (E := E)).continuous

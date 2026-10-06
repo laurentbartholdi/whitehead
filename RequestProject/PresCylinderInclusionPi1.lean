@@ -1,6 +1,10 @@
-import RequestProject.PresCylinderPi1Surjective
-import RequestProject.OrderIsoPi1Surjective
-import RequestProject.CylinderPi1Surjective
+module
+
+public import RequestProject.PresCylinderPi1Surjective
+public import RequestProject.OrderIsoPi1Surjective
+public import RequestProject.CylinderPi1Surjective
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

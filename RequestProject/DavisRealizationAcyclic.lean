@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveSingularAcyclicity
-import RequestProject.DavisChainAcyclic
+module
+
+public import RequestProject.OrderNerveSingularAcyclicity
+public import RequestProject.DavisChainAcyclic
+
+@[expose] public section
 
 namespace FiniteChains.Davis
 open RACG Mirror Comb

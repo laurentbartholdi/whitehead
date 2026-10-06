@@ -1,4 +1,8 @@
-import RequestProject.TreeChainTopological
+module
+
+public import RequestProject.TreeChainTopological
+
+@[expose] public section
 
 /-!
 # Condition (1) of Theorem A, as stated by the interface, implies condition (2)

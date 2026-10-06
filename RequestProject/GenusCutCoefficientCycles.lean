@@ -1,5 +1,9 @@
-import RequestProject.GenusPositiveSquareCoefficients
-import RequestProject.QCubePositiveCoordinateChains
+module
+
+public import RequestProject.GenusPositiveSquareCoefficients
+public import RequestProject.QCubePositiveCoordinateChains
+
+@[expose] public section
 
 /-! Actual recovered cut-face coefficients are cycles killed by the genus collapse. -/
 namespace FiniteChains.Davis.Genus

@@ -1,4 +1,8 @@
-import RequestProject.FreePaddingNaturality
+module
+
+public import RequestProject.FreePaddingNaturality
+
+@[expose] public section
 
 /-! Composition and relabelling for literal supported presentation maps.
 These identities are on the actual group-ring coefficients, not only on

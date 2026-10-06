@@ -1,4 +1,8 @@
-import RequestProject.TopologicalSingular.SubdivisionSupport
+module
+
+public import RequestProject.TopologicalSingular.SubdivisionSupport
+
+@[expose] public section
 
 namespace FiniteChains.SingularSubdivision
 open TopologicalSingular

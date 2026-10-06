@@ -1,5 +1,9 @@
-import RequestProject.TopologicalOrderCoverAcyclic
-import RequestProject.RegularCoverAcyclicChains
+module
+
+public import RequestProject.TopologicalOrderCoverAcyclic
+public import RequestProject.RegularCoverAcyclicChains
+
+@[expose] public section
 
 /-! A genuine topological acyclic regular cover of an order realization
 supplies the actual strict cellular chains used in sufficiency. This

@@ -1,5 +1,9 @@
-import RequestProject.ChamberQuotientPushdownFillings
-import RequestProject.GenusCappedPosetCyclePushdown
+module
+
+public import RequestProject.ChamberQuotientPushdownFillings
+public import RequestProject.GenusCappedPosetCyclePushdown
+
+@[expose] public section
 
 namespace FiniteChains.Davis.Genus
 open RACG Mirror Comb PresModel

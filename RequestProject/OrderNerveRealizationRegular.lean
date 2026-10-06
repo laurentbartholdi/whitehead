@@ -1,5 +1,9 @@
-import RequestProject.Statement
-import RequestProject.OrderNerveRealizationCovering
+module
+
+public import RequestProject.Statement
+public import RequestProject.OrderNerveRealizationCovering
+
+@[expose] public section
 
 /-! Regularity on actual topological fibers, deduced from order deck transformations. -/
 

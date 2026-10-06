@@ -1,4 +1,8 @@
-import RequestProject.PresCoverRelatorNaturality
+module
+
+public import RequestProject.PresCoverRelatorNaturality
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

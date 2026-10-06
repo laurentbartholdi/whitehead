@@ -1,4 +1,8 @@
-import RequestProject.OrderRoseWedgeTopology
+module
+
+public import RequestProject.OrderRoseWedgeTopology
+
+@[expose] public section
 
 /-! The concrete cyclic order of the four vertices in one rose circle.
 This fixes the positive generator orientation before passing to realization. -/

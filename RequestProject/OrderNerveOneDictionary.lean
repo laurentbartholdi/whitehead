@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveCellMaps
-import RequestProject.CellularChainMapZero
+module
+
+public import RequestProject.OrderNerveCellMaps
+public import RequestProject.CellularChainMapZero
+
+@[expose] public section
 
 /-! The degree-one dictionary for actual order chains and their finite prisms. -/
 set_option backward.defeqAttrib.useBackward true

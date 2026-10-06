@@ -1,4 +1,8 @@
-import Mathlib
+module
+
+public import Mathlib
+
+@[expose] public section
 
 /-!
 # Coset table for the presentation `A = ⟨x, y | x²yx⁻¹y, xy⁴xy⁻¹⟩` of Remark 2

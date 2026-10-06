@@ -1,4 +1,8 @@
-import RequestProject.PresPosetReading
+module
+
+public import RequestProject.PresPosetReading
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 universe u v

@@ -1,4 +1,8 @@
-import RequestProject.MedianGraphMetric
+module
+
+public import RequestProject.MedianGraphMetric
+
+@[expose] public section
 
 /-!
 # Transporting a median structure along a graph isomorphism

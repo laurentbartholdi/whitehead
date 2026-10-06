@@ -1,4 +1,8 @@
-import RequestProject.GenusCappedSpineChains
+module
+
+public import RequestProject.GenusCappedSpineChains
+
+@[expose] public section
 
 /-! The actual capped-spine Cockcroft property in its presentation-cover coordinates. -/
 set_option backward.defeqAttrib.useBackward true

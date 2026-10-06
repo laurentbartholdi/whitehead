@@ -1,6 +1,10 @@
-import RequestProject.GenusOldAugmentationVanishing
-import RequestProject.GenusCappedSpineFox
-import RequestProject.TreeCoverAcyclic
+module
+
+public import RequestProject.GenusOldAugmentationVanishing
+public import RequestProject.GenusCappedSpineFox
+public import RequestProject.TreeCoverAcyclic
+
+@[expose] public section
 
 /-! Cockcroftness of the actual capped spine, with no geometric input premise. -/
 set_option backward.defeqAttrib.useBackward true

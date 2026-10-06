@@ -1,5 +1,9 @@
-import RequestProject.InitialComplex
-import RequestProject.PresentationChain
+module
+
+public import RequestProject.InitialComplex
+public import RequestProject.PresentationChain
+
+@[expose] public section
 
 /-!
 # The initial pair as a chain of presentation complexes

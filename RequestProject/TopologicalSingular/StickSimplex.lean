@@ -1,3 +1,5 @@
+module
+
 /-
 Copyright (c) 2026 Vasily Ilin. All rights reserved.
 Released under Apache 2.0 license.
@@ -6,9 +8,11 @@ c66523531ff172d7f41913d94e56921e790a1b47, Hurewicz/StickSimplex.lean
 and elementary face definitions from Hurewicz/SimplexGlue.lean.
 The heavy singular-homology imports are replaced by local cubical geometry.
 -/
-import RequestProject.TopologicalSingular.CubicalShell
-import Mathlib.AlgebraicTopology.TopologicalSimplex
-import Mathlib.Topology.Homotopy.HomotopyGroup
+public import RequestProject.TopologicalSingular.CubicalShell
+public import Mathlib.AlgebraicTopology.TopologicalSimplex
+public import Mathlib.Topology.Homotopy.HomotopyGroup
+
+@[expose] public section
 
 /-!
 # The stick-breaking cube-to-simplex map

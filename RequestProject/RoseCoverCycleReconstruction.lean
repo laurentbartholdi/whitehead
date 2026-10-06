@@ -1,4 +1,8 @@
-import RequestProject.RoseCoverGeneratorChain
+module
+
+public import RequestProject.RoseCoverGeneratorChain
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

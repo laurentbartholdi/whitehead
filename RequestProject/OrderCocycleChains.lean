@@ -1,5 +1,9 @@
-import RequestProject.OrderCxMonodromy
-import RequestProject.UnivCoverIncl
+module
+
+public import RequestProject.OrderCxMonodromy
+public import RequestProject.UnivCoverIncl
+
+@[expose] public section
 
 /-! Integral cellular cocycles obtained from actual order cocycles. -/
 set_option backward.defeqAttrib.useBackward true

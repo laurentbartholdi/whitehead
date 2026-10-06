@@ -1,4 +1,8 @@
-import RequestProject.RoseCoverIncidences
+module
+
+public import RequestProject.RoseCoverIncidences
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

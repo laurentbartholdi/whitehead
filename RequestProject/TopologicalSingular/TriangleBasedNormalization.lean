@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.SimplexBoundaryGluing
-import RequestProject.TopologicalSingular.SingularEdgeNullHomotopy
+module
+
+public import RequestProject.TopologicalSingular.SimplexBoundaryGluing
+public import RequestProject.TopologicalSingular.SingularEdgeNullHomotopy
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

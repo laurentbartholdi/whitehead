@@ -1,5 +1,9 @@
-import RequestProject.CombData
-import RequestProject.ClassicalGraphBoundaryWords
+module
+
+public import RequestProject.CombData
+public import RequestProject.ClassicalGraphBoundaryWords
+
+@[expose] public section
 
 /-! Finite boundary words map naturally under actual graph maps, including
 their four-side parametrizations. Unverified source. -/

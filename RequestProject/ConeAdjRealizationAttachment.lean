@@ -1,8 +1,12 @@
-import RequestProject.OrderNerveRealizationCover
-import RequestProject.OrderNerveRealizationNestedSubcomplex
-import RequestProject.ConeAdjBaseCover
-import RequestProject.PosetCoverLowerInterval
-import RequestProject.AttachmentQuotientHomeomorph
+module
+
+public import RequestProject.OrderNerveRealizationCover
+public import RequestProject.OrderNerveRealizationNestedSubcomplex
+public import RequestProject.ConeAdjBaseCover
+public import RequestProject.PosetCoverLowerInterval
+public import RequestProject.AttachmentQuotientHomeomorph
+
+@[expose] public section
 
 /-! The realization of a poset obtained by adjoining cone points is the
 actual attachment of the realized lower ideals to the realized old part.

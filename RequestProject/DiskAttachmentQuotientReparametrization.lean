@@ -1,5 +1,9 @@
-import RequestProject.AttachmentQuotientHomeomorph
-import RequestProject.ClassicalCellAttachmentMaps
+module
+
+public import RequestProject.AttachmentQuotientHomeomorph
+public import RequestProject.ClassicalCellAttachmentMaps
+
+@[expose] public section
 
 /-! A closed-disk quotient which preserves the interior bijectively may
 replace the characteristic parametrization of an attached cell. Boundary

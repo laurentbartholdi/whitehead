@@ -1,6 +1,10 @@
-import RequestProject.GenerationStep
-import RequestProject.FoxNaturality
-import RequestProject.CockcroftExtStep
+module
+
+public import RequestProject.GenerationStep
+public import RequestProject.FoxNaturality
+public import RequestProject.CockcroftExtStep
+
+@[expose] public section
 
 /-!
 # Rule 3 as a structural map

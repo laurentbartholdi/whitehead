@@ -1,6 +1,10 @@
-import RequestProject.TopologicalOrderCoverComparison
-import RequestProject.CoveringFibreComparison
-import RequestProject.OrderNerveRealizationRegular
+module
+
+public import RequestProject.TopologicalOrderCoverComparison
+public import RequestProject.CoveringFibreComparison
+public import RequestProject.OrderNerveRealizationRegular
+
+@[expose] public section
 
 /-! The reconstructed poset covering has exactly the original covering
 space as its actual geometric realization. No connectedness assumption

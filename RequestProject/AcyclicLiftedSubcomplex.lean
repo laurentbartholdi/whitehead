@@ -1,4 +1,8 @@
-import RequestProject.EmbeddedAcyclicUnion
+module
+
+public import RequestProject.EmbeddedAcyclicUnion
+
+@[expose] public section
 
 /-! The inverse image of an acyclic subcomplex whose fundamental group is
 killed has vanishing H1 and H2 in an actual universal cover.  The proof

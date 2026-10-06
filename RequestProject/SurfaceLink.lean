@@ -1,4 +1,8 @@
-import RequestProject.SurfaceRegular
+module
+
+public import RequestProject.SurfaceRegular
+
+@[expose] public section
 
 /-!
 # The links of the vertices of the surface are connected
@@ -92,7 +96,7 @@ theorem conn_rad (n : ℕ) : ∀ p : Fin M, p.val = n →
       rw [h3] at h4
       exact h2.trans h4
 
-private theorem reflTransGen_symm {α : Type*} {r : α → α → Prop}
+theorem reflTransGen_symm {α : Type*} {r : α → α → Prop}
     (hr : Symmetric r) {a b : α} (h : ReflTransGen r a b) : ReflTransGen r b a := by
   letI : Std.Symm r := ⟨fun _ _ h => hr h⟩
   exact Relation.ReflTransGen.stdSymm.symm _ _ h

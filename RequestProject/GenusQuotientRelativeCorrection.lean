@@ -1,6 +1,10 @@
-import RequestProject.GenusReceivedQuotientComparison
-import RequestProject.LiftedHomotopyChains
-import RequestProject.DeckChainTransport
+module
+
+public import RequestProject.GenusReceivedQuotientComparison
+public import RequestProject.LiftedHomotopyChains
+public import RequestProject.DeckChainTransport
+
+@[expose] public section
 
 /-! The actual old-cell correction from spine markings to attaching-surface
 markings. 

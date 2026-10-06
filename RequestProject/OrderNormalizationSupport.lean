@@ -1,4 +1,8 @@
-import RequestProject.OrderThreeNormalization
+module
+
+public import RequestProject.OrderThreeNormalization
+
+@[expose] public section
 
 /-! Normalization preserves the actual vertex tuples in the support of finite chains. -/
 set_option backward.defeqAttrib.useBackward true

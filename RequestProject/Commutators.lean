@@ -1,4 +1,8 @@
-import RequestProject.Fox
+module
+
+public import RequestProject.Fox
+
+@[expose] public section
 
 /-!
 # Words with vanishing exponent sums are products of commutators

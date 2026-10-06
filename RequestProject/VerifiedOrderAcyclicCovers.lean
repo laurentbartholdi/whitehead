@@ -1,6 +1,10 @@
-import RequestProject.VerifiedPresentationTopologicalChains
-import RequestProject.PresAsphericalAcyclicCover
-import RequestProject.OrderAcyclicRegularCover
+module
+
+public import RequestProject.VerifiedPresentationTopologicalChains
+public import RequestProject.PresAsphericalAcyclicCover
+public import RequestProject.OrderAcyclicRegularCover
+
+@[expose] public section
 
 /-!
 Checked integration point for genuine singular acyclicity of order realizations

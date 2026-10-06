@@ -1,5 +1,9 @@
-import RequestProject.GenusCappedSingularComparisonPushdown
-import RequestProject.OrderNerveSingularH2Surjective
+module
+
+public import RequestProject.GenusCappedSingularComparisonPushdown
+public import RequestProject.OrderNerveSingularH2Surjective
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

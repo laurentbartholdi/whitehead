@@ -1,6 +1,10 @@
-import RequestProject.OrderNerveRealizationContraction
-import RequestProject.OrderNerveRealizationStarSheets
-import Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected
+module
+
+public import RequestProject.OrderNerveRealizationContraction
+public import RequestProject.OrderNerveRealizationStarSheets
+public import Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory

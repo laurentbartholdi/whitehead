@@ -1,7 +1,11 @@
-import RequestProject.OrderConePathReplacement
-import RequestProject.RelatorCircleConnected
-import RequestProject.RelatorConeFundamentalChain
-import RequestProject.ConeAdjBaseCover
+module
+
+public import RequestProject.OrderConePathReplacement
+public import RequestProject.RelatorCircleConnected
+public import RequestProject.RelatorConeFundamentalChain
+public import RequestProject.ConeAdjBaseCover
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

@@ -1,5 +1,9 @@
-import RequestProject.GenusCollapseCoverHomology
-import RequestProject.OrderNervePositiveFillings
+module
+
+public import RequestProject.GenusCollapseCoverHomology
+public import RequestProject.OrderNervePositiveFillings
+
+@[expose] public section
 
 /-! A covered two-dimensional spine has no nonzero two-chain bounding in its block. -/
 set_option backward.defeqAttrib.useBackward true

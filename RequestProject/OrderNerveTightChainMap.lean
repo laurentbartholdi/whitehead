@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveTightCarriers
-import RequestProject.TopologicalSingular.SubdivisionSupport
+module
+
+public import RequestProject.OrderNerveTightCarriers
+public import RequestProject.TopologicalSingular.SubdivisionSupport
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open TopologicalSingular SingularSubdivision

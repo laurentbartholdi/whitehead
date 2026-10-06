@@ -1,4 +1,8 @@
-import RequestProject.GeometricChainCollapse
+module
+
+public import RequestProject.GeometricChainCollapse
+
+@[expose] public section
 
 /-! Positive corner cubes may always be collapsed across their own cut facets. -/
 set_option backward.defeqAttrib.useBackward true

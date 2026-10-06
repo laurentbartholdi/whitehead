@@ -1,5 +1,9 @@
-import Mathlib
-import RequestProject.FoxCommutator
+module
+
+public import Mathlib
+public import RequestProject.FoxCommutator
+
+@[expose] public section
 
 /-!
 # The universal-coefficient input of Section 2

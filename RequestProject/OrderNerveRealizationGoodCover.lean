@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveRealizationStarIntersections
+module
+
+public import RequestProject.OrderNerveRealizationStarIntersections
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory Simplicial

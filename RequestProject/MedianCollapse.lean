@@ -1,5 +1,9 @@
-import RequestProject.CubeMedianGraph
-import RequestProject.CollapseChainMap
+module
+
+public import RequestProject.CubeMedianGraph
+public import RequestProject.CollapseChainMap
+
+@[expose] public section
 
 /-!
 # The CAT(0) input feeds the collapse: cycles of a collapsed median cube complex

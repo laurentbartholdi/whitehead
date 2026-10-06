@@ -1,5 +1,9 @@
-import RequestProject.PresPosetModel
-import RequestProject.OrderConstructionPartialOrder
+module
+
+public import RequestProject.PresPosetModel
+public import RequestProject.OrderConstructionPartialOrder
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

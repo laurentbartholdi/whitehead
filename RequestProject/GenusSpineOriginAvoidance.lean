@@ -1,4 +1,8 @@
-import RequestProject.GenusSpineFullCubeDimension
+module
+
+public import RequestProject.GenusSpineFullCubeDimension
+
+@[expose] public section
 
 /-! The actual old-spine chain image avoids the removed positive vertex. -/
 set_option backward.defeqAttrib.useBackward true

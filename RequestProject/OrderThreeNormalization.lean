@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveCellMaps
+module
+
+public import RequestProject.OrderNerveCellMaps
+
+@[expose] public section
 
 /-! Degree-three normalization of the full weak order nerve. -/
 set_option backward.defeqAttrib.useBackward true

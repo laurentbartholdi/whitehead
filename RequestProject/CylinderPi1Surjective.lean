@@ -1,5 +1,9 @@
-import RequestProject.OrderConstructionPartialOrder
-import RequestProject.OrderReflexiveConjugation
+module
+
+public import RequestProject.OrderConstructionPartialOrder
+public import RequestProject.OrderReflexiveConjugation
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

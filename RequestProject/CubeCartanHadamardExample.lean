@@ -1,4 +1,8 @@
-import RequestProject.CubeCartanHadamard
+module
+
+public import RequestProject.CubeCartanHadamard
+
+@[expose] public section
 
 /-!
 # A model of the descending-cube axioms

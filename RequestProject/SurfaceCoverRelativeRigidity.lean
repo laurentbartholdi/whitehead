@@ -1,5 +1,9 @@
-import RequestProject.GenusReceivedPolygonCoefficient
-import RequestProject.SurfaceDual
+module
+
+public import RequestProject.GenusReceivedPolygonCoefficient
+public import RequestProject.SurfaceDual
+
+@[expose] public section
 
 /-! Relative coefficient propagation in actual covers of the polygon surface. -/
 set_option backward.defeqAttrib.useBackward true
@@ -11,7 +15,7 @@ open ASC
 variable {P Q : Type} [PartialOrder P] [PartialOrder Q]
   {f : P → Q} (hf : IsPosetCover f)
 
-private theorem cover_lt_of_image {a b : P} (hab : a ≤ b) (h : f a < f b) : a < b :=
+theorem cover_lt_of_image {a b : P} (hab : a ≤ b) (h : f a < f b) : a < b :=
   lt_of_le_of_ne hab (fun he => h.ne (congrArg f he))
 
 /-- All local surface incidences lift through a genuine poset cover. -/
@@ -88,7 +92,7 @@ section Coefficients
 variable (S : SurfaceRank P)
 include S
 
-private theorem triangle_rank (r : StrictOrdTri P) :
+theorem triangle_rank (r : StrictOrdTri P) :
     S.rk r.1.1 = 0 ∧ S.rk r.1.2.1 = 1 ∧ S.rk r.1.2.2 = 2 :=
   S.rk_flag r.2.1 r.2.2
 
@@ -239,7 +243,7 @@ theorem surfaceBoundary_face_pair {v e a b : P}
 
 end Coefficients
 
-private theorem exactlyTwo_exhaust {X : Type} {R : X → Prop} (h : ExactlyTwo R)
+theorem exactlyTwo_exhaust {X : Type} {R : X → Prop} (h : ExactlyTwo R)
     {a b : X} (ha : R a) (hb : R b) (hab : a ≠ b) :
     ∀ x, R x → x = a ∨ x = b := by
   obtain ⟨x, y, _, _, _, hall⟩ := h
@@ -367,7 +371,7 @@ theorem polygonRelative_boundary_zero_at_face
   omega
 
 include hd hf in
-private theorem polygonRelative_zero_in_face
+theorem polygonRelative_zero_in_face
     (c : StrictOrdTri P →₀ ℤ) (hrel : PolygonRelativeChain hc f c)
     (a b : StrictOrdTri P) (ht : a.1.2.2 = b.1.2.2) (ha : c a = 0) : c b = 0 :=
   surface_zero_in_face (coveredSurfaceRank hf (surfaceRank_SCell hc hd)) c
@@ -408,7 +412,7 @@ theorem polygonRelative_zero_inner
 include hd hf in
 /-- Move a zero coefficient from all flags over one actual face across an
 internal edge to all flags over its adjacent actual face. -/
-private theorem polygonRelative_zero_across
+theorem polygonRelative_zero_across
     (c : StrictOrdTri P →₀ ℤ) (hrel : PolygonRelativeChain hc f c)
     (t : StrictOrdTri P) (e a : SCell vc ec hc)
     (herk : Cell.rk e = 1) (het : e < f t.1.2.2) (hea : e < a)

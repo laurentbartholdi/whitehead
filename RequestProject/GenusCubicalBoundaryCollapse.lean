@@ -1,5 +1,9 @@
-import RequestProject.QCubeTruncatedBoundaryCollapse
-import RequestProject.GenusSpineCells
+module
+
+public import RequestProject.QCubeTruncatedBoundaryCollapse
+public import RequestProject.GenusSpineCells
+
+@[expose] public section
 
 /-! Actual genus cube boundaries vanish under the chosen geometric collapse. -/
 namespace FiniteChains.Davis.Genus

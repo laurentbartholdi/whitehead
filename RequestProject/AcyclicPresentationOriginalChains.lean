@@ -1,7 +1,11 @@
-import RequestProject.AcyclicPresentationActualChains
-import RequestProject.PresWordDiskTopologicalChains
-import RequestProject.PresAcyclicExponentMatrix
-import RequestProject.TopologicalSingular.MathlibComparison
+module
+
+public import RequestProject.AcyclicPresentationActualChains
+public import RequestProject.PresWordDiskTopologicalChains
+public import RequestProject.PresAcyclicExponentMatrix
+public import RequestProject.TopologicalSingular.MathlibComparison
+
+@[expose] public section
 
 /-! The actual algebraic acyclic-core construction yields chains in the
 literal original CW complex. Acyclicity of the original space and its actual

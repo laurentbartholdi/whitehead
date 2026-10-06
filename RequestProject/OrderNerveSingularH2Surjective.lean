@@ -1,6 +1,10 @@
-import RequestProject.OrderNerveSingularTwoCycles
-import RequestProject.OrderNerveSingularHomologyComparison
-import RequestProject.TopologicalSingular.HomologySurjectivity
+module
+
+public import RequestProject.OrderNerveSingularTwoCycles
+public import RequestProject.OrderNerveSingularHomologyComparison
+public import RequestProject.TopologicalSingular.HomologySurjectivity
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

@@ -1,4 +1,8 @@
-import RequestProject.OrderUniversalPosetThree
+module
+
+public import RequestProject.OrderUniversalPosetThree
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

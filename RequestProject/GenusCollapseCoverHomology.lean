@@ -1,6 +1,10 @@
-import RequestProject.GenusOrdinaryPairCoverHomology
-import RequestProject.GenusCutPairCoverHomology
-import RequestProject.GenusCollapseIteration
+module
+
+public import RequestProject.GenusOrdinaryPairCoverHomology
+public import RequestProject.GenusCutPairCoverHomology
+public import RequestProject.GenusCollapseIteration
+
+@[expose] public section
 
 /-! The entire chosen geometric collapse preserves H2 in arbitrary covers. -/
 namespace FiniteChains.Davis.Genus

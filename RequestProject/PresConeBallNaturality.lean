@@ -1,7 +1,11 @@
-import RequestProject.PresRelatorCircleEmbedding
-import RequestProject.OrderNerveConeBallNaturality
-import RequestProject.PresConeBall
-import RequestProject.RelatorCircleBoundaryNaturality
+module
+
+public import RequestProject.PresRelatorCircleEmbedding
+public import RequestProject.OrderNerveConeBallNaturality
+public import RequestProject.PresConeBall
+public import RequestProject.RelatorCircleBoundaryNaturality
+
+@[expose] public section
 
 /-! A literal presentation embedding preserves the actual parameters of
 each old cone disk as soon as its circle parametrization is preserved. -/
@@ -52,9 +56,9 @@ variable (hn : 0 < (w j).length) (hn' : 0 < (v (h.cell j)).length)
 
 local instance sourceCircleFintype : Fintype (RelatorCircle w j) := Fintype.ofFinite _
 local instance targetCircleFintype : Fintype (RelatorCircle v (h.cell j)) := Fintype.ofFinite _
-private def sourceCircleNonempty : Nonempty (RelatorCircle w j) :=
+def sourceCircleNonempty : Nonempty (RelatorCircle w j) :=
   relatorCircle_nonempty w j (List.ne_nil_of_length_pos hn)
-private def targetCircleNonempty : Nonempty (RelatorCircle v (h.cell j)) :=
+def targetCircleNonempty : Nonempty (RelatorCircle v (h.cell j)) :=
   relatorCircle_nonempty v (h.cell j) (List.ne_nil_of_length_pos hn')
 
 theorem presConeBallHomeomorph_natural_of_boundary

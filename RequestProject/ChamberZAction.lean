@@ -1,5 +1,9 @@
-import RequestProject.ChamberZPoset
-import RequestProject.CoverLevelComparison
+module
+
+public import RequestProject.ChamberZPoset
+public import RequestProject.CoverLevelComparison
+
+@[expose] public section
 
 /-!
 # The construction `Z` is equivariant

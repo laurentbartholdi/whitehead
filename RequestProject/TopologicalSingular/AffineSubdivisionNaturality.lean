@@ -1,7 +1,11 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.AffineVertexChains
-import RequestProject.TopologicalSingular.VertexSubdivisionHomotopy
+public import RequestProject.TopologicalSingular.AffineVertexChains
+public import RequestProject.TopologicalSingular.VertexSubdivisionHomotopy
+
+@[expose] public section
 
 /-! # Naturality of affine subdivision and its homotopy -/
 

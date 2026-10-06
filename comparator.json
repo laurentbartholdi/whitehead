@@ -4,5 +4,5 @@
   "theorem_names": ["Whitehead.TheoremA"],
   "definition_names": [],
   "permitted_axioms": ["propext", "Classical.choice", "Quot.sound"],
-  "external_kernels": {"nanoda": ["nanoda_bin"]}
+  "enable_nanoda": true
 }

@@ -1,7 +1,11 @@
-import RequestProject.ChamberQuotientOldStar
-import RequestProject.ChamberQuotientEquivariantGeneration
-import RequestProject.ChamberZConnected
-import RequestProject.BlockSpinePres
+module
+
+public import RequestProject.ChamberQuotientOldStar
+public import RequestProject.ChamberQuotientEquivariantGeneration
+public import RequestProject.ChamberZConnected
+public import RequestProject.BlockSpinePres
+
+@[expose] public section
 
 /-! The actual intersection cover is a cover of the original attaching simplex poset. -/
 namespace FiniteChains.Davis

@@ -1,6 +1,10 @@
-import RequestProject.CombCoveringLift
-import RequestProject.CombPresPi1
-import RequestProject.CoverComplex
+module
+
+public import RequestProject.CombCoveringLift
+public import RequestProject.CombPresPi1
+public import RequestProject.CoverComplex
+
+@[expose] public section
 
 /-!
 # The cover attached to `Ñ` realises the subgroup `Ñ/R` of `π₁`

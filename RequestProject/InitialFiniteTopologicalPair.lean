@@ -1,9 +1,13 @@
-import RequestProject.PresWordEmbeddingPi1
-import RequestProject.PresWordEmbeddingTopology
-import RequestProject.PresFiniteTopologicalCockcroft
-import RequestProject.InitialComplex
-import RequestProject.OrderPi1TrivialLift
-import RequestProject.OrderEmbeddingOneChain
+module
+
+public import RequestProject.PresWordEmbeddingPi1
+public import RequestProject.PresWordEmbeddingTopology
+public import RequestProject.PresFiniteTopologicalCockcroft
+public import RequestProject.InitialComplex
+public import RequestProject.OrderPi1TrivialLift
+public import RequestProject.OrderEmbeddingOneChain
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

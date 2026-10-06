@@ -1,5 +1,9 @@
-import RequestProject.MedianWallSpace
-import RequestProject.SquareComplexWallsSeparation
+module
+
+public import RequestProject.MedianWallSpace
+public import RequestProject.SquareComplexWallsSeparation
+
+@[expose] public section
 
 /-!
 # Nonpositive curvature supplies the missing separation property

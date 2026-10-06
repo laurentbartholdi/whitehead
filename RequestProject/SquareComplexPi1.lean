@@ -1,5 +1,9 @@
-import RequestProject.SquareComplexCovering
-import RequestProject.SquareComplexTreeCase
+module
+
+public import RequestProject.SquareComplexCovering
+public import RequestProject.SquareComplexTreeCase
+
+@[expose] public section
 
 /-!
 # The combinatorial fundamental group of a square complex

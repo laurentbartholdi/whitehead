@@ -1,5 +1,9 @@
-import RequestProject.SpanningTree
-import RequestProject.PresentationDictionary
+module
+
+public import RequestProject.SpanningTree
+public import RequestProject.PresentationDictionary
+
+@[expose] public section
 
 /-!
 # The presentation of `π₁` read off a spanning tree

@@ -1,5 +1,9 @@
-import RequestProject.ReceivedTreeMarkedChains
-import RequestProject.ReceivedTreeComparison
+module
+
+public import RequestProject.ReceivedTreeMarkedChains
+public import RequestProject.ReceivedTreeComparison
+
+@[expose] public section
 
 /-! Geometric images of exact marked relative boundaries. -/
 set_option backward.defeqAttrib.useBackward true

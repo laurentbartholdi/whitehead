@@ -1,9 +1,13 @@
-import RequestProject.BlockFamilyB1Finsupp
-import RequestProject.CrowellFinsupp
-import RequestProject.GenusSpineFactorComparison
-import RequestProject.GenusSpineSubstitutedBoundary
-import RequestProject.PrincipalCycleBaseChange
-import RequestProject.GenusNormalizedSpineReference
+module
+
+public import RequestProject.BlockFamilyB1Finsupp
+public import RequestProject.CrowellFinsupp
+public import RequestProject.GenusSpineFactorComparison
+public import RequestProject.GenusSpineSubstitutedBoundary
+public import RequestProject.PrincipalCycleBaseChange
+public import RequestProject.GenusNormalizedSpineReference
+
+@[expose] public section
 
 /-!
 Finite-support generation for the actual arbitrary family of genus spines.

@@ -1,7 +1,11 @@
-import RequestProject.RelativePairInjection
-import RequestProject.RelativeCoreSlides
-import RequestProject.FoxCoordinateSubstitution
-import RequestProject.Pi2Extension
+module
+
+public import RequestProject.RelativePairInjection
+public import RequestProject.RelativeCoreSlides
+public import RequestProject.FoxCoordinateSubstitution
+public import RequestProject.Pi2Extension
+
+@[expose] public section
 
 /-! Actual simultaneous rule-1 generation. Distinct pairs have disjoint
 Fox coordinates. The first coordinate of the pair at z is multiplied by
@@ -18,7 +22,7 @@ set_option backward.isDefEq.respectTransparency.types false
 
 namespace FiniteChains
 
-private theorem fox_subst_weighted_coordinate {I K : Type} [DecidableEq I] [DecidableEq K]
+theorem fox_subst_weighted_coordinate {I K : Type} [DecidableEq I] [DecidableEq K]
     (φ : FreeGroup I →* FreeGroup K)
     (a : I) (b : K) (d : FreeGroupRing K)
     (h : ∀ i, fox b (φ (FreeGroup.of i)) = if a = i then d else 0)

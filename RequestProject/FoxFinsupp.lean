@@ -1,5 +1,9 @@
-import RequestProject.NecessityLocallyFinite
-import RequestProject.CoverChainComplex
+module
+
+public import RequestProject.NecessityLocallyFinite
+public import RequestProject.CoverChainComplex
+
+@[expose] public section
 
 /-! Finitely supported Fox calculus for arbitrary generator sets. -/
 

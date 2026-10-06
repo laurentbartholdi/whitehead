@@ -1,6 +1,10 @@
-import RequestProject.PresClassicalDiskComparison
-import RequestProject.RelatorCircleBoundaryNaturality
-import RequestProject.DiskRoseMaps
+module
+
+public import RequestProject.PresClassicalDiskComparison
+public import RequestProject.RelatorCircleBoundaryNaturality
+public import RequestProject.DiskRoseMaps
+
+@[expose] public section
 
 /-! The actual attaching maps and disk-model maps commute with literal
 presentation-word embeddings. Circle-coordinate compatibility is proved

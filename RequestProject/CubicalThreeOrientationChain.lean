@@ -1,4 +1,8 @@
-import RequestProject.CubicalThreeBoundaryMatrix
+module
+
+public import RequestProject.CubicalThreeBoundaryMatrix
+
+@[expose] public section
 
 /-! The genuine finite oriented six-face boundary chain. -/
 set_option backward.defeqAttrib.useBackward true

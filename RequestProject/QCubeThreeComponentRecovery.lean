@@ -1,5 +1,9 @@
-import RequestProject.QCubeThreeOrientationSubdivision
-import RequestProject.QCubeThreeBaseCycles
+module
+
+public import RequestProject.QCubeThreeOrientationSubdivision
+public import RequestProject.QCubeThreeBaseCycles
+
+@[expose] public section
 
 /-! Recovery of the actual cubical boundary of an isolated strict three-cube component. -/
 open scoped Classical

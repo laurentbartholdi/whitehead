@@ -1,5 +1,9 @@
-import RequestProject.ComponentComplex
-import RequestProject.TheoremAGeneral
+module
+
+public import RequestProject.ComponentComplex
+public import RequestProject.TheoremAGeneral
+
+@[expose] public section
 
 /-!
 # Condition (1) of Theorem A with disconnected stages

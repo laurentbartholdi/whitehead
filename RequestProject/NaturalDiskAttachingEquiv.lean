@@ -1,5 +1,9 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.NaturalDiskAttachingExtensions
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.NaturalDiskAttachingExtensions
+
+@[expose] public section
 
 /-! Attaching-map change with natural forward map. The inverse proof uses
 the established full-cylinder backtrack homotopy with the explicit ball

@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.CoherentEdgeNormalization
-import RequestProject.TopologicalSingular.TriangleBasedNormalization
+module
+
+public import RequestProject.TopologicalSingular.CoherentEdgeNormalization
+public import RequestProject.TopologicalSingular.TriangleBasedNormalization
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 open scoped unitInterval Topology

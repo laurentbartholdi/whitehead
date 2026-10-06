@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.SingularHornFilling
-import RequestProject.TopologicalSingular.SimplexFaceIntersections
+module
+
+public import RequestProject.TopologicalSingular.SingularHornFilling
+public import RequestProject.TopologicalSingular.SimplexFaceIntersections
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

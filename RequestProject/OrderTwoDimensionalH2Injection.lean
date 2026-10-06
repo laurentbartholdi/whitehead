@@ -1,6 +1,10 @@
-import RequestProject.OrderRealizationCockcroft
-import RequestProject.OrderThreeNormalization
-import RequestProject.StrictOrderNormalizationMaps
+module
+
+public import RequestProject.OrderRealizationCockcroft
+public import RequestProject.OrderThreeNormalization
+public import RequestProject.StrictOrderNormalizationMaps
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

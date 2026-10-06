@@ -1,4 +1,8 @@
-import RequestProject.ChamberQuotientChosenGeneration
+module
+
+public import RequestProject.ChamberQuotientChosenGeneration
+
+@[expose] public section
 
 /-! Actual quotient cycles are generated modulo genuine three-boundaries by
 deck translates of genuine universal-cover cycles of the chosen base. -/

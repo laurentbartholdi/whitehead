@@ -1,6 +1,10 @@
-import RequestProject.ClassicalGraphBoundaryWords
-import RequestProject.ComponentComplex
-import Mathlib.Topology.Connected.TotallyDisconnected
+module
+
+public import RequestProject.ClassicalGraphBoundaryWords
+public import RequestProject.ComponentComplex
+public import Mathlib.Topology.Connected.TotallyDisconnected
+
+@[expose] public section
 
 /-! Attaching word disks cannot connect distinct graph components.
 Thus connectedness of an actual word-disk model supplies connectedness

@@ -1,6 +1,10 @@
-import RequestProject.ChamberQuotientOldGeneration
-import RequestProject.ChamberQuotientAttachingCover
-import RequestProject.NerveDegreeTransfer
+module
+
+public import RequestProject.ChamberQuotientOldGeneration
+public import RequestProject.ChamberQuotientAttachingCover
+public import RequestProject.NerveDegreeTransfer
+
+@[expose] public section
 
 /-! Actual finite cycles in the covering of the attaching surface, with old-cell corrections. -/
 namespace FiniteChains.Davis

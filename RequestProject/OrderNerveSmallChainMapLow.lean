@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveSmallChainBasis
-import RequestProject.NerveDegree
+module
+
+public import RequestProject.OrderNerveSmallChainBasis
+public import RequestProject.NerveDegree
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open TopologicalSingular SingularSubdivision

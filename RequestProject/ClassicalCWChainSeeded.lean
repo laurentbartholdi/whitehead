@@ -1,5 +1,9 @@
-import RequestProject.ClassicalCWChainPresentation
-import RequestProject.ClassicalChartedGraphComparison
+module
+
+public import RequestProject.ClassicalCWChainPresentation
+public import RequestProject.ClassicalChartedGraphComparison
+
+@[expose] public section
 
 /-! Prescribed original graph words are retained at stage zero. The
 remaining cells still obtain actual words and homotopies from the graph

@@ -1,7 +1,11 @@
-import RequestProject.CutPuncturedBoundaryAcyclic
-import RequestProject.GenusCutPairCollapse
-import RequestProject.PosetCoverPuncturedLower
-import RequestProject.NerveDegreeTransfer
+module
+
+public import RequestProject.CutPuncturedBoundaryAcyclic
+public import RequestProject.GenusCutPairCollapse
+public import RequestProject.PosetCoverPuncturedLower
+public import RequestProject.NerveDegreeTransfer
+
+@[expose] public section
 
 /-! Fillings in the actual sheet of a top cube paired with its cut facet. -/
 namespace FiniteChains.Davis.Genus

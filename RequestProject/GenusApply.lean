@@ -1,5 +1,9 @@
-import RequestProject.GenusLoops
-import RequestProject.BlockSurfaceApplyW
+module
+
+public import RequestProject.GenusLoops
+public import RequestProject.BlockSurfaceApplyW
+
+@[expose] public section
 
 /-!
 # The theorem applied to the block of the article, over the closed surface of genus `q`

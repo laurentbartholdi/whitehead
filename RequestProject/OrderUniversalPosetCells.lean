@@ -1,4 +1,8 @@
-import RequestProject.OrderUniversalPosetCover
+module
+
+public import RequestProject.OrderUniversalPosetCover
+
+@[expose] public section
 
 /-! Actual edge and triangle coordinates of the universal-cover order complex. -/
 namespace FiniteChains.Comb

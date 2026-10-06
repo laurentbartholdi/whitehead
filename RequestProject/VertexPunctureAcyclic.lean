@@ -1,5 +1,9 @@
-import RequestProject.VertexIntersectionContraction
-import RequestProject.NerveRelativeGluing
+module
+
+public import RequestProject.VertexIntersectionContraction
+public import RequestProject.NerveRelativeGluing
+
+@[expose] public section
 
 /-! Augmented acyclicity of the actual punctured three-cube boundary. -/
 namespace FiniteChains.Davis

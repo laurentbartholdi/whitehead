@@ -1,5 +1,9 @@
-import RequestProject.ClosedEmbeddingCWImage
-import RequestProject.BallHomotopyExtension
+module
+
+public import RequestProject.ClosedEmbeddingCWImage
+public import RequestProject.BallHomotopyExtension
+
+@[expose] public section
 
 /-! Characteristic maps for an arbitrary family of genuine disks attached
 to a literal old space. The norm may be the sup norm used by classical CW

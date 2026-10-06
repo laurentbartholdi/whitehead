@@ -1,4 +1,8 @@
-import RequestProject.DiskPresentationExtension
+module
+
+public import RequestProject.DiskPresentationExtension
+
+@[expose] public section
 
 noncomputable section
 namespace FiniteChains.RelativeAttachment.DiskPresentationExtension
@@ -15,7 +19,7 @@ def sourceIntoExtension : C(DiskAttachment r, DiskAttachment (twoAttaching f c r
     old_continuous _ _⟩ : C(DiskAttachment (oneAttaching f r), _)).comp
       ⟨old (oneAttaching f r) (boundaryFamilyInclusion (NewGenerators f) _), old_continuous _ _⟩
 
-private def relatorDiskIntoExtension :
+def relatorDiskIntoExtension :
     C(DiskFamily K (Fin 2 → ℝ), DiskAttachment (twoAttaching f c r s)) where
   toFun d := if hk : d.1 ∈ Set.range c then
     sourceIntoExtension f c r s (cell r (boundaryFamilyInclusion J _) ⟨Classical.choose hk, d.2⟩)

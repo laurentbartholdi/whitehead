@@ -1,4 +1,8 @@
-import RequestProject.MomentAngleConnected
+module
+
+public import RequestProject.MomentAngleConnected
+
+@[expose] public section
 
 /-!
 # A nonempty instance of the cube-complex computation

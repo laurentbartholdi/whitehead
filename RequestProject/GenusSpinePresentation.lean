@@ -1,6 +1,10 @@
-import RequestProject.GenusSpineSurfaceFilling
-import RequestProject.GenusSpineComponent
-import RequestProject.TreePresentation
+module
+
+public import RequestProject.GenusSpineSurfaceFilling
+public import RequestProject.GenusSpineComponent
+public import RequestProject.TreePresentation
+
+@[expose] public section
 
 /-! A finite presentation read from the actual connected marked genus spine. -/
 set_option backward.defeqAttrib.useBackward true

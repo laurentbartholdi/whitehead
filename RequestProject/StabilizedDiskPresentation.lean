@@ -1,6 +1,10 @@
-import RequestProject.DummyLoopFilling
-import RequestProject.DiskPresentationExtensionHomeomorph
-import RequestProject.AttachmentLabelReindex
+module
+
+public import RequestProject.DummyLoopFilling
+public import RequestProject.DiskPresentationExtensionHomeomorph
+public import RequestProject.AttachmentLabelReindex
+
+@[expose] public section
 
 /-! Stabilize any literal rose-and-disks model by one fresh generator
 and a disk killing exactly that generator. This gives a nonempty alphabet

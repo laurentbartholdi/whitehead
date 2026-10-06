@@ -1,4 +1,8 @@
-import RequestProject.NerveSupport
+module
+
+public import RequestProject.NerveSupport
+
+@[expose] public section
 
 /-!
 # The combinatorial mapping cylinder of a map of posets, with its outer end

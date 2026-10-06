@@ -1,6 +1,10 @@
-import RequestProject.TreeChainTopological
-import RequestProject.TreeCoverNecessityFinsupp
-import RequestProject.PresChainTopologicalFinsupp
+module
+
+public import RequestProject.TreeChainTopological
+public import RequestProject.TreeCoverNecessityFinsupp
+public import RequestProject.PresChainTopologicalFinsupp
+
+@[expose] public section
 
 /-! Necessity for arbitrary connected cellular two-complexes and arbitrary cellular chains. -/
 

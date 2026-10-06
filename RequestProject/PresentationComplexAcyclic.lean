@@ -1,4 +1,8 @@
-import RequestProject.IdentityCover
+module
+
+public import RequestProject.IdentityCover
+
+@[expose] public section
 
 /-!
 # The standard two-complex of a presentation, and the acyclic example of the paper

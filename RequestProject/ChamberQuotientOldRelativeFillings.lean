@@ -1,7 +1,11 @@
-import RequestProject.ChamberQuotientOldGeneration
-import RequestProject.ChamberQuotientStarOneFillings
-import RequestProject.NerveRelativeIntersection
-import RequestProject.NerveBoundaryReflection
+module
+
+public import RequestProject.ChamberQuotientOldGeneration
+public import RequestProject.ChamberQuotientStarOneFillings
+public import RequestProject.NerveRelativeIntersection
+public import RequestProject.NerveBoundaryReflection
+
+@[expose] public section
 
 /-! Actual relative degree-two vanishing for the old/attaching pair in the Q cover. -/
 namespace FiniteChains.Davis

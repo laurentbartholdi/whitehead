@@ -1,5 +1,9 @@
-import RequestProject.ChamberQuotientCanonicalGeneration
-import RequestProject.ChamberZConnected
+module
+
+public import RequestProject.ChamberQuotientCanonicalGeneration
+public import RequestProject.ChamberZConnected
+
+@[expose] public section
 
 namespace FiniteChains.Davis
 open RACG Mirror Comb

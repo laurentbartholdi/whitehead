@@ -1,4 +1,8 @@
-import RequestProject.PosetCoverStrictEdgeLift
+module
+
+public import RequestProject.PosetCoverStrictEdgeLift
+
+@[expose] public section
 
 namespace FiniteChains.Comb.IsPosetCover
 universe u

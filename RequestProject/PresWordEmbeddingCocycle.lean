@@ -1,7 +1,11 @@
-import RequestProject.PresWordEmbedding
-import RequestProject.PresPosetReading
-import RequestProject.OrderUniversalCocycleReading
-import RequestProject.CombPi2
+module
+
+public import RequestProject.PresWordEmbedding
+public import RequestProject.PresPosetReading
+public import RequestProject.OrderUniversalCocycleReading
+public import RequestProject.CombPi2
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

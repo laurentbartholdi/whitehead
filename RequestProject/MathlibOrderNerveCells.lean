@@ -1,5 +1,9 @@
-import RequestProject.OrderNormalizationHomotopy
-import Mathlib.AlgebraicTopology.SimplicialSet.NerveNondegenerate
+module
+
+public import RequestProject.OrderNormalizationHomotopy
+public import Mathlib.AlgebraicTopology.SimplicialSet.NerveNondegenerate
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

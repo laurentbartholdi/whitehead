@@ -1,6 +1,10 @@
-import RequestProject.OrderNerveFiniteCoordinates
-import RequestProject.OrderNerveRealizationContraction
-import Mathlib.Data.Fintype.Option
+module
+
+public import RequestProject.OrderNerveFiniteCoordinates
+public import RequestProject.OrderNerveRealizationContraction
+public import Mathlib.Data.Fintype.Option
+
+@[expose] public section
 
 /-! The actual realization of `WithTop P` is the radial cone on the actual
 realization of `P`. The equal-fiber statement records the collapsed radius-zero

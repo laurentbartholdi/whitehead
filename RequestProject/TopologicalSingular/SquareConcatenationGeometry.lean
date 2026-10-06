@@ -1,4 +1,8 @@
-import RequestProject.TopologicalSingular.SquareSubdivisionGeometry
+module
+
+public import RequestProject.TopologicalSingular.SquareSubdivisionGeometry
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 open scoped unitInterval Topology

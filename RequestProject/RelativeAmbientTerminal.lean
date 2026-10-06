@@ -1,4 +1,8 @@
-import RequestProject.RelativeAmbientReplacement
+module
+
+public import RequestProject.RelativeAmbientReplacement
+
+@[expose] public section
 
 /-! The appended terminal stage in the ambient indexing used for the
 next iteration. No terminal vanishing or Cockcroft hypothesis is introduced.
@@ -195,7 +199,7 @@ theorem core_fsIsCockcroft (hinj : Function.Injective (expMatrix core)) : FSIsCo
   have h : x.mapRange (augPres core) (map_zero _) = 0 := by
     apply hinj
     rw [expMatrix_augmentation, hx, map_zero]
-    rfl
+    exact Finsupp.mapRange_zero
   intro c
   exact DFunLike.congr_fun h c
 

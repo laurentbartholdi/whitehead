@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveCellularSingularSupport
-import RequestProject.OrderNerveCellularSingularZero
+module
+
+public import RequestProject.OrderNerveCellularSingularSupport
+public import RequestProject.OrderNerveCellularSingularZero
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open TopologicalSingular SingularSubdivision

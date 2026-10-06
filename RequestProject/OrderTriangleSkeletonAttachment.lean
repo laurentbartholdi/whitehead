@@ -1,11 +1,15 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.OrderTriangleDiskCoordinates
-import RequestProject.StrictOrderNerveCellEquivalences
-import RequestProject.DiskAttachmentQuotientReparametrization
-import RequestProject.ClassicalCWSkeletonAttachment
-import RequestProject.OrderNerveRealizationCW
-import RequestProject.OrderNerveTwoComplex
-import RequestProject.ClassicalCWWordDiskModel
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.OrderTriangleDiskCoordinates
+public import RequestProject.StrictOrderNerveCellEquivalences
+public import RequestProject.DiskAttachmentQuotientReparametrization
+public import RequestProject.ClassicalCWSkeletonAttachment
+public import RequestProject.OrderNerveRealizationCW
+public import RequestProject.OrderNerveTwoComplex
+public import RequestProject.ClassicalCWWordDiskModel
+
+@[expose] public section
 
 /-! The actual second skeleton of an order realization is obtained by
 attaching explicitly parametrized triangle disks to its actual first

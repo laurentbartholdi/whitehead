@@ -1,4 +1,8 @@
-import RequestProject.CoverChainComplex
+module
+
+public import RequestProject.CoverChainComplex
+
+@[expose] public section
 
 /-!
 # The boundaries of the cover are the Fox vectors of the relator subgroup

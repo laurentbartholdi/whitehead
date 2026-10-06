@@ -1,6 +1,10 @@
-import RequestProject.ClassicalCellAttachmentMaps
-import RequestProject.SpanningTree
-import Mathlib.Topology.Path
+module
+
+public import RequestProject.ClassicalCellAttachmentMaps
+public import RequestProject.SpanningTree
+public import Mathlib.Topology.Path
+
+@[expose] public section
 
 /-! The literal one-dimensional disk attachment and its oriented graph.
 The interval parametrization uses the original sup-norm characteristic disks. -/

@@ -1,6 +1,10 @@
-import RequestProject.TopologicalSingular.RelativeSingularMaps
-import RequestProject.TopologicalSingular.SingularChainH0
-import RequestProject.TopologicalSingular.ContractibleSingularChains
+module
+
+public import RequestProject.TopologicalSingular.RelativeSingularMaps
+public import RequestProject.TopologicalSingular.SingularChainH0
+public import RequestProject.TopologicalSingular.ContractibleSingularChains
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 universe u

@@ -1,5 +1,9 @@
-import RequestProject.GenusCappedCoverChainMap
-import RequestProject.UniversalThreeAugmentation
+module
+
+public import RequestProject.GenusCappedCoverChainMap
+public import RequestProject.UniversalThreeAugmentation
+
+@[expose] public section
 
 /-! The exact deck-forgetting formula for the constructed capped-cover comparison. -/
 set_option backward.defeqAttrib.useBackward true

@@ -1,8 +1,12 @@
-import RequestProject.CoverComplex
-import RequestProject.CombLoopWord
-import RequestProject.UniversalPathGauge
-import RequestProject.CellularHomotopyChain
-import RequestProject.ZeroPi2Descent
+module
+
+public import RequestProject.CoverComplex
+public import RequestProject.CombLoopWord
+public import RequestProject.UniversalPathGauge
+public import RequestProject.CellularHomotopyChain
+public import RequestProject.ZeroPi2Descent
+
+@[expose] public section
 
 /-! Exact Fox expansion for a word of actual lifted loops. This is an
 identity of edge chains, not merely of homology classes. Unverified source. -/

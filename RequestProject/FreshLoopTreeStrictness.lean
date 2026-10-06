@@ -1,4 +1,8 @@
-import RequestProject.TreeExtension
+module
+
+public import RequestProject.TreeExtension
+
+@[expose] public section
 
 /-! A fresh loop or a fresh face survives collapse of compatible spanning
 trees. Ordinary strictness by a fresh edge alone would not suffice.

@@ -1,5 +1,9 @@
-import RequestProject.CycleLifting
-import RequestProject.CrowellFinsupp
+module
+
+public import RequestProject.CycleLifting
+public import RequestProject.CrowellFinsupp
+
+@[expose] public section
 
 /-! Cycle lifting in the universal cover, without finiteness assumptions on cells. -/
 

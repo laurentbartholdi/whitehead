@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.HurewiczIsomorphismConsequences
-import RequestProject.OrderRealizationHurewicz
+module
+
+public import RequestProject.TopologicalSingular.HurewiczIsomorphismConsequences
+public import RequestProject.OrderRealizationHurewicz
+
+@[expose] public section
 
 /-! # Genuine degree-two Hurewicz isomorphism
 

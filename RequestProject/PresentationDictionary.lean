@@ -1,7 +1,11 @@
-import RequestProject.HurewiczDictionary
-import RequestProject.CoverAcyclic
-import RequestProject.FrameworkNecessityTF
-import RequestProject.NecessityLocallyFinite
+module
+
+public import RequestProject.HurewiczDictionary
+public import RequestProject.CoverAcyclic
+public import RequestProject.FrameworkNecessityTF
+public import RequestProject.NecessityLocallyFinite
+
+@[expose] public section
 
 /-!
 # The Hurewicz input for a presented complex is a theorem

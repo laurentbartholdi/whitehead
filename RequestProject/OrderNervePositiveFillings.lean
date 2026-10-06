@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveOneDecoding
-import RequestProject.OrderThreeNormalization
+module
+
+public import RequestProject.OrderNerveOneDecoding
+public import RequestProject.OrderThreeNormalization
+
+@[expose] public section
 
 /-! Strict cellular fillings give genuine fillings in the homogeneous full nerve. -/
 set_option backward.defeqAttrib.useBackward true

@@ -1,8 +1,12 @@
-import RequestProject.TopologicalSingular.SimplexCoordinates
-import RequestProject.Statement
-import RequestProject.TopologicalSingular.SingularChainHomotopy
-import RequestProject.TopologicalSingular.ContractibleSingularChains
-import RequestProject.FreeSingularChainComparison
+module
+
+public import RequestProject.TopologicalSingular.SimplexCoordinates
+public import RequestProject.Statement
+public import RequestProject.TopologicalSingular.SingularChainHomotopy
+public import RequestProject.TopologicalSingular.ContractibleSingularChains
+public import RequestProject.FreeSingularChainComparison
+
+@[expose] public section
 
 open scoped ContinuousMap
 

@@ -1,6 +1,10 @@
-import RequestProject.BlockSpinePres
-import RequestProject.OrderCxConeNull
-import RequestProject.CellularHomotopyChain
+module
+
+public import RequestProject.BlockSpinePres
+public import RequestProject.OrderCxConeNull
+public import RequestProject.CellularHomotopyChain
+
+@[expose] public section
 
 /-! Concrete fillings of the cut-surface loops in the full cube quotient. -/
 namespace FiniteChains.Davis

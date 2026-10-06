@@ -1,6 +1,10 @@
-import RequestProject.OrderRoseRealizationHomeomorph
-import RequestProject.PresWordEmbedding
-import RequestProject.OrderNervePosetCoverVertexStars
+module
+
+public import RequestProject.OrderRoseRealizationHomeomorph
+public import RequestProject.PresWordEmbedding
+public import RequestProject.OrderNervePosetCoverVertexStars
+
+@[expose] public section
 
 /-! Literal generator maps of disk roses, and exact naturality of the
 order-rose homeomorphism for generator embeddings. -/

@@ -1,4 +1,8 @@
-import RequestProject.MedianGraphMetric
+module
+
+public import RequestProject.MedianGraphMetric
+
+@[expose] public section
 
 /-!
 # The cells of the descending-cube structure are the cubes of the median graph

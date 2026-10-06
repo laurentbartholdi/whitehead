@@ -1,5 +1,9 @@
-import RequestProject.ChamberQuotientBaseDeck
-import RequestProject.OrderSubposetChains
+module
+
+public import RequestProject.ChamberQuotientBaseDeck
+public import RequestProject.OrderSubposetChains
+
+@[expose] public section
 
 /-! Translate actual component cycles into the chosen lifted base component. -/
 set_option backward.defeqAttrib.useBackward true

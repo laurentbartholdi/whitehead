@@ -1,5 +1,9 @@
-import RequestProject.GenusAllQuotientCorrections
-import RequestProject.GenusAllQuotientReceivedSpine
+module
+
+public import RequestProject.GenusAllQuotientCorrections
+public import RequestProject.GenusAllQuotientReceivedSpine
+
+@[expose] public section
 
 /-! Recover the entire named relation vector from its genuine geometric
 relative class. The scalar remains in the full quotient group until the last

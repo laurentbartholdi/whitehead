@@ -1,5 +1,9 @@
-import RequestProject.GenerationStep
-import RequestProject.CockcroftExtStep
+module
+
+public import RequestProject.GenerationStep
+public import RequestProject.CockcroftExtStep
+
+@[expose] public section
 
 /-! Relabelling the actual relators preserves Cockcroftness. All group,
 coefficient, cycle and augmentation maps are constructed from the relator

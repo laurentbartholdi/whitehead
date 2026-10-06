@@ -1,4 +1,8 @@
-import RequestProject.ClassicalSubcomplexBoundaryWords
+module
+
+public import RequestProject.ClassicalSubcomplexBoundaryWords
+
+@[expose] public section
 
 /-! Simultaneous original-cell words for a finite filtration. Each actual
 two-cell is straightened exactly once, at its first stage. The later

@@ -1,7 +1,11 @@
-import RequestProject.PresWordEmbedding
-import RequestProject.PresPosetGroupEquiv
-import RequestProject.OrderCxNullTransfer
-import RequestProject.ZeroPi2Descent
+module
+
+public import RequestProject.PresWordEmbedding
+public import RequestProject.PresPosetGroupEquiv
+public import RequestProject.OrderCxNullTransfer
+public import RequestProject.ZeroPi2Descent
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

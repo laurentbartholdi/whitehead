@@ -1,5 +1,9 @@
-import RequestProject.OrderUniversalRealizationSimplyConnected
-import RequestProject.TopologicalSingular.MathlibH1Comparison
+module
+
+public import RequestProject.OrderUniversalRealizationSimplyConnected
+public import RequestProject.TopologicalSingular.MathlibH1Comparison
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

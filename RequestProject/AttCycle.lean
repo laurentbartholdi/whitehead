@@ -1,4 +1,8 @@
-import RequestProject.BlockConnected
+module
+
+public import RequestProject.BlockConnected
+
+@[expose] public section
 
 /-!
 # A concrete attaching map: the cycle that spells a prescribed word

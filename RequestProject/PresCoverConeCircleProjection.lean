@@ -1,4 +1,8 @@
-import RequestProject.PresCoverRelatorChains
+module
+
+public import RequestProject.PresCoverRelatorChains
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 universe u

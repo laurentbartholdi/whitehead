@@ -1,7 +1,11 @@
-import RequestProject.TopologicalSingular.SimplexCoordinates
-import RequestProject.OrderNerveRealizationOpenStars
-import RequestProject.OrderNerveRealizationPaths
-import Mathlib.Topology.Homotopy.Contractible
+module
+
+public import RequestProject.TopologicalSingular.SimplexCoordinates
+public import RequestProject.OrderNerveRealizationOpenStars
+public import RequestProject.OrderNerveRealizationPaths
+public import Mathlib.Topology.Homotopy.Contractible
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory Simplicial

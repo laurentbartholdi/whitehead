@@ -1,4 +1,8 @@
-import RequestProject.Pi2Generation
+module
+
+public import RequestProject.Pi2Generation
+
+@[expose] public section
 
 /-!
 # Structural maps with the generation property, and their composites

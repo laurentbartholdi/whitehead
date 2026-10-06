@@ -1,5 +1,9 @@
-import RequestProject.AttachmentHomotopyExtension
-import Mathlib.Analysis.Normed.Group.Constructions
+module
+
+public import RequestProject.AttachmentHomotopyExtension
+public import Mathlib.Analysis.Normed.Group.Constructions
+
+@[expose] public section
 
 /-! Homotopy extension on the entire boundary of `I × D`, including both
 ends. The cylinder is the unit ball for the product supremum norm. -/
@@ -18,7 +22,7 @@ variable (E : Type u) [NormedAddCommGroup E] [NormedSpace ℝ E]
 abbrev FullBallCylinderBoundary :=
   {z : I × ClosedUnitBall E // z.1 = 0 ∨ z.1 = 1 ∨ ‖z.2.val‖ = 1}
 
-private def ballCylinderForward (z : ClosedUnitBall (ℝ × E)) : I × ClosedUnitBall E :=
+def ballCylinderForward (z : ClosedUnitBall (ℝ × E)) : I × ClosedUnitBall E :=
   (⟨(z.val.1 + 1) / 2, by
     have h : |z.val.1| ≤ 1 := by
       simpa only [Real.norm_eq_abs] using (norm_fst_le z.val).trans z.property
@@ -26,7 +30,7 @@ private def ballCylinderForward (z : ClosedUnitBall (ℝ × E)) : I × ClosedUni
     constructor <;> linarith⟩,
    ⟨z.val.2, (norm_snd_le z.val).trans z.property⟩)
 
-private def ballCylinderInverse (z : I × ClosedUnitBall E) : ClosedUnitBall (ℝ × E) :=
+def ballCylinderInverse (z : I × ClosedUnitBall E) : ClosedUnitBall (ℝ × E) :=
   ⟨(2 * (z.1 : ℝ) - 1, z.2.val), by
     rw [Prod.norm_mk, Real.norm_eq_abs]
     apply max_le _ z.2.property
@@ -60,7 +64,7 @@ def ballCylinderHomeomorph : ClosedUnitBall (ℝ × E) ≃ₜ I × ClosedUnitBal
     fun_prop
 
 omit [NormedSpace ℝ E] in
-private theorem ballCylinderForward_boundary (z : UnitBoundary (ℝ × E)) :
+theorem ballCylinderForward_boundary (z : UnitBoundary (ℝ × E)) :
     (ballCylinderHomeomorph E (unitBoundaryInclusion (ℝ × E) z)).1 = 0 ∨
     (ballCylinderHomeomorph E (unitBoundaryInclusion (ℝ × E) z)).1 = 1 ∨
     ‖(ballCylinderHomeomorph E (unitBoundaryInclusion (ℝ × E) z)).2.val‖ = 1 := by
@@ -90,7 +94,7 @@ private theorem ballCylinderForward_boundary (z : UnitBoundary (ℝ × E)) :
     linarith
 
 omit [NormedSpace ℝ E] in
-private theorem ballCylinderInverse_boundary (z : FullBallCylinderBoundary E) :
+theorem ballCylinderInverse_boundary (z : FullBallCylinderBoundary E) :
     ‖((ballCylinderHomeomorph E).symm z.val).val‖ = 1 := by
   apply le_antisymm ((ballCylinderHomeomorph E).symm z.val).property
   change 1 ≤ max ‖2 * (z.val.1 : ℝ) - 1‖ ‖z.val.2.val‖

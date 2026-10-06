@@ -1,4 +1,8 @@
-import RequestProject.CombUniversalCover
+module
+
+public import RequestProject.CombUniversalCover
+
+@[expose] public section
 
 /-! Path-class identities for comparing covers with chosen reference paths. -/
 set_option backward.defeqAttrib.useBackward true

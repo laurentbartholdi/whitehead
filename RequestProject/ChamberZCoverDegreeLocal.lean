@@ -1,6 +1,10 @@
-import RequestProject.ChamberZCoverIntersectionCycles
-import RequestProject.OrderNervePositiveFillings
-import RequestProject.NerveDegreeTransfer
+module
+
+public import RequestProject.ChamberZCoverIntersectionCycles
+public import RequestProject.OrderNervePositiveFillings
+public import RequestProject.NerveDegreeTransfer
+
+@[expose] public section
 
 /-! Local degree-two generation and degree-one intersection fillings on actual covers. -/
 namespace FiniteChains.Davis

@@ -1,6 +1,10 @@
-import RequestProject.OrderNerveSingularBoundaryReflection
-import RequestProject.OrderNerveSingularH2Surjective
-import RequestProject.TopologicalSingular.HomologyInjectivity
+module
+
+public import RequestProject.OrderNerveSingularBoundaryReflection
+public import RequestProject.OrderNerveSingularH2Surjective
+public import RequestProject.TopologicalSingular.HomologyInjectivity
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

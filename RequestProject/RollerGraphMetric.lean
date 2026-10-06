@@ -1,6 +1,10 @@
-import RequestProject.CubeRollerMedian
-import RequestProject.MedianGraphMetric
-import RequestProject.RollerConnected
+module
+
+public import RequestProject.CubeRollerMedian
+public import RequestProject.MedianGraphMetric
+public import RequestProject.RollerConnected
+
+@[expose] public section
 
 /-!
 # The Roller model as an actual graph

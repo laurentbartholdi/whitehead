@@ -1,6 +1,10 @@
-import RequestProject.ChamberQuotientConnectedGeneration
-import RequestProject.PresPosetConnected
-import RequestProject.PresPosetPartialOrder
+module
+
+public import RequestProject.ChamberQuotientConnectedGeneration
+public import RequestProject.PresPosetConnected
+public import RequestProject.PresPosetPartialOrder
+
+@[expose] public section
 
 namespace FiniteChains.Davis
 open RACG Mirror Comb PresModel

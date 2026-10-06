@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveSingularCarriers
-import RequestProject.NerveSupport
+module
+
+public import RequestProject.OrderNerveSingularCarriers
+public import RequestProject.NerveSupport
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open scoped Classical

@@ -1,4 +1,8 @@
-import RequestProject.RACGGroup
+module
+
+public import RequestProject.RACGGroup
+
+@[expose] public section
 
 /-!
 # Length and descents in a right-angled Coxeter group

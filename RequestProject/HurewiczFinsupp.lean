@@ -1,5 +1,9 @@
-import RequestProject.CrowellFinsupp
-import RequestProject.UniversalCoefficients
+module
+
+public import RequestProject.CrowellFinsupp
+public import RequestProject.UniversalCoefficients
+
+@[expose] public section
 
 /-! Integral first homology and its torsion test for arbitrarily many cells. -/
 

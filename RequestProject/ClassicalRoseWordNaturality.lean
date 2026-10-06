@@ -1,9 +1,13 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.ClassicalRoseWordReduction
-import RequestProject.BoundaryWordsLoopMatching
-import RequestProject.DiskRoseMaps
-import RequestProject.DummyLoopFilling
-import RequestProject.FinitePosetCycleNaturality
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.ClassicalRoseWordReduction
+public import RequestProject.BoundaryWordsLoopMatching
+public import RequestProject.DiskRoseMaps
+public import RequestProject.DummyLoopFilling
+public import RequestProject.FinitePosetCycleNaturality
+
+@[expose] public section
 
 /-! Actual word-reading naturality and the boundary of the added filled
 circle. All statements concern the continuous attaching maps themselves.
@@ -42,7 +46,7 @@ theorem classicalRoseWordBoundary_map (f : A → B) (l : List (A × Bool)) :
   intro z
   exact classicalRoseRead_map f l _
 
-private theorem classicalRoseRead_eq_realize_apply (l : List (A × Bool))
+theorem classicalRoseRead_eq_realize_apply (l : List (A × Bool))
     {a b : PUnit}
     (hl : IsPath (graphSrc (roseAttaching A)) (graphTgt (roseAttaching A)) l a b) (t : I) :
     classicalRoseRead l t = realize (graphSrc (roseAttaching A)) (graphTgt (roseAttaching A))
@@ -64,7 +68,7 @@ theorem boundaryWords_homotopic_classicalWord (W : BoundaryWords (roseAttaching 
     exact (classicalRoseRead_eq_realize_apply W.loopWord W.loopWord_isPath _).symm
   rwa [he] at H
 
-private theorem roseCopyRealization_unit (x : orderNerveRealization (Rose PUnit)) :
+theorem roseCopyRealization_unit (x : orderNerveRealization (Rose PUnit)) :
     roseCopyRealization PUnit.unit x = x := by
   change orderNerveRealizationMap (roseCopy PUnit.unit) (roseCopy PUnit.unit).monotone x = x
   have hf : (roseCopy PUnit.unit : Rose PUnit → Rose PUnit) = id := by

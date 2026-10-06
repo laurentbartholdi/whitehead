@@ -1,4 +1,8 @@
-import RequestProject.PresentationInclusionFinsupp
+module
+
+public import RequestProject.PresentationInclusionFinsupp
+
+@[expose] public section
 
 /-! Free generator padding commutes with actual labelled inclusions. In
 particular a zero map on supported two-cycles remains zero after putting

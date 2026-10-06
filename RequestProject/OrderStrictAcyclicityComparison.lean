@@ -1,5 +1,9 @@
-import RequestProject.OrderStrictHomologyVanishing
-import RequestProject.ConnectedCellularZeroFillings
+module
+
+public import RequestProject.OrderStrictHomologyVanishing
+public import RequestProject.ConnectedCellularZeroFillings
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory

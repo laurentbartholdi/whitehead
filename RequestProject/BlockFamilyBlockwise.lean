@@ -1,4 +1,8 @@
-import RequestProject.BlockFamilyChainModel
+module
+
+public import RequestProject.BlockFamilyChainModel
+
+@[expose] public section
 
 /-!
 # The relative vanishing of the family, reduced to one block

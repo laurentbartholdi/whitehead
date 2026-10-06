@@ -1,5 +1,9 @@
-import RequestProject.OrderCxNatHtpy
-import RequestProject.StrictOrderComplex
+module
+
+public import RequestProject.OrderCxNatHtpy
+public import RequestProject.StrictOrderComplex
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

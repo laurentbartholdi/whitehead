@@ -1,5 +1,9 @@
-import RequestProject.CubeMedianGeneration
-import RequestProject.MedianGraphMetric
+module
+
+public import RequestProject.CubeMedianGeneration
+public import RequestProject.MedianGraphMetric
+
+@[expose] public section
 
 /-!
 # The generation step with the CAT(0) input given by an actual median graph

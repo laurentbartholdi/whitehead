@@ -1,4 +1,8 @@
-import RequestProject.TruncatedCubePoset
+module
+
+public import RequestProject.TruncatedCubePoset
+
+@[expose] public section
 
 /-! Dimension and coordinate indices of the actual truncated-cell incidence model. -/
 

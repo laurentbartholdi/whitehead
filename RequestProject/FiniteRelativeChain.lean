@@ -1,4 +1,8 @@
-import RequestProject.GapDescentReduction
+module
+
+public import RequestProject.GapDescentReduction
+
+@[expose] public section
 
 /-!
 # Relative chains with finitely many added cells, and the corrected descent gap

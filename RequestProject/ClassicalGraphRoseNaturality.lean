@@ -1,5 +1,9 @@
-import RequestProject.ClassicalGraphRose
-import RequestProject.DiskFamilyMap
+module
+
+public import RequestProject.ClassicalGraphRose
+public import RequestProject.DiskFamilyMap
+
+@[expose] public section
 
 /-! Compatible spanning trees give an actual commuting graph-to-rose
 square. The forward collapse is canonical on every characteristic

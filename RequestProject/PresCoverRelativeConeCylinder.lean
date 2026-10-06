@@ -1,4 +1,8 @@
-import RequestProject.PresCoverRelatorGeneratorBoundary
+module
+
+public import RequestProject.PresCoverRelatorGeneratorBoundary
+
+@[expose] public section
 
 /-! Cone-coordinate reduction for chains whose boundary lies in the cylinder.
 This is a relative statement: the chain itself need not be a cycle. -/

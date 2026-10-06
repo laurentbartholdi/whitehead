@@ -1,8 +1,12 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.ConeAdjRealizationAttachment
-import RequestProject.OrderNerveLowerCone
-import RequestProject.AttachmentDiagramHomeomorph
-import RequestProject.ClassicalCellAttachmentMaps
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.ConeAdjRealizationAttachment
+public import RequestProject.OrderNerveLowerCone
+public import RequestProject.AttachmentDiagramHomeomorph
+public import RequestProject.ClassicalCellAttachmentMaps
+
+@[expose] public section
 
 /-! Replace the actual cone pieces by disks and their actual strict
 boundaries by spheres, preserving the old inclusion. Circle geometry is

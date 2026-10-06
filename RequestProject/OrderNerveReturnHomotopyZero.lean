@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveSimplicialCarriers
+module
+
+public import RequestProject.OrderNerveSimplicialCarriers
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory AlgebraicTopology TopologicalSingular

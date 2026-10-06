@@ -1,4 +1,8 @@
-import RequestProject.BlockFamilySubst
+module
+
+public import RequestProject.BlockFamilySubst
+
+@[expose] public section
 
 /-!
 # The structural homomorphism of a substitution need not be injective

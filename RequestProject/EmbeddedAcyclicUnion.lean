@@ -1,5 +1,9 @@
-import RequestProject.PushoutOldCoverAcyclic
-import RequestProject.SupportedLabelChains
+module
+
+public import RequestProject.PushoutOldCoverAcyclic
+public import RequestProject.SupportedLabelChains
+
+@[expose] public section
 
 /-! Homology of the actual union of embedded acyclic copies.  Copies may
 have many different names, but copies meeting at a vertex have identical

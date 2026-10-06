@@ -1,4 +1,8 @@
-import RequestProject.GenusSurfaceCharacters
+module
+
+public import RequestProject.GenusSurfaceCharacters
+
+@[expose] public section
 
 /-! Reduction of capped-cover augmentation to actual old spine faces. -/
 set_option backward.defeqAttrib.useBackward true

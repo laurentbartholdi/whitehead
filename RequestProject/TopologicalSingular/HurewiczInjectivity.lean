@@ -1,6 +1,10 @@
-import RequestProject.TopologicalSingular.StationaryPi2Chain
-import RequestProject.TopologicalSingular.StickSimplexQuotient
-import RequestProject.TopologicalSingular.HurewiczSurjectivity
+module
+
+public import RequestProject.TopologicalSingular.StationaryPi2Chain
+public import RequestProject.TopologicalSingular.StickSimplexQuotient
+public import RequestProject.TopologicalSingular.HurewiczSurjectivity
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 variable {X : Type} [TopologicalSpace X] [SimplyConnectedSpace X]

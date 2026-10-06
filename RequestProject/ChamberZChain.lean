@@ -1,6 +1,10 @@
-import RequestProject.ChamberZPoset
-import RequestProject.NerveRelativeGluing
-import RequestProject.DavisChainAcyclic
+module
+
+public import RequestProject.ChamberZPoset
+public import RequestProject.NerveRelativeGluing
+public import RequestProject.DavisChainAcyclic
+
+@[expose] public section
 
 /-!
 # Chains of the complex `Z` of modified chambers: only the copies of the base survive
@@ -262,11 +266,11 @@ theorem zUpto_zlen (z : Zpos A X M att) : ZUpto (zlen z) z := by
   | inl p => exact ⟨p.1.rep, le_refl _, inChamber_rep p.1⟩
   | inr wx => exact ⟨wx.1.1, le_refl _, rfl⟩
 
-private noncomputable def zChainBound (z : Nerve.Ch (Zpos A X M att)) : ℕ :=
+noncomputable def zChainBound (z : Nerve.Ch (Zpos A X M att)) : ℕ :=
   z.support.sup (fun l => (l.map (fun q : Zpos A X M att => zlen q)).sum)
 
 omit [Fintype V] in
-private theorem mem_incOn_zupto_zChainBound {z : Nerve.Ch (Zpos A X M att)}
+theorem mem_incOn_zupto_zChainBound {z : Nerve.Ch (Zpos A X M att)}
     (hz : z ∈ Nerve.Inc (Zpos A X M att)) :
     z ∈ Nerve.IncOn (ZUpto (A := A) (X := X) (M := M) (att := att) (zChainBound z)) := by
   rw [Nerve.mem_incOn_iff]

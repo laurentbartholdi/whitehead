@@ -1,5 +1,9 @@
-import RequestProject.CubeRollerModel
-import RequestProject.CubeMedianGraph
+module
+
+public import RequestProject.CubeRollerModel
+public import RequestProject.CubeMedianGraph
+
+@[expose] public section
 
 /-!
 # The Roller model is a median graph

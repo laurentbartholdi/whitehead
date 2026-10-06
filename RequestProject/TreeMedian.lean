@@ -1,4 +1,8 @@
-import RequestProject.MedianSimplyConnected
+module
+
+public import RequestProject.MedianSimplyConnected
+
+@[expose] public section
 
 /-!
 # Trees are median graphs

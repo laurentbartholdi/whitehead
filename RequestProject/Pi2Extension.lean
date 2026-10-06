@@ -1,5 +1,9 @@
-import RequestProject.Cockcroft
-import RequestProject.FoxNaturality
+module
+
+public import RequestProject.Cockcroft
+public import RequestProject.FoxNaturality
+
+@[expose] public section
 
 /-!
 # Adding one generator and one relator: no new elements of `π₂`

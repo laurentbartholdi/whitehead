@@ -1,4 +1,8 @@
-import RequestProject.BlockFoxModel
+module
+
+public import RequestProject.BlockFoxModel
+
+@[expose] public section
 
 /-!
 # Relative `H₂` of the pair from the absolute homology of the two halves

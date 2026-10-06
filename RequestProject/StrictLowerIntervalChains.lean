@@ -1,4 +1,8 @@
-import RequestProject.StrictThreeBoundarySquared
+module
+
+public import RequestProject.StrictThreeBoundarySquared
+
+@[expose] public section
 
 /-! Actual chains in strict lower intervals and their cone fillings. -/
 set_option backward.defeqAttrib.useBackward true

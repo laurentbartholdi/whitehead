@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveCharacteristicMap
+module
+
+public import RequestProject.OrderNerveCharacteristicMap
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

@@ -1,4 +1,8 @@
-import RequestProject.MirrorSimplyConnected
+module
+
+public import RequestProject.MirrorSimplyConnected
+
+@[expose] public section
 
 /-!
 # Gluing two subposets along a connected intersection

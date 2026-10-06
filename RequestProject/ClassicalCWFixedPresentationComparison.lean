@@ -1,6 +1,10 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.ClassicalCWChainFixedInitial
-import RequestProject.PresClassicalDiskComparison
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.ClassicalCWChainFixedInitial
+public import RequestProject.PresClassicalDiskComparison
+
+@[expose] public section
 
 /-! The fixed presentation used for necessity has an actual homotopy
 equivalence with the original CW space. Its words and tree are independent

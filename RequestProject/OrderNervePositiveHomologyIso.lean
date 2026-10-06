@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveSingularH2Iso
-import RequestProject.OrderNerveSingularAcyclicity
+module
+
+public import RequestProject.OrderNerveSingularH2Iso
+public import RequestProject.OrderNerveSingularAcyclicity
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

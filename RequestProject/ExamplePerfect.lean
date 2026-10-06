@@ -1,5 +1,9 @@
-import RequestProject.ExampleSL25Group
-import RequestProject.ExampleSL25
+module
+
+public import RequestProject.ExampleSL25Group
+public import RequestProject.ExampleSL25
+
+@[expose] public section
 
 /-!
 # `G(A)` is perfect: the example of Remark 2 satisfies condition (2) through the identity

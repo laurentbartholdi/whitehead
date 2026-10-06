@@ -1,4 +1,8 @@
-import Mathlib.Topology.Homotopy.Equiv
+module
+
+public import Mathlib.Topology.Homotopy.Equiv
+
+@[expose] public section
 
 /-! Cancellation and two-of-six with prescribed continuous forward maps.
 All inverse maps and their two homotopies are constructed explicitly from the

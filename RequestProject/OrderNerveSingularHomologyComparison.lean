@@ -1,6 +1,10 @@
-import RequestProject.OrderNerveRealizationComparison
-import RequestProject.FreeSingularChainComparison
-import RequestProject.MathlibOrderNerveComplexNaturality
+module
+
+public import RequestProject.OrderNerveRealizationComparison
+public import RequestProject.FreeSingularChainComparison
+public import RequestProject.MathlibOrderNerveComplexNaturality
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

@@ -1,6 +1,10 @@
-import RequestProject.NormalizedMarkedPathCoefficients
-import RequestProject.GenusAllQuotientCorrections
-import RequestProject.GenusAttachingRelativeOldBoundary
+module
+
+public import RequestProject.NormalizedMarkedPathCoefficients
+public import RequestProject.GenusAllQuotientCorrections
+public import RequestProject.GenusAttachingRelativeOldBoundary
+
+@[expose] public section
 
 /-! Sheetwise marking coefficients survive the actual lower-lift / chainMax
 map and order normalization. Written proof terms; no Lean run performed. -/

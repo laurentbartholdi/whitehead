@@ -1,4 +1,8 @@
-import RequestProject.OrderPosetCovering
+module
+
+public import RequestProject.OrderPosetCovering
+
+@[expose] public section
 
 /-! The actual fiber product of a poset covering along a monotone map. -/
 namespace FiniteChains.Comb

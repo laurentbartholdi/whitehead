@@ -1,4 +1,8 @@
-import RequestProject.PresCoverCollapsedFanBoundary
+module
+
+public import RequestProject.PresCoverCollapsedFanBoundary
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

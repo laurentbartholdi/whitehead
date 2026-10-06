@@ -1,5 +1,9 @@
-import RequestProject.SurfaceCells
-import RequestProject.OrderCocycleFlatSections
+module
+
+public import RequestProject.SurfaceCells
+public import RequestProject.OrderCocycleFlatSections
+
+@[expose] public section
 
 /-! Extending a flat boundary section across the actual triangulated collar. -/
 namespace FiniteChains.Comb.OrdCocycle

@@ -1,7 +1,11 @@
-import RequestProject.RelativeTreeExtensionMaps
-import RequestProject.PresGeneratorRelabel
-import RequestProject.TreePi1Reflection
-import RequestProject.AcyclicPresentationRelativeCellChains
+module
+
+public import RequestProject.RelativeTreeExtensionMaps
+public import RequestProject.PresGeneratorRelabel
+public import RequestProject.TreePi1Reflection
+public import RequestProject.AcyclicPresentationRelativeCellChains
+
+@[expose] public section
 
 /-! The actual acyclic-core ambient construction lifted back from its
 spanning-tree presentation to the original combinatorial complex. All

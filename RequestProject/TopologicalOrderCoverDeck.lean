@@ -1,7 +1,11 @@
-import RequestProject.Statement
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.TopologicalOrderCover
-import RequestProject.StrictPosetCovering
+module
+
+public import RequestProject.Statement
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.TopologicalOrderCover
+public import RequestProject.StrictPosetCovering
+
+@[expose] public section
 
 /-! Genuine topological deck transformations act on the reconstructed
 ordered cover and its strict cells. Compatibility holds on vertices,

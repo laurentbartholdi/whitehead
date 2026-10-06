@@ -1,7 +1,11 @@
-import RequestProject.ZeroPi2Descent
-import RequestProject.OrderUniversalRealizationSimplyConnected
-import RequestProject.OrderNerveRealizationNestedSubcomplex
-import RequestProject.TopologicalCockcroft
+module
+
+public import RequestProject.ZeroPi2Descent
+public import RequestProject.OrderUniversalRealizationSimplyConnected
+public import RequestProject.OrderNerveRealizationNestedSubcomplex
+public import RequestProject.TopologicalCockcroft
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 variable {P Q : Type} [PartialOrder P] [PartialOrder Q]

@@ -1,4 +1,8 @@
-import RequestProject.TreeCoverAcyclic
+module
+
+public import RequestProject.TreeCoverAcyclic
+
+@[expose] public section
 
 /-! Prescribed nonzero boundaries survive the actual spanning-tree collapse. -/
 set_option backward.defeqAttrib.useBackward true

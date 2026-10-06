@@ -1,4 +1,8 @@
-import RequestProject.OrderComplexPi1Transfer
+module
+
+public import RequestProject.OrderComplexPi1Transfer
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 universe u

@@ -1,4 +1,8 @@
-import RequestProject.RelativeAmbientTerminal
+module
+
+public import RequestProject.RelativeAmbientTerminal
+
+@[expose] public section
 
 /-! Concrete fixed-core chains in one ambient alphabet. Their fields
 describe actual relators and actual coefficient maps; the replacement

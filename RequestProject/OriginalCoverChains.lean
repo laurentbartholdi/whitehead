@@ -1,5 +1,9 @@
-import RequestProject.TopologicalCoverTreeChains
-import RequestProject.OrderTriangleTreeComparison
+module
+
+public import RequestProject.TopologicalCoverTreeChains
+public import RequestProject.OrderTriangleTreeComparison
+
+@[expose] public section
 
 /-! The unrestricted sufficiency direction of the original theorem:
 an actual connected acyclic regular covering gives strict chains of

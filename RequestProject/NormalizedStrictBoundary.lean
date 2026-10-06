@@ -1,5 +1,9 @@
-import RequestProject.OrderNormalizationNaturality
-import RequestProject.OrderComparableOneHomotopy
+module
+
+public import RequestProject.OrderNormalizationNaturality
+public import RequestProject.OrderComparableOneHomotopy
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

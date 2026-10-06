@@ -1,5 +1,9 @@
-import RequestProject.QCubeThreeFaceEdges
-import RequestProject.CubicalThreeBoundaryMatrix
+module
+
+public import RequestProject.QCubeThreeFaceEdges
+public import RequestProject.CubicalThreeBoundaryMatrix
+
+@[expose] public section
 
 /-! The indexed six-face boundary is the actual geometric cubical boundary. -/
 namespace FiniteChains.Davis

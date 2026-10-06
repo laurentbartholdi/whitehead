@@ -1,4 +1,8 @@
-import RequestProject.PresStrictPathCylinderReduction
+module
+
+public import RequestProject.PresStrictPathCylinderReduction
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

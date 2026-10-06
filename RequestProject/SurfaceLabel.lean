@@ -1,5 +1,9 @@
-import RequestProject.SurfaceCells
-import RequestProject.AttCycle
+module
+
+public import RequestProject.SurfaceCells
+public import RequestProject.AttCycle
+
+@[expose] public section
 
 /-!
 # The marking of the polygon: the cellular map into the model of the presentation complex

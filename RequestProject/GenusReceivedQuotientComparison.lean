@@ -1,6 +1,10 @@
-import RequestProject.GenusFaithfulComparison
-import RequestProject.ReceivedTreeMarkedComparison
-import RequestProject.UniversalCoverPathTransport
+module
+
+public import RequestProject.GenusFaithfulComparison
+public import RequestProject.ReceivedTreeMarkedComparison
+public import RequestProject.UniversalCoverPathTransport
+
+@[expose] public section
 
 /-! The received spine cover mapped to the actual named quotient.
 

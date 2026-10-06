@@ -1,5 +1,9 @@
-import RequestProject.BlockFamilyFactorComparison
-import RequestProject.GenusMarkedSpineFamily
+module
+
+public import RequestProject.BlockFamilyFactorComparison
+public import RequestProject.GenusMarkedSpineFamily
+
+@[expose] public section
 
 /-!
 # The actual spine factors embed in the simultaneous substituted group

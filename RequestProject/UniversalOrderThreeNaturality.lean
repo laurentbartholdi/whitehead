@@ -1,5 +1,9 @@
-import RequestProject.OrderUniversalThree
-import RequestProject.CombPi2
+module
+
+public import RequestProject.OrderUniversalThree
+public import RequestProject.CombPi2
+
+@[expose] public section
 
 /-! Naturality of genuine lifted tetrahedra, including the transported first face. -/
 set_option backward.defeqAttrib.useBackward true

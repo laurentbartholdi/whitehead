@@ -1,7 +1,11 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.TopologicalCoverPi2
-import Mathlib.Topology.Homotopy.Equiv
-import Mathlib.Tactic
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.TopologicalCoverPi2
+public import Mathlib.Topology.Homotopy.Equiv
+public import Mathlib.Tactic
+
+@[expose] public section
 
 /-! A moving constant boundary can be made stationary by an explicit square collar.
 The construction uses no local contractibility or cofibration hypothesis on the target. -/
@@ -11,41 +15,41 @@ noncomputable section
 namespace Whitehead
 open scoped unitInterval Topology
 
-private abbrev Square := Fin 2 → I
+abbrev Square := Fin 2 → I
 
-private def squareOrigin : Square := fun _ => 0
+def squareOrigin : Square := fun _ => 0
 
-private theorem squareOrigin_boundary : squareOrigin ∈ Cube.boundary (Fin 2) :=
+theorem squareOrigin_boundary : squareOrigin ∈ Cube.boundary (Fin 2) :=
   ⟨0, Or.inl rfl⟩
 
 /-- Distance from the nearest face of the square, in its standard coordinates. -/
-private def squareDepth (z : Square) : ℝ :=
+def squareDepth (z : Square) : ℝ :=
   min (min (z 0 : ℝ) (1 - z 0)) (min (z 1 : ℝ) (1 - z 1))
 
-private theorem squareDepth_nonneg (z : Square) : 0 ≤ squareDepth z := by
+theorem squareDepth_nonneg (z : Square) : 0 ≤ squareDepth z := by
   exact le_min (le_min (z 0).2.1 (sub_nonneg.mpr (z 0).2.2))
     (le_min (z 1).2.1 (sub_nonneg.mpr (z 1).2.2))
 
-private theorem squareDepth_le_coordinate (z : Square) (i : Fin 2) :
+theorem squareDepth_le_coordinate (z : Square) (i : Fin 2) :
     squareDepth z ≤ (z i : ℝ) := by
   fin_cases i
   · exact (min_le_left _ _).trans (min_le_left _ _)
   · exact (min_le_right _ _).trans (min_le_left _ _)
 
-private theorem squareDepth_le_complement (z : Square) (i : Fin 2) :
+theorem squareDepth_le_complement (z : Square) (i : Fin 2) :
     squareDepth z ≤ 1 - (z i : ℝ) := by
   fin_cases i
   · exact (min_le_left _ _).trans (min_le_right _ _)
   · exact (min_le_right _ _).trans (min_le_right _ _)
 
-private theorem squareDepth_boundary (z : Square) (hz : z ∈ Cube.boundary (Fin 2)) :
+theorem squareDepth_boundary (z : Square) (hz : z ∈ Cube.boundary (Fin 2)) :
     squareDepth z = 0 := by
   apply le_antisymm _ (squareDepth_nonneg z)
   obtain ⟨i, hi | hi⟩ := hz
   · simpa only [hi, Set.Icc.coe_zero] using squareDepth_le_coordinate z i
   · simpa only [hi, Set.Icc.coe_one, sub_self] using squareDepth_le_complement z i
 
-private theorem squareDepth_coordinate (z : Square) :
+theorem squareDepth_coordinate (z : Square) :
     ∃ i : Fin 2, squareDepth z = (z i : ℝ) ∨ squareDepth z = 1 - (z i : ℝ) := by
   have hmin (a b : ℝ) : min a b = a ∨ min a b = b := by
     rcases le_total a b with h | h
@@ -55,19 +59,19 @@ private theorem squareDepth_coordinate (z : Square) :
   · exact ⟨0, (hmin (z 0 : ℝ) (1 - z 0)).imp (h.trans ·) (h.trans ·)⟩
   · exact ⟨1, (hmin (z 1 : ℝ) (1 - z 1)).imp (h.trans ·) (h.trans ·)⟩
 
-private theorem squareDepth_continuous : Continuous squareDepth := by
+theorem squareDepth_continuous : Continuous squareDepth := by
   unfold squareDepth
   fun_prop
 
-private theorem squareCollarDenom_pos (s : I) : 0 < 1 - (s : ℝ) / 2 := by
+theorem squareCollarDenom_pos (s : I) : 0 < 1 - (s : ℝ) / 2 := by
   have hs := s.2.2
   linarith
 
 /-- The inner square expands to the whole square; points in the collar hit its boundary. -/
-private def squareCollarExpand (s : I) (z : Square) : Square := fun i =>
+def squareCollarExpand (s : I) (z : Square) : Square := fun i =>
   Set.projIcc 0 1 zero_le_one (((z i : ℝ) - (s : ℝ) / 4) / (1 - (s : ℝ) / 2))
 
-private theorem squareCollarExpand_continuous :
+theorem squareCollarExpand_continuous :
     Continuous (fun sz : I × Square => squareCollarExpand sz.1 sz.2) := by
   apply continuous_pi
   intro i
@@ -77,12 +81,12 @@ private theorem squareCollarExpand_continuous :
     (continuous_const.sub (continuous_fst.subtype_val.div_const 2))
     (fun sz => ne_of_gt (squareCollarDenom_pos sz.1)))
 
-private theorem squareCollarExpand_zero (z : Square) : squareCollarExpand 0 z = z := by
+theorem squareCollarExpand_zero (z : Square) : squareCollarExpand 0 z = z := by
   funext i
   simpa only [squareCollarExpand, Set.Icc.coe_zero, zero_div, sub_zero,
     div_one] using Set.projIcc_val zero_le_one (z i)
 
-private theorem squareCollarExpand_boundary (s : I) (z : Square)
+theorem squareCollarExpand_boundary (s : I) (z : Square)
     (hz : squareDepth z ≤ (s : ℝ) / 4) :
     squareCollarExpand s z ∈ Cube.boundary (Fin 2) := by
   obtain ⟨i, hi | hi⟩ := squareDepth_coordinate z
@@ -97,21 +101,21 @@ private theorem squareCollarExpand_boundary (s : I) (z : Square)
     linarith
 
 /-- Time stops at the collar, whose boundary is always at time zero. -/
-private def squareCollarTime (s : I) (z : Square) : I :=
+def squareCollarTime (s : I) (z : Square) : I :=
   ⟨min (s : ℝ) (4 * squareDepth z),
     le_min s.2.1 (mul_nonneg (by norm_num) (squareDepth_nonneg z)),
     (min_le_left _ _).trans s.2.2⟩
 
-private theorem squareCollarTime_continuous :
+theorem squareCollarTime_continuous :
     Continuous (fun sz : I × Square => squareCollarTime sz.1 sz.2) :=
   (continuous_fst.subtype_val.min
     (continuous_const.mul (squareDepth_continuous.comp continuous_snd))).subtype_mk _
 
-private theorem squareCollarTime_zero (z : Square) : squareCollarTime 0 z = 0 := by
+theorem squareCollarTime_zero (z : Square) : squareCollarTime 0 z = 0 := by
   apply Subtype.ext
   exact min_eq_left (mul_nonneg (by norm_num) (squareDepth_nonneg z))
 
-private theorem squareCollarTime_boundary (s : I) (z : Square)
+theorem squareCollarTime_boundary (s : I) (z : Square)
     (hz : z ∈ Cube.boundary (Fin 2)) : squareCollarTime s z = 0 := by
   apply Subtype.ext
   simp only [squareCollarTime, squareDepth_boundary z hz, mul_zero]

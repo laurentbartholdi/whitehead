@@ -1,5 +1,9 @@
-import RequestProject.CellComplex
-import RequestProject.StrictOrderChains
+module
+
+public import RequestProject.CellComplex
+public import RequestProject.StrictOrderChains
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

@@ -1,5 +1,9 @@
-import RequestProject.RelativeTreeAmbientChain
-import RequestProject.TreeAcyclicExponentMatrix
+module
+
+public import RequestProject.RelativeTreeAmbientChain
+public import RequestProject.TreeAcyclicExponentMatrix
+
+@[expose] public section
 
 /-! Unconditional relative chains over any acyclic combinatorial
 two-complex with a spanning tree. All original cells and the full

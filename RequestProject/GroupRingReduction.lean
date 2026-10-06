@@ -1,5 +1,9 @@
-import Mathlib
-import RequestProject.GroupRingFree
+module
+
+public import Mathlib
+public import RequestProject.GroupRingFree
+
+@[expose] public section
 
 /-!
 # Reduction of group-ring coefficients along `Q → Q/H`

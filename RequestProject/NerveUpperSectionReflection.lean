@@ -1,4 +1,8 @@
-import RequestProject.NerveRelativeGluing
+module
+
+public import RequestProject.NerveRelativeGluing
+
+@[expose] public section
 
 /-! A concrete upper order homotopy reflects fillings along its projection. -/
 namespace FiniteChains.Nerve

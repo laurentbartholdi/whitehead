@@ -1,5 +1,9 @@
-import RequestProject.SubstOneWayQuotient
-import RequestProject.CombLoopWord
+module
+
+public import RequestProject.SubstOneWayQuotient
+public import RequestProject.CombLoopWord
+
+@[expose] public section
 
 /-!
 # The block maps as concrete loops on the generators

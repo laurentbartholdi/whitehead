@@ -1,4 +1,8 @@
-import RequestProject.RACGMedian
+module
+
+public import RequestProject.RACGMedian
+
+@[expose] public section
 
 /-!
 # Right descents, special subgroups and the chamber intersection formula

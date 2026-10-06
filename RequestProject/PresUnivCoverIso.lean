@@ -1,6 +1,10 @@
-import RequestProject.CombPi2
-import RequestProject.CombPresPi1
-import RequestProject.UnivCoverIncl
+module
+
+public import RequestProject.CombPi2
+public import RequestProject.CombPresPi1
+public import RequestProject.UnivCoverIncl
+
+@[expose] public section
 
 /-!
 # The two models of the universal cover of a presentation complex agree

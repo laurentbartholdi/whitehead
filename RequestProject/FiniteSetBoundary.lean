@@ -1,4 +1,8 @@
-import RequestProject.MomentAngle
+module
+
+public import RequestProject.MomentAngle
+
+@[expose] public section
 
 /-! Finitely supported simplicial boundaries and the cubical coefficient convention. -/
 
@@ -34,7 +38,7 @@ theorem finiteSetBoundary_triangle {a b c : V} (hab : a < b) (hbc : b < c) (n : 
 variable [Fintype V]
 
 omit [LinearOrder V] in
-private theorem simplex_sum_univ (σ : Finset V) (f : V → ℤ) :
+theorem simplex_sum_univ (σ : Finset V) (f : V → ℤ) :
     (∑ j ∈ σ, f j) = ∑ j : V, if j ∈ σ then f j else 0 := by
   rw [← Finset.sum_filter]
   congr 1

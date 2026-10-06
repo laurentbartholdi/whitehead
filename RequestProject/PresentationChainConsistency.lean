@@ -1,4 +1,8 @@
-import RequestProject.PresentationChain
+module
+
+public import RequestProject.PresentationChain
+
+@[expose] public section
 
 /-!
 # Chains of presentation complexes exist

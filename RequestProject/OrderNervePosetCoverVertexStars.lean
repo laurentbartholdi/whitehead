@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveRealizationPosetCover
-import RequestProject.PosetCoverLowerInterval
+module
+
+public import RequestProject.OrderNerveRealizationPosetCover
+public import RequestProject.PosetCoverLowerInterval
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory Simplicial Topology

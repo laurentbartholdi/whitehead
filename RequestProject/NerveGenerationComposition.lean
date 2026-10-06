@@ -1,4 +1,8 @@
-import RequestProject.NerveDegreeGluing
+module
+
+public import RequestProject.NerveDegreeGluing
+
+@[expose] public section
 
 /-! Compose positive-degree generation while retaining finite homogeneous fillings. -/
 namespace FiniteChains.Nerve

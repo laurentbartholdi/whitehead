@@ -1,5 +1,9 @@
-import RequestProject.PresConeIntervals
-import RequestProject.PosetCoverLowerInterval
+module
+
+public import RequestProject.PresConeIntervals
+public import RequestProject.PosetCoverLowerInterval
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

@@ -1,8 +1,12 @@
-import RequestProject.VerifiedSubstitutedBoundary
-import RequestProject.GenusReceivedSpineCover
-import RequestProject.ReceivedTreeRootedChainFaithfulness
-import RequestProject.GenusReceivedSpineRelativeChains
-import RequestProject.ReceivedTreeMarkedComparison
+module
+
+public import RequestProject.VerifiedSubstitutedBoundary
+public import RequestProject.GenusReceivedSpineCover
+public import RequestProject.ReceivedTreeRootedChainFaithfulness
+public import RequestProject.GenusReceivedSpineRelativeChains
+public import RequestProject.ReceivedTreeMarkedComparison
+
+@[expose] public section
 
 /-!
 The full receiving-group coefficients now label a genuine regular combinatorial

@@ -1,6 +1,10 @@
-import RequestProject.StrictTopLinkCoefficients
-import RequestProject.PosetCoverLowerInterval
-import RequestProject.OrderNerveRealizationPosetCover
+module
+
+public import RequestProject.StrictTopLinkCoefficients
+public import RequestProject.PosetCoverLowerInterval
+public import RequestProject.OrderNerveRealizationPosetCover
+
+@[expose] public section
 
 /-! The actual upper link of a minimal vertex, including relative boundaries.
 
@@ -119,7 +123,7 @@ namespace IsPosetCover
 variable {Q : Type u} [PartialOrder Q] {f : P → Q} (hf : IsPosetCover f)
 
 include hf in
-private theorem upperInterval_le_reflect {a b v : P} (ha : v ≤ a) (hb : v ≤ b)
+theorem upperInterval_le_reflect {a b v : P} (ha : v ≤ a) (hb : v ≤ b)
     (h : f a ≤ f b) : a ≤ b := by
   obtain ⟨c, ⟨hac, hfc⟩, _⟩ := hf.up a (f b) h
   have hc : c = b := hf.up_inj (ha.trans hac) hb hfc

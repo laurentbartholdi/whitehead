@@ -1,4 +1,8 @@
-import RequestProject.TreeMedian
+module
+
+public import RequestProject.TreeMedian
+
+@[expose] public section
 
 /-!
 # Gromov's criterion in dimension one

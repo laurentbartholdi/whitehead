@@ -1,4 +1,8 @@
-import RequestProject.SquareComplexWalls
+module
+
+public import RequestProject.SquareComplexWalls
+
+@[expose] public section
 
 /-!
 # Homotopy through walks

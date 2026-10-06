@@ -1,6 +1,10 @@
-import RequestProject.ClassicalCWBoundaryCellularization
-import RequestProject.ClassicalCWCellEmbedding
-import RequestProject.DiskFamilyHomotopyBaseChange
+module
+
+public import RequestProject.ClassicalCWBoundaryCellularization
+public import RequestProject.ClassicalCWCellEmbedding
+public import RequestProject.DiskFamilyHomotopyBaseChange
+
+@[expose] public section
 
 /-! Transfer a genuine one- or two-dimensional disk extension of a model
 to an arbitrary original two-complex. The new attachment is cellularized

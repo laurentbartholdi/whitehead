@@ -1,8 +1,12 @@
-import RequestProject.TopologicalPi1Lifting
-import RequestProject.GenusCappedTopologicalCockcroft
-import RequestProject.ChamberTopologicalCockcroft
-import RequestProject.OrderRealizationPi2Criterion
-import RequestProject.OrderTopologicalChains
+module
+
+public import RequestProject.TopologicalPi1Lifting
+public import RequestProject.GenusCappedTopologicalCockcroft
+public import RequestProject.ChamberTopologicalCockcroft
+public import RequestProject.OrderRealizationPi2Criterion
+public import RequestProject.OrderTopologicalChains
+
+@[expose] public section
 
 /-! # Genuine topological extension tools
 

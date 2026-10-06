@@ -1,5 +1,9 @@
-import RequestProject.GenusReceivedSpineCover
-import RequestProject.ReceivedTreeMarkedChains
+module
+
+public import RequestProject.GenusReceivedSpineCover
+public import RequestProject.ReceivedTreeMarkedChains
+
+@[expose] public section
 
 /-! The internal B2 equations imply an exact relative boundary in a genuine cover. -/
 namespace FiniteChains.Davis.Genus

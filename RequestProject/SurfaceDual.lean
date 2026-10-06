@@ -1,6 +1,10 @@
-import RequestProject.OrderComplexDual
-import RequestProject.SurfaceLink
-import RequestProject.SurfaceBlockCollapse
+module
+
+public import RequestProject.OrderComplexDual
+public import RequestProject.SurfaceLink
+public import RequestProject.SurfaceBlockCollapse
+
+@[expose] public section
 
 /-!
 # The dual graph of the surface of the block, and the collapse of Lemma 3.2 (ii)

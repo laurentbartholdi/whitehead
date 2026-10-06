@@ -1,4 +1,8 @@
-import RequestProject.RoseCoverCycleCoordinates
+module
+
+public import RequestProject.RoseCoverCycleCoordinates
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

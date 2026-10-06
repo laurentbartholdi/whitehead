@@ -1,5 +1,9 @@
-import RequestProject.MirrorContraction
-import RequestProject.CombPi1
+module
+
+public import RequestProject.MirrorContraction
+public import RequestProject.CombPi1
+
+@[expose] public section
 
 /-!
 # Simple connectivity of the attaching subcomplex, by paths and triangular relations

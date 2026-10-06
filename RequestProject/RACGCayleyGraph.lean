@@ -1,6 +1,10 @@
-import RequestProject.RACGMedianGraph
-import RequestProject.MedianGraphMetric
-import RequestProject.MedianSimplyConnected
+module
+
+public import RequestProject.RACGMedianGraph
+public import RequestProject.MedianGraphMetric
+public import RequestProject.MedianSimplyConnected
+
+@[expose] public section
 
 /-!
 # The Cayley graph as a simple graph, and its metric

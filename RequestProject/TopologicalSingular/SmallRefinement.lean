@@ -1,4 +1,8 @@
-import RequestProject.TopologicalSingular.SmallRefinementStep
+module
+
+public import RequestProject.TopologicalSingular.SmallRefinementStep
+
+@[expose] public section
 
 namespace FiniteChains.SingularSubdivision
 open TopologicalSingular

@@ -1,4 +1,8 @@
-import RequestProject.Pi2GenerationDescent
+module
+
+public import RequestProject.Pi2GenerationDescent
+
+@[expose] public section
 
 /-! Change the base vertex in an actual spherical generation statement.
 Both directions are genuine universal-cover path transports. Unverified source. -/

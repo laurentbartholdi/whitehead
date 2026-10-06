@@ -1,5 +1,9 @@
-import RequestProject.OrderNormalizationHomotopy
-import RequestProject.NervePrism
+module
+
+public import RequestProject.OrderNormalizationHomotopy
+public import RequestProject.NervePrism
+
+@[expose] public section
 
 /-! The actual cellular boundary maps in degrees two and three agree with the full nerve. -/
 

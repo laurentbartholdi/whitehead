@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.SmallMathlibComparison
-import RequestProject.OrderNerveRealizationStarAcyclic
+module
+
+public import RequestProject.TopologicalSingular.SmallMathlibComparison
+public import RequestProject.OrderNerveRealizationStarAcyclic
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

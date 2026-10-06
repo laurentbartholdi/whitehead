@@ -1,5 +1,9 @@
-import RequestProject.QCubeCanonicalThreeBoundary
-import RequestProject.StrictThreeTopPartition
+module
+
+public import RequestProject.QCubeCanonicalThreeBoundary
+public import RequestProject.StrictThreeTopPartition
+
+@[expose] public section
 
 /-! Finite cubical recovery of actual strict three-boundaries in dimension three. -/
 open scoped Classical

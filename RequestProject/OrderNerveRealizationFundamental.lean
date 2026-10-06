@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveRealizationStarContractible
+module
+
+public import RequestProject.OrderNerveRealizationStarContractible
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory Simplicial

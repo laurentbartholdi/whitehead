@@ -1,4 +1,8 @@
-import RequestProject.PresSubcomplex
+module
+
+public import RequestProject.PresSubcomplex
+
+@[expose] public section
 
 /-!
 # The inclusion of two universal covers, and the chain map it induces

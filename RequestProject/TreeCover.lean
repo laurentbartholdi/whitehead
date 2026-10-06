@@ -1,5 +1,9 @@
-import RequestProject.TreePresentation
-import RequestProject.CoverComplex
+module
+
+public import RequestProject.TreePresentation
+public import RequestProject.CoverComplex
+
+@[expose] public section
 
 /-!
 # The cover of a two-complex attached to a normal subgroup of the collapsed presentation

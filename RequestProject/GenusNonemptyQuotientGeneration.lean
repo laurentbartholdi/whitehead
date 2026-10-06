@@ -1,5 +1,9 @@
-import RequestProject.GenusNonemptyWords
-import RequestProject.PresentationQuotientCycleGeneration
+module
+
+public import RequestProject.GenusNonemptyWords
+public import RequestProject.PresentationQuotientCycleGeneration
+
+@[expose] public section
 
 namespace FiniteChains.Davis.Genus
 open RACG Mirror Comb PresModel

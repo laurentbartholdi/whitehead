@@ -1,4 +1,8 @@
-import RequestProject.CombHurewicz1Pres
+module
+
+public import RequestProject.CombHurewicz1Pres
+
+@[expose] public section
 
 /-! Integral chain witnesses for edge-path homotopies in arbitrary cellular two-complexes. -/
 

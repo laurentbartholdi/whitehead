@@ -1,4 +1,8 @@
-import RequestProject.BlockSpineSubst
+module
+
+public import RequestProject.BlockSpineSubst
+
+@[expose] public section
 
 /-!
 # From a surface filling to the hypothesis `hfill` of the substitution

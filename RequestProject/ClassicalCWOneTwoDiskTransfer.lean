@@ -1,4 +1,8 @@
-import RequestProject.ClassicalCWCellularDiskTransfer
+module
+
+public import RequestProject.ClassicalCWCellularDiskTransfer
+
+@[expose] public section
 
 /-! Transfer a whole relative presentation extension: first its new
 one-cells, then its new two-cells. The zero-on-pi2 condition is required

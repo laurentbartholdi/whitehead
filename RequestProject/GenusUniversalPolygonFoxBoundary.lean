@@ -1,6 +1,10 @@
-import RequestProject.GenusUniversalReferenceCorrection
-import RequestProject.GenusPolygonBoundaryWord
-import RequestProject.LiftedWordFoxChains
+module
+
+public import RequestProject.GenusUniversalReferenceCorrection
+public import RequestProject.GenusPolygonBoundaryWord
+public import RequestProject.LiftedWordFoxChains
+
+@[expose] public section
 
 /-! The explicit degree-one polygon has exactly the prescribed named Fox
 boundary in the original universal old cover. Awaiting Lean verification. -/

@@ -1,4 +1,8 @@
-import RequestProject.NamedPresentationFoxMatrix
+module
+
+public import RequestProject.NamedPresentationFoxMatrix
+
+@[expose] public section
 
 /-! Exact relative Fox coordinates over an arbitrary receiving group ring. -/
 namespace FiniteChains.NamedPresentation

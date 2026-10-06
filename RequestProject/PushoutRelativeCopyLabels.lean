@@ -1,6 +1,10 @@
-import RequestProject.UniversalCoverCopyLabels
-import RequestProject.SupportedLabelChains
-import RequestProject.CombPushout
+module
+
+public import RequestProject.UniversalCoverCopyLabels
+public import RequestProject.SupportedLabelChains
+public import RequestProject.CombPushout
+
+@[expose] public section
 
 /-! Outside K every lifted cell has exactly one L-cell label.  The labels
 below make the relative boundary block diagonal over the actual lifted

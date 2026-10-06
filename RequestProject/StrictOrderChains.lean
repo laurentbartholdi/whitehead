@@ -1,5 +1,9 @@
-import RequestProject.StrictOrderComplex
-import RequestProject.CombHurewicz1Pres
+module
+
+public import RequestProject.StrictOrderComplex
+public import RequestProject.CombHurewicz1Pres
+
+@[expose] public section
 
 /-! Integral cellular normalization of weak order chains, without finite cell assumptions. -/
 

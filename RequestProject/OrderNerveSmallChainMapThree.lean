@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveSmallChainMapTwo
+module
+
+public import RequestProject.OrderNerveSmallChainMapTwo
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open TopologicalSingular SingularSubdivision

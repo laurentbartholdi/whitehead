@@ -1,5 +1,9 @@
-import RequestProject.CombPi2
-import RequestProject.Framework
+module
+
+public import RequestProject.CombPi2
+public import RequestProject.Framework
+
+@[expose] public section
 
 /-!
 # Theorem A over honest combinatorial two-complexes

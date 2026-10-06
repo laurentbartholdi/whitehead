@@ -1,6 +1,10 @@
-import RequestProject.GenusFreeFaceRetraction
-import RequestProject.OrdinaryTruncatedBoundary
-import RequestProject.GenusCollapseStages
+module
+
+public import RequestProject.GenusFreeFaceRetraction
+public import RequestProject.OrdinaryTruncatedBoundary
+public import RequestProject.GenusCollapseStages
+
+@[expose] public section
 
 /-! A complete elementary collapse comparison for an ordinary genus-block cube. -/
 namespace FiniteChains.Davis.Genus

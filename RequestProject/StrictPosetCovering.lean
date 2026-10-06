@@ -1,6 +1,10 @@
-import RequestProject.OrderPosetCovering
-import RequestProject.PosetCoverUpTransform
-import RequestProject.StrictOrderComplex
+module
+
+public import RequestProject.OrderPosetCovering
+public import RequestProject.PosetCoverUpTransform
+public import RequestProject.StrictOrderComplex
+
+@[expose] public section
 
 /-! A poset covering restricts to the genuine nondegenerate cellular
 two-skeleton. This is the cover used with strict cellular acyclicity.

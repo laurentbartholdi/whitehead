@@ -1,4 +1,8 @@
-import RequestProject.QCubeSquareCorners
+module
+
+public import RequestProject.QCubeSquareCorners
+
+@[expose] public section
 
 /-! Faithful indexing of the eight internal radial edges of a square subdivision. -/
 namespace FiniteChains.Davis

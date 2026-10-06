@@ -1,4 +1,8 @@
-import RequestProject.GenusSpinePresentation
+module
+
+public import RequestProject.GenusSpinePresentation
+
+@[expose] public section
 
 /-! The genuine finite complex obtained by capping the marked surviving spine. -/
 set_option backward.defeqAttrib.useBackward true

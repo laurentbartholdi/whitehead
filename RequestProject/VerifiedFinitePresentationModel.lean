@@ -1,5 +1,9 @@
-import RequestProject.VerifiedEmbeddedChains
-import RequestProject.PresValidPi2
+module
+
+public import RequestProject.VerifiedEmbeddedChains
+public import RequestProject.PresValidPi2
+
+@[expose] public section
 
 /-! # A genuine finite model for finite presentations
 

@@ -1,5 +1,9 @@
-import RequestProject.QCubeCoordinateBoundaryChain
-import RequestProject.QCubeCubicalThreeBoundary
+module
+
+public import RequestProject.QCubeCoordinateBoundaryChain
+public import RequestProject.QCubeCubicalThreeBoundary
+
+@[expose] public section
 
 /-! The six-face coefficient orientation agrees with the collapse's actual incidences. -/
 set_option backward.defeqAttrib.useBackward true

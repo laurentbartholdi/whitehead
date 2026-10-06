@@ -1,6 +1,10 @@
-import RequestProject.CombCoveringLift
-import RequestProject.CombPi2
-import RequestProject.MinimalGap
+module
+
+public import RequestProject.CombCoveringLift
+public import RequestProject.CombPi2
+public import RequestProject.MinimalGap
+
+@[expose] public section
 
 /-!
 # The universal cover maps to every covering, and acyclic covers force the Cockcroft property

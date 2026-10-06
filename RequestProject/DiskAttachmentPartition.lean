@@ -1,4 +1,8 @@
-import RequestProject.ClassicalCellAttachmentMaps
+module
+
+public import RequestProject.ClassicalCellAttachmentMaps
+
+@[expose] public section
 
 /-! Partition an arbitrary disk family and attach its two parts successively.
 The homeomorphism is constructed directly from both quotient universal maps. -/
@@ -25,13 +29,13 @@ def partitionRestAttaching : BoundaryFamily {j : J // ¬p j} E →
 
 abbrev PartitionAttachment := DiskAttachment (partitionRestAttaching r p)
 
-private def partitionDiskForget (s : J → Prop) :
+def partitionDiskForget (s : J → Prop) :
     C(DiskFamily {j : J // s j} E, DiskFamily J E) where
   toFun d := ⟨d.1.val, d.2⟩
   continuous_toFun := continuous_sigma (fun j =>
     continuous_sigmaMk (σ := fun _ : J => ClosedUnitBall E) (i := j.val))
 
-private def partitionFirstInto :
+def partitionFirstInto :
     C(DiskAttachment (partitionFirstAttaching r p), DiskAttachment r) :=
   desc (partitionFirstAttaching r p) (boundaryFamilyInclusion {j // p j} E)
     ⟨old r (boundaryFamilyInclusion J E), old_continuous _ _⟩
@@ -73,7 +77,7 @@ def partitionFlatten : C(PartitionAttachment r p, DiskAttachment r) :=
   rw [desc_cell]
   rfl
 
-private def partitionCellMap : C(DiskFamily J E, PartitionAttachment r p) where
+def partitionCellMap : C(DiskFamily J E, PartitionAttachment r p) where
   toFun d := if h : p d.1 then
     old (partitionRestAttaching r p) (boundaryFamilyInclusion {j // ¬p j} E)
       (cell (partitionFirstAttaching r p) (boundaryFamilyInclusion {j // p j} E)
@@ -91,7 +95,7 @@ private def partitionCellMap : C(DiskFamily J E, PartitionAttachment r p) where
       exact (cell_continuous _ _).comp
         (continuous_sigmaMk (σ := fun _ : {j : J // ¬p j} => ClosedUnitBall E) (i := ⟨j, hj⟩))
 
-private theorem partitionCellMap_boundary (a : BoundaryFamily J E) :
+theorem partitionCellMap_boundary (a : BoundaryFamily J E) :
     old (partitionRestAttaching r p) (boundaryFamilyInclusion {j // ¬p j} E)
       (old (partitionFirstAttaching r p) (boundaryFamilyInclusion {j // p j} E) (r a)) =
       partitionCellMap r p (boundaryFamilyInclusion J E a) := by

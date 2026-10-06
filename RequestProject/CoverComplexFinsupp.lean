@@ -1,6 +1,10 @@
-import RequestProject.CoverComplex
-import RequestProject.CrowellFinsupp
-import RequestProject.PresentationNecessityFinsupp
+module
+
+public import RequestProject.CoverComplex
+public import RequestProject.CrowellFinsupp
+public import RequestProject.PresentationNecessityFinsupp
+
+@[expose] public section
 
 /-! Actual presentation covers with arbitrarily many edges and faces. -/
 

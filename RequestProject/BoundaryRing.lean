@@ -1,5 +1,9 @@
-import Mathlib
-import RequestProject.LemmaTwoOne
+module
+
+public import Mathlib
+public import RequestProject.LemmaTwoOne
+
+@[expose] public section
 
 /-!
 # The reduced Fox boundary over an arbitrary coefficient ring

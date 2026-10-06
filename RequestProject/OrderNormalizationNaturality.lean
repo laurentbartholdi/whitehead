@@ -1,4 +1,8 @@
-import RequestProject.OrderNormalizationSupport
+module
+
+public import RequestProject.OrderNormalizationSupport
+
+@[expose] public section
 
 /-! Normalized strict two-chain maps of actual monotone maps. -/
 set_option backward.defeqAttrib.useBackward true

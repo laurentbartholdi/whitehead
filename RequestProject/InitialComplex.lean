@@ -1,8 +1,12 @@
-import RequestProject.Cockcroft
-import RequestProject.AbelianElimination
-import RequestProject.FoxNaturality
-import RequestProject.InitialPair
-import RequestProject.Pi2Dictionary
+module
+
+public import RequestProject.Cockcroft
+public import RequestProject.AbelianElimination
+public import RequestProject.FoxNaturality
+public import RequestProject.InitialPair
+public import RequestProject.Pi2Dictionary
+
+@[expose] public section
 
 /-!
 # The initial Cockcroft pair `D ⊂ Y_D` of Lemma 3.1
@@ -409,8 +413,7 @@ theorem thetaFree_relY (c : CellY I J) : thetaFree (relY r c) = 1 := by
         ⁅FreeGroup.of (Sum.inr (i, false)), FreeGroup.of (Sum.inr (i, true))⁆⁻¹) = 1
       rw [map_mul, map_inv, map_commutatorElement,
         commutatorElement_eq_one_iff_commute.2 (Commute.all _ _)]
-      show thetaFree (FreeGroup.of (Sum.inl i)) * 1 = 1
-      rw [thetaFree, FreeGroup.lift_apply_of, one_mul]
+      simp [thetaFree, FreeGroup.lift_apply_of]
   | Sum.inr (Sum.inr ⟨⟨(p, q), hpq⟩, u, v⟩) =>
       show thetaFree ⁅(FreeGroup.of (Sum.inr (p, u)) : FreeGroup (GenY I)),
         FreeGroup.of (Sum.inr (q, v))⁆ = 1

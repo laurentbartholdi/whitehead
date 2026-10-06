@@ -1,5 +1,9 @@
-import RequestProject.OrderConstructionConnected
-import RequestProject.PresPosetNonemptyWords
+module
+
+public import RequestProject.OrderConstructionConnected
+public import RequestProject.PresPosetNonemptyWords
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

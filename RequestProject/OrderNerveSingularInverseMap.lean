@@ -1,6 +1,10 @@
-import RequestProject.OrderNerveTightChainMap
-import RequestProject.TopologicalSingular.SmallRefinement
-import RequestProject.OrderNerveGradedBoundary
+module
+
+public import RequestProject.OrderNerveTightChainMap
+public import RequestProject.TopologicalSingular.SmallRefinement
+public import RequestProject.OrderNerveGradedBoundary
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

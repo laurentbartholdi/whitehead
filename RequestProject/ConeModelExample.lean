@@ -1,4 +1,8 @@
-import RequestProject.ConeModel
+module
+
+public import RequestProject.ConeModel
+
+@[expose] public section
 
 /-!
 # The cone model is not an empty notion

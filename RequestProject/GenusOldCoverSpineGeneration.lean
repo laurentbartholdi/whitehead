@@ -1,4 +1,8 @@
-import RequestProject.GenusOldCoverSpineFaithfulness
+module
+
+public import RequestProject.GenusOldCoverSpineFaithfulness
+
+@[expose] public section
 
 /-!
 Actual chain generation and reference-filling adjustment in every old-cell

@@ -1,7 +1,11 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.SingularPathComposition
-import Mathlib.LinearAlgebra.Quotient.Basic
+public import RequestProject.TopologicalSingular.SingularPathComposition
+public import Mathlib.LinearAlgebra.Quotient.Basic
+
+@[expose] public section
 
 /-! # Exactness in degree one for simply connected spaces
 

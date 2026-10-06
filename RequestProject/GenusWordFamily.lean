@@ -1,5 +1,9 @@
-import RequestProject.GenusWordInjection
-import RequestProject.BlockFamilyAmalgamation
+module
+
+public import RequestProject.GenusWordInjection
+public import RequestProject.BlockFamilyAmalgamation
+
+@[expose] public section
 
 /-! Simultaneous replacement by finite genus blocks, with independently varying genus. -/
 

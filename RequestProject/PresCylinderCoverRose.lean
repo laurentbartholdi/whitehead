@@ -1,6 +1,10 @@
-import RequestProject.StrictSubposetChains
-import RequestProject.NormalizedStrictBoundary
-import RequestProject.PresCylinderCoverCycles
+module
+
+public import RequestProject.StrictSubposetChains
+public import RequestProject.NormalizedStrictBoundary
+public import RequestProject.PresCylinderCoverCycles
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

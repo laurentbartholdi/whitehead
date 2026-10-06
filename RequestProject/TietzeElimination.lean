@@ -1,4 +1,8 @@
-import RequestProject.RuleOneMor
+module
+
+public import RequestProject.RuleOneMor
+
+@[expose] public section
 
 /-!
 # The elimination move of rule 1

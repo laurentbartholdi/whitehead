@@ -1,4 +1,8 @@
-import RequestProject.ZeroPi2Descent
+module
+
+public import RequestProject.ZeroPi2Descent
+
+@[expose] public section
 
 /-!
 # From generation of `π₂` to the vanishing of the arrows of the descended chain

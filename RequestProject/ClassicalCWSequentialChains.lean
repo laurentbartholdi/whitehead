@@ -1,4 +1,8 @@
-import RequestProject.ClassicalCWCellEmbedding
+module
+
+public import RequestProject.ClassicalCWCellEmbedding
+
+@[expose] public section
 
 /-! Compose the actual successive cellular embeddings into the last
 stage. Thus the common ambient complex in HasChain is constructed from

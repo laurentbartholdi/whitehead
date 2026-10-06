@@ -1,6 +1,10 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.SingularSubdivisionModels
+public import RequestProject.TopologicalSingular.SingularSubdivisionModels
+
+@[expose] public section
 
 /-! # Barycentric subdivision of actual singular chains
 

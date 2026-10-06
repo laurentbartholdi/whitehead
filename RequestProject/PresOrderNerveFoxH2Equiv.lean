@@ -1,5 +1,9 @@
-import RequestProject.OrderUniversalH2Equiv
-import RequestProject.PresUniversalFoxHomologyEquiv
+module
+
+public import RequestProject.OrderUniversalH2Equiv
+public import RequestProject.PresUniversalFoxHomologyEquiv
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

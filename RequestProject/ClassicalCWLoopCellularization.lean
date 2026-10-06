@@ -1,8 +1,12 @@
-import RequestProject.Statement
-import RequestProject.ClassicalCWVertexPaths
-import RequestProject.ClassicalCWCompactSupport
-import RequestProject.ClassicalCWSkeletonAttachment
-import RequestProject.DiskAttachmentRadialCore
+module
+
+public import RequestProject.Statement
+public import RequestProject.ClassicalCWVertexPaths
+public import RequestProject.ClassicalCWCompactSupport
+public import RequestProject.ClassicalCWSkeletonAttachment
+public import RequestProject.DiskAttachmentRadialCore
+
+@[expose] public section
 
 /-! Actual paths and loops in the given two-dimensional CW complex can be
 moved, relative to endpoints already in its one-skeleton, into that original

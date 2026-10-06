@@ -1,4 +1,8 @@
-import RequestProject.RollerGraphMetric
+module
+
+public import RequestProject.RollerGraphMetric
+
+@[expose] public section
 
 /-!
 # Down-sets of a poset of width at most three form a median graph

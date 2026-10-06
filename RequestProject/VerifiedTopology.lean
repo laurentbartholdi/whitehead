@@ -1,7 +1,11 @@
-import RequestProject.GenusCappedSingularHomologyPushdown
-import RequestProject.DavisRealizationAcyclic
-import RequestProject.OrderUniversalRealizationHomologyOne
-import RequestProject.OrderUniversalRealizationPi2
+module
+
+public import RequestProject.GenusCappedSingularHomologyPushdown
+public import RequestProject.DavisRealizationAcyclic
+public import RequestProject.OrderUniversalRealizationHomologyOne
+public import RequestProject.OrderUniversalRealizationPi2
+
+@[expose] public section
 
 /-!
 This file is an intermediate integration point. The full theorem, including

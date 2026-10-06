@@ -1,5 +1,9 @@
-import RequestProject.BlockFamilySubst
-import RequestProject.BlockRelativeQuotient
+module
+
+public import RequestProject.BlockFamilySubst
+public import RequestProject.BlockRelativeQuotient
+
+@[expose] public section
 
 /-!
 # The chain model of the double mapping cylinder of a whole family of blocks

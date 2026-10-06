@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveSingularCarriers
-import RequestProject.TopologicalSingular.SupportedFillings
+module
+
+public import RequestProject.OrderNerveSingularCarriers
+public import RequestProject.TopologicalSingular.SupportedFillings
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open TopologicalSingular

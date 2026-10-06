@@ -1,6 +1,10 @@
-import RequestProject.Pi2Dictionary
-import RequestProject.CycleLiftingFinsupp
-import RequestProject.CoverComplexFinsupp
+module
+
+public import RequestProject.Pi2Dictionary
+public import RequestProject.CycleLiftingFinsupp
+public import RequestProject.CoverComplexFinsupp
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

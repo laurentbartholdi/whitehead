@@ -1,6 +1,10 @@
-import RequestProject.PresUniversalGroupCoordinates
-import RequestProject.PresCoverRelatorChains
-import RequestProject.OrderUniversalPoset
+module
+
+public import RequestProject.PresUniversalGroupCoordinates
+public import RequestProject.PresCoverRelatorChains
+public import RequestProject.OrderUniversalPoset
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

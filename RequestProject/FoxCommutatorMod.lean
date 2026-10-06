@@ -1,5 +1,9 @@
-import Mathlib
-import RequestProject.FoxRequirementMod
+module
+
+public import Mathlib
+public import RequestProject.FoxRequirementMod
+
+@[expose] public section
 
 /-!
 # The requirements modulo `m` pass to the commutator subgroup

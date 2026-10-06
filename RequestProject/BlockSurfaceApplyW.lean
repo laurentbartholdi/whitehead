@@ -1,5 +1,9 @@
-import RequestProject.BlockSpinePresW
-import RequestProject.BlockSurfaceFilling
+module
+
+public import RequestProject.BlockSpinePresW
+public import RequestProject.BlockSurfaceFilling
+
+@[expose] public section
 
 /-!
 # The substitution by a block over a model built on prescribed relator words

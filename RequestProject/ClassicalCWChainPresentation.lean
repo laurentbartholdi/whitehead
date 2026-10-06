@@ -1,6 +1,10 @@
-import RequestProject.ClassicalCWChainCanonicalHomotopies
-import RequestProject.PresWordEmbeddingCombPi2
-import RequestProject.PresChainTopologicalFinsupp
+module
+
+public import RequestProject.ClassicalCWChainCanonicalHomotopies
+public import RequestProject.PresWordEmbeddingCombPi2
+public import RequestProject.PresChainTopologicalFinsupp
+
+@[expose] public section
 
 /-! The actual topological pi2 hypotheses of an original CW filtration
 give a finite-support presentation chain. The initial presentation here

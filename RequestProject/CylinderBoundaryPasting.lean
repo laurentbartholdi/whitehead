@@ -1,4 +1,8 @@
-import RequestProject.AttachmentHomotopyExtension
+module
+
+public import RequestProject.AttachmentHomotopyExtension
+
+@[expose] public section
 
 /-! Continuous pasting on the two ends and the side of a cylinder.
 The side is any closed subspace, including an arbitrary disjoint family of
@@ -20,24 +24,24 @@ abbrev FullCylinderBoundary :=
 
 variable {Z : Type v} [TopologicalSpace Z]
 
-private def fullCylinderPastingFun (f₀ f₁ : C(D, Z)) (H : C(I × S, Z))
+def fullCylinderPastingFun (f₀ f₁ : C(D, Z)) (H : C(I × S, Z))
     (z : FullCylinderBoundary S) : Z :=
   if h₀ : z.val.1 = 0 then f₀ z.val.2
   else if h₁ : z.val.1 = 1 then f₁ z.val.2
   else H (z.val.1, ⟨z.val.2, (z.property.resolve_left h₀).resolve_left h₁⟩)
 
-private theorem fullCylinderPastingFun_zero (f₀ f₁ : C(D, Z)) (H : C(I × S, Z))
+theorem fullCylinderPastingFun_zero (f₀ f₁ : C(D, Z)) (H : C(I × S, Z))
     (z : FullCylinderBoundary S) (hz : z.val.1 = 0) :
     fullCylinderPastingFun S f₀ f₁ H z = f₀ z.val.2 := by
   simp only [fullCylinderPastingFun, dif_pos hz]
 
-private theorem fullCylinderPastingFun_one (f₀ f₁ : C(D, Z)) (H : C(I × S, Z))
+theorem fullCylinderPastingFun_one (f₀ f₁ : C(D, Z)) (H : C(I × S, Z))
     (z : FullCylinderBoundary S) (hz : z.val.1 = 1) :
     fullCylinderPastingFun S f₀ f₁ H z = f₁ z.val.2 := by
   have hzero : z.val.1 ≠ 0 := by rw [hz]; exact one_ne_zero
   simp only [fullCylinderPastingFun, dif_neg hzero, dif_pos hz]
 
-private theorem fullCylinderPastingFun_side (f₀ f₁ : C(D, Z)) (H : C(I × S, Z))
+theorem fullCylinderPastingFun_side (f₀ f₁ : C(D, Z)) (H : C(I × S, Z))
     (h₀ : ∀ x, H (0, x) = f₀ x.val) (h₁ : ∀ x, H (1, x) = f₁ x.val)
     (z : FullCylinderBoundary S) (hz : z.val.2 ∈ S) :
     fullCylinderPastingFun S f₀ f₁ H z = H (z.val.1, ⟨z.val.2, hz⟩) := by

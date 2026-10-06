@@ -1,5 +1,9 @@
-import RequestProject.OrderUniversalCocycleReading
-import RequestProject.OrderUniversalPosetCover
+module
+
+public import RequestProject.OrderUniversalCocycleReading
+public import RequestProject.OrderUniversalPosetCover
+
+@[expose] public section
 
 /-! A concrete ordered cover from a nonabelian cocycle, and its exact
 realization in a universal order cover. Pending final Lean verification. -/

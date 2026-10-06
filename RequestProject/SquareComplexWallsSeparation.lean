@@ -1,5 +1,9 @@
-import RequestProject.SquareComplexWallsExample
-import RequestProject.SquareComplexWallsSphere
+module
+
+public import RequestProject.SquareComplexWallsExample
+public import RequestProject.SquareComplexWallsSphere
+
+@[expose] public section
 
 /-!
 # A criterion for the separation property

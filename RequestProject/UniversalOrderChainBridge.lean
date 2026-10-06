@@ -1,6 +1,10 @@
-import RequestProject.OrderUniversalPosetConnected
-import RequestProject.OrderNerveOneDictionary
-import RequestProject.ChamberQuotientAttachingRelativeChains
+module
+
+public import RequestProject.OrderUniversalPosetConnected
+public import RequestProject.OrderNerveOneDictionary
+public import RequestProject.ChamberQuotientAttachingRelativeChains
+
+@[expose] public section
 
 /-! Convert genuine universal-cover cellular chains into lifted-order nerve chains.
 The conversion preserves coefficients, boundaries, projection, and subposet support.

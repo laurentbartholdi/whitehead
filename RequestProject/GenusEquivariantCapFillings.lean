@@ -1,5 +1,9 @@
-import RequestProject.GenusFullCubeCoverFillings
-import RequestProject.DeckChainTransport
+module
+
+public import RequestProject.GenusFullCubeCoverFillings
+public import RequestProject.DeckChainTransport
+
+@[expose] public section
 
 /-! Equivariant cap fillings obtained by translating one actual filling per disk. -/
 namespace FiniteChains.Davis.Genus

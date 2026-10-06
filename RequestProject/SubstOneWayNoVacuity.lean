@@ -1,5 +1,9 @@
-import RequestProject.SubstOneWay
-import RequestProject.SubstHomFNotInjective
+module
+
+public import RequestProject.SubstOneWay
+public import RequestProject.SubstHomFNotInjective
+
+@[expose] public section
 
 /-!
 # The block maps are a genuine geometric input

@@ -1,5 +1,9 @@
-import RequestProject.RACGMedian
-import RequestProject.CubeMedianGraph
+module
+
+public import RequestProject.RACGMedian
+public import RequestProject.CubeMedianGraph
+
+@[expose] public section
 
 /-!
 # The Cayley graph of a right-angled Coxeter group is a median graph

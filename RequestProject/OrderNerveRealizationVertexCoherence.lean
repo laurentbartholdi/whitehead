@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveRealizationFundamental
-import RequestProject.OrderFunctorTrivialization
+module
+
+public import RequestProject.OrderNerveRealizationFundamental
+public import RequestProject.OrderFunctorTrivialization
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory Simplicial

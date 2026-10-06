@@ -1,5 +1,9 @@
-import RequestProject.CombEdgeLabels
-import RequestProject.CombPushout
+module
+
+public import RequestProject.CombEdgeLabels
+public import RequestProject.CombPushout
+
+@[expose] public section
 
 /-! The upstairs fundamental group embeds in the actual cellular pushout.
 The retraction is read from actual edge labels and path homotopies. Thus

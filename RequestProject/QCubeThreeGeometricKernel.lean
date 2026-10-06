@@ -1,4 +1,8 @@
-import RequestProject.QCubeThreeBoundaryNaturality
+module
+
+public import RequestProject.QCubeThreeBoundaryNaturality
+
+@[expose] public section
 
 /-! The actual cubical facet-cycle equations have the oriented rank-one kernel. -/
 namespace FiniteChains.Davis

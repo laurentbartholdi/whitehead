@@ -1,4 +1,8 @@
-import RequestProject.SurfaceCells
+module
+
+public import RequestProject.SurfaceCells
+
+@[expose] public section
 
 /-!
 # The polygon is filled: the boundary loop of the surface bounds

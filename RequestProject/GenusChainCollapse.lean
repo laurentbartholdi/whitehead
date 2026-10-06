@@ -1,8 +1,12 @@
-import RequestProject.GenusCollapse
-import RequestProject.CutSurfaceSpine
-import Mathlib.Order.Extension.Linear
-import RequestProject.GeometricChainCollapse
-import RequestProject.CutFacetCollapse
+module
+
+public import RequestProject.GenusCollapse
+public import RequestProject.CutSurfaceSpine
+public import Mathlib.Order.Extension.Linear
+public import RequestProject.GeometricChainCollapse
+public import RequestProject.CutFacetCollapse
+
+@[expose] public section
 
 /-! Integral chain collapse of the actual genus block, chosen independently of a cycle. -/
 

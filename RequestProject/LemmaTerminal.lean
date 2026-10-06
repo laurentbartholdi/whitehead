@@ -1,5 +1,9 @@
-import RequestProject.RuleOneComposite
-import RequestProject.WedgeSigma
+module
+
+public import RequestProject.RuleOneComposite
+public import RequestProject.WedgeSigma
+
+@[expose] public section
 
 /-!
 # Lemma 3.10: the terminal extension `Q`

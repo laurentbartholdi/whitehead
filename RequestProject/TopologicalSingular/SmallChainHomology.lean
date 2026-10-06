@@ -1,6 +1,10 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.SmallSingularChains
+public import RequestProject.TopologicalSingular.SmallSingularChains
+
+@[expose] public section
 
 /-! # Small representatives and small fillings of singular cycles
 

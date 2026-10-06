@@ -1,5 +1,9 @@
-import RequestProject.PresCylinderRoseCover
-import RequestProject.RoseCoverCycleReconstruction
+module
+
+public import RequestProject.PresCylinderRoseCover
+public import RequestProject.RoseCoverCycleReconstruction
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

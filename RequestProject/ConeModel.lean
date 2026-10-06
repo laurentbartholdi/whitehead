@@ -1,5 +1,9 @@
-import RequestProject.CappedBlock
-import RequestProject.CollapseChainMap
+module
+
+public import RequestProject.CappedBlock
+public import RequestProject.CollapseChainMap
+
+@[expose] public section
 
 /-!
 # The cone model `C_q` as a combinatorial object, and its dictionary with the Fox complex

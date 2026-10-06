@@ -1,5 +1,9 @@
-import RequestProject.AcyclicPresentationActualChains
-import RequestProject.RegularCoverChainDescent
+module
+
+public import RequestProject.AcyclicPresentationActualChains
+public import RequestProject.RegularCoverChainDescent
+
+@[expose] public section
 
 /-! Retain the actual maps and the triviality on fundamental groups in
 the acyclic presentation construction. These data are needed by regular

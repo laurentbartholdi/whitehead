@@ -1,5 +1,9 @@
-import RequestProject.CollapseChainMap
-import RequestProject.SpineCollapse
+module
+
+public import RequestProject.CollapseChainMap
+public import RequestProject.SpineCollapse
+
+@[expose] public section
 
 /-!
 # Lemma 3.3 (iii) in the form used by the capping argument: the cut surface is the zero

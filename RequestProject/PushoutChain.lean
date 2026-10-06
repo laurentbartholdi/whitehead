@@ -1,4 +1,8 @@
-import RequestProject.CombPushout
+module
+
+public import RequestProject.CombPushout
+
+@[expose] public section
 
 /-!
 # Descending a chain along a covering: the combinatorial part of Proposition 3.11

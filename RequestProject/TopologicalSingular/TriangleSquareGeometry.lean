@@ -1,4 +1,8 @@
-import RequestProject.TopologicalSingular.SquareSingularChains
+module
+
+public import RequestProject.TopologicalSingular.SquareSingularChains
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 open scoped unitInterval Topology

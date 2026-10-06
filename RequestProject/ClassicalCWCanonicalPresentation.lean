@@ -1,9 +1,13 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.ClassicalCWWordDiskModel
-import RequestProject.ClassicalRoseWordNaturality
-import RequestProject.PresCircleWordParametrization
-import RequestProject.PresCanonicalWords
-import RequestProject.StabilizedDiskPresentation
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.ClassicalCWWordDiskModel
+public import RequestProject.ClassicalRoseWordNaturality
+public import RequestProject.PresCircleWordParametrization
+public import RequestProject.PresCanonicalWords
+public import RequestProject.StabilizedDiskPresentation
+
+@[expose] public section
 
 /-! Every original connected two-dimensional CW complex has an actual
 homotopy equivalence to the canonical nonempty-word presentation model.

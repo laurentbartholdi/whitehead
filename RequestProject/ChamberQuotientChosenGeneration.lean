@@ -1,5 +1,9 @@
-import RequestProject.ChamberQuotientComponentTranslation
-import RequestProject.OrderLabelCycleDecomposition
+module
+
+public import RequestProject.ChamberQuotientComponentTranslation
+public import RequestProject.OrderLabelCycleDecomposition
+
+@[expose] public section
 
 /-! Actual finite generation of lifted base cycles by deck translates of the
 genuine universal-cover cycles of one chosen base component. -/

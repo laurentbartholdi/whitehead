@@ -1,7 +1,11 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.ClassicalCWGraphCoordinates
-import RequestProject.ClassicalGraphBoundaryWords
-import RequestProject.ClassicalGraphRose
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.ClassicalCWGraphCoordinates
+public import RequestProject.ClassicalGraphBoundaryWords
+public import RequestProject.ClassicalGraphRose
+
+@[expose] public section
 
 /-! A genuine homotopy equivalence from the given original two-dimensional
 CW complex to a rose with word disks. The disks retain the original two-cell
@@ -58,7 +62,7 @@ def originalRoseDiskEquiv : K ≃ₕ DiskAttachment (originalRoseAttaching K) :=
     (diskAttachmentBaseChangeHomotopyEquiv (skeletonAttachingMap (Set.univ : Set K) 2)
       (originalOneSkeletonRoseEquiv K))
 
-private theorem originalRoseWords_exists (j : OriginalRoseRel K) :
+theorem originalRoseWords_exists (j : OriginalRoseRel K) :
     ∃ W : BoundaryWords (roseAttaching (OriginalRoseGen K)),
       ((originalRoseAttaching K).comp
         (⟨fun a => ⟨j, a⟩, by

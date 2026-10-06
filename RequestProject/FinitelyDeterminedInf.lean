@@ -1,4 +1,8 @@
-import RequestProject.SubgroupCompactness
+module
+
+public import RequestProject.SubgroupCompactness
+
+@[expose] public section
 
 /-!
 # Finitely determined requirements pass to intersections of chains

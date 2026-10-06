@@ -1,4 +1,8 @@
-import RequestProject.OrderComplexGluing
+module
+
+public import RequestProject.OrderComplexGluing
+
+@[expose] public section
 
 /-! The genuine simplicial two-skeleton of a partial order: no degenerate edges or triangles. -/
 

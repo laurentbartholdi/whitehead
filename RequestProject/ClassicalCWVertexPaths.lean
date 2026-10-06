@@ -1,5 +1,9 @@
-import Mathlib.Topology.CWComplex.Classical.Basic
-import Mathlib.Analysis.Normed.Module.Connected
+module
+
+public import Mathlib.Topology.CWComplex.Classical.Basic
+public import Mathlib.Analysis.Normed.Module.Connected
+
+@[expose] public section
 
 /-! Actual paths from arbitrary points of an original classical CW complex
 to its original vertices. This uses only characteristic disks and the finite

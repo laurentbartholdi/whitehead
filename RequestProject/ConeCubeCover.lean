@@ -1,5 +1,9 @@
-import RequestProject.ConeModel
-import RequestProject.CubeMedianGraph
+module
+
+public import RequestProject.ConeModel
+public import RequestProject.CubeMedianGraph
+
+@[expose] public section
 
 /-!
 # The CAT(0) input of the capping argument: `H₂ = 0` from a cube-complex universal cover

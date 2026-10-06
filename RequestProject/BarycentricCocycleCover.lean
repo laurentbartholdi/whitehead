@@ -1,8 +1,12 @@
-import RequestProject.OrderCocycleCover
-import RequestProject.BarycentricCocycleDescent
-import RequestProject.BarycentricTwoChains
-import RequestProject.ConeAdjPoset
-import RequestProject.UniversalOrderChainBridge
+module
+
+public import RequestProject.OrderCocycleCover
+public import RequestProject.BarycentricCocycleDescent
+public import RequestProject.BarycentricTwoChains
+public import RequestProject.ConeAdjPoset
+public import RequestProject.UniversalOrderChainBridge
+
+@[expose] public section
 
 /-! The actual barycentric realization of a descended surface cover in the
 original universal order cover. Pending final Lean verification. -/

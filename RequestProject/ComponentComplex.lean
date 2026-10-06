@@ -1,4 +1,8 @@
-import RequestProject.CombData
+module
+
+public import RequestProject.CombData
+
+@[expose] public section
 
 /-!
 # The connected component of a two-complex, and `π₂`

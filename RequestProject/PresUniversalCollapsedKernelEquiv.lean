@@ -1,5 +1,9 @@
-import RequestProject.PresCoverRelatorKernelEquiv
-import RequestProject.PresUniversalRelatorKernel
+module
+
+public import RequestProject.PresCoverRelatorKernelEquiv
+public import RequestProject.PresUniversalRelatorKernel
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

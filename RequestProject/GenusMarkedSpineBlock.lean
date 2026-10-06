@@ -1,5 +1,9 @@
-import RequestProject.GenusNamedSpineComparison
-import RequestProject.BlockFamilyAmalgamation
+module
+
+public import RequestProject.GenusNamedSpineComparison
+public import RequestProject.BlockFamilyAmalgamation
+
+@[expose] public section
 
 /-! Genuine finite spine relators in the distinguished/internal order used by substitution. -/
 set_option backward.defeqAttrib.useBackward true

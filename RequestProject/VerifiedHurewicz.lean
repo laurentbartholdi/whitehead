@@ -1,6 +1,10 @@
-import RequestProject.TopologicalSingular.Pi2HurewiczHom
-import RequestProject.TopologicalSingular.BasedTriangleHurewicz
-import RequestProject.TopologicalSingular.TriangleBasedNormalization
+module
+
+public import RequestProject.TopologicalSingular.Pi2HurewiczHom
+public import RequestProject.TopologicalSingular.BasedTriangleHurewicz
+public import RequestProject.TopologicalSingular.TriangleBasedNormalization
+
+@[expose] public section
 
 /-! Checked infrastructure for the genuine degree-two Hurewicz map.
 

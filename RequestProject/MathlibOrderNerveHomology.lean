@@ -1,5 +1,9 @@
-import RequestProject.MathlibOrderNerveCycles
-import Mathlib.Algebra.Homology.ShortComplex.ModuleCat
+module
+
+public import RequestProject.MathlibOrderNerveCycles
+public import Mathlib.Algebra.Homology.ShortComplex.ModuleCat
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory

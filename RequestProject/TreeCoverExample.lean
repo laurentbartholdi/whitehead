@@ -1,4 +1,8 @@
-import RequestProject.TreeCoverTheoremA
+module
+
+public import RequestProject.TreeCoverTheoremA
+
+@[expose] public section
 
 /-!
 # Non-vacuity of the tree-collapse form of Theorem A

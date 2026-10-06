@@ -1,5 +1,9 @@
-import RequestProject.OrderComplexSurface
-import RequestProject.MomentAngleConnected
+module
+
+public import RequestProject.OrderComplexSurface
+public import RequestProject.MomentAngleConnected
+
+@[expose] public section
 
 /-!
 # The dual graph of the order complex of a two-dimensional cell poset

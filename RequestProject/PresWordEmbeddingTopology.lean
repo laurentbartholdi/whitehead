@@ -1,6 +1,10 @@
-import RequestProject.PresCanonicalWords
-import RequestProject.PresValidFinite
-import RequestProject.OrderNerveEmbeddingCells
+module
+
+public import RequestProject.PresCanonicalWords
+public import RequestProject.PresValidFinite
+public import RequestProject.OrderNerveEmbeddingCells
+
+@[expose] public section
 
 namespace FiniteChains.PresModel.PresWordEmbedding
 open Comb Topology

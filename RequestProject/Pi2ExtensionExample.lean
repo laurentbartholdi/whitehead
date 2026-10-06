@@ -1,4 +1,8 @@
-import RequestProject.Pi2ExtensionInjective
+module
+
+public import RequestProject.Pi2ExtensionInjective
+
+@[expose] public section
 
 /-!
 # The extension theorems are not vacuous: the torus

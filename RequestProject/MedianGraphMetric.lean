@@ -1,4 +1,8 @@
-import RequestProject.CubeMedianGraph
+module
+
+public import RequestProject.CubeMedianGraph
+
+@[expose] public section
 
 /-!
 # The median hypothesis as a statement about an actual graph

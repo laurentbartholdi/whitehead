@@ -1,6 +1,10 @@
-import RequestProject.PresCocycleCoverCoordinates
-import RequestProject.CoverFoxPrefixSum
-import RequestProject.CoverComplexFinsupp
+module
+
+public import RequestProject.PresCocycleCoverCoordinates
+public import RequestProject.CoverFoxPrefixSum
+public import RequestProject.CoverComplexFinsupp
+
+@[expose] public section
 
 namespace FiniteChains.PresModel.PresCocycleCover
 open Comb

@@ -1,5 +1,9 @@
-import RequestProject.BlockGenerates
-import RequestProject.BaseChangeCycles
+module
+
+public import RequestProject.BlockGenerates
+public import RequestProject.BaseChangeCycles
+
+@[expose] public section
 
 /-!
 # The chain model of the block substitution, built over the Fox complex

@@ -1,4 +1,8 @@
-import RequestProject.NerveDegreeTransfer
+module
+
+public import RequestProject.NerveDegreeTransfer
+
+@[expose] public section
 
 /-! Actual fillings transferred by a lower order homotopy. -/
 namespace FiniteChains.Nerve

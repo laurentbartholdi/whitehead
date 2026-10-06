@@ -1,8 +1,12 @@
-import RequestProject.ClassicalCWCanonicalPresentation
-import RequestProject.TopologicalCoverCellChains
-import RequestProject.TopologicalAcyclicCoverHomotopy
-import RequestProject.PresPosetConnected
-import RequestProject.PresPosetDimension
+module
+
+public import RequestProject.ClassicalCWCanonicalPresentation
+public import RequestProject.TopologicalCoverCellChains
+public import RequestProject.TopologicalAcyclicCoverHomotopy
+public import RequestProject.PresPosetConnected
+public import RequestProject.PresPosetDimension
+
+@[expose] public section
 
 /-! Feed an acyclic regular covering of the original CW complex into
 the actual cellular chain construction, through its constructed canonical

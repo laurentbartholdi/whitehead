@@ -1,5 +1,9 @@
-import RequestProject.MinimalGap
-import RequestProject.PushoutChain
+module
+
+public import RequestProject.MinimalGap
+public import RequestProject.PushoutChain
+
+@[expose] public section
 
 /-!
 # Sharpening the descent gap of Theorem A

@@ -1,7 +1,11 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.SmallChainComplex
-import Mathlib.Algebra.Homology.QuasiIso
+public import RequestProject.TopologicalSingular.SmallChainComplex
+public import Mathlib.Algebra.Homology.QuasiIso
+
+@[expose] public section
 
 /-! # The small-chain theorem for an arbitrary open cover
 

@@ -1,5 +1,9 @@
-import RequestProject.OrderCxNatHtpy
-import RequestProject.OrderCxConeNull
+module
+
+public import RequestProject.OrderCxNatHtpy
+public import RequestProject.OrderCxConeNull
+
+@[expose] public section
 
 /-! Null homotopies transfer through an actual order homotopy, including changing bases. -/
 set_option backward.defeqAttrib.useBackward true

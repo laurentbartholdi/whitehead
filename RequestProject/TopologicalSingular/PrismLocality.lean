@@ -1,4 +1,8 @@
-import RequestProject.TopologicalSingular.SingularPrism
+module
+
+public import RequestProject.TopologicalSingular.SingularPrism
+
+@[expose] public section
 
 namespace FiniteChains.SingularPrism
 open TopologicalSingular

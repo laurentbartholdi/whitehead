@@ -1,4 +1,8 @@
-import RequestProject.PresConeExcursionReplacement
+module
+
+public import RequestProject.PresConeExcursionReplacement
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

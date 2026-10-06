@@ -1,5 +1,9 @@
-import RequestProject.BlockSpinePres
-import RequestProject.SubstOneWayQuotientW
+module
+
+public import RequestProject.BlockSpinePres
+public import RequestProject.SubstOneWayQuotientW
+
+@[expose] public section
 
 /-!
 # The block over a model built on prescribed relator words

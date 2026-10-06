@@ -1,4 +1,8 @@
-import RequestProject.PresPosetAlphaW
+module
+
+public import RequestProject.PresPosetAlphaW
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

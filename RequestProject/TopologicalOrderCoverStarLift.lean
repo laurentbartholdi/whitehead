@@ -1,6 +1,10 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.TopologicalOrderCoverDeck
-import RequestProject.OrderNerveRealizationStarContractible
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.TopologicalOrderCoverDeck
+public import RequestProject.OrderNerveRealizationStarContractible
+
+@[expose] public section
 
 /-! Actual continuous covering lifts over each closed vertex star. They
 are obtained by lifting its explicit contraction, so no local path

@@ -1,5 +1,9 @@
-import RequestProject.NerveSupport
-import RequestProject.NervePrism
+module
+
+public import RequestProject.NerveSupport
+public import RequestProject.NervePrism
+
+@[expose] public section
 
 /-!
 # Relative chain gluing: pieces that are acyclic only relative to a fixed subcomplex

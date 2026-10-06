@@ -1,7 +1,11 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.DiskFamilyHomotopyBaseChange
-import RequestProject.DiskFamilyMap
-import RequestProject.AttachingHomotopyChosenExtensions
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.DiskFamilyHomotopyBaseChange
+public import RequestProject.DiskFamilyMap
+public import RequestProject.AttachingHomotopyChosenExtensions
+
+@[expose] public section
 
 /-! Explicit disk extensions, natural in the base map and disk labels.
 The extension on a disk is the fixed ball-cylinder retraction, independent

@@ -1,6 +1,10 @@
-import RequestProject.MathlibOrderNerveCells
-import RequestProject.OrderComplexSurface
-import Mathlib.AlgebraicTopology.SimplicialSet.Dimension
+module
+
+public import RequestProject.MathlibOrderNerveCells
+public import RequestProject.OrderComplexSurface
+public import Mathlib.AlgebraicTopology.SimplicialSet.Dimension
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory Simplicial

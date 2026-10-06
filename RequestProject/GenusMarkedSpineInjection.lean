@@ -1,5 +1,9 @@
-import RequestProject.GenusMarkedSpineBlock
-import RequestProject.GenusWordInjection
+module
+
+public import RequestProject.GenusMarkedSpineBlock
+public import RequestProject.GenusWordInjection
+
+@[expose] public section
 
 /-! Structural injectivity for substitution by the actual finite surviving spine. -/
 set_option backward.defeqAttrib.useBackward true

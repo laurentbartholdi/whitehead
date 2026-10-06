@@ -1,4 +1,8 @@
-import RequestProject.FoxBaseChangeExact
+module
+
+public import RequestProject.FoxBaseChangeExact
+
+@[expose] public section
 
 /-!
 # The relative complex of the pair as an honest quotient

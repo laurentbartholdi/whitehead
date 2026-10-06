@@ -1,5 +1,9 @@
-import RequestProject.SlideGeneration
-import RequestProject.RuleOneMor
+module
+
+public import RequestProject.SlideGeneration
+public import RequestProject.RuleOneMor
+
+@[expose] public section
 
 /-!
 # Rule 2 as a structural map with the generation property

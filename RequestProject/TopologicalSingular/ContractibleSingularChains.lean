@@ -1,7 +1,11 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.SingularPrism
-import Mathlib.Topology.Homotopy.Contractible
+public import RequestProject.TopologicalSingular.SingularPrism
+public import Mathlib.Topology.Homotopy.Contractible
+
+@[expose] public section
 
 /-! # Exact singular chains in all positive degrees for contractible spaces
 

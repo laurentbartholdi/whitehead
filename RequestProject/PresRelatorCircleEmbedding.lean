@@ -1,6 +1,10 @@
-import RequestProject.PresWordEmbedding
-import RequestProject.PresRealizationWordDisks
-import RequestProject.RelatorCircleBoundaryHomeomorph
+module
+
+public import RequestProject.PresWordEmbedding
+public import RequestProject.PresRealizationWordDisks
+public import RequestProject.RelatorCircleBoundaryHomeomorph
+
+@[expose] public section
 
 /-! Restrict a literal presentation-word embedding to each actual
 relator circle. Positions, cyclic indices, and the letter-reading map

@@ -1,4 +1,8 @@
-import RequestProject.ClassicalCWChainDiskModels
+module
+
+public import RequestProject.ClassicalCWChainDiskModels
+
+@[expose] public section
 
 /-! The coherent word-disk models form actual commuting squares with
 the original subcomplex inclusions. Thus original topological pi2

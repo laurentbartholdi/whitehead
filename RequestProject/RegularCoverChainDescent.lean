@@ -1,4 +1,8 @@
-import RequestProject.RegularCoverActualPi2Descent
+module
+
+public import RequestProject.RegularCoverActualPi2Descent
+
+@[expose] public section
 
 /-! Regular-cover descent for arbitrary cell sets, carrying the actual
 inclusions. No finite-complement hypothesis is needed for the chain or

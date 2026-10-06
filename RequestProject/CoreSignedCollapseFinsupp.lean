@@ -1,7 +1,11 @@
-import RequestProject.CoreSignedCollapse
-import RequestProject.GenerationStepFinsupp
-import RequestProject.BlockFamilyBlockwiseFinsupp
-import RequestProject.ExponentCorrection
+module
+
+public import RequestProject.CoreSignedCollapse
+public import RequestProject.GenerationStepFinsupp
+public import RequestProject.BlockFamilyBlockwiseFinsupp
+public import RequestProject.ExponentCorrection
+
+@[expose] public section
 
 /-! Core collapse and Hurewicz reflection for arbitrary cell sets.  Only the
 individual chains are finitely supported.  Core H2 vanishing is expressed by

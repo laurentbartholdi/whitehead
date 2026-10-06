@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveRealizationCovering
+module
+
+public import RequestProject.OrderNerveRealizationCovering
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory Simplicial

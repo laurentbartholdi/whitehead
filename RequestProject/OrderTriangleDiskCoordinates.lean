@@ -1,6 +1,10 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.SquareBoundaryNormHomeomorph
-import Mathlib.Analysis.Convex.StdSimplex
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.SquareBoundaryNormHomeomorph
+public import Mathlib.Analysis.Convex.StdSimplex
+
+@[expose] public section
 
 /-! Explicit disk coordinates for strict order triangles. The bottom
 edge of the square is collapsed to vertex 0, while its other three sides

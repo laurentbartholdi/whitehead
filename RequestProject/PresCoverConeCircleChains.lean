@@ -1,8 +1,12 @@
-import RequestProject.StrictTopLinkCoefficients
-import RequestProject.RelatorCircleBoundary
-import RequestProject.PresConeLinkOrderIso
-import RequestProject.PresCoverConeLinks
-import RequestProject.CellularChainMapZero
+module
+
+public import RequestProject.StrictTopLinkCoefficients
+public import RequestProject.RelatorCircleBoundary
+public import RequestProject.PresConeLinkOrderIso
+public import RequestProject.PresCoverConeLinks
+public import RequestProject.CellularChainMapZero
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

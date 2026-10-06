@@ -1,6 +1,10 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.VertexSubdivision
+public import RequestProject.TopologicalSingular.VertexSubdivision
+
+@[expose] public section
 
 /-! # The explicit chain homotopy for recursive vertex subdivision -/
 

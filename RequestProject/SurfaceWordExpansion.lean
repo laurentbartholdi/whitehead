@@ -1,4 +1,8 @@
-import RequestProject.BlockSurfaceFilling
+module
+
+public import RequestProject.BlockSurfaceFilling
+
+@[expose] public section
 
 /-!
 Naming arbitrary words in a surface relation. The named presentation retains the old

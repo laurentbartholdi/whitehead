@@ -1,6 +1,10 @@
-import RequestProject.QCubeDoubleFacetIndex
-import RequestProject.QCubeCubicalTwoBoundary
-import RequestProject.QCubeThreeFacetCoordinates
+module
+
+public import RequestProject.QCubeDoubleFacetIndex
+public import RequestProject.QCubeCubicalTwoBoundary
+public import RequestProject.QCubeThreeFacetCoordinates
+
+@[expose] public section
 
 /-! The six actual square faces in the ordered three-cube coefficient index. -/
 namespace FiniteChains.Davis

@@ -1,6 +1,10 @@
-import RequestProject.CellularChainMapZero
-import RequestProject.RoseCoverGeneratorChain
-import RequestProject.RelatorCircleFundamentalChain
+module
+
+public import RequestProject.CellularChainMapZero
+public import RequestProject.RoseCoverGeneratorChain
+public import RequestProject.RelatorCircleFundamentalChain
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

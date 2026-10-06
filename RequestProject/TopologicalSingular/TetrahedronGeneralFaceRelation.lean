@@ -1,3 +1,5 @@
+module
+
 /-
 The horn comparison is adapted from the simplicial telescope argument of
 Vasily Ilin, homotopy-groups-lean commit
@@ -5,8 +7,10 @@ c66523531ff172d7f41913d94e56921e790a1b47, Hurewicz/SimplicialTelescope.lean,
 released under Apache 2.0. In degree two a single telescope stage suffices.
 All fillers here are actual continuous singular simplices.
 -/
-import RequestProject.TopologicalSingular.TetrahedronLastFaceRelation
-import RequestProject.TopologicalSingular.PointedTriangleHorn
+public import RequestProject.TopologicalSingular.TetrahedronLastFaceRelation
+public import RequestProject.TopologicalSingular.PointedTriangleHorn
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 variable {X : Type} [TopologicalSpace X] {x : X}

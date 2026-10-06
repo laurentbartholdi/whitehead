@@ -1,4 +1,8 @@
-import RequestProject.FoxCoordinateSubstitution
+module
+
+public import RequestProject.FoxCoordinateSubstitution
+
+@[expose] public section
 
 /-! Internal Fox coordinates of the actual simultaneous word substitution. -/
 namespace FiniteChains.BlockFamily

@@ -1,6 +1,10 @@
-import RequestProject.PresUnivCoverIso
-import RequestProject.Cockcroft
-import RequestProject.CockcroftExtension
+module
+
+public import RequestProject.PresUnivCoverIso
+public import RequestProject.Cockcroft
+public import RequestProject.CockcroftExtension
+
+@[expose] public section
 
 /-!
 # The Cockcroft property: the topological definition and the Fox one agree

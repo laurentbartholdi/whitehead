@@ -1,5 +1,9 @@
-import RequestProject.StabilizedDiskPresentation
-import RequestProject.DiskFamilyMap
+module
+
+public import RequestProject.StabilizedDiskPresentation
+public import RequestProject.DiskFamilyMap
+
+@[expose] public section
 
 /-! The filled-circle stabilization is natural for literal disk
 inclusions. This includes its actual forward homotopy equivalence,

@@ -1,4 +1,8 @@
-import RequestProject.OpenCoverPathReplacement
+module
+
+public import RequestProject.OpenCoverPathReplacement
+
+@[expose] public section
 
 /-! Paths can be moved into an open core when its complementary charts are
 disjoint simply connected sets with path-connected intersections with the
@@ -51,7 +55,7 @@ variable (A : Set X) (U : ι → Set X)
 
 include hcover in
 omit [TopologicalSpace X] in
-private theorem exists_chart {x : X} (hx : x ∉ A) : ∃ i, x ∈ U i := by
+theorem exists_chart {x : X} (hx : x ∉ A) : ∃ i, x ∈ U i := by
   have h : x ∈ A ∪ ⋃ i, U i := by rw [hcover]; trivial
   exact Set.mem_iUnion.mp (h.resolve_left hx)
 
@@ -69,7 +73,7 @@ theorem corePoint_eq {x : X} (hx : x ∈ A) : corePoint A U hcover hpath x = x :
   dif_pos hx
 
 include hsc in
-private theorem point_joined_corePoint {x : X} (hx : x ∉ A) :
+theorem point_joined_corePoint {x : X} (hx : x ∉ A) :
     JoinedIn (U (Classical.choose (exists_chart A U hcover hx))) x
       (corePoint A U hcover hpath x) := by
   let i := Classical.choose (exists_chart A U hcover hx)

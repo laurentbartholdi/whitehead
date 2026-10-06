@@ -1,5 +1,9 @@
-import RequestProject.SurfaceCells
-import RequestProject.NerveDegree
+module
+
+public import RequestProject.SurfaceCells
+public import RequestProject.NerveDegree
+
+@[expose] public section
 
 /-! Explicit oriented chains of the polygon's triangulation, before identifying its sides. -/
 

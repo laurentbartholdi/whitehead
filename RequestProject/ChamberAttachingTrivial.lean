@@ -1,4 +1,8 @@
-import RequestProject.ChamberZPoset
+module
+
+public import RequestProject.ChamberZPoset
+
+@[expose] public section
 
 /-!
 # Why the attaching map is defined on the simplices and not on all finite sets of vertices

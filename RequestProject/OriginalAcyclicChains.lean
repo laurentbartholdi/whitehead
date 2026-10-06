@@ -1,5 +1,9 @@
-import RequestProject.ClassicalCWCanonicalPresentation
-import RequestProject.AcyclicPresentationOriginalChains
+module
+
+public import RequestProject.ClassicalCWCanonicalPresentation
+public import RequestProject.AcyclicPresentationOriginalChains
+
+@[expose] public section
 
 /-! Original-cell-preserving chains for every acyclic connected CW
 two-complex. The finite theorem is precisely the finite acyclic clause

@@ -1,6 +1,10 @@
-import RequestProject.RelativeSlideNaturality
-import RequestProject.RelativeTerminalOperation
-import RequestProject.PresentationInclusionCalculus
+module
+
+public import RequestProject.RelativeSlideNaturality
+public import RequestProject.RelativeTerminalOperation
+public import RequestProject.PresentationInclusionCalculus
+
+@[expose] public section
 
 /-! One simultaneous replacement, returned in the same ambient-label
 format as its input. The core labels are fixed. Earlier stages select

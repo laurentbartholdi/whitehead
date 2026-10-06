@@ -1,4 +1,8 @@
-import RequestProject.ClassicalCellAttachmentHausdorff
+module
+
+public import RequestProject.ClassicalCellAttachmentHausdorff
+
+@[expose] public section
 
 /-! The classical CW structure on an actual disk attachment. The original
 cells are retained with their original dimensions and images; all added cells
@@ -210,15 +214,20 @@ def attachmentOldSubcomplex :
   ext z
   constructor
   · intro hz
-    obtain ⟨m, ⟨j, hj⟩, hz⟩ := by simpa only [Set.mem_iUnion] using hz
-    obtain ⟨j, rfl⟩ := hj
+    obtain ⟨m, hz⟩ := Set.mem_iUnion.mp hz
+    obtain ⟨j', hz⟩ := Set.mem_iUnion.mp hz
+    obtain ⟨j, hj⟩ := j'.property
+    have hj' : (j'.1 : AttachmentCell (X := X) (J := J) n m) = Sum.inl j := hj.symm
+    rw [hj'] at hz
     change z ∈ attachmentCharacteristic n r hr x₀ m (Sum.inl j) '' ball 0 1 at hz
     rw [attachmentCharacteristic_old_image] at hz
-    exact Set.image_subset_range _ _ hz
+    obtain ⟨y, _, rfl⟩ := hz
+    exact ⟨y, rfl⟩
   · rintro ⟨x, rfl⟩
     have hx : x ∈ ⋃ m, ⋃ j : RelCWComplex.cell (Set.univ : Set X) m,
         RelCWComplex.openCell m j := by rw [CWComplex.iUnion_openCell_eq_complex]; trivial
-    obtain ⟨m, j, hx⟩ := by simpa only [Set.mem_iUnion] using hx
+    obtain ⟨m, hx⟩ := Set.mem_iUnion.mp hx
+    obtain ⟨j, hx⟩ := Set.mem_iUnion.mp hx
     apply Set.mem_iUnion.mpr
     refine ⟨m, Set.mem_iUnion.mpr ⟨⟨Sum.inl j, ⟨j, rfl⟩⟩, ?_⟩⟩
     change old r _ x ∈ attachmentCharacteristic n r hr x₀ m (Sum.inl j) '' ball 0 1

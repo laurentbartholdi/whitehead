@@ -1,4 +1,8 @@
-import RequestProject.ExponentCorrection
+module
+
+public import RequestProject.ExponentCorrection
+
+@[expose] public section
 
 /-!
 # Words in commuting elements, and the elimination step of Lemma 3.1

@@ -1,5 +1,9 @@
-import RequestProject.GenusCappedQuotientPushdown
-import RequestProject.MathlibOrderNerveCategoricalNaturality
+module
+
+public import RequestProject.GenusCappedQuotientPushdown
+public import RequestProject.MathlibOrderNerveCategoricalNaturality
+
+@[expose] public section
 
 namespace FiniteChains.Davis.Genus
 open RACG Mirror Comb PresModel

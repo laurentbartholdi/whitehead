@@ -1,7 +1,11 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.ClassicalGraphBoundaryWords
-import RequestProject.ContinuousEdgeWordHomotopies
-import RequestProject.SquareBoundaryLoopQuotient
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.ClassicalGraphBoundaryWords
+public import RequestProject.ContinuousEdgeWordHomotopies
+public import RequestProject.SquareBoundaryLoopQuotient
+
+@[expose] public section
 
 /-! The actual four-side attaching map is homotopic to the descended
 continuous realization of its based edge word. This retains a homotopy
@@ -19,27 +23,27 @@ open scoped Classical unitInterval
 variable {V J : Type} [TopologicalSpace V]
     {r : BoundaryFamily J (Fin 1 → ℝ) → V} (W : BoundaryWords r)
 
-private theorem corner01Eq : squareSideMap (0, false) 1 = squareSideMap (1, true) 0 := by
+theorem corner01Eq : squareSideMap (0, false) 1 = squareSideMap (1, true) 0 := by
   apply Subtype.ext
   funext i
   fin_cases i <;> rfl
 
-private theorem corner11Eq : squareSideMap (1, true) 1 = squareSideMap (0, true) 1 := by
+theorem corner11Eq : squareSideMap (1, true) 1 = squareSideMap (0, true) 1 := by
   apply Subtype.ext
   funext i
   fin_cases i <;> rfl
 
-private theorem corner10Eq : squareSideMap (0, true) 0 = squareSideMap (1, false) 1 := by
+theorem corner10Eq : squareSideMap (0, true) 0 = squareSideMap (1, false) 1 := by
   apply Subtype.ext
   funext i
   fin_cases i <;> rfl
 
-private theorem corner00Eq : squareSideMap (1, false) 0 = squareSideMap (0, false) 0 := by
+theorem corner00Eq : squareSideMap (1, false) 0 = squareSideMap (0, false) 0 := by
   apply Subtype.ext
   funext i
   fin_cases i <;> rfl
 
-private theorem realize_cast_eq {V E X : Type} [TopologicalSpace X]
+theorem realize_cast_eq {V E X : Type} [TopologicalSpace X]
     (src tgt : E → V) (v : V → X) (edge : ∀ e, Path (v (src e)) (v (tgt e)))
     (l : List (E × Bool)) {a b a' b' : V}
     (hl : Comb.IsPath src tgt l a b) (hl' : Comb.IsPath src tgt l a' b')
@@ -56,12 +60,12 @@ def loopRealization :
   realize (graphSrc r) (graphTgt r) (old r (boundaryFamilyInclusion J _))
     (graphEdgePath r) W.loopWord W.loopWord_isPath
 
-private theorem corner_value (s : SquareSide) (t : I) (ht : t = 0 ∨ t = 1) :
+theorem corner_value (s : SquareSide) (t : I) (ht : t = 0 ∨ t = 1) :
     W.squareMap (squareSideMap s t) =
       old r (boundaryFamilyInclusion J _) (W.vertex (squareSideMap s t)) :=
   (W.squareMap_side s t).trans (W.sidePath_endpoint s t ht)
 
-private def baseEquality : old r (boundaryFamilyInclusion J _) (W.vertex squareCorner00) =
+def baseEquality : old r (boundaryFamilyInclusion J _) (W.vertex squareCorner00) =
     W.squareMap squareCorner00 := (corner_value W (0, false) 0 (Or.inl rfl)).symm
 
 def basedTraversal :

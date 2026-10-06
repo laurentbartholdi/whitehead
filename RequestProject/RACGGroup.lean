@@ -1,4 +1,8 @@
-import RequestProject.RACGTrace
+module
+
+public import RequestProject.RACGTrace
+
+@[expose] public section
 
 /-!
 # Right-angled Coxeter groups through their reduced traces

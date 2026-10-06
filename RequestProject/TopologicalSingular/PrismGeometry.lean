@@ -1,6 +1,10 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.PrismIndices
+public import RequestProject.TopologicalSingular.PrismIndices
+
+@[expose] public section
 
 /-! # Continuous prism simplices and all their face identities -/
 

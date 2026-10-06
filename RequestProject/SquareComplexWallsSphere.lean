@@ -1,4 +1,8 @@
-import RequestProject.SquareComplexWallSpace
+module
+
+public import RequestProject.SquareComplexWallSpace
+
+@[expose] public section
 
 /-!
 # Walls of a simply connected square complex need not separate its vertices

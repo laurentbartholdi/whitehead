@@ -1,5 +1,9 @@
-import RequestProject.Isolator
-import RequestProject.FrameworkNecessityMod
+module
+
+public import RequestProject.Isolator
+public import RequestProject.FrameworkNecessityMod
+
+@[expose] public section
 
 /-!
 # An unconditional consequence of Section 2: torsion abelianization

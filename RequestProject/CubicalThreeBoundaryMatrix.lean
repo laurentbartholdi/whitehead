@@ -1,4 +1,8 @@
-import RequestProject.QCubeThreeFacetCoordinates
+module
+
+public import RequestProject.QCubeThreeFacetCoordinates
+
+@[expose] public section
 
 /-! Integral coefficient calculation for the six oriented faces of an ordered three-cube.
 The separate geometric comparison must identify this matrix with actual cube edge cells. -/

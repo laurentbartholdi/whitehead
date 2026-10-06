@@ -1,4 +1,8 @@
-import RequestProject.RelatorConeFundamentalChain
+module
+
+public import RequestProject.RelatorConeFundamentalChain
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

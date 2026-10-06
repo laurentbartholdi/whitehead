@@ -1,8 +1,12 @@
-import RequestProject.StrictBottomLinkChains
-import RequestProject.SurfaceLink
-import RequestProject.GenusSurface
-import RequestProject.GenusCellularFundamental
-import RequestProject.CellularChainMapZero
+module
+
+public import RequestProject.StrictBottomLinkChains
+public import RequestProject.SurfaceLink
+public import RequestProject.GenusSurface
+public import RequestProject.GenusCellularFundamental
+public import RequestProject.CellularChainMapZero
+
+@[expose] public section
 
 /-! Pole coefficients in genuine covers of the polygon surface.
 

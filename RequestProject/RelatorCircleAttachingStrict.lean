@@ -1,5 +1,9 @@
-import RequestProject.RoseStrictEdges
-import RequestProject.RelatorCircleEdges
+module
+
+public import RequestProject.RoseStrictEdges
+public import RequestProject.RelatorCircleEdges
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

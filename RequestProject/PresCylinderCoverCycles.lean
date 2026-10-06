@@ -1,5 +1,9 @@
-import RequestProject.PresCylinderCycles
-import RequestProject.PosetCoverUpTransform
+module
+
+public import RequestProject.PresCylinderCycles
+public import RequestProject.PosetCoverUpTransform
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

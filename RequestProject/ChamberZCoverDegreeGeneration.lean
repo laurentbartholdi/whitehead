@@ -1,4 +1,8 @@
-import RequestProject.ChamberZCoverDegreeLocal
+module
+
+public import RequestProject.ChamberZCoverDegreeLocal
+
+@[expose] public section
 
 /-! Degree-two generation on actual poset covers of the modified chamber construction. -/
 namespace FiniteChains.Davis
@@ -91,11 +95,11 @@ theorem generatesDegreeIn_cover_zupto (hf : IsPosetCover f) :
         · exact Or.inl ⟨y, by omega, hyp⟩
         · exact Or.inr ⟨y, le_antisymm hy h', hyp⟩
 
-private noncomputable def coverChainBound (c : Nerve.Ch P) : ℕ :=
+noncomputable def coverChainBound (c : Nerve.Ch P) : ℕ :=
   c.support.sup (fun l => (l.map (fun p => zlen (f p))).sum)
 
 omit [Fintype V] [Nonempty X] in
-private theorem mem_incOn_cover_bound {c : Nerve.Ch P} (hc : c ∈ Nerve.Inc P) :
+theorem mem_incOn_cover_bound {c : Nerve.Ch P} (hc : c ∈ Nerve.Inc P) :
     c ∈ IncOn (fun p => ZUpto (coverChainBound (f := f) c) (f p)) := by
   rw [mem_incOn_iff]
   intro l hl

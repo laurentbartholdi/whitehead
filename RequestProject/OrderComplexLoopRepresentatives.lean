@@ -1,5 +1,9 @@
-import RequestProject.OrderComplexFreeFace
-import RequestProject.OrderCxNatHtpy
+module
+
+public import RequestProject.OrderComplexFreeFace
+public import RequestProject.OrderCxNatHtpy
+
+@[expose] public section
 
 /-! Constructed loop representatives under the first elementary collapse deletion. -/
 namespace FiniteChains.Comb

@@ -1,6 +1,10 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.SingularChainH0
+public import RequestProject.TopologicalSingular.SingularChainH0
+
+@[expose] public section
 
 /-! # Explicit triangle coordinates for singular path relations -/
 

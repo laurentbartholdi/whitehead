@@ -1,5 +1,9 @@
-import RequestProject.OrderUniversalPoset
-import RequestProject.OrderPosetCovering
+module
+
+public import RequestProject.OrderUniversalPoset
+public import RequestProject.OrderPosetCovering
+
+@[expose] public section
 
 /-! Unique interval lifts in the genuine path-class universal-cover order. -/
 namespace FiniteChains.Comb

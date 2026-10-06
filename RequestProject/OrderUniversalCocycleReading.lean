@@ -1,5 +1,9 @@
-import RequestProject.OrderCxMonodromy
-import RequestProject.CombUniversalCover
+module
+
+public import RequestProject.OrderCxMonodromy
+public import RequestProject.CombUniversalCover
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

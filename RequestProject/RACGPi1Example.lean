@@ -1,4 +1,8 @@
-import RequestProject.RACGPi1
+module
+
+public import RequestProject.RACGPi1
+
+@[expose] public section
 
 /-!
 # Non-vacuity: the fundamental group of a concrete `C(L)`

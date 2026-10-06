@@ -1,5 +1,9 @@
-import RequestProject.QCubeCoordinateEquiv
-import RequestProject.OrderCxNullTransfer
+module
+
+public import RequestProject.QCubeCoordinateEquiv
+public import RequestProject.OrderCxNullTransfer
+
+@[expose] public section
 
 /-! Coordinate maps used to contract a cube boundary after deletion of one facet. -/
 namespace FiniteChains.Davis

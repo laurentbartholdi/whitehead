@@ -1,5 +1,9 @@
-import RequestProject.UniversalTreeGauge
-import RequestProject.GenusFullCubeMarking
+module
+
+public import RequestProject.UniversalTreeGauge
+public import RequestProject.GenusFullCubeMarking
+
+@[expose] public section
 
 /-! Exact lifted path translations for the genuine capped presentation group. -/
 set_option backward.defeqAttrib.useBackward true

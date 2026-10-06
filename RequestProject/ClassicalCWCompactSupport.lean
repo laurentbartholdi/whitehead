@@ -1,6 +1,10 @@
-import Mathlib.Topology.CWComplex.Classical.Basic
-import Mathlib.Topology.Compactness.Compact
-import Mathlib.Data.Set.Finite.Lattice
+module
+
+public import Mathlib.Topology.CWComplex.Classical.Basic
+public import Mathlib.Topology.Compactness.Compact
+public import Mathlib.Data.Set.Finite.Lattice
+
+@[expose] public section
 
 /-! Compact subsets of an original classical Hausdorff CW complex meet only
 finitely many original open cells. The proof uses the actual weak topology

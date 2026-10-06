@@ -1,5 +1,9 @@
-import RequestProject.TruncatedCubePi1
-import RequestProject.OrderNerveCellMaps
+module
+
+public import RequestProject.TruncatedCubePi1
+public import RequestProject.OrderNerveCellMaps
+
+@[expose] public section
 
 /-! The actual truncation prism in cellular degrees two and three. -/
 set_option backward.defeqAttrib.useBackward true

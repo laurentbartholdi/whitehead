@@ -1,7 +1,11 @@
-import RequestProject.TruncatedCubePoset
-import RequestProject.TruncatedCellIncidence
-import RequestProject.PuncturedCubeBoundary
-import RequestProject.OrderComplexPi1Transfer
+module
+
+public import RequestProject.TruncatedCubePoset
+public import RequestProject.TruncatedCellIncidence
+public import RequestProject.PuncturedCubeBoundary
+public import RequestProject.OrderComplexPi1Transfer
+
+@[expose] public section
 
 /-! Ordinary punctured cube boundaries inside the actual truncated-cell face poset. -/
 namespace FiniteChains.Davis

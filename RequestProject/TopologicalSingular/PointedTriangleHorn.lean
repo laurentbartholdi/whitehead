@@ -1,4 +1,8 @@
-import RequestProject.TopologicalSingular.PointedSingularTriangle
+module
+
+public import RequestProject.TopologicalSingular.PointedSingularTriangle
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 variable {X : Type} [TopologicalSpace X] {x : X}

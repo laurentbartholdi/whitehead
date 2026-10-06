@@ -1,6 +1,10 @@
-import RequestProject.TopologicalSingular.BasedTriangleHurewicz
-import RequestProject.TopologicalSingular.SimplexLinearHomotopy
-import RequestProject.TopologicalSingular.SimplexPrismRetraction
+module
+
+public import RequestProject.TopologicalSingular.BasedTriangleHurewicz
+public import RequestProject.TopologicalSingular.SimplexLinearHomotopy
+public import RequestProject.TopologicalSingular.SimplexPrismRetraction
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 open scoped unitInterval Topology

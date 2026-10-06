@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveSmallHomotopyAll
+module
+
+public import RequestProject.OrderNerveSmallHomotopyAll
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory TopologicalSingular SingularSubdivision

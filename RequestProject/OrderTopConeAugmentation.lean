@@ -1,4 +1,8 @@
-import RequestProject.OrderTopConeChains
+module
+
+public import RequestProject.OrderTopConeChains
+
+@[expose] public section
 
 /-! The degree-zero boundary of the actual upper-cone subdivision. -/
 set_option backward.defeqAttrib.useBackward true

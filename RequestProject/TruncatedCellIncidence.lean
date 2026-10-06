@@ -1,5 +1,9 @@
-import RequestProject.TruncatedCellDimension
-import RequestProject.SpineCollapse
+module
+
+public import RequestProject.TruncatedCellDimension
+public import RequestProject.SpineCollapse
+
+@[expose] public section
 
 /-! Read actual codimension-one face incidences in the collapse's coordinate indices. -/
 namespace FiniteChains.Davis

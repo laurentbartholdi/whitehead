@@ -1,6 +1,10 @@
-import RequestProject.SurfaceFullCubeFilling
-import RequestProject.GenusSpinePresentation
-import RequestProject.ZeroPi2Descent
+module
+
+public import RequestProject.SurfaceFullCubeFilling
+public import RequestProject.GenusSpinePresentation
+public import RequestProject.ZeroPi2Descent
+
+@[expose] public section
 
 /-! The actual surviving-spine marking contracts in the full cube quotient. -/
 set_option backward.defeqAttrib.useBackward true

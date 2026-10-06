@@ -1,4 +1,8 @@
-import Mathlib
+module
+
+public import Mathlib
+
+@[expose] public section
 
 /-!
 # The two Zorn-type steps of Section 2
@@ -33,27 +37,27 @@ def FinitelyDetermined {ι : Type*} (Sat : Subgroup G → ι → Prop) : Prop :=
 section Compactness
 
 /-- The indicator functions of normal subgroups, inside the compact space `G → Bool`. -/
-private def NSSet (G : Type*) [Group G] : Set (G → Bool) :=
+def NSSet (G : Type*) [Group G] : Set (G → Bool) :=
   {f | f 1 = true ∧ (∀ a b, f a = true → f b = true → f (a * b) = true) ∧
     (∀ a, f a = true → f a⁻¹ = true) ∧ (∀ g a, f a = true → f (g * a * g⁻¹) = true)}
 
 /-- The normal subgroup with a given indicator function. -/
-private def toSubgroup (f : G → Bool) (hf : f ∈ NSSet G) : Subgroup G where
+def toSubgroup (f : G → Bool) (hf : f ∈ NSSet G) : Subgroup G where
   carrier := {g | f g = true}
   one_mem' := hf.1
   mul_mem' ha hb := hf.2.1 _ _ ha hb
   inv_mem' ha := hf.2.2.1 _ ha
 
-private theorem mem_toSubgroup {f : G → Bool} (hf : f ∈ NSSet G) (g : G) :
+theorem mem_toSubgroup {f : G → Bool} (hf : f ∈ NSSet G) (g : G) :
     g ∈ toSubgroup f hf ↔ f g = true := Iff.rfl
 
-private theorem toSubgroup_normal {f : G → Bool} (hf : f ∈ NSSet G) :
+theorem toSubgroup_normal {f : G → Bool} (hf : f ∈ NSSet G) :
     (toSubgroup f hf).Normal :=
   ⟨fun n hn g => hf.2.2.2 g n hn⟩
 
 omit [Group G] in
 /-- A condition on `G → Bool` that only depends on finitely many coordinates is closed. -/
-private theorem isClosed_of_finite_determination (P : (G → Bool) → Prop) (F : Finset G)
+theorem isClosed_of_finite_determination (P : (G → Bool) → Prop) (F : Finset G)
     (hF : ∀ f f' : G → Bool, (∀ g ∈ F, f g = f' g) → P f → P f') :
     IsClosed {f | P f} := by
   rw [← isOpen_compl_iff, isOpen_iff_forall_mem_open]
@@ -67,7 +71,7 @@ private theorem isClosed_of_finite_determination (P : (G → Bool) → Prop) (F 
     rw [hset]
     exact isOpen_biInter_finset fun g _ => (isOpen_discrete _).preimage (continuous_apply g)
 
-private theorem isClosed_NSSet : IsClosed (NSSet G) := by
+theorem isClosed_NSSet : IsClosed (NSSet G) := by
   classical
   have h1 : IsClosed {f : G → Bool | f 1 = true} :=
     isClosed_of_finite_determination _ {1} (by

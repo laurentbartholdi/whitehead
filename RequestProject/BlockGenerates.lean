@@ -1,5 +1,9 @@
-import RequestProject.BlockGeneration
-import RequestProject.GenerationStep
+module
+
+public import RequestProject.BlockGeneration
+public import RequestProject.GenerationStep
+
+@[expose] public section
 
 /-!
 # From the homology of the double mapping cylinder to equation (3.3)

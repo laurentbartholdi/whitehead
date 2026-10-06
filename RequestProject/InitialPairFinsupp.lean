@@ -1,5 +1,9 @@
-import RequestProject.InitialComplexFinsupp
-import RequestProject.FreeGeneratorPaddingFinsupp
+module
+
+public import RequestProject.InitialComplexFinsupp
+public import RequestProject.FreeGeneratorPaddingFinsupp
+
+@[expose] public section
 
 /-! A concrete initial ambient presentation for every acyclic core.
 The added alphabet contains a free padding generator, including when the
@@ -15,7 +19,7 @@ open RelativeNormalForm
 
 variable {A M : Type}
 
-private def chosenOrder (A : Type) : LinearOrder A :=
+def chosenOrder (A : Type) : LinearOrder A :=
   IsWellOrder.linearOrder (@WellOrderingRel A)
 
 abbrev ExtraGen (A : Type) := (A × Bool) ⊕ PUnit
@@ -48,7 +52,7 @@ def baseRel (core : M → FreeGroup A) : M ⊕ ExtraCell A → FreeGroup (GenY A
 def extra (core : M → FreeGroup A) : ExtraCell A → FreeGroup (A ⊕ ExtraGen A) :=
   fun c => FreeGroup.map generatorEmbedding (baseRel core (Sum.inr c))
 
-private theorem generatorEmbedding_map_core (w : FreeGroup A) :
+theorem generatorEmbedding_map_core (w : FreeGroup A) :
     FreeGroup.map generatorEmbedding (FreeGroup.map Sum.inl w) =
       FreeGroup.map (Sum.inl (β := ExtraGen A)) w := by
   have h : (FreeGroup.map generatorEmbedding).comp (FreeGroup.map Sum.inl) =

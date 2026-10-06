@@ -1,5 +1,9 @@
-import RequestProject.ReceivedTreeCover
-import RequestProject.UniversalTreeGauge
+module
+
+public import RequestProject.ReceivedTreeCover
+public import RequestProject.UniversalTreeGauge
+
+@[expose] public section
 
 /-! Exact geometric reference paths for the cover over a receiving group. -/
 set_option backward.defeqAttrib.useBackward true

@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveOneDictionary
+module
+
+public import RequestProject.OrderNerveOneDictionary
+
+@[expose] public section
 
 /-! Genuine finite triangle fillings for two-leg order contractions in degree one. -/
 set_option backward.defeqAttrib.useBackward true

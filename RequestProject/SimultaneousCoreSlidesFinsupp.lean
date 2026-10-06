@@ -1,4 +1,8 @@
-import RequestProject.BlockFamilyB1Finsupp
+module
+
+public import RequestProject.BlockFamilyB1Finsupp
+
+@[expose] public section
 
 /-! The triangular two-chain isomorphism for simultaneous slides over a
 fixed core. Both the family and the core may have infinitely many cells.

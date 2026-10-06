@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveRealizationSimplices
+module
+
+public import RequestProject.OrderNerveRealizationSimplices
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

@@ -1,6 +1,10 @@
-import RequestProject.CellularHomotopyChain
-import RequestProject.SurfaceCoverPolygonEquivariance
-import RequestProject.BarycentricTwoChains
+module
+
+public import RequestProject.CellularHomotopyChain
+public import RequestProject.SurfaceCoverPolygonEquivariance
+public import RequestProject.BarycentricTwoChains
+
+@[expose] public section
 
 /-! The boundary of the explicit subdivided polygon is its actual lifted
 boundary path, with all sheets retained. Pending final Lean verification. -/

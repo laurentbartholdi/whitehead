@@ -1,5 +1,9 @@
-import RequestProject.RankOneCylinderRealization
-import RequestProject.PresPosetDimension
+module
+
+public import RequestProject.RankOneCylinderRealization
+public import RequestProject.PresPosetDimension
+
+@[expose] public section
 
 /-! The actual topological mapping cylinder in the presentation model
 collapses to the subdivided rose. The outer attaching circles are sent

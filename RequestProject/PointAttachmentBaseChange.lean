@@ -1,8 +1,12 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.PointAttachmentHomotopyEquiv
-import RequestProject.AttachmentQuotientHomeomorph
-import RequestProject.AttachmentDiagramHomeomorph
-import RequestProject.ClassicalCellAttachmentMaps
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.PointAttachmentHomotopyEquiv
+public import RequestProject.AttachmentQuotientHomeomorph
+public import RequestProject.AttachmentDiagramHomeomorph
+public import RequestProject.ClassicalCellAttachmentMaps
+
+@[expose] public section
 
 /-! Changing the single old point of a pointed attachment to an
 arbitrary space is the actual pushout at that point. This identifies a

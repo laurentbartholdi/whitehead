@@ -1,5 +1,9 @@
-import RequestProject.SubstOneWayQuotient
-import RequestProject.PresPosetAlphaW
+module
+
+public import RequestProject.SubstOneWayQuotient
+public import RequestProject.PresPosetAlphaW
+
+@[expose] public section
 
 /-!
 # The one-way comparison over a model built on prescribed relator words

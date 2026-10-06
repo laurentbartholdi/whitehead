@@ -1,6 +1,10 @@
-import RequestProject.ClassicalGraphRoseNaturality
-import RequestProject.ContinuousEdgeWords
-import RequestProject.TreePresentation
+module
+
+public import RequestProject.ClassicalGraphRoseNaturality
+public import RequestProject.ContinuousEdgeWords
+public import RequestProject.TreePresentation
+
+@[expose] public section
 
 /-! The exact finite word read by collapsing a spanning tree. The word
 is obtained by deleting the tree letters; the corresponding continuous

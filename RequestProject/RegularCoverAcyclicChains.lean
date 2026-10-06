@@ -1,5 +1,9 @@
-import RequestProject.AcyclicRelativeTreeChains
-import RequestProject.TreeChainFinsupp
+module
+
+public import RequestProject.AcyclicRelativeTreeChains
+public import RequestProject.TreeChainFinsupp
+
+@[expose] public section
 
 /-! The actual regular-cover sufficiency construction in the cellular
 category: build relative chains upstairs and descend their particular

@@ -1,5 +1,9 @@
-import RequestProject.PosetCoverFreeFaceHomology
-import RequestProject.GenusCollapseStages
+module
+
+public import RequestProject.PosetCoverFreeFaceHomology
+public import RequestProject.GenusCollapseStages
+
+@[expose] public section
 
 /-! The recorded genus-collapse pairs supply actual covered free-face retractions. -/
 namespace FiniteChains.Davis.Genus

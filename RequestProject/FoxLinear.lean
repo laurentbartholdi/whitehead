@@ -1,4 +1,8 @@
-import RequestProject.Fox
+module
+
+public import RequestProject.Fox
+
+@[expose] public section
 
 /-!
 # The Fox derivative as a linear map on the group ring

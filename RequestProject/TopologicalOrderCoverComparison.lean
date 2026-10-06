@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveCoverLiftGluing
+module
+
+public import RequestProject.OrderNerveCoverLiftGluing
+
+@[expose] public section
 
 /-! The actual continuous comparison from the reconstructed poset cover
 to the given covering space, commuting with the projection. Unverified. -/

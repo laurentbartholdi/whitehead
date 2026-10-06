@@ -1,4 +1,8 @@
-import RequestProject.OrderPosetCovering
+module
+
+public import RequestProject.OrderPosetCovering
+
+@[expose] public section
 
 /-! Lifting an actual downward monotone homotopy through a poset covering. -/
 namespace FiniteChains.Comb

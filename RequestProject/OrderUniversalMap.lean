@@ -1,6 +1,10 @@
-import RequestProject.CombPi2
-import RequestProject.OrderUniversalPosetHom
-import RequestProject.OrderNerveRealizationNestedSubcomplex
+module
+
+public import RequestProject.CombPi2
+public import RequestProject.OrderUniversalPosetHom
+public import RequestProject.OrderNerveRealizationNestedSubcomplex
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

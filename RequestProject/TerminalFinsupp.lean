@@ -1,6 +1,10 @@
-import RequestProject.GenerationStepFinsupp
-import RequestProject.BlockFamilyBlockwiseFinsupp
-import RequestProject.LemmaTerminal
+module
+
+public import RequestProject.GenerationStepFinsupp
+public import RequestProject.BlockFamilyBlockwiseFinsupp
+public import RequestProject.LemmaTerminal
+
+@[expose] public section
 
 /-! The terminal inclusion and the Cockcroft/trivial-group vanishing argument
 for arbitrary presentations.  Only chains, not cell sets, are finite.

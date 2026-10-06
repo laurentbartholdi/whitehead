@@ -1,5 +1,9 @@
-import RequestProject.BlockFamilyBlockwiseFinsupp
-import RequestProject.BaseChangeExactFinsupp
+module
+
+public import RequestProject.BlockFamilyBlockwiseFinsupp
+public import RequestProject.BaseChangeExactFinsupp
+
+@[expose] public section
 
 /-!
 The actual B1 chain identity for simultaneous block substitution, with finite

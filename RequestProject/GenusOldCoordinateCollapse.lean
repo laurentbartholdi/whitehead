@@ -1,4 +1,8 @@
-import RequestProject.GenusCutCoefficientCycles
+module
+
+public import RequestProject.GenusCutCoefficientCycles
+
+@[expose] public section
 
 /-! The actual recovered ordinary old-spine coefficients vanish under the genus collapse. -/
 set_option backward.defeqAttrib.useBackward true

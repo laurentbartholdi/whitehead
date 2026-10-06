@@ -1,5 +1,9 @@
-import RequestProject.OrderComplexGluing
-import RequestProject.CombCoveringLift
+module
+
+public import RequestProject.OrderComplexGluing
+public import RequestProject.CombCoveringLift
+
+@[expose] public section
 
 /-!
 # A combinatorial criterion for a monotone map to induce a covering of order complexes

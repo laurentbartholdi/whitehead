@@ -1,6 +1,10 @@
-import RequestProject.TreeExtension
-import RequestProject.TreeCoverExample
-import RequestProject.CombData
+module
+
+public import RequestProject.TreeExtension
+public import RequestProject.TreeCoverExample
+public import RequestProject.CombData
+
+@[expose] public section
 
 /-!
 # Condition (1) of Theorem A for chains of arbitrary two-complexes

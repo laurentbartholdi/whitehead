@@ -1,5 +1,9 @@
-import RequestProject.ReducedSimplex
-import Mathlib.Analysis.Normed.Operator.Banach
+module
+
+public import RequestProject.ReducedSimplex
+public import Mathlib.Analysis.Normed.Operator.Banach
+
+@[expose] public section
 
 namespace FiniteChains
 

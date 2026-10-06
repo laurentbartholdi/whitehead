@@ -1,6 +1,10 @@
-import RequestProject.OrderComparableCollapse
-import RequestProject.OrderComparableEdgeFan
-import RequestProject.PosetCoverDownTransform
+module
+
+public import RequestProject.OrderComparableCollapse
+public import RequestProject.OrderComparableEdgeFan
+public import RequestProject.PosetCoverDownTransform
+
+@[expose] public section
 
 /-! Genuine strict cycle fillings in arbitrary covers of a lower cone. -/
 namespace FiniteChains.Comb

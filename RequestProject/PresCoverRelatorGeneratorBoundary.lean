@@ -1,5 +1,9 @@
-import RequestProject.PresCylinderCollapsedRoseLinear
-import RequestProject.PresCoverRelatorKernelEquiv
+module
+
+public import RequestProject.PresCylinderCollapsedRoseLinear
+public import RequestProject.PresCoverRelatorKernelEquiv
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

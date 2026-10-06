@@ -1,4 +1,8 @@
-import RequestProject.QCubeThreeOrderedFrame
+module
+
+public import RequestProject.QCubeThreeOrderedFrame
+
+@[expose] public section
 
 /-! Actual three-cube cells and their canonical decreasing boundary frames. -/
 namespace FiniteChains.Davis

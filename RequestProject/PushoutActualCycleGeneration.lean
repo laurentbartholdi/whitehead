@@ -1,7 +1,11 @@
-import RequestProject.PushoutRelativeCopyLabels
-import RequestProject.PushoutUniversalCellEmbedding
-import RequestProject.PushoutOldCoverHomology
-import RequestProject.AcyclicLiftedSubcomplex
+module
+
+public import RequestProject.PushoutRelativeCopyLabels
+public import RequestProject.PushoutUniversalCellEmbedding
+public import RequestProject.PushoutOldCoverHomology
+public import RequestProject.AcyclicLiftedSubcomplex
+
+@[expose] public section
 
 /-! Actual regular-cover descent in degree two. Every universal-cover
 two-cycle is a finite sum of images of genuine cycles in copies of the

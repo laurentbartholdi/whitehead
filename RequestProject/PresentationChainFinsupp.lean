@@ -1,5 +1,9 @@
-import RequestProject.PresentationChain
-import RequestProject.Pi2DictionaryFinsupp
+module
+
+public import RequestProject.PresentationChain
+public import RequestProject.Pi2DictionaryFinsupp
+
+@[expose] public section
 
 /-! Chains of presentation complexes with arbitrary generator and relator sets.
 The two-cycle condition is imposed on actual cellular universal-cover chains. -/

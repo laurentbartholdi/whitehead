@@ -1,4 +1,8 @@
-import RequestProject.BarycentricSurface
+module
+
+public import RequestProject.BarycentricSurface
+
+@[expose] public section
 
 /-!
 # When is the order complex of a two-dimensional cell poset a closed surface?

@@ -1,4 +1,8 @@
-import RequestProject.OrderNerveRealizationMapCoordinates
+module
+
+public import RequestProject.OrderNerveRealizationMapCoordinates
+
+@[expose] public section
 
 /-! Exact barycentric-coordinate reconstruction for a finite poset. This is
 used to split an actual cone point into its radial coordinate and base point. -/

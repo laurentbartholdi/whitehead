@@ -1,6 +1,10 @@
-import RequestProject.SurfaceLabel
-import RequestProject.SurfaceFilling
-import RequestProject.AttCycleLoop
+module
+
+public import RequestProject.SurfaceLabel
+public import RequestProject.SurfaceFilling
+public import RequestProject.AttCycleLoop
+
+@[expose] public section
 
 /-!
 # The boundary of the polygon reads the word

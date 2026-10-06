@@ -1,5 +1,9 @@
-import RequestProject.FiniteSetBoundary
-import RequestProject.StrictOrderChains
+module
+
+public import RequestProject.FiniteSetBoundary
+public import RequestProject.StrictOrderChains
+
+@[expose] public section
 
 /-! Coordinate simplices and nondegenerate cellular order chains have the same boundary. -/
 

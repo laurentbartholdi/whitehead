@@ -1,4 +1,8 @@
-import RequestProject.PresUniversalRelatorAugmentation
+module
+
+public import RequestProject.PresUniversalRelatorAugmentation
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

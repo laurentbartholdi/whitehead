@@ -1,4 +1,8 @@
-import RequestProject.GenusData
+module
+
+public import RequestProject.GenusData
+
+@[expose] public section
 
 /-!
 # The cell structure of the polygon with identified boundary, counted

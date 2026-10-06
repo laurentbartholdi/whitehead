@@ -1,5 +1,9 @@
-import RequestProject.BlockRelativeQuotient
-import RequestProject.TietzeElimination
+module
+
+public import RequestProject.BlockRelativeQuotient
+public import RequestProject.TietzeElimination
+
+@[expose] public section
 
 /-!
 # A regression case: a nonaspherical `X`, where `H₂(W̃) = 0` is false

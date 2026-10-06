@@ -1,6 +1,10 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.SingularChainMaps
+public import RequestProject.TopologicalSingular.SingularChainMaps
+
+@[expose] public section
 
 /-! # The alternating-sum cancellation in a prism, in every dimension -/
 

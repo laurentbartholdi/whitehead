@@ -1,5 +1,9 @@
-import Mathlib.Algebra.Homology.ShortComplex.ModuleCat
-import Mathlib.Algebra.Homology.ShortComplex.HomologicalComplex
+module
+
+public import Mathlib.Algebra.Homology.ShortComplex.ModuleCat
+public import Mathlib.Algebra.Homology.ShortComplex.HomologicalComplex
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 open CategoryTheory

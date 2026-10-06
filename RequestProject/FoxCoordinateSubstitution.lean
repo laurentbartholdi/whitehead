@@ -1,5 +1,9 @@
-import RequestProject.FoxNaturality
-import RequestProject.SubstOneWay
+module
+
+public import RequestProject.FoxNaturality
+public import RequestProject.SubstOneWay
+
+@[expose] public section
 
 /-! Fox coordinates retained by a word substitution. -/
 set_option backward.defeqAttrib.useBackward true

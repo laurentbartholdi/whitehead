@@ -1,4 +1,8 @@
-import RequestProject.TreePresentation
+module
+
+public import RequestProject.TreePresentation
+
+@[expose] public section
 
 /-!
 # Extending a spanning tree along a subcomplex inclusion
@@ -44,48 +48,48 @@ variable {X Y : Complex2.{u}}
 section Extension
 
 /-- The lengths of the edge paths from `a` to the image of `X`. -/
-private def imReach (h : Hom X Y) (a : Y.V) : Set ℕ :=
+def imReach (h : Hom X Y) (a : Y.V) : Set ℕ :=
   {n | ∃ p : List (Y.E × Bool), p.length = n ∧ ∃ x : X.V, IsPath Y.src Y.tgt p a (h.onV x)}
 
 /-- The distance from a vertex of `Y` to the image of `X`. -/
-private noncomputable def imDist (h : Hom X Y) (a : Y.V) : ℕ := sInf (imReach h a)
+noncomputable def imDist (h : Hom X Y) (a : Y.V) : ℕ := sInf (imReach h a)
 
 variable (h : Hom X Y) (hconn : IsConnected Y) (x₀ : X.V)
 
 include hconn x₀ in
-private theorem imReach_nonempty (a : Y.V) : (imReach h a).Nonempty := by
+theorem imReach_nonempty (a : Y.V) : (imReach h a).Nonempty := by
   obtain ⟨p, hp⟩ := hconn a (h.onV x₀)
   exact ⟨p.length, p, rfl, x₀, hp⟩
 
 include hconn x₀ in
-private theorem imDist_mem (a : Y.V) : imDist h a ∈ imReach h a :=
+theorem imDist_mem (a : Y.V) : imDist h a ∈ imReach h a :=
   Nat.sInf_mem (imReach_nonempty h hconn x₀ a)
 
-private theorem imDist_le {a : Y.V} {p : List (Y.E × Bool)} {x : X.V}
+theorem imDist_le {a : Y.V} {p : List (Y.E × Bool)} {x : X.V}
     (hp : IsPath Y.src Y.tgt p a (h.onV x)) : imDist h a ≤ p.length :=
   Nat.sInf_le ⟨p, rfl, x, hp⟩
 
-private theorem imDist_image (x : X.V) : imDist h (h.onV x) = 0 :=
+theorem imDist_image (x : X.V) : imDist h (h.onV x) = 0 :=
   Nat.le_zero.1 (imDist_le h (p := []) (x := x) rfl)
 
 include hconn x₀ in
-private theorem exists_pre {a : Y.V} (hz : imDist h a = 0) : ∃ x : X.V, a = h.onV x := by
+theorem exists_pre {a : Y.V} (hz : imDist h a = 0) : ∃ x : X.V, a = h.onV x := by
   obtain ⟨p, hlen, x, hp⟩ := imDist_mem h hconn x₀ a
   rw [hz, List.length_eq_zero_iff] at hlen
   subst hlen
   exact ⟨x, hp⟩
 
 /-- A choice of preimage of a vertex at distance zero from the image. -/
-private noncomputable def imPre {a : Y.V} (hz : imDist h a = 0) : X.V :=
+noncomputable def imPre {a : Y.V} (hz : imDist h a = 0) : X.V :=
   Classical.choose (exists_pre h hconn x₀ hz)
 
-private theorem imPre_spec {a : Y.V} (hz : imDist h a = 0) :
+theorem imPre_spec {a : Y.V} (hz : imDist h a = 0) :
     a = h.onV (imPre h hconn x₀ hz) :=
   Classical.choose_spec (exists_pre h hconn x₀ hz)
 
 include hconn x₀ in
 /-- A vertex not in the image has a neighbour one step closer to the image. -/
-private theorem imDist_step {a : Y.V} (ha : imDist h a ≠ 0) :
+theorem imDist_step {a : Y.V} (ha : imDist h a ≠ 0) :
     ∃ g : Y.E × Bool, germSrc Y.src Y.tgt g = a ∧
       imDist h (germTgt Y.src Y.tgt g) + 1 = imDist h a := by
   obtain ⟨p, hlen, x, hp⟩ := imDist_mem h hconn x₀ a
@@ -111,14 +115,14 @@ private theorem imDist_step {a : Y.V} (ha : imDist h a ≠ 0) :
   omega
 
 /-- The edge towards the image chosen at a vertex outside the image. -/
-private noncomputable def upChoice {a : Y.V} (ha : imDist h a ≠ 0) : Y.E × Bool :=
+noncomputable def upChoice {a : Y.V} (ha : imDist h a ≠ 0) : Y.E × Bool :=
   Classical.choose (imDist_step h hconn x₀ ha)
 
-private theorem upChoice_src {a : Y.V} (ha : imDist h a ≠ 0) :
+theorem upChoice_src {a : Y.V} (ha : imDist h a ≠ 0) :
     germSrc Y.src Y.tgt (upChoice h hconn x₀ ha) = a :=
   (Classical.choose_spec (imDist_step h hconn x₀ ha)).1
 
-private theorem upChoice_dist {a : Y.V} (ha : imDist h a ≠ 0) :
+theorem upChoice_dist {a : Y.V} (ha : imDist h a ≠ 0) :
     imDist h (germTgt Y.src Y.tgt (upChoice h hconn x₀ ha)) + 1 = imDist h a :=
   (Classical.choose_spec (imDist_step h hconn x₀ ha)).2
 
@@ -128,7 +132,7 @@ variable (T : SpanningTree X)
 
 /-- The height function of the extended tree: the old height on the image, and one more than
 the height of the next vertex towards the image elsewhere. -/
-private noncomputable def extHt (a : Y.V) : ℕ :=
+noncomputable def extHt (a : Y.V) : ℕ :=
   if hz : imDist h a = 0 then T.ht (imPre h hconn x₀ hz)
   else extHt (germTgt Y.src Y.tgt (upChoice h hconn x₀ hz)) + 1
   termination_by imDist h a
@@ -136,48 +140,48 @@ private noncomputable def extHt (a : Y.V) : ℕ :=
     have := upChoice_dist h hconn x₀ hz
     omega
 
-private theorem extHt_of_zero {a : Y.V} (hz : imDist h a = 0) :
+theorem extHt_of_zero {a : Y.V} (hz : imDist h a = 0) :
     extHt h hconn x₀ T a = T.ht (imPre h hconn x₀ hz) := by
   rw [extHt, dif_pos hz]
 
-private theorem extHt_of_ne {a : Y.V} (hz : imDist h a ≠ 0) :
+theorem extHt_of_ne {a : Y.V} (hz : imDist h a ≠ 0) :
     extHt h hconn x₀ T a =
       extHt h hconn x₀ T (germTgt Y.src Y.tgt (upChoice h hconn x₀ hz)) + 1 := by
   rw [extHt]
   exact dif_neg hz
 
 include hconn x₀ in
-private theorem extHt_image (hV : Function.Injective h.onV) (x : X.V) :
+theorem extHt_image (hV : Function.Injective h.onV) (x : X.V) :
     extHt h hconn x₀ T (h.onV x) = T.ht x := by
   have hz : imDist h (h.onV x) = 0 := imDist_image h x
   rw [extHt_of_zero h hconn x₀ T hz]
   have := (imPre_spec h hconn x₀ hz).symm
   rw [hV this]
 
-private theorem imPre_ne_root {a : Y.V} (ha : a ≠ h.onV T.root) (hz : imDist h a = 0) :
+theorem imPre_ne_root {a : Y.V} (ha : a ≠ h.onV T.root) (hz : imDist h a = 0) :
     imPre h hconn x₀ hz ≠ T.root := fun hr =>
   ha ((imPre_spec h hconn x₀ hz).trans (congrArg h.onV hr))
 
 /-- The tree edge of the extended tree. -/
-private noncomputable def extUp (a : Y.V) (ha : a ≠ h.onV T.root) : Y.E × Bool :=
+noncomputable def extUp (a : Y.V) (ha : a ≠ h.onV T.root) : Y.E × Bool :=
   if hz : imDist h a = 0 then
     (h.onE (T.up (imPre h hconn x₀ hz) (imPre_ne_root h hconn x₀ T ha hz)).1,
       (T.up (imPre h hconn x₀ hz) (imPre_ne_root h hconn x₀ T ha hz)).2)
   else upChoice h hconn x₀ hz
 
-private theorem extUp_of_zero {a : Y.V} (ha : a ≠ h.onV T.root) (hz : imDist h a = 0) :
+theorem extUp_of_zero {a : Y.V} (ha : a ≠ h.onV T.root) (hz : imDist h a = 0) :
     extUp h hconn x₀ T a ha =
       (h.onE (T.up (imPre h hconn x₀ hz) (imPre_ne_root h hconn x₀ T ha hz)).1,
         (T.up (imPre h hconn x₀ hz) (imPre_ne_root h hconn x₀ T ha hz)).2) := by
   rw [extUp, dif_pos hz]
 
-private theorem extUp_of_ne {a : Y.V} (ha : a ≠ h.onV T.root) (hz : imDist h a ≠ 0) :
+theorem extUp_of_ne {a : Y.V} (ha : a ≠ h.onV T.root) (hz : imDist h a ≠ 0) :
     extUp h hconn x₀ T a ha = upChoice h hconn x₀ hz := by
   rw [extUp]
   exact dif_neg hz
 
 /-- The extension of a spanning tree of a subcomplex to the ambient complex. -/
-private noncomputable def extend (hV : Function.Injective h.onV) : SpanningTree Y where
+noncomputable def extend (hV : Function.Injective h.onV) : SpanningTree Y where
   root := h.onV T.root
   ht := extHt h hconn x₀ T
   isTree := fun e => ∃ (a : Y.V) (ha : a ≠ h.onV T.root), (extUp h hconn x₀ T a ha).1 = e

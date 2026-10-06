@@ -1,6 +1,10 @@
-import RequestProject.GenusApply
-import RequestProject.PresPosetConnected
-import RequestProject.PresPosetPartialOrder
+module
+
+public import RequestProject.GenusApply
+public import RequestProject.PresPosetConnected
+public import RequestProject.PresPosetPartialOrder
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

@@ -1,5 +1,9 @@
-import RequestProject.GenusCappedSpine
-import RequestProject.TreeUnivCoverIso
+module
+
+public import RequestProject.GenusCappedSpine
+public import RequestProject.TreeUnivCoverIso
+
+@[expose] public section
 
 /-! Chain comparison for the actual capped spine and its cell presentation. -/
 set_option backward.defeqAttrib.useBackward true

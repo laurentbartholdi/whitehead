@@ -1,4 +1,8 @@
-import RequestProject.WedgeCockcroft
+module
+
+public import RequestProject.WedgeCockcroft
+
+@[expose] public section
 
 /-!
 # An arbitrary wedge of Cockcroft complexes is Cockcroft

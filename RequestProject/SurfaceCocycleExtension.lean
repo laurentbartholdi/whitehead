@@ -1,5 +1,9 @@
-import RequestProject.SurfaceCocycleFan
-import RequestProject.BarycentricCocycleDescent
+module
+
+public import RequestProject.SurfaceCocycleFan
+public import RequestProject.BarycentricCocycleDescent
+
+@[expose] public section
 
 /-! Boundary flat sections extend across the actual closed polygon surface. -/
 namespace FiniteChains.Davis.SurfaceSection

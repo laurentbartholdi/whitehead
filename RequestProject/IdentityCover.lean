@@ -1,4 +1,8 @@
-import RequestProject.CombData
+module
+
+public import RequestProject.CombData
+
+@[expose] public section
 
 /-!
 # Remark 2: an acyclic two-complex satisfies condition (2) through its identity cover

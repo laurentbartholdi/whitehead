@@ -1,5 +1,9 @@
-import RequestProject.PresRelatorCircleEmbedding
-import RequestProject.FinitePosetCycleNaturality
+module
+
+public import RequestProject.PresRelatorCircleEmbedding
+public import RequestProject.FinitePosetCycleNaturality
+
+@[expose] public section
 
 /-! Literal presentation inclusions preserve the actual boundary-circle
 parametrization exactly. No independent choice of circle coordinates is

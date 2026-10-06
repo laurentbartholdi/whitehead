@@ -1,4 +1,8 @@
-import RequestProject.StrictOrderChains
+module
+
+public import RequestProject.StrictOrderChains
+
+@[expose] public section
 
 /-! Explicit degree-two normalization homotopy in the full weak order nerve. -/
 

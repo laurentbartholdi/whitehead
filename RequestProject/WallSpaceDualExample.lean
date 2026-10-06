@@ -1,4 +1,8 @@
-import RequestProject.WallSpaceDualConnected
+module
+
+public import RequestProject.WallSpaceDualConnected
+
+@[expose] public section
 
 /-!
 # Wall spaces: the hypotheses are not vacuous

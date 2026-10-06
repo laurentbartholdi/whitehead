@@ -1,5 +1,9 @@
-import RequestProject.PresCoverRelatorFanLinks
-import RequestProject.PresCoverCylinderElimination
+module
+
+public import RequestProject.PresCoverRelatorFanLinks
+public import RequestProject.PresCoverCylinderElimination
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

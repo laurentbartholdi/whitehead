@@ -1,5 +1,9 @@
-import RequestProject.NerveDegree
-import RequestProject.ChamberZChain
+module
+
+public import RequestProject.NerveDegree
+public import RequestProject.ChamberZChain
+
+@[expose] public section
 
 /-! The actual chamber relative homology theorem with witnesses in the required degrees. -/
 

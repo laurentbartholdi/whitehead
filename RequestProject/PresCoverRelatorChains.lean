@@ -1,4 +1,8 @@
-import RequestProject.PresCoverCycleCoordinates
+module
+
+public import RequestProject.PresCoverCycleCoordinates
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

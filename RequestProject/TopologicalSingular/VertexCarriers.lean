@@ -1,7 +1,11 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.VertexSubdivisionHomotopy
-import Mathlib.LinearAlgebra.Finsupp.Supported
+public import RequestProject.TopologicalSingular.VertexSubdivisionHomotopy
+public import Mathlib.LinearAlgebra.Finsupp.Supported
+
+@[expose] public section
 
 /-! # Carrier control for subdivision and its homotopy -/
 

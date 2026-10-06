@@ -1,8 +1,12 @@
-import RequestProject.OrderTwoDimensionalAcyclicity
-import RequestProject.OrderUniversalRealizationPi2
-import RequestProject.OrderUniversalRealizationSimplyConnected
-import RequestProject.TopologicalSingular.HurewiczIsomorphismConsequences
-import RequestProject.OrderNerveTwoComplex
+module
+
+public import RequestProject.OrderTwoDimensionalAcyclicity
+public import RequestProject.OrderUniversalRealizationPi2
+public import RequestProject.OrderUniversalRealizationSimplyConnected
+public import RequestProject.TopologicalSingular.HurewiczIsomorphismConsequences
+public import RequestProject.OrderNerveTwoComplex
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 open CategoryTheory CategoryTheory.Category AlgebraicTopology TopologicalSingular Topology

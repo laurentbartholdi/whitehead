@@ -1,4 +1,8 @@
-import RequestProject.GenusQuotientMarkingCoefficients
+module
+
+public import RequestProject.GenusQuotientMarkingCoefficients
+
+@[expose] public section
 
 /-! Old-chain corrections with coefficients in the entire quotient deck
 group. This keeps the polygon scalar in its original ring until every

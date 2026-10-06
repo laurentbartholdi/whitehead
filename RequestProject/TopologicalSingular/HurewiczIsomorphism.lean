@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.HurewiczInjectivity
-import RequestProject.TopologicalSingular.HomologyToPi2
+module
+
+public import RequestProject.TopologicalSingular.HurewiczInjectivity
+public import RequestProject.TopologicalSingular.HomologyToPi2
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

@@ -1,5 +1,9 @@
-import RequestProject.ChamberAttachingJ
-import RequestProject.RACGPi1Example
+module
+
+public import RequestProject.ChamberAttachingJ
+public import RequestProject.RACGPi1Example
+
+@[expose] public section
 
 /-!
 # Which complex is compared with which: the levels of the two models

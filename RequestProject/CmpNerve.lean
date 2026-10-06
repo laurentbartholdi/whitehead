@@ -1,5 +1,9 @@
-import RequestProject.BlockConnected
-import RequestProject.OrderCxConeNull
+module
+
+public import RequestProject.BlockConnected
+public import RequestProject.OrderCxConeNull
+
+@[expose] public section
 
 /-!
 # The nerve of a partial order: the comparability graph and its flag complex

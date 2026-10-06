@@ -1,4 +1,8 @@
-import RequestProject.TopologicalSingular.HurewiczSurjectivityConsequences
+module
+
+public import RequestProject.TopologicalSingular.HurewiczSurjectivityConsequences
+
+@[expose] public section
 
 /-! Surjectivity checkpoint for the genuine degree-two Hurewicz homomorphism.
 

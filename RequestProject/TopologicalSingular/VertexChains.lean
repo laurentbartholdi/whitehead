@@ -1,7 +1,11 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.SingularChains
-import Mathlib.Data.Fin.Tuple.Basic
+public import RequestProject.TopologicalSingular.SingularChains
+public import Mathlib.Data.Fin.Tuple.Basic
+
+@[expose] public section
 
 /-! # Integral chains of ordered vertex lists
 

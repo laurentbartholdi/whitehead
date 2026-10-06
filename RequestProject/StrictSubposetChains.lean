@@ -1,5 +1,9 @@
-import RequestProject.StrictOrderChains
-import RequestProject.UnivCoverIncl
+module
+
+public import RequestProject.StrictOrderChains
+public import RequestProject.UnivCoverIncl
+
+@[expose] public section
 
 /-! Finite chains and cycles on an actual induced subposet. -/
 namespace FiniteChains.Comb

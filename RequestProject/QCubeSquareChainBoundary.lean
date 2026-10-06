@@ -1,4 +1,8 @@
-import RequestProject.QCubeSquareChainEmbedding
+module
+
+public import RequestProject.QCubeSquareChainEmbedding
+
+@[expose] public section
 
 /-! Degree-two boundary naturality of the actual finite square-chain subdivision. -/
 namespace FiniteChains.Davis

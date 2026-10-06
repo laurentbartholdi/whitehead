@@ -1,5 +1,9 @@
-import RequestProject.TreePresentation
-import RequestProject.UnivCoverIncl
+module
+
+public import RequestProject.TreePresentation
+public import RequestProject.UnivCoverIncl
+
+@[expose] public section
 
 /-! Actual cellular cocycles associated with characters of the fundamental group. -/
 namespace FiniteChains.Comb.SpanningTree

@@ -1,6 +1,10 @@
-import RequestProject.GenusSpinePresentation
-import RequestProject.GenusCollapseLoopRepresentatives
-import RequestProject.NamedPresentation
+module
+
+public import RequestProject.GenusSpinePresentation
+public import RequestProject.GenusCollapseLoopRepresentatives
+public import RequestProject.NamedPresentation
+
+@[expose] public section
 
 /-! The finite marked block presentation of the actual surviving genus spine. -/
 namespace FiniteChains.Davis.Genus

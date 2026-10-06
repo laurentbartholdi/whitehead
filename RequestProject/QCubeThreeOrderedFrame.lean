@@ -1,4 +1,8 @@
-import RequestProject.QCubeThreeComponentRecovery
+module
+
+public import RequestProject.QCubeThreeComponentRecovery
+
+@[expose] public section
 
 /-! Existence of decreasing actual coordinate frames for three-dimensional cubes. -/
 namespace FiniteChains.Davis

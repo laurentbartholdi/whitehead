@@ -1,4 +1,8 @@
-import RequestProject.Framework
+module
+
+public import RequestProject.Framework
+
+@[expose] public section
 
 /-!
 # The hypothesis bundles are consistent

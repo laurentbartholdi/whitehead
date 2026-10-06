@@ -1,5 +1,9 @@
-import RequestProject.ReceivedTreeFoxCoordinates
-import RequestProject.TreeCoverAcyclic
+module
+
+public import RequestProject.ReceivedTreeFoxCoordinates
+public import RequestProject.TreeCoverAcyclic
+
+@[expose] public section
 
 /-! Edge chains are determined by their non-tree coordinates and off-root boundary. -/
 set_option backward.defeqAttrib.useBackward true

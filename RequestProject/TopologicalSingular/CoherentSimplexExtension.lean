@@ -1,5 +1,9 @@
-import RequestProject.TopologicalSingular.SimplexFaceIntersections
-import RequestProject.TopologicalSingular.CoherentPrism
+module
+
+public import RequestProject.TopologicalSingular.SimplexFaceIntersections
+public import RequestProject.TopologicalSingular.CoherentPrism
+
+@[expose] public section
 
 namespace FiniteChains.TopologicalSingular
 open scoped unitInterval Topology

@@ -1,4 +1,8 @@
-import RequestProject.NervePrism
+module
+
+public import RequestProject.NervePrism
+
+@[expose] public section
 
 /-!
 # Chains supported on a subposet, and the chain-level gluing (Mayer–Vietoris) step

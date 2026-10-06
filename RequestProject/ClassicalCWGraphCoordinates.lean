@@ -1,6 +1,10 @@
-import RequestProject.ClassicalCWLoopCellularization
-import RequestProject.ClassicalGraphPathStraightening
-import Mathlib.Topology.Connected.Clopen
+module
+
+public import RequestProject.ClassicalCWLoopCellularization
+public import RequestProject.ClassicalGraphPathStraightening
+public import Mathlib.Topology.Connected.Clopen
+
+@[expose] public section
 
 /-! The actual graph underlying the original CW one-skeleton. Its vertices
 are the literal zero-skeleton points and its edges the original one-cell
@@ -16,7 +20,7 @@ open ClassicalSkeletonAttachment RelativeAttachment ClassicalGraphModel Continuo
 
 variable {X : Type} [TopologicalSpace X] [T2Space X] [CWComplex (Set.univ : Set X)]
 
-private theorem isClosed_of_closedCell_constant (S : Set X)
+theorem isClosed_of_closedCell_constant (S : Set X)
     (hS : ∀ n (j : RelCWComplex.cell (Set.univ : Set X) n),
       CWComplex.closedCell n j ⊆ S ∨ Disjoint (CWComplex.closedCell n j) S) : IsClosed S := by
   apply (CWComplex.closed (Set.univ : Set X) S (Set.subset_univ _)).mpr

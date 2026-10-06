@@ -1,5 +1,9 @@
-import RequestProject.CanonicalPresentationTopologicalChains
-import RequestProject.AsphericalChains
+module
+
+public import RequestProject.CanonicalPresentationTopologicalChains
+public import RequestProject.AsphericalChains
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

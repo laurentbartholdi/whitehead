@@ -1,6 +1,10 @@
-import RequestProject.TopologicalSingular.NormalizedThreeChains
-import RequestProject.TopologicalSingular.BasedTetrahedronDisks
-import RequestProject.TopologicalSingular.TetrahedronFaceNullHomotopy
+module
+
+public import RequestProject.TopologicalSingular.NormalizedThreeChains
+public import RequestProject.TopologicalSingular.BasedTetrahedronDisks
+public import RequestProject.TopologicalSingular.TetrahedronFaceNullHomotopy
+
+@[expose] public section
 
 /-!
 # Coherent tetrahedra and genuine based homotopies

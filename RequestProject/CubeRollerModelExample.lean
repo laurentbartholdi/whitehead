@@ -1,4 +1,8 @@
-import RequestProject.CubeRollerModel
+module
+
+public import RequestProject.CubeRollerModel
+
+@[expose] public section
 
 /-!
 # Models of the Roller axioms

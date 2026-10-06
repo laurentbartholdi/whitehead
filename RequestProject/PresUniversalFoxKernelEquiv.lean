@@ -1,4 +1,8 @@
-import RequestProject.PresUniversalFoxColumns
+module
+
+public import RequestProject.PresUniversalFoxColumns
+
+@[expose] public section
 
 namespace FiniteChains.PresModel
 open Comb

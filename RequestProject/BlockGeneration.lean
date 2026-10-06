@@ -1,5 +1,9 @@
-import RequestProject.RelativeH2
-import RequestProject.CellCancellation
+module
+
+public import RequestProject.RelativeH2
+public import RequestProject.CellCancellation
+
+@[expose] public section
 
 /-!
 # Assembling the generation lemma for the block

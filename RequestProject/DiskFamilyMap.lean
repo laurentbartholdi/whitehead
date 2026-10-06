@@ -1,4 +1,8 @@
-import RequestProject.ClassicalCellAttachmentMaps
+module
+
+public import RequestProject.ClassicalCellAttachmentMaps
+
+@[expose] public section
 
 /-! Actual maps of disk attachments induced by a base map and a map of
 disk labels. These maps retain the complete characteristic disks. Unverified. -/

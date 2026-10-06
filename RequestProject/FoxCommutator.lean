@@ -1,6 +1,10 @@
-import Mathlib
-import RequestProject.FoxRequirement
-import RequestProject.BoundaryRing
+module
+
+public import Mathlib
+public import RequestProject.FoxRequirement
+public import RequestProject.BoundaryRing
+
+@[expose] public section
 
 /-!
 # The requirements pass to the commutator subgroup (Lemma 2.1 in the paper's application)

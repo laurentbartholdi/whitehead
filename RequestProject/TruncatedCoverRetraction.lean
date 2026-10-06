@@ -1,6 +1,10 @@
-import RequestProject.PosetCoverPullback
-import RequestProject.NerveUpperSectionReflection
-import RequestProject.TruncatedCubePoset
+module
+
+public import RequestProject.PosetCoverPullback
+public import RequestProject.NerveUpperSectionReflection
+public import RequestProject.TruncatedCubePoset
+
+@[expose] public section
 
 /-! Pulling a genuine old-cell covering back to the actual truncated block. -/
 namespace FiniteChains.Davis

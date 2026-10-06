@@ -1,5 +1,9 @@
-import RequestProject.GenusSpineRetraction
-import RequestProject.TruncatedCellularHomotopy
+module
+
+public import RequestProject.GenusSpineRetraction
+public import RequestProject.TruncatedCellularHomotopy
+
+@[expose] public section
 
 /-! The actual retained-cube retraction fixes spine two-cycles after normalization. -/
 set_option backward.defeqAttrib.useBackward true

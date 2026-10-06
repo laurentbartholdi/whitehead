@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveRealizationFaceReduction
-import Mathlib.Topology.Separation.Hausdorff
+module
+
+public import RequestProject.OrderNerveRealizationFaceReduction
+public import Mathlib.Topology.Separation.Hausdorff
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

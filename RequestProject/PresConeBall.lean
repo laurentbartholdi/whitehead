@@ -1,5 +1,9 @@
-import RequestProject.OrderNerveLowerCone
-import RequestProject.RelatorCircleBoundaryHomeomorph
+module
+
+public import RequestProject.OrderNerveLowerCone
+public import RequestProject.RelatorCircleBoundaryHomeomorph
+
+@[expose] public section
 
 /-! The actual closed lower ideal of a nonempty relator apex is a genuine
 two-dimensional disk. Its strict lower interval is precisely the norm-one
@@ -13,7 +17,7 @@ open scoped Classical
 variable {α J : Type} (w : J → List (α × Bool)) (j : J)
     (hn : 0 < (w j).length)
 
-private noncomputable instance relatorCircle_fintype : Fintype (RelatorCircle w j) :=
+noncomputable instance relatorCircle_fintype : Fintype (RelatorCircle w j) :=
   Fintype.ofFinite _
 
 def presConeBallHomeomorph :

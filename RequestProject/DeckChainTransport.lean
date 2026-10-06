@@ -1,4 +1,8 @@
-import RequestProject.CombPi2
+module
+
+public import RequestProject.CombPi2
+
+@[expose] public section
 
 /-! Deck transformations act on genuine cellular chains and preserve their boundary. -/
 set_option backward.defeqAttrib.useBackward true

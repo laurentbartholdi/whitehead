@@ -1,4 +1,8 @@
-import RequestProject.PosetCoverDownTransform
+module
+
+public import RequestProject.PosetCoverDownTransform
+
+@[expose] public section
 
 /-! The two legs of a contraction lift into the same sheet of a poset cover. -/
 namespace FiniteChains.Comb.IsPosetCover

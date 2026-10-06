@@ -1,4 +1,8 @@
-import Mathlib
+module
+
+public import Mathlib
+
+@[expose] public section
 
 /-!
 # Collapsing the top cells: the spine argument of Lemma 3.2 (ii)

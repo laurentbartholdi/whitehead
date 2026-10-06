@@ -1,6 +1,10 @@
-import RequestProject.RelatorCircleFundamentalChain
-import RequestProject.StrictTopConeInjectivity
-import RequestProject.PresCoverConeCircleProjection
+module
+
+public import RequestProject.RelatorCircleFundamentalChain
+public import RequestProject.StrictTopConeInjectivity
+public import RequestProject.PresCoverConeCircleProjection
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

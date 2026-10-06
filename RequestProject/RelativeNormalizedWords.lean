@@ -1,5 +1,9 @@
-import RequestProject.ExponentCorrection
-import RequestProject.GenusStructuralFinsupp
+module
+
+public import RequestProject.ExponentCorrection
+public import RequestProject.GenusStructuralFinsupp
+
+@[expose] public section
 
 /-! A simultaneous labelled relative normal form.
 

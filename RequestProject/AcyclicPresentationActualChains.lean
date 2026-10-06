@@ -1,5 +1,9 @@
-import RequestProject.InitialPairFinsupp
-import RequestProject.RelativeAmbientPresChain
+module
+
+public import RequestProject.InitialPairFinsupp
+public import RequestProject.RelativeAmbientPresChain
+
+@[expose] public section
 
 /-! The acyclic-core sufficiency construction with its explicit initial
 pair, actual genus replacement, actual terminal extension, and actual

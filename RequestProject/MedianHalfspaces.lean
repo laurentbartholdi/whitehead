@@ -1,4 +1,8 @@
-import RequestProject.MedianGraphMetric
+module
+
+public import RequestProject.MedianGraphMetric
+
+@[expose] public section
 
 /-!
 # Halfspaces of a median graph are convex

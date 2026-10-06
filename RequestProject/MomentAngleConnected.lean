@@ -1,4 +1,8 @@
-import RequestProject.TruncatedCube
+module
+
+public import RequestProject.TruncatedCube
+
+@[expose] public section
 
 /-!
 # Connectivity of the adjacency graph of the three-cubes of `C(L)`

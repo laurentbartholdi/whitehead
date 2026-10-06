@@ -1,5 +1,9 @@
-import RequestProject.MonoidAlgebraMapDomain
-import RequestProject.BaseChangeCycles
+module
+
+public import RequestProject.MonoidAlgebraMapDomain
+public import RequestProject.BaseChangeCycles
+
+@[expose] public section
 
 /-!
 # Principal matrix kernels under an injective group-ring extension

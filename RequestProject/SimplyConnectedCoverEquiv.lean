@@ -1,5 +1,9 @@
-import RequestProject.UniversalToCover
-import RequestProject.ZeroPi2Descent
+module
+
+public import RequestProject.UniversalToCover
+public import RequestProject.ZeroPi2Descent
+
+@[expose] public section
 
 /-! A connected simply connected cellular covering is the actual path-class universal cover. -/
 

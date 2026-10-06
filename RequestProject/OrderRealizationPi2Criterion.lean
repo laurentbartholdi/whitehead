@@ -1,5 +1,9 @@
-import RequestProject.OrderUniversalMap
-import RequestProject.OrderRealizationCockcroft
+module
+
+public import RequestProject.OrderUniversalMap
+public import RequestProject.OrderRealizationCockcroft
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

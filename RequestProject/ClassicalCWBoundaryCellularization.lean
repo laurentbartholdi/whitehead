@@ -1,6 +1,10 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.IntervalEndpointHomotopyExtension
-import RequestProject.ClassicalCWLoopCellularization
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.IntervalEndpointHomotopyExtension
+public import RequestProject.ClassicalCWLoopCellularization
+
+@[expose] public section
 
 /-! Cellular representatives for actual attaching circle maps, including
 maps whose chosen starting point is not in the one-skeleton. Four endpoint

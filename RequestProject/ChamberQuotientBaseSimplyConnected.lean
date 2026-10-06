@@ -1,5 +1,9 @@
-import RequestProject.ChamberQuotientBaseCover
-import RequestProject.OrderUniversalPosetConnected
+module
+
+public import RequestProject.ChamberQuotientBaseCover
+public import RequestProject.OrderUniversalPosetConnected
+
+@[expose] public section
 
 /-! Each actual lifted base component is simply connected, proved from the
 genuine covering and the proved injection of the base fundamental group. -/

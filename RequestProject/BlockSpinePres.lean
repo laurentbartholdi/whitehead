@@ -1,6 +1,10 @@
-import RequestProject.SubstOneWayBlockLoops
-import RequestProject.TreePresentation
-import RequestProject.CombPi1Conj
+module
+
+public import RequestProject.SubstOneWayBlockLoops
+public import RequestProject.TreePresentation
+public import RequestProject.CombPi1Conj
+
+@[expose] public section
 
 /-!
 # The block of the article: its spine, its marked presentation, its loops and its fillings

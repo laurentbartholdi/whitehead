@@ -1,7 +1,11 @@
-import RequestProject.OrderCocycleCoverPi1
-import RequestProject.PresPosetReading
-import RequestProject.PresCoverRelatorLetterCoefficients
-import RequestProject.PresCoverRoseFibreEquiv
+module
+
+public import RequestProject.OrderCocycleCoverPi1
+public import RequestProject.PresPosetReading
+public import RequestProject.PresCoverRelatorLetterCoefficients
+public import RequestProject.PresCoverRoseFibreEquiv
+
+@[expose] public section
 
 noncomputable section
 namespace FiniteChains.PresModel.PresCocycleCover

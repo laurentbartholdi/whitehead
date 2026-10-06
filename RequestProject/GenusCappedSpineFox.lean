@@ -1,5 +1,9 @@
-import RequestProject.GenusCappedSpineHurewicz
-import RequestProject.PresCockcroftDictionary
+module
+
+public import RequestProject.GenusCappedSpineHurewicz
+public import RequestProject.PresCockcroftDictionary
+
+@[expose] public section
 
 /-! The actual capped spine and the Fox complex of its genuine presentation agree. -/
 set_option backward.defeqAttrib.useBackward true

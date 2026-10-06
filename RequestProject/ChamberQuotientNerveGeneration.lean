@@ -1,7 +1,11 @@
-import RequestProject.ChamberQuotientEquivariantGeneration
-import RequestProject.ChamberZConnected
-import RequestProject.OrderUniversalTetLift
-import RequestProject.OrderNervePositiveFillings
+module
+
+public import RequestProject.ChamberQuotientEquivariantGeneration
+public import RequestProject.ChamberZConnected
+public import RequestProject.OrderUniversalTetLift
+public import RequestProject.OrderNervePositiveFillings
+
+@[expose] public section
 
 /-! Genuine quotient universal-cover generation in the full homogeneous nerve. -/
 set_option backward.defeqAttrib.useBackward true

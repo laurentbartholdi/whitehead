@@ -1,5 +1,9 @@
-import RequestProject.CombPi2
-import RequestProject.CombData
+module
+
+public import RequestProject.CombPi2
+public import RequestProject.CombData
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 universe u

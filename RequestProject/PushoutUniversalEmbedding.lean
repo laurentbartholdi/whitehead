@@ -1,6 +1,10 @@
-import RequestProject.PushoutFundamentalRetraction
-import RequestProject.RegularCoverEdgeLabels
-import RequestProject.UniversalCoverPi1Injection
+module
+
+public import RequestProject.PushoutFundamentalRetraction
+public import RequestProject.RegularCoverEdgeLabels
+public import RequestProject.UniversalCoverPi1Injection
+
+@[expose] public section
 
 /-! Actual sheet separation in the universal cover of the descent pushout.
 The map L→K∪D L identifies old vertices, so fundamental-group injection

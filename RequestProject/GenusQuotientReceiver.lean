@@ -1,7 +1,11 @@
-import RequestProject.ChamberQuotientCocycleGluing
-import RequestProject.GenusReceivedSpineCover
-import RequestProject.PresUniversalGroupCoordinates
-import RequestProject.GenusNonemptyMarkedReading
+module
+
+public import RequestProject.ChamberQuotientCocycleGluing
+public import RequestProject.GenusReceivedSpineCover
+public import RequestProject.PresUniversalGroupCoordinates
+public import RequestProject.GenusNonemptyMarkedReading
+
+@[expose] public section
 
 /-! Construct the old-piece cocycle from the actual finite-spine receiver,
 then glue it to a base receiver using only the genuine marked readings.

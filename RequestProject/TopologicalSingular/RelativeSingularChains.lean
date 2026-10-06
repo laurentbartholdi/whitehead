@@ -1,7 +1,11 @@
+module
+
 /- Adapted from the local 2026-09-11 Lean audit; see PROVENANCE.json. -/
 
-import RequestProject.TopologicalSingular.SingularChainMaps
-import Mathlib.LinearAlgebra.Quotient.Basic
+public import RequestProject.TopologicalSingular.SingularChainMaps
+public import Mathlib.LinearAlgebra.Quotient.Basic
+
+@[expose] public section
 
 /-! # Relative singular chains of an actual topological pair
 

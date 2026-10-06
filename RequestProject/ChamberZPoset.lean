@@ -1,5 +1,9 @@
-import RequestProject.ChamberAttachingJ
-import RequestProject.CylinderPoset
+module
+
+public import RequestProject.ChamberAttachingJ
+public import RequestProject.CylinderPoset
+
+@[expose] public section
 
 /-!
 # The complex `Z` of modified chambers, as an explicit poset

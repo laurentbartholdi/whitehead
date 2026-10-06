@@ -1,5 +1,9 @@
-import RequestProject.BlockQuotientModel
-import RequestProject.BlockFoxModelExample
+module
+
+public import RequestProject.BlockQuotientModel
+public import RequestProject.BlockFoxModelExample
+
+@[expose] public section
 
 /-!
 # The hypotheses of the absolute form of the block model are satisfiable

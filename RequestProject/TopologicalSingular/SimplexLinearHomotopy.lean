@@ -1,4 +1,8 @@
-import RequestProject.TopologicalSingular.SingularChains
+module
+
+public import RequestProject.TopologicalSingular.SingularChains
+
+@[expose] public section
 
 set_option backward.defeqAttrib.useBackward true
 set_option backward.isDefEq.respectTransparency false

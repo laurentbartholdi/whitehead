@@ -1,6 +1,10 @@
-import RequestProject.HomeomorphContinuousMap
-import RequestProject.OrderEdgeSkeletonAttachment
-import RequestProject.ClassicalGraphBoundaryWords
+module
+
+public import RequestProject.HomeomorphContinuousMap
+public import RequestProject.OrderEdgeSkeletonAttachment
+public import RequestProject.ClassicalGraphBoundaryWords
+
+@[expose] public section
 
 /-! The actual triangle attaching circle reads the literal strict
 boundary 01,12,02^-1 in the graph model. The trailing constant segment in
@@ -127,15 +131,15 @@ theorem graphSquare_bottom (t : StrictOrdTri P) (u : I) :
     orderNerveRealizationCoordinates_vertex]
   simp [squareSideMap, Whitehead.squareEdge, boolEndpoint]
 
-private def intervalPath : Path (0 : I) 1 where
+def intervalPath : Path (0 : I) 1 where
   toFun := id
   continuous_toFun := continuous_id
   source' := rfl
   target' := rfl
 
-private def pausedIntervalPath : Path (0 : I) 1 := intervalPath.trans (Path.refl 1)
+def pausedIntervalPath : Path (0 : I) 1 := intervalPath.trans (Path.refl 1)
 
-private theorem single_word_paused {V E X : Type} [TopologicalSpace X]
+theorem single_word_paused {V E X : Type} [TopologicalSpace X]
     (src tgt : E → V) (v : V → X) (edge : ∀ e, Path (v (src e)) (v (tgt e)))
     (g : E × Bool) {a b : V} (h : IsPath src tgt [g] a b) (u : I) :
     realize src tgt v edge [g] h u = germPath src tgt v edge g (pausedIntervalPath u) := by

@@ -1,6 +1,10 @@
-import RequestProject.ClassicalCWChainFixedBase
-import RequestProject.ClassicalCWWordDiskModel
-import Mathlib.Order.Fin.Basic
+module
+
+public import RequestProject.ClassicalCWChainFixedBase
+public import RequestProject.ClassicalCWWordDiskModel
+public import Mathlib.Order.Fin.Basic
+
+@[expose] public section
 
 /-! A fixed initial presentation for every ambient CW chain of the given
 original complex. The original cellwise homeomorphism is upgraded by
@@ -22,26 +26,26 @@ variable (D K : Whitehead.TwoComplex) {n : ℕ}
       e.map (RelCWComplex.map (C := (Set.univ : Set D)) m j x))
   (h₀ : C 0 = e.imageSubcomplex)
 
-private def chartedGraphAt (S : CWComplex.Subcomplex (Set.univ : Set K))
+def chartedGraphAt (S : CWComplex.Subcomplex (Set.univ : Set K))
     (hS : S = e.imageSubcomplex) : Hom (originalGraph D) (subcomplexGraph S) :=
   hS.symm ▸ e.graphHom hchart
 
-private def chartedCellsAt (S : CWComplex.Subcomplex (Set.univ : Set K))
+def chartedCellsAt (S : CWComplex.Subcomplex (Set.univ : Set K))
     (hS : S = e.imageSubcomplex) (m : ℕ) :
     RelCWComplex.cell (Set.univ : Set D) m ≃ RelCWComplex.cell (S : Set K) m :=
   hS.symm ▸ e.imageCellEquiv m
 
-private theorem chartedGraphAt_injective_V (S : CWComplex.Subcomplex (Set.univ : Set K))
+theorem chartedGraphAt_injective_V (S : CWComplex.Subcomplex (Set.univ : Set K))
     (hS : S = e.imageSubcomplex) : Function.Injective (chartedGraphAt D K e hchart S hS).onV := by
   subst S
   exact e.graphHom_injective_V hchart
 
-private theorem chartedGraphAt_injective_E (S : CWComplex.Subcomplex (Set.univ : Set K))
+theorem chartedGraphAt_injective_E (S : CWComplex.Subcomplex (Set.univ : Set K))
     (hS : S = e.imageSubcomplex) : Function.Injective (chartedGraphAt D K e hchart S hS).onE := by
   subst S
   exact e.graphHom_injective_E hchart
 
-private theorem chartedWordAt_spec (S : CWComplex.Subcomplex (Set.univ : Set K))
+theorem chartedWordAt_spec (S : CWComplex.Subcomplex (Set.univ : Set K))
     (hS : S = e.imageSubcomplex) (j : RelCWComplex.cell (Set.univ : Set D) 2) :
     (subcomplexCellBoundary S (chartedCellsAt D K e S hS 2 j)).Homotopic
       ((fixedGraphWord D j).map (chartedGraphAt D K e hchart S hS)).boundaryMap := by

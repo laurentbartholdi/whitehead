@@ -1,4 +1,8 @@
-import RequestProject.OrderNormalizationHomotopy
+module
+
+public import RequestProject.OrderNormalizationHomotopy
+
+@[expose] public section
 
 namespace FiniteChains.Comb
 universe u

@@ -1,4 +1,8 @@
-import RequestProject.RelativePairGeneration
+module
+
+public import RequestProject.RelativePairGeneration
+
+@[expose] public section
 
 /-! All three actual structural rules over a fixed core, in finite-support
 coordinates. No rule-1 injection, slide filling, commutator factorization,
@@ -27,7 +31,7 @@ theorem pairRel_rawPresentation : pairRel (rawPresentation core extra) =
 def relativeRuleOneMap : PresMorFS (rawPresentation core extra) (beforeCorrection core extra) :=
   (pairStructuralMap (rawPresentation core extra)).castTarget (pairRel_rawPresentation core extra)
 
-private def pairGroupHomTo {B W J : Type} (ρ : J → FreeGroup (B ⊕ W))
+def pairGroupHomTo {B W J : Type} (ρ : J → FreeGroup (B ⊕ W))
     (τ : J → FreeGroup (PairGen B W)) (h : pairRel ρ = τ) : PresGroup ρ →* PresGroup τ :=
   QuotientGroup.lift _ ((QuotientGroup.mk' _).comp pairSubstitution) (by
     refine Subgroup.normalClosure_le_normal ?_
@@ -35,13 +39,13 @@ private def pairGroupHomTo {B W J : Type} (ρ : J → FreeGroup (B ⊕ W))
     apply (QuotientGroup.eq_one_iff _).mpr
     exact Subgroup.subset_normalClosure ⟨j, (congrFun h j).symm⟩)
 
-private theorem pairCast_hom {B W J : Type} (ρ : J → FreeGroup (B ⊕ W))
+theorem pairCast_hom {B W J : Type} (ρ : J → FreeGroup (B ⊕ W))
     (τ : J → FreeGroup (PairGen B W)) (h : pairRel ρ = τ) :
     ((pairStructuralMap ρ).castTarget h).hom = pairGroupHomTo ρ τ h := by
   cases h
   rfl
 
-private theorem pairCast_cells {B W J : Type} (ρ : J → FreeGroup (B ⊕ W))
+theorem pairCast_cells {B W J : Type} (ρ : J → FreeGroup (B ⊕ W))
     (τ : J → FreeGroup (PairGen B W)) (h : pairRel ρ = τ)
     (x : J →₀ MonoidAlgebra ℤ (PresGroup ρ)) :
     ((pairStructuralMap ρ).castTarget h).cells x =

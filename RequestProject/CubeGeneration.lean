@@ -1,5 +1,9 @@
-import RequestProject.RelativeH2
-import RequestProject.CubeCartanHadamard
+module
+
+public import RequestProject.RelativeH2
+public import RequestProject.CubeCartanHadamard
+
+@[expose] public section
 
 /-!
 # Feeding the chain-level Cartan–Hadamard step into the generation lemma
