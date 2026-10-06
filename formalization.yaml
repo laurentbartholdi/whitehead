@@ -18,7 +18,6 @@ classification:
     - math.AT
   msc2020:
     - 55P15
-    - 57M20
 sources:
   - title: "Finite Chains of Two-Complexes and Acyclic Covers"
     authors:
