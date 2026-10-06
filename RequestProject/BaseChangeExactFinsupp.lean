@@ -1,0 +1,129 @@
+import RequestProject.BaseChangeCycles
+
+/-! Exactness after extending a subgroup ring, with finite support in every cell index. -/
+
+namespace FiniteChains
+open MonoidAlgebra
+variable {G : Type*} [Group G] (H : Subgroup G) {J α ι : Type*}
+
+/-- Extend the coefficients of each matrix column from the subgroup ring. -/
+noncomputable def fsExtendedBoundary (A : J → α →₀ MonoidAlgebra ℤ H) :
+    (J →₀ MonoidAlgebra ℤ G) →ₗ[MonoidAlgebra ℤ G] (α →₀ MonoidAlgebra ℤ G) :=
+  Finsupp.linearCombination _ (fun j => (A j).mapRange (subRingHom H) (map_zero _))
+
+/-- Taking a coset slice commutes with a boundary whose entries lie in the subgroup ring. -/
+theorem fs_slice_extendedBoundary (A : J → α →₀ MonoidAlgebra ℤ H)
+    (g : G) (c : J →₀ MonoidAlgebra ℤ G) :
+    (fsExtendedBoundary H A c).mapRange (slice H g) (map_zero _) =
+      Finsupp.linearCombination (MonoidAlgebra ℤ H) A
+        (c.mapRange (slice H g) (map_zero _)) := by
+  classical
+  induction c using Finsupp.induction_linear with
+  | zero => simp
+  | add c d hc hd =>
+    rw [map_add, Finsupp.mapRange_add, Finsupp.mapRange_add, map_add, hc, hd] <;> exact fun x y => map_add _ x y
+  | single j x =>
+    simp only [fsExtendedBoundary, Finsupp.linearCombination_single, Finsupp.mapRange_single]
+    apply Finsupp.ext
+    intro i
+    exact slice_mul H g x (A j i)
+
+/-- A subgroup-ring boundary commutes with extension and left multiplication by a deck element. -/
+theorem fs_extend_boundary (A : J → α →₀ MonoidAlgebra ℤ H)
+    (g : G) (c : J →₀ MonoidAlgebra ℤ H) :
+    fsExtendedBoundary H A
+      ((single g (1 : ℤ) : MonoidAlgebra ℤ G) •
+        c.mapRange (subRingHom H) (map_zero _)) =
+      (single g (1 : ℤ) : MonoidAlgebra ℤ G) •
+        (Finsupp.linearCombination (MonoidAlgebra ℤ H) A c).mapRange
+          (subRingHom H) (map_zero _) := by
+  classical
+  rw [map_smul]
+  congr 1
+  induction c using Finsupp.induction_linear with
+  | zero => simp
+  | add c d hc hd =>
+    rw [Finsupp.mapRange_add, map_add, map_add, Finsupp.mapRange_add, hc, hd] <;> exact fun x y => map_add _ x y
+  | single j x =>
+    simp only [Finsupp.mapRange_single, fsExtendedBoundary, Finsupp.linearCombination_single]
+    apply Finsupp.ext
+    intro i
+    exact (map_mul (subRingHom H) x (A j i)).symm
+
+/-- Base change along a subgroup preserves exactness for arbitrary free chain modules. -/
+theorem fs_exists_preimage_base_change
+    (A : J → α →₀ MonoidAlgebra ℤ H) (B : α → ι →₀ MonoidAlgebra ℤ H)
+    (hex : ∀ c : α →₀ MonoidAlgebra ℤ H,
+      Finsupp.linearCombination (MonoidAlgebra ℤ H) B c = 0 →
+      ∃ y, Finsupp.linearCombination (MonoidAlgebra ℤ H) A y = c)
+    (w : α →₀ MonoidAlgebra ℤ G) (hw : fsExtendedBoundary H B w = 0) :
+    ∃ y : J →₀ MonoidAlgebra ℤ G, fsExtendedBoundary H A y = w := by
+  classical
+  have hs : ∀ g : G,
+      Finsupp.linearCombination (MonoidAlgebra ℤ H) B
+        (w.mapRange (slice H g) (map_zero _)) = 0 := by
+    intro g
+    rw [← fs_slice_extendedBoundary, hw, Finsupp.mapRange_zero]
+  choose y hy using fun g => hex (w.mapRange (slice H g) (map_zero _)) (hs g)
+  let S : Finset (G ⧸ H) := w.support.biUnion fun i =>
+    (w i).coeff.support.image (fun g => (QuotientGroup.mk g : G ⧸ H))
+  refine ⟨∑ C ∈ S, (single (Quotient.out C) (1 : ℤ) : MonoidAlgebra ℤ G) •
+    (y (Quotient.out C)).mapRange (subRingHom H) (map_zero _), ?_⟩
+  rw [map_sum]
+  simp_rw [fs_extend_boundary, hy]
+  apply Finsupp.ext
+  intro i
+  rw [Finsupp.finset_sum_apply]
+  change (∑ C ∈ S, single (Quotient.out C) (1 : ℤ) *
+    subRingHom H (slice H (Quotient.out C) (w i))) = w i
+  apply sum_cosetPieces_of_subset
+  by_cases hi : i ∈ w.support
+  · exact Finset.subset_biUnion_of_mem
+      (fun i => (w i).coeff.support.image (fun g => (QuotientGroup.mk g : G ⧸ H))) hi
+  · have hz : w i = 0 := by simpa using hi
+    simp [hz]
+
+/-- A finite-support vector has only finitely many occupied subgroup cosets. -/
+noncomputable def fsCosetSupport (c : J →₀ MonoidAlgebra ℤ G) : Finset (G ⧸ H) := by
+  classical
+  exact c.support.biUnion fun j =>
+    (c j).coeff.support.image (fun g => (QuotientGroup.mk g : G ⧸ H))
+
+/-- Reassemble the finitely many coset slices of a chain. -/
+theorem fs_sum_cosetSlices (c : J →₀ MonoidAlgebra ℤ G) :
+    (∑ C ∈ fsCosetSupport H c,
+      (single (Quotient.out C) (1 : ℤ) : MonoidAlgebra ℤ G) •
+        (c.mapRange (slice H (Quotient.out C)) (map_zero _)).mapRange
+          (subRingHom H) (map_zero _)) = c := by
+  classical
+  apply Finsupp.ext
+  intro j
+  rw [Finsupp.finset_sum_apply]
+  change (∑ C ∈ fsCosetSupport H c, single (Quotient.out C) (1 : ℤ) *
+    subRingHom H (slice H (Quotient.out C) (c j))) = c j
+  apply sum_cosetPieces_of_subset
+  by_cases hj : j ∈ c.support
+  · exact Finset.subset_biUnion_of_mem
+      (fun j => (c j).coeff.support.image (fun g => (QuotientGroup.mk g : G ⧸ H))) hj
+  · have hz : c j = 0 := by simpa using hj
+    simp [hz]
+
+/-- Every cycle over the larger group ring is generated by cycles over the subgroup ring,
+without a finite-cell restriction. -/
+theorem fs_cycle_mem_span_subgroup_cycles
+    (A : J → α →₀ MonoidAlgebra ℤ H) (c : J →₀ MonoidAlgebra ℤ G)
+    (hc : fsExtendedBoundary H A c = 0) :
+    c ∈ Submodule.span (MonoidAlgebra ℤ G)
+      {v : J →₀ MonoidAlgebra ℤ G | ∃ w : J →₀ MonoidAlgebra ℤ H,
+        Finsupp.linearCombination (MonoidAlgebra ℤ H) A w = 0 ∧
+        v = w.mapRange (subRingHom H) (map_zero _)} := by
+  classical
+  rw [← fs_sum_cosetSlices H c]
+  apply Submodule.sum_mem
+  intro C hC
+  apply Submodule.smul_mem
+  apply Submodule.subset_span
+  refine ⟨c.mapRange (slice H (Quotient.out C)) (map_zero _), ?_, rfl⟩
+  rw [← fs_slice_extendedBoundary, hc, Finsupp.mapRange_zero]
+
+end FiniteChains

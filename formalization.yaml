@@ -1,0 +1,66 @@
+# Copy to formalization.yaml after choosing the repository's SPDX licence.
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+version: "v0.4"
+project:
+  name: "Finite Chains of Two-Complexes and Acyclic Covers"
+  description: >-
+    A Lean formalization of Theorem A, characterizing the existence of connected
+    regular acyclic covers of connected two-dimensional CW complexes by strict
+    finite chains of two-complexes, including the finite acyclic clause.
+  authors:
+    - "Laurent Bartholdi"
+    - "Roman Mikhailov"
+  license: "Apache-2.0"
+  responsible_maintainers:
+    - "Laurent Bartholdi"
+classification:
+  arxiv: ["math.AT"]
+  msc2020: ["55P15", "57M20"]
+sources:
+  - title: "Finite Chains of Two-Complexes and Acyclic Covers"
+    authors:
+      - "Laurent Bartholdi"
+      - "Roman Mikhailov"
+    type: "paper"
+    relationship: "formalizes"
+    license: "unknown"
+    author_endorsement: "participated"
+related_formalizations: []
+status:
+  scope: >-
+    Formalizes Theorem A as stated in Challenge.lean, including both directions
+    of the arbitrary-chain characterization and the finite acyclic conclusion.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: ["propext", "Classical.choice", "Quot.sound"]
+  main_results:
+    - "Whitehead.TheoremA"
+automation:
+  methods:
+    - method: "agent"
+      models: ["OpenAI Codex", "Claude"]
+      framework: "Lean 4 and mathlib"
+      tool_setup: "AI-assisted source development, porting, proof repair, and kernel verification"
+      cost:
+        wall_time: "not tracked"
+        spend_usd: "not tracked"
+        hardware: "local machine"
+      prompting_notes: "Iterative proof development and Lean compiler feedback."
+  spend_usd: "not tracked"
+  notes: "The final rc3 port and audit used OpenAI Codex; inherited sources also record Claude edits."
+fidelity:
+  divergences: "none known"
+review:
+  status: "self-assessed"
+  reviewers:
+    - "Laurent Bartholdi"
+  notes: "Direct Lean build, axiom audit, source-hole audit, Comparator, Lean kernel, and NanoDa checks passed locally."
+alignment:
+  namespace: "Whitehead"
+  statements:
+    - source: "Theorem A"
+      lean: "Whitehead.TheoremA"
+      module: "Solution"
+      status: "proved"
+      note: "Comparator checks the declaration against Challenge.lean."
+acknowledgements: "Lean, mathlib, Palomar Comparator, NanoDa, OpenAI Codex, and Claude."

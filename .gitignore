@@ -1,0 +1,8 @@
+.lake/
+verification/archive/
+*.olean
+*.ilean
+*.trace
+*.log
+.DS_Store
+.claude/
