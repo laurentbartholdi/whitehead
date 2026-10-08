@@ -28,5 +28,7 @@ endpoint. Historical port/debug logs and editor backups are retained in
 verification/archive and excluded from the submission package.
 
 The mathematical source is "Finite Chains of Two-Complexes and Acyclic Covers"
-by Laurent Bartholdi and Roman Mikhailov (the adjacent whitehead.tex).
-No Palomar submission has been made by this workflow.
+by Laurent Bartholdi and Roman Mikhailov, arXiv:2610.10074.
+Whitehead.TheoremA formalizes Theorem A of that article. PROVENANCE.json records
+the available automation and audit history, including the known gaps in
+inherited records. The preflight workflow does not submit to Palomar.

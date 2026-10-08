@@ -4,9 +4,12 @@ version: "v0.4"
 project:
   name: "Finite Chains of Two-Complexes and Acyclic Covers"
   description: >-
-    A Lean formalization of the main theorem of the article: given a two-dimensional
-    CW complex K, there exists an arbitrarily long chain of inclusions K ⊂ K₁ ⊂ ... ⊂ Kₙ which are 0 on π₂ if and
-    only if K admits a regular acyclic cover.
+    Whitehead's asphericity problem would have a negative answer if a
+    non-aspherical two-complex began an infinite chain whose inclusions induce
+    zero maps on second homotopy groups. This Lean formalization proves the
+    article's main finite-length characterization: a connected two-complex K
+    begins such chains of every finite length if and only if K has a connected
+    acyclic regular cover. It also formalizes the finite acyclic enhancement.
   authors:
     - "Laurent Bartholdi"
     - "Roman Mikhailov"
@@ -15,7 +18,8 @@ project:
     - "Laurent Bartholdi"
 classification:
   arxiv:
-    - math.AT
+    - math.GT
+    - math.GR
   msc2020:
     - 55P15
 sources:
@@ -23,8 +27,16 @@ sources:
     authors:
       - "Laurent Bartholdi"
       - "Roman Mikhailov"
+    id: "arXiv:2610.10074"
     type: "paper"
+    location: "Theorem A"
     relationship: "formalizes"
+    note: >-
+      https://arxiv.org/abs/2610.10074. Whitehead.TheoremA formalizes Theorem A:
+      the equivalence between pi_2-trivial chains of every finite length and a
+      connected regular acyclic cover, together with the finite acyclic
+      enhancement. The arXiv abstract's explicit finite non-aspherical
+      SL(2,5) presentation-complex consequence is outside the compared theorem.
     license: "unknown"
     author_endorsement: "participated"
 related_formalizations: []
@@ -47,11 +59,21 @@ automation:
         wall_time: "not tracked"
         spend_usd: "not tracked"
         hardware: "local machine"
-      prompting_notes: "Iterative proof development and Lean compiler feedback."
+      prompting_notes: >-
+        Iterative proof development and Lean compiler feedback. The complete
+        earlier automation transcript is unavailable; see PROVENANCE.json.
   spend_usd: "not tracked"
-  notes: "The final rc3 port and audit used OpenAI Codex; inherited sources also record Claude edits."
+  notes: >-
+    The final rc3 port and audit used OpenAI Codex; inherited sources also
+    record Claude edits. The complete earlier automation history and the
+    historical 2026-09-11 audit snapshot are unavailable. PROVENANCE.json
+    records these limits and distinguishes current verification from inherited
+    audit claims.
 fidelity:
-  divergences: "none known"
+  divergences: >-
+    The submission compares Theorem A only. It does not separately formalize
+    the arXiv abstract's explicit finite non-aspherical presentation complex of
+    SL(2,5), which is a consequence discussed in the article.
 review:
   status: "self-assessed"
   reviewers:

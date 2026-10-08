@@ -2,7 +2,7 @@
   "mathematical_source": {
     "title": "Finite Chains of Two-Complexes and Acyclic Covers",
     "authors": ["Laurent Bartholdi", "Roman Mikhailov"],
-    "local_source": "../whitehead.tex"
+    "stable_source": "https://arxiv.org/abs/2610.10074"
   },
   "continuation": "Proof development inherited from previous sessions; ported and checked with Lean and mathlib v4.35.0-rc3.",
   "historical_adaptation_notes": "Some files cite a local 2026-09-11 Lean audit. The original audit snapshot and its provenance manifest were not present in this checkout; those comments do not establish an external source revision.",
